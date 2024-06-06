@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation>The base subflow for Flow Templates.</annotation>
+        <attributes/>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>0196b66173303010e46b4a2214f6a7a2</copied_from>
+        <copied_from_name>Flow Template Subflow</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>object_template__post_app_flow__20240525_173934</internal_name>
+        <label_cache>[{"name":"subflow.flow_name","label":"Input➛FlowName","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6104d4bd-e4a8-4126-8368-0c2c1e42b9c5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"25160f78-8dd1-4021-abe3-cbddc1ce3c7c.flow_sys_id","label":"1➛flow_sys_id","reference_display":"flow_sys_id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"78315980-0618-4b5c-a42e-0486bb6228c4"}},{"name":"25160f78-8dd1-4021-abe3-cbddc1ce3c7c.__dont_treat_as_error__","label":"1➛Don\u0027tTreatasError","reference_display":"Don\u0027tTreatasError","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"a4bab41e-a176-42d8-8d64-faab6a1b3692"}},{"name":"25160f78-8dd1-4021-abe3-cbddc1ce3c7c.__action_status__","label":"1➛ActionStatus","reference_display":"ActionStatus","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"620ae830-f089-4bb7-b87a-596632299baf"}},{"name":"subflow.flow_run_with_roles","label":"Input➛Runwithroles","reference":"sys_user_role","reference_display":"Role","type":"glide_list","base_type":"glide_list","column_name":"","attributes":{"uiType":"glide_list","uiTypeLabel":"List","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3b298cd5-a32f-478b-b0f7-c7b26bbbf167","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_run_as","label":"Input➛Runas","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Userwhoinitiatessession","value":"Userwhoinitiatessession","order":0.0},{"label":"SystemUser","value":"SystemUser","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4447cc97-a00d-4693-8eb5-681129f02a53","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_protection","label":"Input➛Protection","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"--None--","value":"","order":0.0},{"label":"Read-only","value":"Read-only","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c8223d22-6181-4a8e-b91e-6309e65fc0c7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_description","label":"Input➛FlowDescription","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bb1d9d81-856b-448b-8302-7ad3b4b486a6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_scope_sys_id","label":"Input➛Application","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dd22b118-eb4e-4d05-b199-4b02d11eae14","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_sys_id","label":"Input➛flow_sys_id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e8a73e65-5f5f-4d5f-9ac5-848e4c40267d","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Object Template - Post App Flow - 2024-05-25 17:39:34</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>379dbdc3eb5682505204f635cad0cddb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Object Template - Post App Flow - 2024-05-25 17:39:34</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_hub_flow_379dbdc3eb5682505204f635cad0cddb</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:39</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_variable_value action="DELETE" query="document_key=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb^id=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN739dbdc3eb5682505204f635cad0cddc"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>379dbdc3eb5682505204f635cad0cddb</id>
+        <name>Object Template - Post App Flow - 2024-05-25 17:39:34</name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>739dbdc3eb5682505204f635cad0cddc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=739dbdc3eb5682505204f635cad0cddc"/>
+    <sys_hub_flow_input action="DELETE" query="model=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN3f9dbdc3eb5682505204f635cad0cdf8,44adfdc3eb5682505204f635cad0cd08,739dbdc3eb5682505204f635cad0cdfd,80adfdc3eb5682505204f635cad0cd03,bb9dbdc3eb5682505204f635cad0cde1,f79dbdc3eb5682505204f635cad0cdf5,fb9dbdc3eb5682505204f635cad0cde5"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=c8223d22-6181-4a8e-b91e-6309e65fc0c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_protection</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Protection</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>3f9dbdc3eb5682505204f635cad0cdf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=3f9dbdc3eb5682505204f635cad0cdf8"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e8a73e65-5f5f-4d5f-9ac5-848e4c40267d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>1b9dbdc3eb5682505204f635cad0cd25</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Source Flow sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>44adfdc3eb5682505204f635cad0cd08</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=44adfdc3eb5682505204f635cad0cd08"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=4447cc97-a00d-4693-8eb5-681129f02a53</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>User who initiates session</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_run_as</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Run as</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>739dbdc3eb5682505204f635cad0cdfd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=739dbdc3eb5682505204f635cad0cdfd"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_list,uiTypeLabel=List,uiUniqueId=3b298cd5-a32f-478b-b0f7-c7b26bbbf167</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user_role</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_run_with_roles</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_list</internal_type>
+        <label>Run with roles</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user_role">sys_user_role</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>80adfdc3eb5682505204f635cad0cd03</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=80adfdc3eb5682505204f635cad0cd03"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6104d4bd-e4a8-4126-8368-0c2c1e42b9c5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Flow Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>bb9dbdc3eb5682505204f635cad0cde1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=bb9dbdc3eb5682505204f635cad0cde1"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dd22b118-eb4e-4d05-b199-4b02d11eae14</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Application</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>f79dbdc3eb5682505204f635cad0cdf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=f79dbdc3eb5682505204f635cad0cdf5"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=bb1d9d81-856b-448b-8302-7ad3b4b486a6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Flow Description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>fb9dbdc3eb5682505204f635cad0cde5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=fb9dbdc3eb5682505204f635cad0cde5"/>
+    <sys_hub_flow_output action="DELETE" query="model=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN44adfdc3eb5682505204f635cad0cd1c"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aa34d29c-a9ce-4ad1-b70e-4e25b5685f2b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</model>
+        <model_id>379dbdc3eb5682505204f635cad0cddb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>44adfdc3eb5682505204f635cad0cd1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=44adfdc3eb5682505204f635cad0cd1c"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_hub_action_instance action="DELETE" query="flow=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN04adfdc3eb5682505204f635cad0cd3c"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Flow">66fce50e5b91301083f30f216581c7d8</action_type>
+        <action_type_parent display_value="Copy Flow">d2da6d8a5b91301083f30f216581c7a3</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>66fce50e5b91301083f30f216581c7d8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>04adfdc3eb5682505204f635cad0cd3c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:39</sys_updated_on>
+        <ui_id>25160f78-8dd1-4021-abe3-cbddc1ce3c7c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=04adfdc3eb5682505204f635cad0cd3c"/>
+    <sys_element_mapping action="DELETE" query="id=04adfdc3eb5682505204f635cad0cd3c"/>
+    <sys_element_mapping action="DELETE">
+        <field>description</field>
+        <id>04adfdc3eb5682505204f635cad0cd3c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>84adfdc3eb5682505204f635cad0cd57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8</table>
+        <value>{{subflow.flow_description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>name</field>
+        <id>04adfdc3eb5682505204f635cad0cd3c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>44adfdc3eb5682505204f635cad0cd3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8</table>
+        <value>{{subflow.flow_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>protection</field>
+        <id>04adfdc3eb5682505204f635cad0cd3c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>0cadfdc3eb5682505204f635cad0cd57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8</table>
+        <value>{{subflow.flow_protection}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>run_as</field>
+        <id>04adfdc3eb5682505204f635cad0cd3c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>48adfdc3eb5682505204f635cad0cd57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8</table>
+        <value>{{subflow.flow_run_as}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>run_with_roles</field>
+        <id>04adfdc3eb5682505204f635cad0cd3c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>80adfdc3eb5682505204f635cad0cd58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8</table>
+        <value>{{subflow.flow_run_with_roles}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>scope_sys_id</field>
+        <id>04adfdc3eb5682505204f635cad0cd3c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>80adfdc3eb5682505204f635cad0cd3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8</table>
+        <value>{{subflow.flow_scope_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>source_flow_sys_id</field>
+        <id>04adfdc3eb5682505204f635cad0cd3c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>ccadfdc3eb5682505204f635cad0cd57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8</table>
+        <value>{{subflow.flow_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=04adfdc3eb5682505204f635cad0cd3c"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=04adfdc3eb5682505204f635cad0cd3c"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN88adfdc3eb5682505204f635cad0cd33,ccadfdc3eb5682505204f635cad0cd22"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">80adfdc3eb5682505204f635cad0cd33</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>output</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>88adfdc3eb5682505204f635cad0cd33</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:39</sys_updated_on>
+        <ui_id>071ccb31-f3bf-4d21-a383-676c1f8552fd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=88adfdc3eb5682505204f635cad0cd33"/>
+    <sys_element_mapping action="DELETE" query="id=88adfdc3eb5682505204f635cad0cd33"/>
+    <sys_element_mapping action="DELETE">
+        <field>output</field>
+        <id>88adfdc3eb5682505204f635cad0cd33</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>04adfdc3eb5682505204f635cad0cd36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb</table>
+        <value>{{25160f78-8dd1-4021-abe3-cbddc1ce3c7c.flow_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=88adfdc3eb5682505204f635cad0cd33"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=88adfdc3eb5682505204f635cad0cd33"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">80adfdc3eb5682505204f635cad0cd22</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Object Template - Post App Flow - 2024-05-25 17:39:34">379dbdc3eb5682505204f635cad0cddb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Update Flow Template">2f6feee173f03010e46b4a2214f6a776</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>ccadfdc3eb5682505204f635cad0cd22</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:39</sys_updated_on>
+        <ui_id>839626ca-3420-40f3-8493-1b0753bbb2b7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=ccadfdc3eb5682505204f635cad0cd22"/>
+    <sys_element_mapping action="DELETE" query="id=ccadfdc3eb5682505204f635cad0cd22"/>
+    <sys_element_mapping action="DELETE">
+        <field>flow</field>
+        <id>ccadfdc3eb5682505204f635cad0cd22</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>88adfdc3eb5682505204f635cad0cd32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_2f6feee173f03010e46b4a2214f6a776</table>
+        <value>{{25160f78-8dd1-4021-abe3-cbddc1ce3c7c.flow_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb^id=ccadfdc3eb5682505204f635cad0cd22"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=ccadfdc3eb5682505204f635cad0cd22"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=ccadfdc3eb5682505204f635cad0cd22"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_hub_flow_variable action="DELETE" query="model=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN3f9dbdc3eb5682505204f635cad0cdf7,44adfdc3eb5682505204f635cad0cd07,739dbdc3eb5682505204f635cad0cdfc,80adfdc3eb5682505204f635cad0cd02,88adfdc3eb5682505204f635cad0cd0a,bb9dbdc3eb5682505204f635cad0cde4,f79dbdc3eb5682505204f635cad0cdf4"/>
+    <sys_documentation action="DELETE">
+        <element>flow_scope_sys_id</element>
+        <help/>
+        <hint/>
+        <label>Application</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>3f9dbdc3eb5682505204f635cad0cdf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>flow_run_with_roles</element>
+        <help/>
+        <hint>Select roles that you want to temporarily assign to the user who triggers your flow.</hint>
+        <label>Run with roles</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>44adfdc3eb5682505204f635cad0cd07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>flow_protection</element>
+        <help/>
+        <hint>Choose whether other users with Flow Designer access can edit your flow (No protection), or if your flow should be read-only.</hint>
+        <label>Protection</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>739dbdc3eb5682505204f635cad0cdfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>flow_run_as</element>
+        <help/>
+        <hint>If you want to temporarily elevate the permissions of the user who triggers the flow, select System User. Selecting System User is less secure but can prevent permissions errors that cause your flow to stop running.</hint>
+        <label>Run as</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>80adfdc3eb5682505204f635cad0cd02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>flow_sys_id</element>
+        <help/>
+        <hint/>
+        <label>Source Flow sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>88adfdc3eb5682505204f635cad0cd0a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>flow_name</element>
+        <help/>
+        <hint>Choose a name that briefly describes what your flow does. Only users with access to Flow Designer can see this name.</hint>
+        <label>Flow Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>bb9dbdc3eb5682505204f635cad0cde4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>flow_description</element>
+        <help/>
+        <hint>Describe how your flow automates work for your app. Only users with access to Flow Designer can see this description.</hint>
+        <label>Flow Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+        <sys_id>f79dbdc3eb5682505204f635cad0cdf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN3f9dbdc3eb5682505204f635cad0cdfe,bf9dbdc3eb5682505204f635cad0cdfa,f39dbdc3eb5682505204f635cad0cdff,f79dbdc3eb5682505204f635cad0cdfa"/>
+    <sys_choice action="DELETE" field="flow_protection" table="var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>flow_protection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Read-only</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf9dbdc3eb5682505204f635cad0cdfa</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:39:38</sys_updated_on>
+            <value>Read-only</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>flow_protection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f79dbdc3eb5682505204f635cad0cdfa</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:39:38</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice action="DELETE" field="flow_run_as" table="var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>flow_run_as</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>User who initiates session</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f9dbdc3eb5682505204f635cad0cdfe</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:39:38</sys_updated_on>
+            <value>User who initiates session</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>flow_run_as</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>System User</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>jspirko</sys_created_by>
+            <sys_created_on>2024-05-25 17:39:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f39dbdc3eb5682505204f635cad0cdff</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jspirko</sys_updated_by>
+            <sys_updated_on>2024-05-25 17:39:38</sys_updated_on>
+            <value>System User</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN4cadfdc3eb5682505204f635cad0cd1f"/>
+    <sys_documentation action="DELETE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:36</sys_created_on>
+        <sys_id>4cadfdc3eb5682505204f635cad0cd1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=379dbdc3eb5682505204f635cad0cddb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>76bfb9f61ba9f594fe1b43f4bd4bcb74</instance_id>
+        <instance_name>dsforum</instance_name>
+        <name>sys_hub_flow_379dbdc3eb5682505204f635cad0cddb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation&gt;The base subflow for Flow Templates.&lt;/annotation&gt;&lt;attributes/&gt;&lt;authored_on_release_version&gt;25000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from&gt;0196b66173303010e46b4a2214f6a7a2&lt;/copied_from&gt;&lt;copied_from_name&gt;Flow Template Subflow&lt;/copied_from_name&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;object_template__post_app_flow__20240525_173934&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"subflow.flow_name","label":"Input➛FlowName","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6104d4bd-e4a8-4126-8368-0c2c1e42b9c5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"25160f78-8dd1-4021-abe3-cbddc1ce3c7c.flow_sys_id","label":"1➛flow_sys_id","reference_display":"flow_sys_id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"78315980-0618-4b5c-a42e-0486bb6228c4"}},{"name":"25160f78-8dd1-4021-abe3-cbddc1ce3c7c.__dont_treat_as_error__","label":"1➛Don\u0027tTreatasError","reference_display":"Don\u0027tTreatasError","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"a4bab41e-a176-42d8-8d64-faab6a1b3692"}},{"name":"25160f78-8dd1-4021-abe3-cbddc1ce3c7c.__action_status__","label":"1➛ActionStatus","reference_display":"ActionStatus","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"620ae830-f089-4bb7-b87a-596632299baf"}},{"name":"subflow.flow_run_with_roles","label":"Input➛Runwithroles","reference":"sys_user_role","reference_display":"Role","type":"glide_list","base_type":"glide_list","column_name":"","attributes":{"uiType":"glide_list","uiTypeLabel":"List","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3b298cd5-a32f-478b-b0f7-c7b26bbbf167","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_run_as","label":"Input➛Runas","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Userwhoinitiatessession","value":"Userwhoinitiatessession","order":0.0},{"label":"SystemUser","value":"SystemUser","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4447cc97-a00d-4693-8eb5-681129f02a53","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_protection","label":"Input➛Protection","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"--None--","value":"","order":0.0},{"label":"Read-only","value":"Read-only","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c8223d22-6181-4a8e-b91e-6309e65fc0c7","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_description","label":"Input➛FlowDescription","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"bb1d9d81-856b-448b-8302-7ad3b4b486a6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_scope_sys_id","label":"Input➛Application","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dd22b118-eb4e-4d05-b199-4b02d11eae14","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.flow_sys_id","label":"Input➛flow_sys_id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e8a73e65-5f5f-4d5f-9ac5-848e4c40267d","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Object Template - Post App Flow - 2024-05-25 17:39:34&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Object Template - Post App Flow - 2024-05-25 17:39:34&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_379dbdc3eb5682505204f635cad0cddb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:39&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb^id=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN739dbdc3eb5682505204f635cad0cddc"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/id&gt;&lt;name&gt;Object Template - Post App Flow - 2024-05-25 17:39:34&lt;/name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;739dbdc3eb5682505204f635cad0cddc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=739dbdc3eb5682505204f635cad0cddc"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN3f9dbdc3eb5682505204f635cad0cdf8,44adfdc3eb5682505204f635cad0cd08,739dbdc3eb5682505204f635cad0cdfd,80adfdc3eb5682505204f635cad0cd03,bb9dbdc3eb5682505204f635cad0cde1,f79dbdc3eb5682505204f635cad0cdf5,fb9dbdc3eb5682505204f635cad0cde5"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=c8223d22-6181-4a8e-b91e-6309e65fc0c7&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;flow_protection&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;label&gt;Protection&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;4&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3f9dbdc3eb5682505204f635cad0cdf8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3f9dbdc3eb5682505204f635cad0cdf8"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e8a73e65-5f5f-4d5f-9ac5-848e4c40267d&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;1b9dbdc3eb5682505204f635cad0cd25&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;flow_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Source Flow sys_id&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;7&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;44adfdc3eb5682505204f635cad0cd08&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:38&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=44adfdc3eb5682505204f635cad0cd08"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=4447cc97-a00d-4693-8eb5-681129f02a53&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;3&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;User who initiates session&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;flow_run_as&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;label&gt;Run as&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;5&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;739dbdc3eb5682505204f635cad0cdfd&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:38&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=739dbdc3eb5682505204f635cad0cdfd"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_list,uiTypeLabel=List,uiUniqueId=3b298cd5-a32f-478b-b0f7-c7b26bbbf167&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;sys_user_role&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;flow_run_with_roles&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;glide_list&lt;/internal_type&gt;&lt;label&gt;Run with roles&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;1024&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;6&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sys_user_role"&gt;sys_user_role&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;80adfdc3eb5682505204f635cad0cd03&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=80adfdc3eb5682505204f635cad0cd03"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6104d4bd-e4a8-4126-8368-0c2c1e42b9c5&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;flow_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Flow Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;bb9dbdc3eb5682505204f635cad0cde1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bb9dbdc3eb5682505204f635cad0cde1"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dd22b118-eb4e-4d05-b199-4b02d11eae14&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;flow_scope_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Application&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f79dbdc3eb5682505204f635cad0cdf5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f79dbdc3eb5682505204f635cad0cdf5"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=bb1d9d81-856b-448b-8302-7ad3b4b486a6&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;flow_description&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Flow Description&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;fb9dbdc3eb5682505204f635cad0cde5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fb9dbdc3eb5682505204f635cad0cde5"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN44adfdc3eb5682505204f635cad0cd1c"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aa34d29c-a9ce-4ad1-b70e-4e25b5685f2b&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;output&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Output&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model&gt;&lt;model_id&gt;379dbdc3eb5682505204f635cad0cddb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;44adfdc3eb5682505204f635cad0cd1c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=44adfdc3eb5682505204f635cad0cd1c"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN04adfdc3eb5682505204f635cad0cd3c"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Copy Flow"&gt;66fce50e5b91301083f30f216581c7d8&lt;/action_type&gt;&lt;action_type_parent display_value="Copy Flow"&gt;d2da6d8a5b91301083f30f216581c7a3&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;66fce50e5b91301083f30f216581c7d8&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;25160f78-8dd1-4021-abe3-cbddc1ce3c7c&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=04adfdc3eb5682505204f635cad0cd3c"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=04adfdc3eb5682505204f635cad0cd3c"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;description&lt;/field&gt;&lt;id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;84adfdc3eb5682505204f635cad0cd57&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8&lt;/table&gt;&lt;value&gt;{{subflow.flow_description}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;name&lt;/field&gt;&lt;id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;44adfdc3eb5682505204f635cad0cd3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8&lt;/table&gt;&lt;value&gt;{{subflow.flow_name}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;protection&lt;/field&gt;&lt;id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;0cadfdc3eb5682505204f635cad0cd57&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8&lt;/table&gt;&lt;value&gt;{{subflow.flow_protection}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;run_as&lt;/field&gt;&lt;id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;48adfdc3eb5682505204f635cad0cd57&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8&lt;/table&gt;&lt;value&gt;{{subflow.flow_run_as}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;run_with_roles&lt;/field&gt;&lt;id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;80adfdc3eb5682505204f635cad0cd58&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8&lt;/table&gt;&lt;value&gt;{{subflow.flow_run_with_roles}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;scope_sys_id&lt;/field&gt;&lt;id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;80adfdc3eb5682505204f635cad0cd3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8&lt;/table&gt;&lt;value&gt;{{subflow.flow_scope_sys_id}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;source_flow_sys_id&lt;/field&gt;&lt;id&gt;04adfdc3eb5682505204f635cad0cd3c&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;ccadfdc3eb5682505204f635cad0cd57&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_66fce50e5b91301083f30f216581c7d8&lt;/table&gt;&lt;value&gt;{{subflow.flow_sys_id}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=04adfdc3eb5682505204f635cad0cd3c"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=04adfdc3eb5682505204f635cad0cd3c"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN88adfdc3eb5682505204f635cad0cd33,ccadfdc3eb5682505204f635cad0cd22"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;80adfdc3eb5682505204f635cad0cd33&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Assign Subflow Outputs"&gt;df4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned&gt;output&lt;/outputs_assigned&gt;&lt;outputs_to_assign/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;88adfdc3eb5682505204f635cad0cd33&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;071ccb31-f3bf-4d21-a383-676c1f8552fd&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=88adfdc3eb5682505204f635cad0cd33"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=88adfdc3eb5682505204f635cad0cd33"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;output&lt;/field&gt;&lt;id&gt;88adfdc3eb5682505204f635cad0cd33&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;04adfdc3eb5682505204f635cad0cd36&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb&lt;/table&gt;&lt;value&gt;{{25160f78-8dd1-4021-abe3-cbddc1ce3c7c.flow_sys_id}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=88adfdc3eb5682505204f635cad0cd33"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=88adfdc3eb5682505204f635cad0cd33"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;80adfdc3eb5682505204f635cad0cd22&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Object Template - Post App Flow - 2024-05-25 17:39:34"&gt;379dbdc3eb5682505204f635cad0cddb&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Update Flow Template"&gt;2f6feee173f03010e46b4a2214f6a776&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;ccadfdc3eb5682505204f635cad0cd22&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;839626ca-3420-40f3-8493-1b0753bbb2b7&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ccadfdc3eb5682505204f635cad0cd22"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=ccadfdc3eb5682505204f635cad0cd22"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;flow&lt;/field&gt;&lt;id&gt;ccadfdc3eb5682505204f635cad0cd22&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;88adfdc3eb5682505204f635cad0cd32&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_2f6feee173f03010e46b4a2214f6a776&lt;/table&gt;&lt;value&gt;{{25160f78-8dd1-4021-abe3-cbddc1ce3c7c.flow_sys_id}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb^id=ccadfdc3eb5682505204f635cad0cd22"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ccadfdc3eb5682505204f635cad0cd22"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=ccadfdc3eb5682505204f635cad0cd22"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN3f9dbdc3eb5682505204f635cad0cdf7,44adfdc3eb5682505204f635cad0cd07,739dbdc3eb5682505204f635cad0cdfc,80adfdc3eb5682505204f635cad0cd02,88adfdc3eb5682505204f635cad0cd0a,bb9dbdc3eb5682505204f635cad0cde4,f79dbdc3eb5682505204f635cad0cdf4"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;flow_scope_sys_id&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Application&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;3f9dbdc3eb5682505204f635cad0cdf7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;flow_run_with_roles&lt;/element&gt;&lt;help/&gt;&lt;hint&gt;Select roles that you want to temporarily assign to the user who triggers your flow.&lt;/hint&gt;&lt;label&gt;Run with roles&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;44adfdc3eb5682505204f635cad0cd07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;flow_protection&lt;/element&gt;&lt;help/&gt;&lt;hint&gt;Choose whether other users with Flow Designer access can edit your flow (No protection), or if your flow should be read-only.&lt;/hint&gt;&lt;label&gt;Protection&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;739dbdc3eb5682505204f635cad0cdfc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;flow_run_as&lt;/element&gt;&lt;help/&gt;&lt;hint&gt;If you want to temporarily elevate the permissions of the user who triggers the flow, select System User. Selecting System User is less secure but can prevent permissions errors that cause your flow to stop running.&lt;/hint&gt;&lt;label&gt;Run as&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;80adfdc3eb5682505204f635cad0cd02&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;flow_sys_id&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Source Flow sys_id&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;88adfdc3eb5682505204f635cad0cd0a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:38&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;flow_name&lt;/element&gt;&lt;help/&gt;&lt;hint&gt;Choose a name that briefly describes what your flow does. Only users with access to Flow Designer can see this name.&lt;/hint&gt;&lt;label&gt;Flow Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;bb9dbdc3eb5682505204f635cad0cde4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;flow_description&lt;/element&gt;&lt;help/&gt;&lt;hint&gt;Describe how your flow automates work for your app. Only users with access to Flow Designer can see this description.&lt;/hint&gt;&lt;label&gt;Flow Description&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_id&gt;f79dbdc3eb5682505204f635cad0cdf4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:35&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN3f9dbdc3eb5682505204f635cad0cdfe,bf9dbdc3eb5682505204f635cad0cdfa,f39dbdc3eb5682505204f635cad0cdff,f79dbdc3eb5682505204f635cad0cdfa"/&gt;&lt;sys_choice field="flow_protection" table="var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb"&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;flow_protection&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;Read-only&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;sequence&gt;2&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bf9dbdc3eb5682505204f635cad0cdfa&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:38&lt;/sys_updated_on&gt;&lt;value&gt;Read-only&lt;/value&gt;&lt;/sys_choice&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;flow_protection&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;-- None --&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;sequence&gt;1&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f79dbdc3eb5682505204f635cad0cdfa&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:38&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;/sys_choice&gt;&lt;/sys_choice&gt;&lt;sys_choice field="flow_run_as" table="var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb"&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;flow_run_as&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;User who initiates session&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;sequence&gt;1&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3f9dbdc3eb5682505204f635cad0cdfe&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:38&lt;/sys_updated_on&gt;&lt;value&gt;User who initiates session&lt;/value&gt;&lt;/sys_choice&gt;&lt;sys_choice action="INSERT_OR_UPDATE"&gt;&lt;dependent_value/&gt;&lt;element&gt;flow_run_as&lt;/element&gt;&lt;hint/&gt;&lt;inactive&gt;false&lt;/inactive&gt;&lt;label&gt;System User&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;sequence&gt;2&lt;/sequence&gt;&lt;synonyms/&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f39dbdc3eb5682505204f635cad0cdff&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:38&lt;/sys_updated_on&gt;&lt;value&gt;System User&lt;/value&gt;&lt;/sys_choice&gt;&lt;/sys_choice&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb^sys_idNOT IN4cadfdc3eb5682505204f635cad0cd1f"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;output&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Output&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-25 17:39:36&lt;/sys_created_on&gt;&lt;sys_id&gt;4cadfdc3eb5682505204f635cad0cd1f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-25 17:39:36&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=379dbdc3eb5682505204f635cad0cddb"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>171166358</payload_hash>
+        <record_name>Object Template - Post App Flow - 2024-05-25 17:39:34</record_name>
+        <reverted_from/>
+        <source>f164dae3ff8202103ca0f6648c4fd910</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:39</sys_created_on>
+        <sys_id>30ad3107eb5682505204f635cad0cd38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fb0d6366c0000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:39</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>34ad3107c35682508482db295876c337</update_guid>
+        <update_guid_history>34ad3107c35682508482db295876c337:171166358,9cadfdc3ab568250808caa67cdd4c67f:-358201485,bf9dbdc3c056825050d1a14e2b63f4de:829371568</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-05-25 17:39:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>7ab0ebe307274f718a54c5b3df1e8951</sys_id>
+        <sys_metadata>379dbdc3eb5682505204f635cad0cddb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Object Template - Post App Flow - 2024-05-25 17:39:34</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_379dbdc3eb5682505204f635cad0cddb</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_379dbdc3eb5682505204f635cad0cddb">30ad3107eb5682505204f635cad0cd38</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-05-25 17:39:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

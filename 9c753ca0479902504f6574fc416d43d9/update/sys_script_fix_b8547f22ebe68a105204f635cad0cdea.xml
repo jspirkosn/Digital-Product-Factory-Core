@@ -4,16 +4,16 @@
         <description/>
         <name>test role query</name>
         <record_for_rollback>true</record_for_rollback>
-        <script><![CDATA[roleNames = 'sn_gsm.constituent_viewer,sn_gsm.report_viewer,sn_gsm.case_read_granular,sn_gsm_lic_prmt.case_writer,sn_gsm.constituent_contributor,sn_gsm.case_write_granular,sn_gsm_lic_prmt.ib_viewer,sn_gsm_lic_prmt.case_viewer,sn_gsm.business_agent,sn_gsm_lic_prmt.contributor_creator,sn_gsm.constituent_writer,sn_gsm.contributor_creator,sn_gsm.relationship_agent,sn_gsm.constituent_agent,sn_gsm.service_offered_viewer,sn_gsm.case_writer,sn_gsm.service_offered_writer,sn_gsm_lic_prmt.business_agent,sn_gsm.case_create_granular,sn_gsm_lic_prmt.constituent_agent,gsm_lic_prmt.relationship_agent,sn_gsm.case_viewer,sn_gsm_lic_prmt.report_viewer';
-
-var roles = new GlideRecord('sys_user_role');
+        <script><![CDATA[var roles = new GlideRecord('sys_user_has_role');
 var roleSysIDs = new Array();
 
-roles.addQuery('name','IN', roleNames);
+roles.addQuery('user', 'fabbc01beba68e105204f635cad0cdf7');
 roles.query();
 
+gs.info("deleting " + roles.getRowCount() + " rows");
+
 while(roles.next()){
- roleSysIDs.push(roles.sys_id);   
+ roles.deleteRecord();   
 }
 
  gs.info(roleSysIDs);]]></script>
@@ -21,14 +21,14 @@ while(roles.next()){
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 23:19:45</sys_created_on>
         <sys_id>b8547f22ebe68a105204f635cad0cdea</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>test role query</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_script_fix_b8547f22ebe68a105204f635cad0cdea</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-06-05 23:26:19</sys_updated_on>
+        <sys_updated_on>2024-06-07 16:26:52</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

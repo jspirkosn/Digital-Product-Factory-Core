@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Digital Product Factory for Government Agencies">bfe53424479902504f6574fc416d4337</cat_item>
+        <cat_item/>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -20,46 +20,44 @@
         <dynamic_value_dot_walk_path/>
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
-        <example_text>Smith</example_text>
+        <example_text/>
         <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
         <include_none>false</include_none>
-        <instructions><![CDATA[<p>If these don&#39;t fit what you need change your selection to define a new service.</p>]]></instructions>
+        <instructions/>
         <layout>normal</layout>
         <list_table/>
         <lookup_label/>
         <lookup_price/>
-        <lookup_table/>
+        <lookup_table>cmdb_ci_service_business</lookup_table>
         <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_value>name</lookup_value>
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>dev_last_name</name>
-        <order>210</order>
+        <name>business_service</name>
+        <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Developer last name</question_text>
-        <read_only>false</read_only>
+        <question_text>Program Name:</question_text>
+        <read_only>true</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
-        <reference>sn_gsm_government_service_model</reference>
-        <reference_qual>type=service_request^EQ</reference_qual>
-        <reference_qual_condition table="sn_gsm_government_service_model">type=service_request^EQ<item display_value="Service Requests" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="service_request"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference/>
+        <reference_qual>javascript:"sys_id="+current.variables.business_service_id;</reference_qual>
+        <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -77,26 +75,26 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2024-04-13 23:47:58</sys_created_on>
-        <sys_id>79bdfe21ebe902105204f635cad0cd4e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Developer last name</sys_name>
+        <sys_created_on>2024-07-20 22:54:25</sys_created_on>
+        <sys_id>0d1d9785eb6bce105204f635cad0cda8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Program Name:</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>item_option_new_79bdfe21ebe902105204f635cad0cd4e</sys_update_name>
+        <sys_update_name>item_option_new_0d1d9785eb6bce105204f635cad0cda8</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-12 02:55:57</sys_updated_on>
+        <sys_updated_on>2024-07-20 23:12:13</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>6</type>
+        <type>18</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
-        <variable_set/>
+        <variable_set display_value="Service and Offering Selection">85a3a296eb5f02105204f635cad0cdec</variable_set>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
@@ -105,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=79bdfe21ebe902105204f635cad0cd4e"/>
-    <fx_price action="delete_multiple" query="id=79bdfe21ebe902105204f635cad0cd4e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=0d1d9785eb6bce105204f635cad0cda8"/>
+    <fx_price action="delete_multiple" query="id=0d1d9785eb6bce105204f635cad0cda8"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>79bdfe21ebe902105204f635cad0cd4e</id>
+        <id>0d1d9785eb6bce105204f635cad0cda8</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2024-04-13 23:47:58</sys_created_on>
-        <sys_id>6e2ff2e1ebe902105204f635cad0cda1</sys_id>
+        <sys_created_on>2024-07-20 22:54:25</sys_created_on>
+        <sys_id>6dbedfc5eb6bce105204f635cad0cde3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-04-13 23:47:58</sys_updated_on>
+        <sys_updated_on>2024-07-20 22:54:25</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -128,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>79bdfe21ebe902105204f635cad0cd4e</id>
+        <id>0d1d9785eb6bce105204f635cad0cda8</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2024-04-13 23:47:58</sys_created_on>
-        <sys_id>6a2ff2e1ebe902105204f635cad0cda0</sys_id>
+        <sys_created_on>2024-07-20 22:54:25</sys_created_on>
+        <sys_id>6dbedfc5eb6bce105204f635cad0cde2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-04-13 23:47:58</sys_updated_on>
+        <sys_updated_on>2024-07-20 22:54:25</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

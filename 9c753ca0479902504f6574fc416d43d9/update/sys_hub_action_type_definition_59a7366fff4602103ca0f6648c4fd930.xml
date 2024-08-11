@@ -16,28 +16,29 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>set_developer_password</internal_name>
-        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.user}}","label":"action➛User","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.user}}","label":"action➛User","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛Password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>fc51fb6fffca02103ca0f6648c4fd9a9</master_snapshot>
-        <name>Set Developer Password</name>
+        <master_snapshot_digest/>
+        <name>Set Factory User Password</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 00:54:20</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>59a7366fff4602103ca0f6648c4fd930</sys_id>
-        <sys_mod_count>18</sys_mod_count>
-        <sys_name>Set Developer Password</sys_name>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Set Factory User Password</sys_name>
         <sys_overrides/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_59a7366fff4602103ca0f6648c4fd930</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-20 17:00:27</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:09:01</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -51,10 +52,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 00:54:21</sys_created_on>
         <sys_id>9da7366fff4602103ca0f6648c4fd99e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-15 05:34:37</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD9da7366f544602103349521ca4522d81":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD9da7366f544602103349521ca4522d81.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"5be3a82b-e1f2-45d7-9719-504ffd572939\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9da7366f544602103349521ca4522d81\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-07-24 21:28:02</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD9da7366f544602103349521ca4522d81":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD9da7366f544602103349521ca4522d81.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"5be3a82b-e1f2-45d7-9719-504ffd572939\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9da7366f544602103349521ca4522d81\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">5da7366fff4602103ca0f6648c4fd983</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -74,7 +75,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_59a7366fff4602103ca0f6648c4fd930^id=59a7366fff4602103ca0f6648c4fd930"/>
     <sys_hub_step_instance action="delete_multiple" query="action=59a7366fff4602103ca0f6648c4fd930^sys_idNOT IN55a7366fff4602103ca0f6648c4fd93f"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Set Developer Password">59a7366fff4602103ca0f6648c4fd930</action>
+        <action display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</action>
         <cid>b6966c84-69b0-4e8c-a592-c1c06b092cbf</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -90,10 +91,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 00:54:20</sys_created_on>
         <sys_id>55a7366fff4602103ca0f6648c4fd93f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-20 17:00:27</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:08:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=55a7366fff4602103ca0f6648c4fd93f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -118,19 +119,21 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 00:54:21</sys_created_on>
         <sys_id>5da7366fff4602103ca0f6648c4fd94c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-20 17:00:27</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:08:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   
 // ... code ...
   
   var user = new GlideRecord('sys_user');
-  var newPass = '12345aB!!'
+  
   user.get(inputs.userRec.sys_id);
   
-  user.setDisplayValue('user_password', newPass);
-  user.update();
+  var pwd = inputs.newPass.toString();
+
+  user.user_password.setDisplayValue(pwd);
+  outputs.uid = user.update();
   
 })(inputs, outputs);
 </value>
@@ -148,6 +151,18 @@
         <sys_updated_on>2024-05-15 00:54:21</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>newPass</field>
+        <id>55a7366fff4602103ca0f6648c4fd93f</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 21:39:57</sys_created_on>
+        <sys_id>0a043b16ff2782103ca0f6648c4fd9a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 21:39:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_55a7366fff4602103ca0f6648c4fd93f</table>
+        <value>{{action.password}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
@@ -173,9 +188,10 @@
         <table>var__m_sys_hub_step_ext_input_55a7366fff4602103ca0f6648c4fd93f</table>
         <value>{{action.user}}</value>
     </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_55a7366fff4602103ca0f6648c4fd93f^id=55a7366fff4602103ca0f6648c4fd93f"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=55a7366fff4602103ca0f6648c4fd93f"/>
     <sys_translated_text action="delete_multiple" query="documentkey=55a7366fff4602103ca0f6648c4fd93f"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=55a7366fff4602103ca0f6648c4fd93f^sys_idNOT IN15a7366fff4602103ca0f6648c4fd943"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=55a7366fff4602103ca0f6648c4fd93f^sys_idNOT IN15a7366fff4602103ca0f6648c4fd943,86043b16ff2782103ca0f6648c4fd99d"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -259,10 +275,283 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=55a7366fff4602103ca0f6648c4fd93f"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>newPass</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">55a7366fff4602103ca0f6648c4fd93f</model>
+        <model_id>55a7366fff4602103ca0f6648c4fd93f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_55a7366fff4602103ca0f6648c4fd93f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 21:39:57</sys_created_on>
+        <sys_id>86043b16ff2782103ca0f6648c4fd99d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 21:39:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=55a7366fff4602103ca0f6648c4fd93f^sys_idNOT INc2148c62ffa782103ca0f6648c4fd97a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a6d63a66-3a67-4c57-9798-aba4e22ab990</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>uid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>uID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">55a7366fff4602103ca0f6648c4fd93f</model>
+        <model_id>55a7366fff4602103ca0f6648c4fd93f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_55a7366fff4602103ca0f6648c4fd93f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 22:50:08</sys_created_on>
+        <sys_id>c2148c62ffa782103ca0f6648c4fd97a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 22:50:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=55a7366fff4602103ca0f6648c4fd93f"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_55a7366fff4602103ca0f6648c4fd93f"/>
-    <sys_hub_action_input action="delete_multiple" query="model=59a7366fff4602103ca0f6648c4fd930^sys_idNOT INd1a7366fff4602103ca0f6648c4fd937"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_55a7366fff4602103ca0f6648c4fd93f^sys_idNOT INce148c62ffa782103ca0f6648c4fd97d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>uid</element>
+        <help/>
+        <hint/>
+        <label>uID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_55a7366fff4602103ca0f6648c4fd93f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 22:50:08</sys_created_on>
+        <sys_id>ce148c62ffa782103ca0f6648c4fd97d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 22:50:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=59a7366fff4602103ca0f6648c4fd930^sys_idNOT IN0a043b16ff2782103ca0f6648c4fd955,d1a7366fff4602103ca0f6648c4fd937"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2eaec824-4f1b-4e59-a7c6-7f3989fadc04</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Password</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</model>
+        <model_id>59a7366fff4602103ca0f6648c4fd930</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_59a7366fff4602103ca0f6648c4fd930</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 21:39:57</sys_created_on>
+        <sys_id>0a043b16ff2782103ca0f6648c4fd955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 21:39:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0a043b16ff2782103ca0f6648c4fd955"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -303,7 +592,7 @@
         <label>User</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Set Developer Password">59a7366fff4602103ca0f6648c4fd930</model>
+        <model display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</model>
         <model_id>59a7366fff4602103ca0f6648c4fd930</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_59a7366fff4602103ca0f6648c4fd930</name>
@@ -390,7 +679,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Set Developer Password">59a7366fff4602103ca0f6648c4fd930</model>
+        <model display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</model>
         <model_id>59a7366fff4602103ca0f6648c4fd930</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_59a7366fff4602103ca0f6648c4fd930</name>
@@ -413,14 +702,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 00:54:21</sys_created_on>
         <sys_id>55a7366fff4602103ca0f6648c4fd989</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-20 17:00:27</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:09:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -447,7 +736,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>91a7366fff4602103ca0f6648c4fd982</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -455,7 +744,7 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-20 17:00:27</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:09:00</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -500,7 +789,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Set Developer Password">59a7366fff4602103ca0f6648c4fd930</model>
+        <model display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</model>
         <model_id>59a7366fff4602103ca0f6648c4fd930</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_59a7366fff4602103ca0f6648c4fd930</name>
@@ -548,7 +837,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=59a7366fff4602103ca0f6648c4fd930"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=59a7366fff4602103ca0f6648c4fd930^sys_idNOT IN21a7366fff4602103ca0f6648c4fd9a1"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Set Developer Password">59a7366fff4602103ca0f6648c4fd930</action_type_id>
+        <action_type_id display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</action_type_id>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 00:54:21</sys_created_on>
         <sys_id>21a7366fff4602103ca0f6648c4fd9a1</sys_id>
@@ -557,7 +846,7 @@
         <sys_updated_on>2024-05-15 00:54:21</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=21a7366fff4602103ca0f6648c4fd9a1"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_59a7366fff4602103ca0f6648c4fd930^sys_idNOT IN1da7366fff4602103ca0f6648c4fd93c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_59a7366fff4602103ca0f6648c4fd930^sys_idNOT IN1da7366fff4602103ca0f6648c4fd93c,8a043b16ff2782103ca0f6648c4fd997"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>user</element>
         <help/>
@@ -578,6 +867,29 @@
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-05-15 00:54:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>password</element>
+        <help/>
+        <hint/>
+        <label>Password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_59a7366fff4602103ca0f6648c4fd930</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 21:39:57</sys_created_on>
+        <sys_id>8a043b16ff2782103ca0f6648c4fd997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 21:39:57</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -632,19 +944,19 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_59a7366fff4602103ca0f6648c4fd930"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=59a7366fff4602103ca0f6648c4fd930^sys_idNOT IN09513f6fffca02103ca0f6648c4fd920"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Set Developer Password">59a7366fff4602103ca0f6648c4fd930</action_id>
+        <action_id display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"09513f6fffca02103ca0f6648c4fd920","name":"plan","plan_signature":null}}</plan>
-        <snapshot>6789fbebff0e02103ca0f6648c4fd9a5</snapshot>
+        <snapshot>7268c0eaffa782103ca0f6648c4fd9f7</snapshot>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 05:06:22</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>09513f6fffca02103ca0f6648c4fd920</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-15 05:42:19</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:09:02</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -661,19 +973,19 @@
         <description/>
         <flow_priority/>
         <internal_name>set_developer_password</internal_name>
-        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.user}}","label":"action➛User","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.user}}","label":"action➛User","type":"action","ref":"sys_user","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛Password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
-        <name>Set Developer Password</name>
+        <name>Set Factory User Password</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Set Developer Password">59a7366fff4602103ca0f6648c4fd930</parent_action>
+        <parent_action display_value="Set Factory User Password">59a7366fff4602103ca0f6648c4fd930</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 05:06:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fc51fb6fffca02103ca0f6648c4fd9a9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -681,7 +993,7 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-15 05:35:16</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -695,10 +1007,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 05:06:21</sys_created_on>
         <sys_id>4151fb6fffca02103ca0f6648c4fd9f0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-15 05:06:21</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">fc51fb6fffca02103ca0f6648c4fd9c9</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -718,7 +1030,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_fc51fb6fffca02103ca0f6648c4fd9a9^id=fc51fb6fffca02103ca0f6648c4fd9a9"/>
     <sys_hub_step_instance action="delete_multiple" query="action=fc51fb6fffca02103ca0f6648c4fd9a9^sys_idNOT INfc51fb6fffca02103ca0f6648c4fd9b8"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Set Developer Password">fc51fb6fffca02103ca0f6648c4fd9a9</action>
+        <action display_value="Set Factory User Password">fc51fb6fffca02103ca0f6648c4fd9a9</action>
         <cid>b6966c84-69b0-4e8c-a592-c1c06b092cbf</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -734,10 +1046,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 05:06:21</sys_created_on>
         <sys_id>fc51fb6fffca02103ca0f6648c4fd9b8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-15 05:42:18</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:09:01</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fc51fb6fffca02103ca0f6648c4fd9b8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -748,19 +1060,21 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 05:06:21</sys_created_on>
         <sys_id>7451fb6fffca02103ca0f6648c4fd9c6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-15 05:42:18</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:09:01</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   
 // ... code ...
   
   var user = new GlideRecord('sys_user');
-  var newPass = '12345aB!!'
+  
   user.get(inputs.userRec.sys_id);
   
-  user.user_password.setDisplayValue(newPass);
-  user.update();
+  var pwd = inputs.newPass.toString();
+
+  user.user_password.setDisplayValue(pwd);
+  outputs.uid = user.update();
   
 })(inputs, outputs);
 </value>
@@ -794,6 +1108,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>newPass</field>
+        <id>fc51fb6fffca02103ca0f6648c4fd9b8</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 23:03:18</sys_created_on>
+        <sys_id>0f17c02affa782103ca0f6648c4fd91f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_fc51fb6fffca02103ca0f6648c4fd9b8</table>
+        <value>{{action.password}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>fc51fb6fffca02103ca0f6648c4fd9b8</id>
         <sys_created_by>jspirko</sys_created_by>
@@ -817,9 +1143,10 @@
         <table>var__m_sys_hub_step_ext_input_fc51fb6fffca02103ca0f6648c4fd9b8</table>
         <value>{{action.user}}</value>
     </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_fc51fb6fffca02103ca0f6648c4fd9b8^id=fc51fb6fffca02103ca0f6648c4fd9b8"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=fc51fb6fffca02103ca0f6648c4fd9b8"/>
     <sys_translated_text action="delete_multiple" query="documentkey=fc51fb6fffca02103ca0f6648c4fd9b8"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=fc51fb6fffca02103ca0f6648c4fd9b8^sys_idNOT INb851fb6fffca02103ca0f6648c4fd9bc"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=fc51fb6fffca02103ca0f6648c4fd9b8^sys_idNOT INb851fb6fffca02103ca0f6648c4fd9bc,ba17c02affa782103ca0f6648c4fd912"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -903,10 +1230,199 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=fc51fb6fffca02103ca0f6648c4fd9b8"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>newPass</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>newPass</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">fc51fb6fffca02103ca0f6648c4fd9b8</model>
+        <model_id>fc51fb6fffca02103ca0f6648c4fd9b8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_fc51fb6fffca02103ca0f6648c4fd9b8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 23:03:18</sys_created_on>
+        <sys_id>ba17c02affa782103ca0f6648c4fd912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=fc51fb6fffca02103ca0f6648c4fd9b8^sys_idNOT IN0b17c02affa782103ca0f6648c4fd916"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a6d63a66-3a67-4c57-9798-aba4e22ab990</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>uid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>uID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">fc51fb6fffca02103ca0f6648c4fd9b8</model>
+        <model_id>fc51fb6fffca02103ca0f6648c4fd9b8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_fc51fb6fffca02103ca0f6648c4fd9b8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 23:03:18</sys_created_on>
+        <sys_id>0b17c02affa782103ca0f6648c4fd916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=fc51fb6fffca02103ca0f6648c4fd9b8"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_fc51fb6fffca02103ca0f6648c4fd9b8"/>
-    <sys_hub_action_input action="delete_multiple" query="model=fc51fb6fffca02103ca0f6648c4fd9a9^sys_idNOT IN3051fb6fffca02103ca0f6648c4fd9ae"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_fc51fb6fffca02103ca0f6648c4fd9b8^sys_idNOT INcf17c02affa782103ca0f6648c4fd919"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>uid</element>
+        <help/>
+        <hint/>
+        <label>uID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_fc51fb6fffca02103ca0f6648c4fd9b8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 23:03:18</sys_created_on>
+        <sys_id>cf17c02affa782103ca0f6648c4fd919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=fc51fb6fffca02103ca0f6648c4fd9a9^sys_idNOT IN3051fb6fffca02103ca0f6648c4fd9ae,be17c02affa782103ca0f6648c4fd907"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -947,7 +1463,7 @@
         <label>User</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Set Developer Password">fc51fb6fffca02103ca0f6648c4fd9a9</model>
+        <model display_value="Set Factory User Password">fc51fb6fffca02103ca0f6648c4fd9a9</model>
         <model_id>fc51fb6fffca02103ca0f6648c4fd9a9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_fc51fb6fffca02103ca0f6648c4fd9a9</name>
@@ -991,6 +1507,90 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3051fb6fffca02103ca0f6648c4fd9ae"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2eaec824-4f1b-4e59-a7c6-7f3989fadc04</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Password</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Set Factory User Password">fc51fb6fffca02103ca0f6648c4fd9a9</model>
+        <model_id>fc51fb6fffca02103ca0f6648c4fd9a9</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_fc51fb6fffca02103ca0f6648c4fd9a9</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 23:03:18</sys_created_on>
+        <sys_id>be17c02affa782103ca0f6648c4fd907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=be17c02affa782103ca0f6648c4fd907"/>
     <sys_hub_action_output action="delete_multiple" query="model=fc51fb6fffca02103ca0f6648c4fd9a9^sys_idNOT INf051fb6fffca02103ca0f6648c4fd9cf,fc51fb6fffca02103ca0f6648c4fd9c9"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1034,7 +1634,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Set Developer Password">fc51fb6fffca02103ca0f6648c4fd9a9</model>
+        <model display_value="Set Factory User Password">fc51fb6fffca02103ca0f6648c4fd9a9</model>
         <model_id>fc51fb6fffca02103ca0f6648c4fd9a9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_fc51fb6fffca02103ca0f6648c4fd9a9</name>
@@ -1057,14 +1657,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 05:06:21</sys_created_on>
         <sys_id>f051fb6fffca02103ca0f6648c4fd9cf</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-05-15 05:42:18</sys_updated_on>
+        <sys_updated_on>2024-07-24 23:09:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1121,7 +1721,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Set Developer Password">fc51fb6fffca02103ca0f6648c4fd9a9</model>
+        <model display_value="Set Factory User Password">fc51fb6fffca02103ca0f6648c4fd9a9</model>
         <model_id>fc51fb6fffca02103ca0f6648c4fd9a9</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_fc51fb6fffca02103ca0f6648c4fd9a9</name>
@@ -1169,7 +1769,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=fc51fb6fffca02103ca0f6648c4fd9a9"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=fc51fb6fffca02103ca0f6648c4fd9a9^sys_idNOT IN4151fb6fffca02103ca0f6648c4fd9f2"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Set Developer Password">fc51fb6fffca02103ca0f6648c4fd9a9</action_type_id>
+        <action_type_id display_value="Set Factory User Password">fc51fb6fffca02103ca0f6648c4fd9a9</action_type_id>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-15 05:06:22</sys_created_on>
         <sys_id>4151fb6fffca02103ca0f6648c4fd9f2</sys_id>
@@ -1178,7 +1778,7 @@
         <sys_updated_on>2024-05-15 05:06:22</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=4151fb6fffca02103ca0f6648c4fd9f2"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fc51fb6fffca02103ca0f6648c4fd9a9^sys_idNOT IN3051fb6fffca02103ca0f6648c4fd9b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fc51fb6fffca02103ca0f6648c4fd9a9^sys_idNOT IN3051fb6fffca02103ca0f6648c4fd9b6,7617c02affa782103ca0f6648c4fd90c"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>user</element>
         <help/>
@@ -1199,6 +1799,29 @@
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-05-15 05:06:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>password</element>
+        <help/>
+        <hint/>
+        <label>Password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_fc51fb6fffca02103ca0f6648c4fd9a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-24 23:03:18</sys_created_on>
+        <sys_id>7617c02affa782103ca0f6648c4fd90c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-24 23:03:18</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1254,6 +1877,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>59a7366fff4602103ca0f6648c4fd930</sys_id>
         <latest_snapshot>fc51fb6fffca02103ca0f6648c4fd9a9</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch2-hotfix1-04-15-2024_04-17-2024_1014.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patchrtp-07-02-2024_07-09-2024_0940.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

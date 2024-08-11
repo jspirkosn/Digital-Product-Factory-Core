@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=29000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>08e2deb284b34a10d1f5cc7185669b29</copied_from>
+        <copied_from_name>Delete Denied for SNC_External</copied_from_name>
+        <description>For a specific record producer get rid of snc_external denied.  This is a work around for this getting added by app templates.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>copy_of_delete_denied_for_snc_external</internal_name>
+        <label_cache>[{"name":"6c933649-4edd-4fef-8cb3-84d539d3b5b0.item","label":"2 - For Each➛Catalog Item Not Available for Record","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"reference","base_type":"reference","usedInstances":{"1053cb7e-824d-4b5f-8106-7a0382009f4d":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"1d261926-f9d3-4caa-9482-58f038b25477.Records","label":"1 - Look Up Records➛sc_cat_item_user_criteria_no_mtom Records","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"records","base_type":"records","usedInstances":{"6c933649-4edd-4fef-8cb3-84d539d3b5b0":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.record_producer","label":"Input➛Record Producer","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"bbe200e0-52b3-427d-8aae-9dbfee8e1d29":["conditions"],"1d261926-f9d3-4caa-9482-58f038b25477":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5ea23aaf-a29f-4044-a2e3-cd1edde309e4","uiTypeLabel":"Reference"}}]</label_cache>
+        <master_snapshot>28c94f3aeb3b4a105204f635cad0cd3d</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Delete Denied for SNC_External</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a1a94b3aeb3b4a105204f635cad0cd6d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Delete Denied for SNC_External</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_hub_flow_a1a94b3aeb3b4a105204f635cad0cd6d</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:56</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_variable_value action="DELETE" query="document_key=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT INada94b3aeb3b4a105204f635cad0cd6f"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>a1a94b3aeb3b4a105204f635cad0cd6d</id>
+        <name>Copy of Delete Denied for SNC_External</name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:26</sys_created_on>
+        <sys_id>ada94b3aeb3b4a105204f635cad0cd6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=ada94b3aeb3b4a105204f635cad0cd6f"/>
+    <sys_hub_flow_input action="DELETE" query="model=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT IN25a94b3aeb3b4a105204f635cad0cd78"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5ea23aaf-a29f-4044-a2e3-cd1edde309e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_cat_item_producer</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record_producer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Record Producer</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Delete Denied for SNC_External">a1a94b3aeb3b4a105204f635cad0cd6d</model>
+        <model_id>a1a94b3aeb3b4a105204f635cad0cd6d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_cat_item_producer">sc_cat_item_producer</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:27</sys_created_on>
+        <sys_id>25a94b3aeb3b4a105204f635cad0cd78</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=25a94b3aeb3b4a105204f635cad0cd78"/>
+    <sys_hub_flow_output action="DELETE" query="model=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT INf9a94b3aeb3b4a105204f635cad0cd86,fda94b3aeb3b4a105204f635cad0cd87"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Delete Denied for SNC_External">a1a94b3aeb3b4a105204f635cad0cd6d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:27</sys_created_on>
+        <sys_id>f9a94b3aeb3b4a105204f635cad0cd86</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:55</sys_updated_on>
+        <ui_id>1d261926-f9d3-4caa-9482-58f038b25477</ui_id>
+        <values>H4sIAAAAAAAA/9VX207jMBD9lSrPUZX0Xt5WsEhoF5AA8cKyluM4rbWOnXWcllL133ccJ+ktLaVbJHir7bmcmTnHcZ/mDgudM2cQdTwP+91B3/Pabc/r9doE+0HQ7pHACzqB4zoCxxQsNQ44heUE88ysU4II1ohpGqMspQoRBb8Vw0hIFGsZg23I0oTj2eM7XMiY8VBR4Zw9PbtOghVkBxvnbL5xpGcJRRwHlEPkBwOucWOQugcXtua8XahJUC6RsKGlCg0Wz3Xoi6YipJAqwjylrhNjEWIt1azaURSHt4IvN8ZMaIjoGOOXlL1C+IFn7CIKZRFqz8hYMkJvE82ksDsWkT2UPIvFjUVqOkwjnHFddhh2oLEopIkBZ7IVqaP7sZzelYkumcjrKA65JJhXK6y1YkGmaWqaTjmNIRCKcZIwMUKJkhOWOwOWuDnisGhGXE4hacpGoomJAd6EXuDmJexf5NuPGMYMVVxDGHAGQIzDWJHtbiozlZc/QYRnaX6gsEhtLGeR9wj9zQxKW3VRH7ItAoMUuJTob+AwoUUpC/cgkne95eyJFCEzOdN6pv/KIEI4n6dZYGpuKkqAEqYpYUaoWix+r/G6qSSnP69+fB92vAD3vdbQpG953pAMuv1h0Ik6/SgKaGuvVj4w6XFqO1/t0qEdrnWua3uhu7W9Qnf+yXQHcD9aeVpln094b0nJFvyGnkh/77S7y8GmUmlkO7ciqG22H03FS0Z5uHbxHwCudL41rGoEs114CyZGJsfGF6D1db4An5KHAChEtrFMcCbyLy0APQ1Bvf3X0XBj4PmcV+57s4dTsk1T3NCy8Xr8vZnPtSTqASBLx3tA1HiwKGuAlzdmGb7gaPtkHG23dnAUGPI0r2BW7anpZPlyMjMq7V+NPd60BxqtOPiL54rj58fl9N+bs2Vyboiw/S4VrlLInlzsYNKJn2s7VOV+pIzH4FrkQ1aVaMrCEdXL7KVVKPUU8z9154XUKrHk5f3306+zV2Q9fykoIDtSNIVRrb79fHgnbN8Dvmu3j7sGroSmo7x5h0IsPa/xS+OuwlgLvLgLWJWj4HTnhE+nk36wyg7XyqRs9Jf4U3MsV5//AS3huXqNDwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Delete Record">c3e09916c31332002841b63b12d3aedf</action_type>
+        <action_type_parent display_value="Delete Record">a8f274c8c3c232002841b63b12d3aee9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Delete Denied for SNC_External">a1a94b3aeb3b4a105204f635cad0cd6d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6c933649-4edd-4fef-8cb3-84d539d3b5b0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:27</sys_created_on>
+        <sys_id>fda94b3aeb3b4a105204f635cad0cd87</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:55</sys_updated_on>
+        <ui_id>1053cb7e-824d-4b5f-8106-7a0382009f4d</ui_id>
+        <values>H4sIAAAAAAAA/42RQU/DMAyF/wrKeavapUzrbkgTEgdAAokLQpWTuFukNAlpOhjT/jtO201oJ45+sf3e57wfmVZszXKBeVUVS8kLzhd5vliVhVhyUSwUB8SCzZiFFqkzoHRBUb0H0yfheFzKivNlWc1LVGpeNtjMV1Lw+apUt7xSXNyKPNMR29OJ5pTuvIHD2zROitxpowJatn7/mDEPgZwiBrY+Xj3Fg8fagEBDgxsn+xZtvHnY0I7/UpynX84Y11jJg2o1ba91Eukp5clnDL8jWoXk1oDpcMZasAqiCwe2jqEnISCoZ2sOl46dtnEEbeG70z+0vsxTX4NEJi9HcFris4/a2VGJIMz50Zm+tU9j1HRDbKA38c8N+w5rhT5lS25jlOZ1575ezj732g4UUyzjJJhLBTEGLfqIXTo7GhzgW/Be223tg9vrYZiitNnWUJE1xn2RZ6e3NgOZcmd0CcjuSd8M8hsEnSAeaQ0Nnwbo+rNPviPGFLgemAfgevgQau1k0D7e0eI9TjFPH7+qSNBSsAIAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT IN7da94b3aeb3b4a105204f635cad0cd85"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">f1a94b3aeb3b4a105204f635cad0cd85</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Delete Denied for SNC_External">a1a94b3aeb3b4a105204f635cad0cd6d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:27</sys_created_on>
+        <sys_id>7da94b3aeb3b4a105204f635cad0cd85</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:55</sys_updated_on>
+        <ui_id>6c933649-4edd-4fef-8cb3-84d539d3b5b0</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj9SN86twFCgh61AV/QyFAYt0YkwWdIkOaln+L+Piu1s6HEni4/ke480R2b6YPvgX82D9/Ko2eHH+4ZJHTF6j0xDh+zAZMDOsw07g+pjPI6ZyMusysttW4liu+MA22q3z7d3+zYt9k1+t7u/T16QGyf8NFGrkN4qGN7+n4GfpBIOF5MWHHkL6Nhh/JQKg8VaQYOKhBYG6peCwqwSbZWlFS/yssjTNN/vsqYsmiwXBaAoqW7tfFqG/rSDyE6hu/HSJ7rI0w3Dj4BaIAm1oDxuWAdaQDBuYIfgegIcgnjWarhVnKQORMdi7YeXv4k7S9NY2CJNxHFO8pORHJ9tkEbPSIBGrUmj+k5/m33GXWMLvQrrrgnpPdYCbTQX5Rbt9vvJXF5WoUepr4MsSWU4qFsEITjZ9AF93Dcq7Iio7sBaqY+1deYsr83kpUuOioKkVeZCovGuEuDReEK7gOSR8C9X+A2cjFN8JRpqnq5T17/6qDvPsTiu56GpwHMnbXggujMu5qb3eJgzk58vQCCXngRfI/a0nnNMDPQ3Jf8Xuhj3M1r9i01/ABnmys8YAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_hub_flow_variable action="DELETE" query="model=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT INe9a94b3aeb3b4a105204f635cad0cd81"/>
+    <sys_documentation action="DELETE">
+        <element>record_producer</element>
+        <help/>
+        <hint/>
+        <label>Record Producer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:27</sys_created_on>
+        <sys_id>e9a94b3aeb3b4a105204f635cad0cd81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>08e2deb284b34a10d1f5cc7185669b29</copied_from>
+        <copied_from_name/>
+        <description>For a specific record producer get rid of snc_external denied.  This is a work around for this getting added by app templates.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>delete_denied_for_snc_external</internal_name>
+        <label_cache>[{"name":"6c933649-4edd-4fef-8cb3-84d539d3b5b0.item","label":"2 - For Each➛Catalog Item Not Available for Record","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"reference","base_type":"reference","usedInstances":{"1053cb7e-824d-4b5f-8106-7a0382009f4d":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"1d261926-f9d3-4caa-9482-58f038b25477.Records","label":"1 - Look Up Records➛sc_cat_item_user_criteria_no_mtom Records","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"records","base_type":"records","usedInstances":{"6c933649-4edd-4fef-8cb3-84d539d3b5b0":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.record_producer","label":"Input➛Record Producer","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"bbe200e0-52b3-427d-8aae-9dbfee8e1d29":["conditions"],"1d261926-f9d3-4caa-9482-58f038b25477":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5ea23aaf-a29f-4044-a2e3-cd1edde309e4","uiTypeLabel":"Reference"}}]</label_cache>
+        <master>true</master>
+        <name>Delete Denied for SNC_External</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Delete Denied for SNC_External">a1a94b3aeb3b4a105204f635cad0cd6d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28c94f3aeb3b4a105204f635cad0cd3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:55</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_variable_value action="DELETE" query="document_key=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT IN28c94f3aeb3b4a105204f635cad0cd3e"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>28c94f3aeb3b4a105204f635cad0cd3d</id>
+        <name>Delete Denied for SNC_External</name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:55</sys_created_on>
+        <sys_id>28c94f3aeb3b4a105204f635cad0cd3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=28c94f3aeb3b4a105204f635cad0cd3e"/>
+    <sys_hub_flow_input action="DELETE" query="model=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT INe8c94f3aeb3b4a105204f635cad0cd3f"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5ea23aaf-a29f-4044-a2e3-cd1edde309e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_cat_item_producer</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record_producer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Record Producer</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Delete Denied for SNC_External">28c94f3aeb3b4a105204f635cad0cd3d</model>
+        <model_id>28c94f3aeb3b4a105204f635cad0cd3d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_cat_item_producer">sc_cat_item_producer</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:55</sys_created_on>
+        <sys_id>e8c94f3aeb3b4a105204f635cad0cd3f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=e8c94f3aeb3b4a105204f635cad0cd3f"/>
+    <sys_hub_flow_output action="DELETE" query="model=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT IN3cc94f3aeb3b4a105204f635cad0cddd,3cc94f3aeb3b4a105204f635cad0cdde"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Delete Denied for SNC_External">28c94f3aeb3b4a105204f635cad0cd3d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:56</sys_created_on>
+        <sys_id>3cc94f3aeb3b4a105204f635cad0cddd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:56</sys_updated_on>
+        <ui_id>1d261926-f9d3-4caa-9482-58f038b25477</ui_id>
+        <values>H4sIAAAAAAAA/+VXbW/aMBD+KyifEUp4p9+mskrV+iK1Vb9sneU4Dlhz4sx2oBTx33eOk5BByogEUqt9w3dn33N3z+OY72uHBc6FMw77rou9wXjkur2e6w6HPYI93+8Nie/6fd9pOzGOKERq7HMKywXmqVkrggjWiGkaoVRRiYiE35JhFAsUaRFBbMBUwvHqucEWMmc8kDR2Lr6/tJ0ES8gOMc7Fesd1LHyOfcoh9CnHv1OOXiXlEmU+a7upbmvdWYeQgYHith36qmkcUMAQYq5o24lwHGAt5Kq0SIqD+5hvDXMWazjRMcGvir1B3rFr4kIKVRFqfeUyyzy1HbSucIo1ftQyJTqVeTiZC0aosj0JaIhTri+rNhtwn2gmYrvFlm53C55G8Z1tiVMeUAwMLDAnFNDEFGvQ56WEj3OxfCiQXrE460vu5IJgXq6w1pL5qTZ41g7lNIKDUISThMUzlEixYNlmwBJ1ZhwWnZCLJSRVbBZ3MDHAO9Bb3LkC+zQzP2NgDVRxC8fAZgDEOLAE2TEqkcqsnQtEeKoyh8Sxsmc5m7ajVuqSY6W2lUPb0e/U4LZ9yCtGtmlmC5A10V/giAXNi9u0j1LRwN3Sjog4YAaFqpfSjxROCNZrlfqmCx1JCZDOtClICZWbzc+/hNORgtOb629fJ33XxyO3OzHpu647IePBaOL3w/4oDH3aPSjGMyY9pZyzPhZyvqw2sq65ubD3bDd1B+TC9k4mbKjjs0kbkn88ZTfXqm3BPwRLRgeJNthySgmpke1lRbH7cmrM9SMgFFy/N+xs+av3UOVUDxnlQd037Mo4dr5h3f/3G/YhiQ6AAmQnyGLO4uxRAkDPpQD38FU72eFaRrHKF8vYsCL7OsAtLVpvjdVwBJxCDY+Qu/Vk8dRALO79jDK7d35hzEXQO5kIet3TiWBdllo2s6bvxVvUTLSIfzPxeDceaFjZ4G3qRNYop9c0Z3ezL+JeIxVXCWc903d4d+IH6zuqbJ/zGpjD1jwfshpGSxbMqN5mL6ICoZeY/6rz58JExaCy8s7w+O0flO7Q28oU1IIkVTC86uvXg6fS/j3ita252TVyBJaiHbf4tfVQgqlFmF8loHY6y2ZTvUuuS2tO8v4JH48f+otaDKxWh8XcPsX/xtOJ4eUPX1DYflERAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Delete Record">c3e09916c31332002841b63b12d3aedf</action_type>
+        <action_type_parent display_value="Delete Record">a8f274c8c3c232002841b63b12d3aee9</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Delete Denied for SNC_External">28c94f3aeb3b4a105204f635cad0cd3d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6c933649-4edd-4fef-8cb3-84d539d3b5b0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:56</sys_created_on>
+        <sys_id>3cc94f3aeb3b4a105204f635cad0cdde</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:56</sys_updated_on>
+        <ui_id>1053cb7e-824d-4b5f-8106-7a0382009f4d</ui_id>
+        <values>H4sIAAAAAAAA/41SwW6cMBD9lcpnFsGarJa9VUGRKiWNlFS5RBEa7GHXkjHUNptQtP/eMbA0yqnHeTNv5r1nv45MSXZgSYVJnqc7wVPOt0my3WdpteNVupUcEFMWMQMN0qRF0VpJ9Rl0H4Bx3Imc812WbzKUcpPVWG/2ouKbfSZveC55dVMlsfLYXC7Ek8p1GoaXhU6IOCktLRp2eH2LWAeWLnm07DB+af2vVA0Vahp9umr9qt0PXahlK/oGjS/VFbxfmMXS+fajoA6RgpwkYvjh0UgkHTVohxFrwEjwrR3YwdueAIsgH40e1omTMn722cCHU3/ocJaEuRrJmFgyWMtfUGks5ozmVl2Ah2faLnxv18haJdDNsUisodf+9jM2Dzx2XrVmpviweGG3um/MzzkUti749CS9w1JiF7wG9bO1+vnUvj9dhd4pM6Wy2NStAL1W4L1VVe+DnJGhxinmBrpOmWPZ2fasJjJJaeKjpiKudftON506mhhE0B1TshDfEV5M8AtYFUw80BoiXyLmBnerwbl/VijH8ncflMzGFgvllMIUQTl9hkAWVnX+O5064yL88vYXtjecYxEDAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT INb0c94f3aeb3b4a105204f635cad0cddc"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">f1a94b3aeb3b4a105204f635cad0cd85</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Delete Denied for SNC_External">28c94f3aeb3b4a105204f635cad0cd3d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:56</sys_created_on>
+        <sys_id>b0c94f3aeb3b4a105204f635cad0cddc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:56</sys_updated_on>
+        <ui_id>6c933649-4edd-4fef-8cb3-84d539d3b5b0</ui_id>
+        <values>H4sIAAAAAAAA/51TTW/bMAz9Lzonhj/SNM6taFCgwLYCadHLUAS0RCfCZMmT5KSekf8+KnLcoseeLD6Sj+9R8sBM59vOuxdz55zca7b+/TZjUgeMzgPT0CBbM+mxcWzGjqC6EA9DJvJlVubLeV2KYr7gAPNyscrnN6s6LVZVfrO4vU22yI0V7nymViFdq6B//T4DP0glLI4iW7CkzaNl6+FLSgoakJWiLrO05EW+LPI0zVeLrFoWVZaLAlAsiVBBhYpKH0d3X8z6vg2hjRJG4MfYs51Q+gQReTpj+O5RC6TxNSiHM9aAFuCN7dna244AiyCetOqnioPUnuhYqH138h9NzNI0FNZIhjjG5BS+QKVwE3cZU/UGPDwTPfedHcv5wUiOLq5DYA2d8vefsVjw1HppdGzxgXjsNqpr9K+4DTYRXK+OkM7hTmAbzAb5o5f6+WBO26vSB6kvixmTynBQUwTeW1l1PugZGCpsiGjXQNtKvd+11hzlpZm0NMleUZDUypxoaHimCfAgPKHdQvJA+OYCv4KVwcVPoqHm84y53t0rcO7DCy1y97cLSqKz0cMuriG0cCtbf0cDjjjKPb+Flx+5p51y6UjC5Toer/9LSPT0iiT/DJ2M/RPEf2Dn/7zCWSx5AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_hub_flow_variable action="DELETE" query="model=28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT IN7cc94f3aeb3b4a105204f635cad0cdd6"/>
+    <sys_documentation action="DELETE">
+        <element>record_producer</element>
+        <help/>
+        <hint/>
+        <label>Record Producer</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:56</sys_created_on>
+        <sys_id>7cc94f3aeb3b4a105204f635cad0cdd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_28c94f3aeb3b4a105204f635cad0cd3d"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>a1a94b3aeb3b4a105204f635cad0cd6d</sys_id>
+        <latest_snapshot>28c94f3aeb3b4a105204f635cad0cd3d</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=a1a94b3aeb3b4a105204f635cad0cd6d"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT IN30c94f3aeb3b4a105204f635cad0cdeb"/>
+    <sys_flow_subflow_plan action="DELETE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@df72610</plan>
+        <plan_id display_value="Delete Denied for SNC_External">a1a94b3aeb3b4a105204f635cad0cd6d</plan_id>
+        <snapshot>28c94f3aeb3b4a105204f635cad0cd3d</snapshot>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>30c94f3aeb3b4a105204f635cad0cdeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:56</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>76bfb9f61ba9f594fe1b43f4bd4bcb74</instance_id>
+        <instance_name>dsforum</instance_name>
+        <name>sys_hub_flow_a1a94b3aeb3b4a105204f635cad0cd6d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=29000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value=""&gt;{}&lt;/category&gt;&lt;copied_from&gt;08e2deb284b34a10d1f5cc7185669b29&lt;/copied_from&gt;&lt;copied_from_name&gt;Delete Denied for SNC_External&lt;/copied_from_name&gt;&lt;description&gt;For a specific record producer get rid of snc_external denied.  This is a work around for this getting added by app templates.&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;copy_of_delete_denied_for_snc_external&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"6c933649-4edd-4fef-8cb3-84d539d3b5b0.item","label":"2 - For Each➛Catalog Item Not Available for Record","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"reference","base_type":"reference","usedInstances":{"1053cb7e-824d-4b5f-8106-7a0382009f4d":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"1d261926-f9d3-4caa-9482-58f038b25477.Records","label":"1 - Look Up Records➛sc_cat_item_user_criteria_no_mtom Records","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"records","base_type":"records","usedInstances":{"6c933649-4edd-4fef-8cb3-84d539d3b5b0":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.record_producer","label":"Input➛Record Producer","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"bbe200e0-52b3-427d-8aae-9dbfee8e1d29":["conditions"],"1d261926-f9d3-4caa-9482-58f038b25477":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5ea23aaf-a29f-4044-a2e3-cd1edde309e4","uiTypeLabel":"Reference"}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Delete Denied for SNC_External&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Delete Denied for SNC_External&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_a1a94b3aeb3b4a105204f635cad0cd6d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:56&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT INada94b3aeb3b4a105204f635cad0cd6f"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/id&gt;&lt;name&gt;Copy of Delete Denied for SNC_External&lt;/name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:26&lt;/sys_created_on&gt;&lt;sys_id&gt;ada94b3aeb3b4a105204f635cad0cd6f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:26&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ada94b3aeb3b4a105204f635cad0cd6f"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT IN25a94b3aeb3b4a105204f635cad0cd78"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5ea23aaf-a29f-4044-a2e3-cd1edde309e4&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;sc_cat_item_producer&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;record_producer&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Record Producer&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Delete Denied for SNC_External"&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/model&gt;&lt;model_id&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_cat_item_producer"&gt;sc_cat_item_producer&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:27&lt;/sys_created_on&gt;&lt;sys_id&gt;25a94b3aeb3b4a105204f635cad0cd78&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:27&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=25a94b3aeb3b4a105204f635cad0cd78"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT INf9a94b3aeb3b4a105204f635cad0cd86,fda94b3aeb3b4a105204f635cad0cd87"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Delete Denied for SNC_External"&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:27&lt;/sys_created_on&gt;&lt;sys_id&gt;f9a94b3aeb3b4a105204f635cad0cd86&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:55&lt;/sys_updated_on&gt;&lt;ui_id&gt;1d261926-f9d3-4caa-9482-58f038b25477&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/9VX207jMBD9lSrPUZX0Xt5WsEhoF5AA8cKyluM4rbWOnXWcllL133ccJ+ktLaVbJHir7bmcmTnHcZ/mDgudM2cQdTwP+91B3/Pabc/r9doE+0HQ7pHACzqB4zoCxxQsNQ44heUE88ysU4II1ohpGqMspQoRBb8Vw0hIFGsZg23I0oTj2eM7XMiY8VBR4Zw9PbtOghVkBxvnbL5xpGcJRRwHlEPkBwOucWOQugcXtua8XahJUC6RsKGlCg0Wz3Xoi6YipJAqwjylrhNjEWIt1azaURSHt4IvN8ZMaIjoGOOXlL1C+IFn7CIKZRFqz8hYMkJvE82ksDsWkT2UPIvFjUVqOkwjnHFddhh2oLEopIkBZ7IVqaP7sZzelYkumcjrKA65JJhXK6y1YkGmaWqaTjmNIRCKcZIwMUKJkhOWOwOWuDnisGhGXE4hacpGoomJAd6EXuDmJexf5NuPGMYMVVxDGHAGQIzDWJHtbiozlZc/QYRnaX6gsEhtLGeR9wj9zQxKW3VRH7ItAoMUuJTob+AwoUUpC/cgkne95eyJFCEzOdN6pv/KIEI4n6dZYGpuKkqAEqYpYUaoWix+r/G6qSSnP69+fB92vAD3vdbQpG953pAMuv1h0Ik6/SgKaGuvVj4w6XFqO1/t0qEdrnWua3uhu7W9Qnf+yXQHcD9aeVpln094b0nJFvyGnkh/77S7y8GmUmlkO7ciqG22H03FS0Z5uHbxHwCudL41rGoEs114CyZGJsfGF6D1db4An5KHAChEtrFMcCbyLy0APQ1Bvf3X0XBj4PmcV+57s4dTsk1T3NCy8Xr8vZnPtSTqASBLx3tA1HiwKGuAlzdmGb7gaPtkHG23dnAUGPI0r2BW7anpZPlyMjMq7V+NPd60BxqtOPiL54rj58fl9N+bs2Vyboiw/S4VrlLInlzsYNKJn2s7VOV+pIzH4FrkQ1aVaMrCEdXL7KVVKPUU8z9154XUKrHk5f3306+zV2Q9fykoIDtSNIVRrb79fHgnbN8Dvmu3j7sGroSmo7x5h0IsPa/xS+OuwlgLvLgLWJWj4HTnhE+nk36wyg7XyqRs9Jf4U3MsV5//AS3huXqNDwAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Delete Record"&gt;c3e09916c31332002841b63b12d3aedf&lt;/action_type&gt;&lt;action_type_parent display_value="Delete Record"&gt;a8f274c8c3c232002841b63b12d3aee9&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c3e09916c31332002841b63b12d3aedf&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Delete Denied for SNC_External"&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;6c933649-4edd-4fef-8cb3-84d539d3b5b0&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:27&lt;/sys_created_on&gt;&lt;sys_id&gt;fda94b3aeb3b4a105204f635cad0cd87&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:55&lt;/sys_updated_on&gt;&lt;ui_id&gt;1053cb7e-824d-4b5f-8106-7a0382009f4d&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/42RQU/DMAyF/wrKeavapUzrbkgTEgdAAokLQpWTuFukNAlpOhjT/jtO201oJ45+sf3e57wfmVZszXKBeVUVS8kLzhd5vliVhVhyUSwUB8SCzZiFFqkzoHRBUb0H0yfheFzKivNlWc1LVGpeNtjMV1Lw+apUt7xSXNyKPNMR29OJ5pTuvIHD2zROitxpowJatn7/mDEPgZwiBrY+Xj3Fg8fagEBDgxsn+xZtvHnY0I7/UpynX84Y11jJg2o1ba91Eukp5clnDL8jWoXk1oDpcMZasAqiCwe2jqEnISCoZ2sOl46dtnEEbeG70z+0vsxTX4NEJi9HcFris4/a2VGJIMz50Zm+tU9j1HRDbKA38c8N+w5rhT5lS25jlOZ1575ezj732g4UUyzjJJhLBTEGLfqIXTo7GhzgW/Be223tg9vrYZiitNnWUJE1xn2RZ6e3NgOZcmd0CcjuSd8M8hsEnSAeaQ0Nnwbo+rNPviPGFLgemAfgevgQau1k0D7e0eI9TjFPH7+qSNBSsAIAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT IN7da94b3aeb3b4a105204f635cad0cd85"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;f1a94b3aeb3b4a105204f635cad0cd85&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Delete Denied for SNC_External"&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:27&lt;/sys_created_on&gt;&lt;sys_id&gt;7da94b3aeb3b4a105204f635cad0cd85&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:55&lt;/sys_updated_on&gt;&lt;ui_id&gt;6c933649-4edd-4fef-8cb3-84d539d3b5b0&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/51STW/bMAz9Lzonhj9SN86twFCgh61AV/QyFAYt0YkwWdIkOaln+L+Piu1s6HEni4/ke480R2b6YPvgX82D9/Ko2eHH+4ZJHTF6j0xDh+zAZMDOsw07g+pjPI6ZyMusysttW4liu+MA22q3z7d3+zYt9k1+t7u/T16QGyf8NFGrkN4qGN7+n4GfpBIOF5MWHHkL6Nhh/JQKg8VaQYOKhBYG6peCwqwSbZWlFS/yssjTNN/vsqYsmiwXBaAoqW7tfFqG/rSDyE6hu/HSJ7rI0w3Dj4BaIAm1oDxuWAdaQDBuYIfgegIcgnjWarhVnKQORMdi7YeXv4k7S9NY2CJNxHFO8pORHJ9tkEbPSIBGrUmj+k5/m33GXWMLvQrrrgnpPdYCbTQX5Rbt9vvJXF5WoUepr4MsSWU4qFsEITjZ9AF93Dcq7Iio7sBaqY+1deYsr83kpUuOioKkVeZCovGuEuDReEK7gOSR8C9X+A2cjFN8JRpqnq5T17/6qDvPsTiu56GpwHMnbXggujMu5qb3eJgzk58vQCCXngRfI/a0nnNMDPQ3Jf8Xuhj3M1r9i01/ABnmys8YAwAA&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT INe9a94b3aeb3b4a105204f635cad0cd81"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;record_producer&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record Producer&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:27&lt;/sys_created_on&gt;&lt;sys_id&gt;e9a94b3aeb3b4a105204f635cad0cd81&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:27&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value=""&gt;{}&lt;/category&gt;&lt;copied_from&gt;08e2deb284b34a10d1f5cc7185669b29&lt;/copied_from&gt;&lt;copied_from_name/&gt;&lt;description&gt;For a specific record producer get rid of snc_external denied.  This is a work around for this getting added by app templates.&lt;/description&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;delete_denied_for_snc_external&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"6c933649-4edd-4fef-8cb3-84d539d3b5b0.item","label":"2 - For Each➛Catalog Item Not Available for Record","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"reference","base_type":"reference","usedInstances":{"1053cb7e-824d-4b5f-8106-7a0382009f4d":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"1d261926-f9d3-4caa-9482-58f038b25477.Records","label":"1 - Look Up Records➛sc_cat_item_user_criteria_no_mtom Records","reference":"sc_cat_item_user_criteria_no_mtom","reference_display":"Catalog Item Not Available for","type":"records","base_type":"records","usedInstances":{"6c933649-4edd-4fef-8cb3-84d539d3b5b0":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.record_producer","label":"Input➛Record Producer","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"bbe200e0-52b3-427d-8aae-9dbfee8e1d29":["conditions"],"1d261926-f9d3-4caa-9482-58f038b25477":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5ea23aaf-a29f-4044-a2e3-cd1edde309e4","uiTypeLabel":"Reference"}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Delete Denied for SNC_External&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Delete Denied for SNC_External"&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:55&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT IN28c94f3aeb3b4a105204f635cad0cd3e"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/id&gt;&lt;name&gt;Delete Denied for SNC_External&lt;/name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:55&lt;/sys_created_on&gt;&lt;sys_id&gt;28c94f3aeb3b4a105204f635cad0cd3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:55&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=28c94f3aeb3b4a105204f635cad0cd3e"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT INe8c94f3aeb3b4a105204f635cad0cd3f"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=5ea23aaf-a29f-4044-a2e3-cd1edde309e4&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table&gt;sc_cat_item_producer&lt;/choice_table&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;record_producer&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Record Producer&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Delete Denied for SNC_External"&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/model&gt;&lt;model_id&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_cat_item_producer"&gt;sc_cat_item_producer&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:55&lt;/sys_created_on&gt;&lt;sys_id&gt;e8c94f3aeb3b4a105204f635cad0cd3f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:56&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e8c94f3aeb3b4a105204f635cad0cd3f"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT IN3cc94f3aeb3b4a105204f635cad0cddd,3cc94f3aeb3b4a105204f635cad0cdde"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Delete Denied for SNC_External"&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:56&lt;/sys_created_on&gt;&lt;sys_id&gt;3cc94f3aeb3b4a105204f635cad0cddd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;1d261926-f9d3-4caa-9482-58f038b25477&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+VXbW/aMBD+KyifEUp4p9+mskrV+iK1Vb9sneU4Dlhz4sx2oBTx33eOk5BByogEUqt9w3dn33N3z+OY72uHBc6FMw77rou9wXjkur2e6w6HPYI93+8Nie/6fd9pOzGOKERq7HMKywXmqVkrggjWiGkaoVRRiYiE35JhFAsUaRFBbMBUwvHqucEWMmc8kDR2Lr6/tJ0ES8gOMc7Fesd1LHyOfcoh9CnHv1OOXiXlEmU+a7upbmvdWYeQgYHith36qmkcUMAQYq5o24lwHGAt5Kq0SIqD+5hvDXMWazjRMcGvir1B3rFr4kIKVRFqfeUyyzy1HbSucIo1ftQyJTqVeTiZC0aosj0JaIhTri+rNhtwn2gmYrvFlm53C55G8Z1tiVMeUAwMLDAnFNDEFGvQ56WEj3OxfCiQXrE460vu5IJgXq6w1pL5qTZ41g7lNIKDUISThMUzlEixYNlmwBJ1ZhwWnZCLJSRVbBZ3MDHAO9Bb3LkC+zQzP2NgDVRxC8fAZgDEOLAE2TEqkcqsnQtEeKoyh8Sxsmc5m7ajVuqSY6W2lUPb0e/U4LZ9yCtGtmlmC5A10V/giAXNi9u0j1LRwN3Sjog4YAaFqpfSjxROCNZrlfqmCx1JCZDOtClICZWbzc+/hNORgtOb629fJ33XxyO3OzHpu647IePBaOL3w/4oDH3aPSjGMyY9pZyzPhZyvqw2sq65ubD3bDd1B+TC9k4mbKjjs0kbkn88ZTfXqm3BPwRLRgeJNthySgmpke1lRbH7cmrM9SMgFFy/N+xs+av3UOVUDxnlQd037Mo4dr5h3f/3G/YhiQ6AAmQnyGLO4uxRAkDPpQD38FU72eFaRrHKF8vYsCL7OsAtLVpvjdVwBJxCDY+Qu/Vk8dRALO79jDK7d35hzEXQO5kIet3TiWBdllo2s6bvxVvUTLSIfzPxeDceaFjZ4G3qRNYop9c0Z3ezL+JeIxVXCWc903d4d+IH6zuqbJ/zGpjD1jwfshpGSxbMqN5mL6ICoZeY/6rz58JExaCy8s7w+O0flO7Q28oU1IIkVTC86uvXg6fS/j3ita252TVyBJaiHbf4tfVQgqlFmF8loHY6y2ZTvUuuS2tO8v4JH48f+otaDKxWh8XcPsX/xtOJ4eUPX1DYflERAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Delete Record"&gt;c3e09916c31332002841b63b12d3aedf&lt;/action_type&gt;&lt;action_type_parent display_value="Delete Record"&gt;a8f274c8c3c232002841b63b12d3aee9&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c3e09916c31332002841b63b12d3aedf&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Delete Denied for SNC_External"&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;6c933649-4edd-4fef-8cb3-84d539d3b5b0&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:56&lt;/sys_created_on&gt;&lt;sys_id&gt;3cc94f3aeb3b4a105204f635cad0cdde&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;1053cb7e-824d-4b5f-8106-7a0382009f4d&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/41SwW6cMBD9lcpnFsGarJa9VUGRKiWNlFS5RBEa7GHXkjHUNptQtP/eMbA0yqnHeTNv5r1nv45MSXZgSYVJnqc7wVPOt0my3WdpteNVupUcEFMWMQMN0qRF0VpJ9Rl0H4Bx3Imc812WbzKUcpPVWG/2ouKbfSZveC55dVMlsfLYXC7Ek8p1GoaXhU6IOCktLRp2eH2LWAeWLnm07DB+af2vVA0Vahp9umr9qt0PXahlK/oGjS/VFbxfmMXS+fajoA6RgpwkYvjh0UgkHTVohxFrwEjwrR3YwdueAIsgH40e1omTMn722cCHU3/ocJaEuRrJmFgyWMtfUGks5ozmVl2Ah2faLnxv18haJdDNsUisodf+9jM2Dzx2XrVmpviweGG3um/MzzkUti749CS9w1JiF7wG9bO1+vnUvj9dhd4pM6Wy2NStAL1W4L1VVe+DnJGhxinmBrpOmWPZ2fasJjJJaeKjpiKudftON506mhhE0B1TshDfEV5M8AtYFUw80BoiXyLmBnerwbl/VijH8ncflMzGFgvllMIUQTl9hkAWVnX+O5064yL88vYXtjecYxEDAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT INb0c94f3aeb3b4a105204f635cad0cddc"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;f1a94b3aeb3b4a105204f635cad0cd85&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Delete Denied for SNC_External"&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:56&lt;/sys_created_on&gt;&lt;sys_id&gt;b0c94f3aeb3b4a105204f635cad0cddc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:56&lt;/sys_updated_on&gt;&lt;ui_id&gt;6c933649-4edd-4fef-8cb3-84d539d3b5b0&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/51TTW/bMAz9Lzonhj/SNM6taFCgwLYCadHLUAS0RCfCZMmT5KSekf8+KnLcoseeLD6Sj+9R8sBM59vOuxdz55zca7b+/TZjUgeMzgPT0CBbM+mxcWzGjqC6EA9DJvJlVubLeV2KYr7gAPNyscrnN6s6LVZVfrO4vU22yI0V7nymViFdq6B//T4DP0glLI4iW7CkzaNl6+FLSgoakJWiLrO05EW+LPI0zVeLrFoWVZaLAlAsiVBBhYpKH0d3X8z6vg2hjRJG4MfYs51Q+gQReTpj+O5RC6TxNSiHM9aAFuCN7dna244AiyCetOqnioPUnuhYqH138h9NzNI0FNZIhjjG5BS+QKVwE3cZU/UGPDwTPfedHcv5wUiOLq5DYA2d8vefsVjw1HppdGzxgXjsNqpr9K+4DTYRXK+OkM7hTmAbzAb5o5f6+WBO26vSB6kvixmTynBQUwTeW1l1PugZGCpsiGjXQNtKvd+11hzlpZm0NMleUZDUypxoaHimCfAgPKHdQvJA+OYCv4KVwcVPoqHm84y53t0rcO7DCy1y97cLSqKz0cMuriG0cCtbf0cDjjjKPb+Flx+5p51y6UjC5Toer/9LSPT0iiT/DJ2M/RPEf2Dn/7zCWSx5AwAA&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d^sys_idNOT IN7cc94f3aeb3b4a105204f635cad0cdd6"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;record_producer&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record Producer&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:56&lt;/sys_created_on&gt;&lt;sys_id&gt;7cc94f3aeb3b4a105204f635cad0cdd6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:56&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_28c94f3aeb3b4a105204f635cad0cd3d"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/sys_id&gt;&lt;latest_snapshot&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/latest_snapshot&gt;&lt;compiler_build/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=a1a94b3aeb3b4a105204f635cad0cd6d"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=a1a94b3aeb3b4a105204f635cad0cd6d^sys_idNOT IN30c94f3aeb3b4a105204f635cad0cdeb"/&gt;&lt;sys_flow_subflow_plan action="INSERT_OR_UPDATE"&gt;&lt;plan&gt;com.snc.process_flow.engine.ProcessPlan@df72610&lt;/plan&gt;&lt;plan_id display_value="Delete Denied for SNC_External"&gt;a1a94b3aeb3b4a105204f635cad0cd6d&lt;/plan_id&gt;&lt;snapshot&gt;28c94f3aeb3b4a105204f635cad0cd3d&lt;/snapshot&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-07 18:07:56&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;30c94f3aeb3b4a105204f635cad0cdeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-07 18:07:56&lt;/sys_updated_on&gt;&lt;/sys_flow_subflow_plan&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1376491451</payload_hash>
+        <record_name>Delete Denied for SNC_External</record_name>
+        <reverted_from/>
+        <source>29bedfc5eb6bce105204f635cad0cde7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:07:57</sys_created_on>
+        <sys_id>b4c94f3aeb3b4a105204f635cad0cdf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1912e06b4470000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:07:57</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>b8c94f3af23b4a1046738162fc844bf5</update_guid>
+        <update_guid_history>b8c94f3af23b4a1046738162fc844bf5:1376491451,a0c94f3ae83b4a106982b096c189ef2f:734509724,35a94b3a6c3b4a10804807a204375892:713219614,ada94b3a5b3b4a10cf5938d2ff76a574:-2071850380</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-07 18:22:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>560affeea6ff45cda384a07ad3e57581</sys_id>
+        <sys_metadata>a1a94b3aeb3b4a105204f635cad0cd6d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete Denied for SNC_External</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_a1a94b3aeb3b4a105204f635cad0cd6d</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_a1a94b3aeb3b4a105204f635cad0cd6d">b4c94f3aeb3b4a105204f635cad0cdf6</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-07 18:22:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -57,9 +57,7 @@
         <record_producer_table/>
         <reference>sn_gsm_government_service_model</reference>
         <reference_qual>type=license^ORtype=permit^EQ</reference_qual>
-        <reference_qual_condition table="sn_gsm_government_service_model">type=license^ORtype=permit^EQ<item display_value="License" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="license"/>
-            <item display_value="Permit" endquery="false" field="type" goto="false" newquery="false" operator="=" or="true" value="permit"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <reference_qual_condition table="sn_gsm_government_service_model">type=license^ORtype=permit^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>

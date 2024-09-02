@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_15_minute_se.DPFUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>DPFUtils</name>
+        <script><![CDATA[var DPFUtils = Class.create();
+
+DPFUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    getCurrentConsumer: function() {
+        gr = new GlideRecord('csm_consumer');
+        gr.addQuery('user', gs.getUserID());
+        gr.query();
+        if (gr.next()) {
+            return gr.sys_id.toString();
+        }
+        return null;
+    },
+
+    type: 'DPFUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-04 21:50:35</sys_created_on>
+        <sys_id>d4585406ebb782105204f635cad0cd8b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>DPFUtils</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_script_include_d4585406ebb782105204f635cad0cd8b</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-04 23:42:47</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>d4585406ebb782105204f635cad0cd8b</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-04 21:50:34</sys_created_on>
+        <sys_id>30ff1cceebb782105204f635cad0cdff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-04 21:50:34</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>76bfb9f61ba9f594fe1b43f4bd4bcb74</instance_id>
+        <instance_name>dsforum</instance_name>
+        <name>sys_script_include_d4585406ebb782105204f635cad0cd8b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_15_minute_se.DPFUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;DPFUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var DPFUtils = Class.create();
+
+DPFUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    getCurrentConsumer: function() {
+        gr = new GlideRecord('csm_consumer');
+        gr.addQuery('user', gs.getUserID());
+        gr.query();
+        if (gr.next()) {
+            return gr.sys_id.toString();
+        }
+        return null;
+    },
+
+    type: 'DPFUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-04 21:50:35&lt;/sys_created_on&gt;&lt;sys_id&gt;d4585406ebb782105204f635cad0cd8b&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;DPFUtils&lt;/sys_name&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_d4585406ebb782105204f635cad0cd8b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-04 23:42:47&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;d4585406ebb782105204f635cad0cd8b&lt;/id&gt;&lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-04 21:50:34&lt;/sys_created_on&gt;&lt;sys_id&gt;30ff1cceebb782105204f635cad0cdff&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-04 21:50:34&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1819951458</payload_hash>
+        <record_name>DPFUtils</record_name>
+        <reverted_from/>
+        <source>29bedfc5eb6bce105204f635cad0cde7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-04 23:42:47</sys_created_on>
+        <sys_id>a4a97802ebbb82105204f635cad0cdcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1911fc62d950000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-04 23:42:47</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>a8a9780280bb8210df3d66e735562ccb</update_guid>
+        <update_guid_history>a8a9780280bb8210df3d66e735562ccb:-1819951458,d05a2482db3b8210fcfeddcfb6fdf89f:-802071458,1ac8e442d53b82102c08741d5bb1017b:1047955583,63d764025c3b8210672810743ba93910:752295073,4307a08eb6f7821023165d5ed76c6762:-1407936784,1c74684aadf7821001decb1a80541e5e:918706885,16f3ac0aacf78210f314ddcd47357616:-1065162495,aa73e80a4df782102173c06a3d83d528:1952433477,8591ec06f0f782108a34b091dd9dee47:-475398790,cf31e4c254f78210748d25f07c3df7ac:-1466361916,4cb02c82d8f78210b9299d4fa956d3f1:343502746,c9ff1082c2f78210d747cd287f742558:-2044518517</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-05 00:13:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>093eefa2a5c34c408da9f95b49dc1000</sys_id>
+        <sys_metadata>d4585406ebb782105204f635cad0cd8b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DPFUtils</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_script_include_d4585406ebb782105204f635cad0cd8b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_d4585406ebb782105204f635cad0cd8b">a4a97802ebbb82105204f635cad0cdcc</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-05 00:13:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

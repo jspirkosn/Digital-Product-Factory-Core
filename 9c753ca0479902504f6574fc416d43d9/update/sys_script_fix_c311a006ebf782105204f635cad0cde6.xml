@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Test Df</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[//var si = new  x_snc_15_minute_se.DPFUtils.getCurrentConsumer();
+//var si = global.CSPConsumerUtils.isHouseholdPluginActive();
+
+//gs.info("*** Return ****: " + si);
+//gs.info("*** Return ****: " + CSPConsumerUtils.isHouseholdPluginActive());
+
+//var ga = new GlideAjax('DPFUtils');
+//gs.info("*** Return ****: " + ga.getCurrentConsumer());
+
+var DemandList = new global.CSPConsumerUtils();
+gs.info("*** Return ****: " + DemandList.isHouseholdPluginActive());
+
+//var cs =new x_snc_15_minute_se.DPFUtils();
+//gs.info("*** Return ****: " + cs.getCurrentConsumer());
+
+var utils = new global.DPFUtils();
+
+//gs.info('Object is: ' + utils);
+
+var consumerId = utils.getCurrentConsumer();
+gs.info('Current Consumer ID: ' + consumerId);]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-04 22:00:34</sys_created_on>
+        <sys_id>c311a006ebf782105204f635cad0cde6</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Test Df</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_script_fix_c311a006ebf782105204f635cad0cde6</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-05 01:06:39</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c311a006ebf782105204f635cad0cde6</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-08-04 22:00:34</sys_created_on>
+        <sys_id>8332e486ebf782105204f635cad0cd40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-08-04 22:00:34</sys_updated_on>
+        <table>sys_script_fix</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Test Cart Submit in New Product</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[// Test Vars
+appID = 'a4ab06eb27c74610a541bbdb2c55aa62'; // HCWIP Test
+
+
+var cart = new sn_sc.CartJS();
+
+var catItem = new GlideRecord('sc_cat_item');
+catItem.addQuery('name', 'Configure the {program_name} Work Flows');
+catItem.addQuery('sys_scope', appID);
+catItem.query();
+
+//gs.info('Rows Returned Is: ' + catItem.getRowCount());
+if (catItem.next()) {
+    // gs.info('Cat Item is: ' + catItem.sys_id);
+
+
+    var newItem = cart.addToCart({
+        "sysparm_id": catItem.sys_id.toString(),
+        "sysparm_quantity": "1",
+        "variables": {
+            "new_name_of_incident_producer": "We named it",
+            "program_name": "New NAAAAAAAAAAAAAAAAME"
+        }
+    });
+}
+var checkoutInfo = cart.checkoutCart();]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-07-04 22:49:01</sys_created_on>
+        <sys_id>b3de308cff1382103ca0f6648c4fd957</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Test Cart Submit in New Product</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_script_fix_b3de308cff1382103ca0f6648c4fd957</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-07-05 02:24:38</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

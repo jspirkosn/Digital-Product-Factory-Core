@@ -18,6 +18,7 @@
         <internal_name>string_to_array</internal_name>
         <label_cache>[{"name":"{{action.comma_separated_list}}","label":"action➛Comma Separated List","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.grant_to_user}}","label":"action➛Grant to User","type":"action","ref":"","reference_display":"User","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[944e8688-3deb-49ab-8df6-192aa250a7ab].arrayout}}","label":"step➛Script step➛arrayOut","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD3d73272299668a1072a81af78d1a09dd","child_label":"arrayOut_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"arrayout_child0","child_uiUniqueId":"2e290456-4796-41cd-9fcb-d07d3b15a156","uiUniqueId":"909d13e0-532b-49b3-a3e7-becf30bbfcc2"}}]</label_cache>
         <master_snapshot>36c7e72aeb668a105204f635cad0cd34</master_snapshot>
+        <master_snapshot_digest/>
         <name>Grant Roles to User</name>
         <natlang/>
         <outputs/>
@@ -28,7 +29,6 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 21:49:32</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>e050e76aeb268a105204f635cad0cdbc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Grant Roles to User</sys_name>
@@ -37,12 +37,11 @@
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_e050e76aeb268a105204f635cad0cdbc</sys_update_name>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-07-20 20:42:42</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-02 21:08:59</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
-    <sys_translated_text action="delete_multiple" query="documentkey=e050e76aeb268a105204f635cad0cdbc"/>
     <sys_variable_value action="delete_multiple" query="document_key=e050e76aeb268a105204f635cad0cdbc"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_definition</document>
@@ -138,11 +137,16 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 21:54:25</sys_created_on>
         <sys_id>08712b2eeb268a105204f635cad0cd7d</sys_id>
         <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-07 21:37:18</sys_updated_on>
     </sys_hub_step_instance>
@@ -246,7 +250,6 @@ while(roles.next()){&#13;
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_08712b2eeb268a105204f635cad0cd7d^id=08712b2eeb268a105204f635cad0cd7d"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=08712b2eeb268a105204f635cad0cd7d"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=08712b2eeb268a105204f635cad0cd7d"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=08712b2eeb268a105204f635cad0cd7d^sys_idNOT IN7cb03d9beba2ce105204f635cad0cd6e,c8712b2eeb268a105204f635cad0cdaa"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -425,7 +428,6 @@ while(roles.next()){&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 22:03:17</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>fd732722eb668a105204f635cad0cddd</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name/>
@@ -540,7 +542,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_08712b2eeb268a105204f635cad0cd7d_arrayout_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 21:54:25</sys_updated_on>
         <url/>
@@ -813,7 +815,6 @@ while(roles.next()){&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 22:03:17</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>42732722eb668a105204f635cad0cde8</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name/>
@@ -1030,7 +1031,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e050e76aeb268a105204f635cad0cdbc_comma_separated_list_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 21:54:25</sys_updated_on>
         <url/>
@@ -1053,7 +1054,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e050e76aeb268a105204f635cad0cdbc_grant_to_user_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-07 21:37:17</sys_updated_on>
         <url/>
@@ -1078,7 +1079,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e050e76aeb268a105204f635cad0cdbc___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 21:54:25</sys_updated_on>
         <url/>
@@ -1101,7 +1102,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e050e76aeb268a105204f635cad0cdbc_variable_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 22:03:17</sys_updated_on>
         <url/>
@@ -1124,7 +1125,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e050e76aeb268a105204f635cad0cdbc___action_status___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 21:54:25</sys_updated_on>
         <url/>
@@ -1136,14 +1137,18 @@ while(roles.next()){&#13;
         <action_id display_value="Grant Roles to User">e050e76aeb268a105204f635cad0cdbc</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"47c7e72aeb668a105204f635cad0cdc0","name":"plan","plan_signature":null}}</plan>
         <snapshot>91b07d9beba2ce105204f635cad0cd10</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 22:22:12</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>47c7e72aeb668a105204f635cad0cdc0</sys_id>
         <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
         <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope/>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-07 21:37:21</sys_updated_on>
     </sys_hub_action_plan>
@@ -1173,7 +1178,6 @@ while(roles.next()){&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 22:22:11</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>36c7e72aeb668a105204f635cad0cd34</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
@@ -1187,7 +1191,6 @@ while(roles.next()){&#13;
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
-    <sys_translated_text action="delete_multiple" query="documentkey=36c7e72aeb668a105204f635cad0cd34"/>
     <sys_variable_value action="delete_multiple" query="document_key=36c7e72aeb668a105204f635cad0cd34"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
@@ -1269,11 +1272,16 @@ while(roles.next()){&#13;
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 22:22:11</sys_created_on>
         <sys_id>7ec7e72aeb668a105204f635cad0cd3e</sys_id>
         <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-07 21:37:20</sys_updated_on>
     </sys_hub_step_instance>
@@ -1377,7 +1385,6 @@ while(roles.next()){&#13;
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_7ec7e72aeb668a105204f635cad0cd3e^id=7ec7e72aeb668a105204f635cad0cd3e"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=7ec7e72aeb668a105204f635cad0cd3e"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=7ec7e72aeb668a105204f635cad0cd3e"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=7ec7e72aeb668a105204f635cad0cd3e^sys_idNOT IN3ac7e72aeb668a105204f635cad0cd42,9db03d9beba2ce105204f635cad0cde9"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1556,7 +1563,6 @@ while(roles.next()){&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 22:22:11</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>32c7e72aeb668a105204f635cad0cd47</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
@@ -1671,7 +1677,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_7ec7e72aeb668a105204f635cad0cd3e_arrayout_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 22:22:11</sys_updated_on>
         <url/>
@@ -2031,7 +2037,6 @@ while(roles.next()){&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-06-05 22:22:11</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>f2c7e72aeb668a105204f635cad0cd54</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
@@ -2161,7 +2166,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_36c7e72aeb668a105204f635cad0cd34_grant_to_user_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-07 21:37:19</sys_updated_on>
         <url/>
@@ -2184,7 +2189,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_36c7e72aeb668a105204f635cad0cd34_comma_separated_list_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 22:22:11</sys_updated_on>
         <url/>
@@ -2209,7 +2214,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_36c7e72aeb668a105204f635cad0cd34___action_status___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 22:22:11</sys_updated_on>
         <url/>
@@ -2232,7 +2237,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_36c7e72aeb668a105204f635cad0cd34_variable_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 22:22:11</sys_updated_on>
         <url/>
@@ -2255,7 +2260,7 @@ while(roles.next()){&#13;
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_36c7e72aeb668a105204f635cad0cd34___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-06-05 22:22:12</sys_updated_on>
         <url/>

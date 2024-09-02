@@ -28,21 +28,19 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-02 15:41:53</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>e068f415ff77c6503ca0f6648c4fd978</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Delete Not Allowed for SNC_EXTERNAL Entries</sys_name>
         <sys_overrides/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_e068f415ff77c6503ca0f6648c4fd978</sys_update_name>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-03 20:35:19</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-02 21:09:01</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
-    <sys_translated_text action="delete_multiple" query="documentkey=e068f415ff77c6503ca0f6648c4fd978"/>
     <sys_variable_value action="delete_multiple" query="document_key=e068f415ff77c6503ca0f6648c4fd978"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_definition</document>
@@ -88,11 +86,16 @@
         <outputs/>
         <section/>
         <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-02 15:48:21</sys_created_on>
         <sys_id>d7d93cd5ff77c6503ca0f6648c4fd9d1</sys_id>
         <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 20:35:17</sys_updated_on>
     </sys_hub_step_instance>
@@ -397,7 +400,6 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>/api/now/table/sc_cat_item_user_criteria_no_mtom/{{action.record_id}}</value>
     </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=d7d93cd5ff77c6503ca0f6648c4fd9d1"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=d7d93cd5ff77c6503ca0f6648c4fd9d1"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=d7d93cd5ff77c6503ca0f6648c4fd9d1^sys_idNOT IN1bd93cd5ff77c6503ca0f6648c4fd9db"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -498,11 +500,11 @@
         <sys_created_on>2024-08-02 15:48:21</sys_created_on>
         <sys_id>d7d93cd5ff77c6503ca0f6648c4fd9df</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_d7d93cd5ff77c6503ca0f6648c4fd9d1_sn_auth_token_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:21</sys_updated_on>
         <url/>
@@ -794,11 +796,11 @@
         <sys_created_on>2024-08-02 15:48:21</sys_created_on>
         <sys_id>1bd93cd5ff77c6503ca0f6648c4fd9cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record ID</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e068f415ff77c6503ca0f6648c4fd978_record_id_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:21</sys_updated_on>
         <url/>
@@ -819,11 +821,11 @@
         <sys_created_on>2024-08-02 15:48:22</sys_created_on>
         <sys_id>6bd93cd5ff77c6503ca0f6648c4fd9fb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e068f415ff77c6503ca0f6648c4fd978___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:22</sys_updated_on>
         <url/>
@@ -842,11 +844,11 @@
         <sys_created_on>2024-08-02 15:48:22</sys_created_on>
         <sys_id>abd93cd5ff77c6503ca0f6648c4fd9f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e068f415ff77c6503ca0f6648c4fd978___action_status___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:22</sys_updated_on>
         <url/>
@@ -858,14 +860,18 @@
         <action_id display_value="Delete Not Allowed for SNC_EXTERNAL Entries">e068f415ff77c6503ca0f6648c4fd978</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c4e97cd5ff77c6503ca0f6648c4fd9d2","name":"plan","plan_signature":null}}</plan>
         <snapshot>30250f25ffb78a503ca0f6648c4fd929</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-02 15:48:24</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>c4e97cd5ff77c6503ca0f6648c4fd9d2</sys_id>
         <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
         <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope/>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 20:35:20</sys_updated_on>
     </sys_hub_action_plan>
@@ -894,7 +900,6 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-02 15:48:22</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>b7d97cd5ff77c6503ca0f6648c4fd921</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
@@ -908,7 +913,6 @@
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
-    <sys_translated_text action="delete_multiple" query="documentkey=b7d97cd5ff77c6503ca0f6648c4fd921"/>
     <sys_variable_value action="delete_multiple" query="document_key=b7d97cd5ff77c6503ca0f6648c4fd921"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
@@ -954,11 +958,16 @@
         <outputs/>
         <section/>
         <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-02 15:48:23</sys_created_on>
         <sys_id>f7d97cd5ff77c6503ca0f6648c4fd943</sys_id>
         <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 20:35:19</sys_updated_on>
     </sys_hub_step_instance>
@@ -1263,7 +1272,6 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>/api/now/table/sc_cat_item_user_criteria_no_mtom/{{action.record_id}}</value>
     </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=f7d97cd5ff77c6503ca0f6648c4fd943"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=f7d97cd5ff77c6503ca0f6648c4fd943"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=f7d97cd5ff77c6503ca0f6648c4fd943^sys_idNOT IN3bd97cd5ff77c6503ca0f6648c4fd97c"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1364,11 +1372,11 @@
         <sys_created_on>2024-08-02 15:48:23</sys_created_on>
         <sys_id>3bd97cd5ff77c6503ca0f6648c4fd97f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_f7d97cd5ff77c6503ca0f6648c4fd943_sn_auth_token_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:23</sys_updated_on>
         <url/>
@@ -1660,11 +1668,11 @@
         <sys_created_on>2024-08-02 15:48:23</sys_created_on>
         <sys_id>bbd97cd5ff77c6503ca0f6648c4fd941</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record ID</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_b7d97cd5ff77c6503ca0f6648c4fd921_record_id_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:23</sys_updated_on>
         <url/>
@@ -1685,11 +1693,11 @@
         <sys_created_on>2024-08-02 15:48:23</sys_created_on>
         <sys_id>bfd97cd5ff77c6503ca0f6648c4fd997</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_b7d97cd5ff77c6503ca0f6648c4fd921___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:23</sys_updated_on>
         <url/>
@@ -1708,11 +1716,11 @@
         <sys_created_on>2024-08-02 15:48:23</sys_created_on>
         <sys_id>f3d97cd5ff77c6503ca0f6648c4fd992</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_b7d97cd5ff77c6503ca0f6648c4fd921___action_status___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-02 15:48:23</sys_updated_on>
         <url/>

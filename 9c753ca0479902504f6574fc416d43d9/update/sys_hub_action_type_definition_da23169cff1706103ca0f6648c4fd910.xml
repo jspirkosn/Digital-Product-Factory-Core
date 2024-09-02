@@ -18,6 +18,7 @@
         <internal_name>create_a_new_product_model</internal_name>
         <label_cache>[{"name":"{{action.model_name}}","label":"action➛Model Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.model_description}}","label":"action➛Model Description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.model_table}}","label":"action➛Model Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.new_model_name}}","label":"action➛New Model Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a087fbfb-a912-4114-b0c0-05e82e927397].status}}","label":"step➛Script step➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a087fbfb-a912-4114-b0c0-05e82e927397].new_model_id}}","label":"step➛Script step➛New Model ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6dfcb9e8-da1e-4e10-83bc-3508ab82449b"}}]</label_cache>
         <master_snapshot>7995d2d0ff5706103ca0f6648c4fd9be</master_snapshot>
+        <master_snapshot_digest/>
         <name>Create or Update Product Model</name>
         <natlang/>
         <outputs/>
@@ -28,7 +29,6 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 23:13:10</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>da23169cff1706103ca0f6648c4fd910</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Create or Update Product Model</sys_name>
@@ -37,12 +37,11 @@
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_da23169cff1706103ca0f6648c4fd910</sys_update_name>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-07-20 20:42:41</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-02 21:08:56</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
-    <sys_translated_text action="delete_multiple" query="documentkey=da23169cff1706103ca0f6648c4fd910"/>
     <sys_variable_value action="delete_multiple" query="document_key=da23169cff1706103ca0f6648c4fd910"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_definition</document>
@@ -136,11 +135,16 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 23:21:37</sys_created_on>
         <sys_id>02151690ff5706103ca0f6648c4fd977</sys_id>
         <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:42:34</sys_updated_on>
     </sys_hub_step_instance>
@@ -242,7 +246,6 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_02151690ff5706103ca0f6648c4fd977^id=02151690ff5706103ca0f6648c4fd977"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=02151690ff5706103ca0f6648c4fd977"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=02151690ff5706103ca0f6648c4fd977"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=02151690ff5706103ca0f6648c4fd977^sys_idNOT IN06151690ff5706103ca0f6648c4fd985,243d82c1ff1b4a103ca0f6648c4fd971,4e151690ff5706103ca0f6648c4fd982,82151690ff5706103ca0f6648c4fd97f"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -762,7 +765,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_02151690ff5706103ca0f6648c4fd977_new_model_id_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:21:38</sys_updated_on>
         <url/>
@@ -785,7 +788,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_02151690ff5706103ca0f6648c4fd977_status_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:07:15</sys_updated_on>
         <url/>
@@ -1507,7 +1510,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_da23169cff1706103ca0f6648c4fd910_model_name_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:21:37</sys_updated_on>
         <url/>
@@ -1530,7 +1533,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_da23169cff1706103ca0f6648c4fd910_new_model_name_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:42:34</sys_updated_on>
         <url/>
@@ -1553,7 +1556,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_da23169cff1706103ca0f6648c4fd910_model_description_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:21:37</sys_updated_on>
         <url/>
@@ -1576,7 +1579,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_da23169cff1706103ca0f6648c4fd910_model_table_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:21:37</sys_updated_on>
         <url/>
@@ -1601,7 +1604,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_da23169cff1706103ca0f6648c4fd910___action_status___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:21:38</sys_updated_on>
         <url/>
@@ -1624,7 +1627,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_da23169cff1706103ca0f6648c4fd910_model_id_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:32:21</sys_updated_on>
         <url/>
@@ -1647,7 +1650,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_da23169cff1706103ca0f6648c4fd910_variable_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:07:15</sys_updated_on>
         <url/>
@@ -1670,7 +1673,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_da23169cff1706103ca0f6648c4fd910___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:21:38</sys_updated_on>
         <url/>
@@ -1682,14 +1685,18 @@
         <action_id display_value="Create or Update Product Model">da23169cff1706103ca0f6648c4fd910</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"029516d0ff5706103ca0f6648c4fd974","name":"plan","plan_signature":null}}</plan>
         <snapshot>c13dc2c1ff1b4a103ca0f6648c4fd91d</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 23:23:49</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>029516d0ff5706103ca0f6648c4fd974</sys_id>
         <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
         <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope/>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:42:37</sys_updated_on>
     </sys_hub_action_plan>
@@ -1719,7 +1726,6 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 23:23:47</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>7995d2d0ff5706103ca0f6648c4fd9be</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name/>
@@ -1733,7 +1739,6 @@
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
-    <sys_translated_text action="delete_multiple" query="documentkey=7995d2d0ff5706103ca0f6648c4fd9be"/>
     <sys_variable_value action="delete_multiple" query="document_key=7995d2d0ff5706103ca0f6648c4fd9be"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
@@ -1827,11 +1832,16 @@
         <outputs/>
         <section/>
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 23:23:48</sys_created_on>
         <sys_id>f595d2d0ff5706103ca0f6648c4fd9eb</sys_id>
         <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:42:36</sys_updated_on>
     </sys_hub_step_instance>
@@ -1933,7 +1943,6 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f595d2d0ff5706103ca0f6648c4fd9eb^id=f595d2d0ff5706103ca0f6648c4fd9eb"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=f595d2d0ff5706103ca0f6648c4fd9eb"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=f595d2d0ff5706103ca0f6648c4fd9eb"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=f595d2d0ff5706103ca0f6648c4fd9eb^sys_idNOT IN4d3d82c1ff1b4a103ca0f6648c4fd9f5,b195d2d0ff5706103ca0f6648c4fd9ef,bd9516d0ff5706103ca0f6648c4fd903,bd95d2d0ff5706103ca0f6648c4fd9f3"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2453,7 +2462,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_f595d2d0ff5706103ca0f6648c4fd9eb_status_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:07:16</sys_updated_on>
         <url/>
@@ -2476,7 +2485,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_f595d2d0ff5706103ca0f6648c4fd9eb_new_model_id_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:23:48</sys_updated_on>
         <url/>
@@ -3198,7 +3207,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_7995d2d0ff5706103ca0f6648c4fd9be_new_model_name_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:42:36</sys_updated_on>
         <url/>
@@ -3221,7 +3230,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_7995d2d0ff5706103ca0f6648c4fd9be_model_name_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:23:47</sys_updated_on>
         <url/>
@@ -3244,7 +3253,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_7995d2d0ff5706103ca0f6648c4fd9be_model_description_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:23:48</sys_updated_on>
         <url/>
@@ -3267,7 +3276,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_7995d2d0ff5706103ca0f6648c4fd9be_model_table_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:23:48</sys_updated_on>
         <url/>
@@ -3292,7 +3301,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7995d2d0ff5706103ca0f6648c4fd9be_variable_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:07:17</sys_updated_on>
         <url/>
@@ -3315,7 +3324,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7995d2d0ff5706103ca0f6648c4fd9be___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:23:48</sys_updated_on>
         <url/>
@@ -3338,7 +3347,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7995d2d0ff5706103ca0f6648c4fd9be_model_id_en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 06:32:23</sys_updated_on>
         <url/>
@@ -3361,7 +3370,7 @@
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_7995d2d0ff5706103ca0f6648c4fd9be___action_status___en</sys_update_name>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 23:23:48</sys_updated_on>
         <url/>

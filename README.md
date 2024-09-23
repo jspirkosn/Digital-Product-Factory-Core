@@ -24,6 +24,15 @@ The Digital Product Factory fast-tracks digital transformation by automating the
 1. Access the Employee Service Center - [your instance]/esc
 	- Click on the "Digital Factory Services" topic
 	- Select the "Digital Product Factory for Government Agencies" catalog item
+1. Post Installation Instructions
+	- On the target instance, set the permission for these four tables as shown below (You must be an admin to do this)
+	![image](https://github.com/user-attachments/assets/2ab5006b-ba10-433e-a75e-7929b7b0c907)
+	These are direct links to the permission pages:
+		- **Sys_user_group:** https://github.com/[your_instance].service-now.com/now/nav/ui/classic/params/target/sys_db_object.do%3Fsys_id%3Dsys_user_group%26sysparm_refkey%3Dname
+		- **Sc_category:** https://github.com/[your_instance].service-now.com/now/nav/ui/classic/params/target/sys_db_object.do%3Fsys_id%3Dsc_category%26sysparm_refkey%3Dname
+		- **Sc_cat_item:** https://github.com/[your_instance].service-now.com/now/nav/ui/classic/params/target/sys_db_object.do%3Fsys_id%3Dsc_cat_item%26sysparm_refkey%3Dname
+		- **Sc_cat_item_category:** https://github.com/[your_instance].service-now.com/now/nav/ui/classic/params/target/sys_db_object.do%3Fsys_id%3Dsc_cat_item_category%26sysparm_refkey%3Dname
+	- Setup the connection credential so that 
 1. See the "Installing Factory Templates" section for your Industry
 
 Note: The factory will need to have the appropriate templates before it can build a product

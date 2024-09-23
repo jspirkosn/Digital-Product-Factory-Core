@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>true</ih_action>
         <internal_name>initialize_product</internal_name>
-        <label_cache>[{"name":"{{action.new_product_name}}","label":"action➛New Product Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.new_product_sys_id}}","label":"action➛New Product SYS_ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.government_portal_root_category}}","label":"action➛Government Portal Root Category","type":"action","ref":"","reference_display":"Category","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.product_model_table}}","label":"action➛Product Model Table Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a2a613-2003-4d6b-aeaf-91a4a5fd157f"}},{"name":"{{action.assignment_group}}","label":"action➛Assignment Group","type":"action","ref":"","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.government_portal_root_category.sys_id}}","label":"action➛Government Portal Root Category➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[949a5267-d89c-4be0-93b4-045c540122c9].output}}","label":"step➛Script step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ca2243a7-a430-4538-a34e-0d7ce3d2f352"}},{"name":"{{step[f05f515b-0e61-486f-bf77-e42058019489].root.request_id}}","label":"step➛JSON Parser step➛root➛request_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9a0b2beb-c45f-4d7a-a528-6c7ff19e1fc0].record}}","label":"step➛Look Up Record step➛Request Record","type":"step","ref":"sc_request","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record}}","label":"step➛Look Up Record step➛Category Record","type":"step","ref":"sc_category","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record.sys_id}}","label":"step➛Look Up Record step➛Category Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_scope.can_edit_in_studio}}","label":"step➛Look Up Record step➛Topic Record➛Application➛Can Edit Application in Studio","type":"step","ref":"","reference_display":"Can Edit Application in Studio","base_type":"boolean","parent_table_name":"sys_scope","column_name":"can_edit_in_studio","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_id}}","label":"step➛Look Up Record step➛Topic Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"topic","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.new_product_name}}","label":"action➛New Product Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.new_product_sys_id}}","label":"action➛New Product SYS_ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.government_portal_root_category}}","label":"action➛Government Portal Root Category","type":"action","ref":"","reference_display":"Category","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.product_model_table}}","label":"action➛Product Model Table Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a2a613-2003-4d6b-aeaf-91a4a5fd157f"}},{"name":"{{action.assignment_group}}","label":"action➛Assignment Group ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"be154d97-39f5-477f-b2c4-176761f86bd4"}},{"name":"{{action.government_portal_root_category.sys_id}}","label":"action➛Government Portal Root Category➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.instance_url}}","label":"action➛Instance URL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[949a5267-d89c-4be0-93b4-045c540122c9].output}}","label":"step➛Script step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ca2243a7-a430-4538-a34e-0d7ce3d2f352"}},{"name":"{{step[f05f515b-0e61-486f-bf77-e42058019489].root.request_id}}","label":"step➛JSON Parser step➛root➛request_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9a0b2beb-c45f-4d7a-a528-6c7ff19e1fc0].record}}","label":"step➛Look Up Record step➛Request Record","type":"step","ref":"sc_request","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record}}","label":"step➛Look Up Record step➛Category Record","type":"step","ref":"sc_category","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record.sys_id}}","label":"step➛Look Up Record step➛Category Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_scope.can_edit_in_studio}}","label":"step➛Look Up Record step➛Topic Record➛Application➛Can Edit Application in Studio","type":"step","ref":"","reference_display":"Can Edit Application in Studio","base_type":"boolean","parent_table_name":"sys_scope","column_name":"can_edit_in_studio","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_id}}","label":"step➛Look Up Record step➛Topic Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"topic","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>e4c73908ff9782103ca0f6648c4fd933</master_snapshot>
         <master_snapshot_digest/>
         <name>Initialize Product</name>
@@ -30,7 +30,7 @@
         <sys_created_on>2024-07-04 22:19:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1a5d70c8ff1382103ca0f6648c4fd9ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Initialize Product</sys_name>
         <sys_overrides/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1a5d70c8ff1382103ca0f6648c4fd9ff</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2024-09-02 21:08:29</sys_updated_on>
+        <sys_updated_on>2024-09-22 17:57:34</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -51,10 +51,10 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:25:39</sys_created_on>
         <sys_id>7f95bd04ff9782103ca0f6648c4fd957</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:24:19</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:44:00</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">7b95bd04ff9782103ca0f6648c4fd949</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -127,14 +127,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:25:38</sys_created_on>
         <sys_id>3395bd04ff9782103ca0f6648c4fd932</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-03 21:23:40</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3395bd04ff9782103ca0f6648c4fd932"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -159,9 +159,9 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:25:38</sys_created_on>
         <sys_id>fb95bd04ff9782103ca0f6648c4fd945</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-03 21:23:40</sys_updated_on>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
   // Test Vars&#13;
 appID = inputs.product_id; &#13;
@@ -178,7 +178,6 @@ gs.info('Rows Returned Is: ' + catItem.getRowCount());&#13;
 if (catItem.next()) {&#13;
     // gs.info('Cat Item is: ' + catItem.sys_id);&#13;
 &#13;
-&#13;
     var newItem = cart.addToCart({&#13;
         "sysparm_id": catItem.sys_id.toString(),&#13;
         "sysparm_quantity": "1",&#13;
@@ -187,7 +186,8 @@ if (catItem.next()) {&#13;
             "new_product_name": inputs.product_name.toString(),&#13;
             "delivery_root_dir": inputs.delivery_root_dir.sys_id.toString(),&#13;
             "product_model_table": inputs.product_model_table.toString(),&#13;
-            "assignment_group": inputs.assignment_group.sys_id.toString()&#13;
+            "assignment_group": inputs.assignment_group.sys_id.toString(),&#13;
+            "instance_url": inputs.instance_url.toString()&#13;
         }&#13;
     });&#13;
     &#13;
@@ -221,6 +221,18 @@ if (catItem.next()) {&#13;
         <sys_updated_on>2024-07-07 23:17:00</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_3395bd04ff9782103ca0f6648c4fd932</table>
         <value>{{action.government_portal_root_category}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>instance_url</field>
+        <id>3395bd04ff9782103ca0f6648c4fd932</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:17</sys_created_on>
+        <sys_id>39316a48873c5614da92fff6cebb35c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:17</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3395bd04ff9782103ca0f6648c4fd932</table>
+        <value>{{action.instance_url}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>product_id</field>
@@ -258,9 +270,21 @@ if (catItem.next()) {&#13;
         <table>var__m_sys_hub_step_ext_input_3395bd04ff9782103ca0f6648c4fd932</table>
         <value>{{action.new_product_name}}</value>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>3395bd04ff9782103ca0f6648c4fd932</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:06</sys_created_on>
+        <sys_id>cae77900876c1a9099eab88c8bbb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:06</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_3395bd04ff9782103ca0f6648c4fd932^id=3395bd04ff9782103ca0f6648c4fd932"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=3395bd04ff9782103ca0f6648c4fd932"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=3395bd04ff9782103ca0f6648c4fd932^sys_idNOT IN3395bd04ff9782103ca0f6648c4fd93e,7b95bd04ff9782103ca0f6648c4fd93a,b937ac89ffdb0a103ca0f6648c4fd906,bef84505ff534a103ca0f6648c4fd92b,cdc527ecff3f82503ca0f6648c4fd9b9"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=3395bd04ff9782103ca0f6648c4fd932^sys_idNOT IN3395bd04ff9782103ca0f6648c4fd93e,7b95bd04ff9782103ca0f6648c4fd93a,b937ac89ffdb0a103ca0f6648c4fd906,bef84505ff534a103ca0f6648c4fd92b,cdc527ecff3f82503ca0f6648c4fd9b9,e1316a48873c5614da92fff6cebb35b8"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -676,6 +700,89 @@ if (catItem.next()) {&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3395bd04ff9782103ca0f6648c4fd932</model>
+        <model_id>3395bd04ff9782103ca0f6648c4fd932</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3395bd04ff9782103ca0f6648c4fd932</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:17</sys_created_on>
+        <sys_id>e1316a48873c5614da92fff6cebb35b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_output action="delete_multiple" query="model=3395bd04ff9782103ca0f6648c4fd932^sys_idNOT IN4d3017a9fff78a503ca0f6648c4fd96e,53eab984ffd782103ca0f6648c4fd9d1"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -858,11 +965,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:23:40</sys_created_on>
         <sys_id>c13017a9fff78a503ca0f6648c4fd973</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Request Record</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_3395bd04ff9782103ca0f6648c4fd932_request_record_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 21:23:40</sys_updated_on>
         <url/>
@@ -881,11 +988,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:48:49</sys_created_on>
         <sys_id>dfeab984ffd782103ca0f6648c4fd9d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Output</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_3395bd04ff9782103ca0f6648c4fd932_output_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:48:49</sys_updated_on>
         <url/>
@@ -1103,16 +1210,30 @@ if (catItem.next()) {&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-03 21:23:40</sys_created_on>
         <sys_id>853017a9fff78a503ca0f6648c4fd989</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-03 21:23:41</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:07</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=853017a9fff78a503ca0f6648c4fd989"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>853017a9fff78a503ca0f6648c4fd989</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:07</sys_created_on>
+        <sys_id>4ee77900876c1a9099eab88c8bbb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:07</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>853017a9fff78a503ca0f6648c4fd989</document_key>
@@ -1143,6 +1264,18 @@ if (catItem.next()) {&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_853017a9fff78a503ca0f6648c4fd989^id=853017a9fff78a503ca0f6648c4fd989"/>
     <sys_element_mapping action="delete_multiple" query="id=853017a9fff78a503ca0f6648c4fd989"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>853017a9fff78a503ca0f6648c4fd989</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:07</sys_created_on>
+        <sys_id>cae77900876c1a9099eab88c8bbb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:07</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>sample_payload</field>
         <id>853017a9fff78a503ca0f6648c4fd989</id>
@@ -1192,15 +1325,15 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:23:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>cd3017a9fff78a503ca0f6648c4fd98c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:31:33</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:30</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1301,11 +1434,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:23:41</sys_created_on>
         <sys_id>493017a9fff78a503ca0f6648c4fd991</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>root</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_853017a9fff78a503ca0f6648c4fd989_root_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 21:23:41</sys_updated_on>
         <url/>
@@ -1453,7 +1586,7 @@ if (catItem.next()) {&#13;
     <sys_hub_step_ext_output action="delete_multiple" query="model=ee6253a1ff3b8a503ca0f6648c4fd9a7"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ee6253a1ff3b8a503ca0f6648c4fd9a7"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ee6253a1ff3b8a503ca0f6648c4fd9a7"/>
-    <sys_hub_action_input action="delete_multiple" query="model=1a5d70c8ff1382103ca0f6648c4fd9ff^sys_idNOT IN23953904ff9782103ca0f6648c4fd975,7795bd04ff9782103ca0f6648c4fd92c,a6762049ffdb0a103ca0f6648c4fd927,c0084981ff534a103ca0f6648c4fd9c0,c5c527ecff3f82503ca0f6648c4fd949"/>
+    <sys_hub_action_input action="delete_multiple" query="model=1a5d70c8ff1382103ca0f6648c4fd9ff^sys_idNOT IN23953904ff9782103ca0f6648c4fd975,71e77900876c1a9099eab88c8bbb356b,7795bd04ff9782103ca0f6648c4fd92c,a6762049ffdb0a103ca0f6648c4fd927,c0084981ff534a103ca0f6648c4fd9c0,e5316a48873c5614da92fff6cebb359c"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1538,6 +1671,90 @@ if (catItem.next()) {&#13;
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=23953904ff9782103ca0f6648c4fd975"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=be154d97-39f5-477f-b2c4-176761f86bd4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assignment_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Assignment Group ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Initialize Product">1a5d70c8ff1382103ca0f6648c4fd9ff</model>
+        <model_id>1a5d70c8ff1382103ca0f6648c4fd9ff</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:06</sys_created_on>
+        <sys_id>71e77900876c1a9099eab88c8bbb356b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=71e77900876c1a9099eab88c8bbb356b"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1794,7 +2011,7 @@ if (catItem.next()) {&#13;
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=be154d97-39f5-477f-b2c4-176761f86bd4</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f7a15b3a-6604-4225-a037-dac01e186938</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1804,7 +2021,7 @@ if (catItem.next()) {&#13;
 })(current);]]></calculation>
         <choice/>
         <choice_field/>
-        <choice_table>sys_user_group</choice_table>
+        <choice_table/>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -1818,7 +2035,7 @@ if (catItem.next()) {&#13;
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>assignment_group</element>
+        <element>instance_url</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -1826,20 +2043,20 @@ if (catItem.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label>Assignment Group</label>
+        <internal_type display_value="String">string</internal_type>
+        <label>Instance URL</label>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
+        <max_length>8000</max_length>
         <model display_value="Initialize Product">1a5d70c8ff1382103ca0f6648c4fd9ff</model>
         <model_id>1a5d70c8ff1382103ca0f6648c4fd9ff</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff</name>
         <next_element/>
-        <order>5</order>
+        <order>6</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sys_user_group">sys_user_group</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -1850,17 +2067,17 @@ if (catItem.next()) {&#13;
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2024-07-31 20:23:57</sys_created_on>
-        <sys_id>c5c527ecff3f82503ca0f6648c4fd949</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:16</sys_created_on>
+        <sys_id>e5316a48873c5614da92fff6cebb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-07-31 20:23:57</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1873,7 +2090,7 @@ if (catItem.next()) {&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c5c527ecff3f82503ca0f6648c4fd949"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e5316a48873c5614da92fff6cebb359c"/>
     <sys_hub_action_output action="delete_multiple" query="model=1a5d70c8ff1382103ca0f6648c4fd9ff^sys_idNOT IN3eb4046eff8016903ca0f6648c4fd93a,7b95bd04ff9782103ca0f6648c4fd949,e26253a1ff3b8a503ca0f6648c4fd9c9,ff95bd04ff9782103ca0f6648c4fd94e"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2201,14 +2418,14 @@ if (catItem.next()) {&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:25:39</sys_created_on>
         <sys_id>ff95bd04ff9782103ca0f6648c4fd94e</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:31:33</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2235,27 +2452,50 @@ if (catItem.next()) {&#13;
         <sys_updated_on>2024-07-05 02:25:39</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=fb95bd04ff9782103ca0f6648c4fd959"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff^sys_idNOT IN81c527ecff3f82503ca0f6648c4fd980,b6762049ffdb0a103ca0f6648c4fd92c,b795bd04ff9782103ca0f6648c4fd92f,d0084981ff534a103ca0f6648c4fd9c4,f395bd04ff9782103ca0f6648c4fd92b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff^sys_idNOT IN61316a48873c5614da92fff6cebb35a3,7de77900876c1a9099eab88c8bbb3570,b6762049ffdb0a103ca0f6648c4fd92c,b795bd04ff9782103ca0f6648c4fd92f,d0084981ff534a103ca0f6648c4fd9c4,f395bd04ff9782103ca0f6648c4fd92b"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>assignment_group</element>
+        <element>instance_url</element>
         <help/>
         <hint/>
-        <label>Assignment Group</label>
+        <label>Instance URL</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2024-07-31 20:23:57</sys_created_on>
-        <sys_id>81c527ecff3f82503ca0f6648c4fd980</sys_id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:17</sys_created_on>
+        <sys_id>61316a48873c5614da92fff6cebb35a3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Assignment Group</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff_assignment_group_en</sys_update_name>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-07-31 20:23:57</sys_updated_on>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assignment_group</element>
+        <help/>
+        <hint/>
+        <label>Assignment Group ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:06</sys_created_on>
+        <sys_id>7de77900876c1a9099eab88c8bbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:06</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2272,11 +2512,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-07 23:13:47</sys_created_on>
         <sys_id>b6762049ffdb0a103ca0f6648c4fd92c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Government Portal Root Category</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff_government_portal_root_category_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-07 23:13:47</sys_updated_on>
         <url/>
@@ -2295,11 +2535,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:25:38</sys_created_on>
         <sys_id>b795bd04ff9782103ca0f6648c4fd92f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>New Product SYS_ID</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff_new_product_sys_id_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:25:38</sys_updated_on>
         <url/>
@@ -2318,11 +2558,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-08 01:40:15</sys_created_on>
         <sys_id>d0084981ff534a103ca0f6648c4fd9c4</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Product Model Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff_product_model_table_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 01:41:11</sys_updated_on>
         <url/>
@@ -2341,11 +2581,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:25:38</sys_created_on>
         <sys_id>f395bd04ff9782103ca0f6648c4fd92b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>New Product Name</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_1a5d70c8ff1382103ca0f6648c4fd9ff_new_product_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:25:38</sys_updated_on>
         <url/>
@@ -2366,11 +2606,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:33:20</sys_created_on>
         <sys_id>ae6253a1ff3b8a503ca0f6648c4fd9cd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Category ID</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1a5d70c8ff1382103ca0f6648c4fd9ff_category_id_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 21:33:20</sys_updated_on>
         <url/>
@@ -2389,11 +2629,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:25:39</sys_created_on>
         <sys_id>b395bd04ff9782103ca0f6648c4fd94e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Action Status</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1a5d70c8ff1382103ca0f6648c4fd9ff___action_status___en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:25:39</sys_updated_on>
         <url/>
@@ -2412,11 +2652,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-18 19:24:19</sys_created_on>
         <sys_id>beb4046eff8016903ca0f6648c4fd940</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Topic ID</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1a5d70c8ff1382103ca0f6648c4fd9ff_topic_id_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-18 19:24:19</sys_updated_on>
         <url/>
@@ -2435,11 +2675,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:25:39</sys_created_on>
         <sys_id>fb95bd04ff9782103ca0f6648c4fd954</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Don't Treat as Error</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1a5d70c8ff1382103ca0f6648c4fd9ff___dont_treat_as_error___en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:25:39</sys_updated_on>
         <url/>
@@ -2450,21 +2690,21 @@ if (catItem.next()) {&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Initialize Product">1a5d70c8ff1382103ca0f6648c4fd9ff</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"30c73908ff9782103ca0f6648c4fd9a2","name":"plan","plan_signature":null}}</plan>
-        <snapshot>7d664422ffc016903ca0f6648c4fd9aa</snapshot>
+        <snapshot>2580c479fb781210c04cfbac7befdc23</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:35:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>30c73908ff9782103ca0f6648c4fd9a2</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope/>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:31:38</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:36</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2481,7 +2721,7 @@ if (catItem.next()) {&#13;
         <description>This actions sets up the new digital product according to the variables defined during setup.</description>
         <flow_priority/>
         <internal_name>initialize_product</internal_name>
-        <label_cache>[{"name":"{{action.new_product_name}}","label":"action➛New Product Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.new_product_sys_id}}","label":"action➛New Product SYS_ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.government_portal_root_category}}","label":"action➛Government Portal Root Category","type":"action","ref":"","reference_display":"Category","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.product_model_table}}","label":"action➛Product Model Table Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a2a613-2003-4d6b-aeaf-91a4a5fd157f"}},{"name":"{{action.assignment_group}}","label":"action➛Assignment Group","type":"action","ref":"","reference_display":"Group","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.government_portal_root_category.sys_id}}","label":"action➛Government Portal Root Category➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[949a5267-d89c-4be0-93b4-045c540122c9].output}}","label":"step➛Script step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ca2243a7-a430-4538-a34e-0d7ce3d2f352"}},{"name":"{{step[f05f515b-0e61-486f-bf77-e42058019489].root.request_id}}","label":"step➛JSON Parser step➛root➛request_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9a0b2beb-c45f-4d7a-a528-6c7ff19e1fc0].record}}","label":"step➛Look Up Record step➛Request Record","type":"step","ref":"sc_request","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record}}","label":"step➛Look Up Record step➛Category Record","type":"step","ref":"sc_category","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record.sys_id}}","label":"step➛Look Up Record step➛Category Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_scope.can_edit_in_studio}}","label":"step➛Look Up Record step➛Topic Record➛Application➛Can Edit Application in Studio","type":"step","ref":"","reference_display":"Can Edit Application in Studio","base_type":"boolean","parent_table_name":"sys_scope","column_name":"can_edit_in_studio","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_id}}","label":"step➛Look Up Record step➛Topic Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"topic","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.new_product_name}}","label":"action➛New Product Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.new_product_sys_id}}","label":"action➛New Product SYS_ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.government_portal_root_category}}","label":"action➛Government Portal Root Category","type":"action","ref":"","reference_display":"Category","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.product_model_table}}","label":"action➛Product Model Table Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"b6a2a613-2003-4d6b-aeaf-91a4a5fd157f"}},{"name":"{{action.assignment_group}}","label":"action➛Assignment Group ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"be154d97-39f5-477f-b2c4-176761f86bd4"}},{"name":"{{action.government_portal_root_category.sys_id}}","label":"action➛Government Portal Root Category➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.instance_url}}","label":"action➛Instance URL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[949a5267-d89c-4be0-93b4-045c540122c9].output}}","label":"step➛Script step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ca2243a7-a430-4538-a34e-0d7ce3d2f352"}},{"name":"{{step[f05f515b-0e61-486f-bf77-e42058019489].root.request_id}}","label":"step➛JSON Parser step➛root➛request_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9a0b2beb-c45f-4d7a-a528-6c7ff19e1fc0].record}}","label":"step➛Look Up Record step➛Request Record","type":"step","ref":"sc_request","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record}}","label":"step➛Look Up Record step➛Category Record","type":"step","ref":"sc_category","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[27b0bd1c-4811-4032-b4fb-0d56d45d6d68].record.sys_id}}","label":"step➛Look Up Record step➛Category Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sc_category","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_scope.can_edit_in_studio}}","label":"step➛Look Up Record step➛Topic Record➛Application➛Can Edit Application in Studio","type":"step","ref":"","reference_display":"Can Edit Application in Studio","base_type":"boolean","parent_table_name":"sys_scope","column_name":"can_edit_in_studio","choices":null,"attributes":{}},{"name":"{{step[e98498a7-b8ed-4c81-a8fb-b6e3cb8f06a4].record.sys_id}}","label":"step➛Look Up Record step➛Topic Record➛Sys ID","type":"step","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"topic","column_name":"sys_id","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
         <name>Initialize Product</name>
         <natlang/>
@@ -2493,15 +2733,15 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:34:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e4c73908ff9782103ca0f6648c4fd933</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:31:35</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:34</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2514,10 +2754,10 @@ if (catItem.next()) {&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:34:59</sys_created_on>
         <sys_id>bcc73908ff9782103ca0f6648c4fd962</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:31:37</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:44:04</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">acc73908ff9782103ca0f6648c4fd955</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2661,14 +2901,14 @@ if (catItem.next()) {&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:34:58</sys_created_on>
         <sys_id>2cc73908ff9782103ca0f6648c4fd942</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-03 21:23:43</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:33</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2cc73908ff9782103ca0f6648c4fd942"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2679,9 +2919,9 @@ if (catItem.next()) {&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:34:59</sys_created_on>
         <sys_id>64c73908ff9782103ca0f6648c4fd952</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-03 21:23:43</sys_updated_on>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:34</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
   // Test Vars&#13;
 appID = inputs.product_id; &#13;
@@ -2698,7 +2938,6 @@ gs.info('Rows Returned Is: ' + catItem.getRowCount());&#13;
 if (catItem.next()) {&#13;
     // gs.info('Cat Item is: ' + catItem.sys_id);&#13;
 &#13;
-&#13;
     var newItem = cart.addToCart({&#13;
         "sysparm_id": catItem.sys_id.toString(),&#13;
         "sysparm_quantity": "1",&#13;
@@ -2707,7 +2946,8 @@ if (catItem.next()) {&#13;
             "new_product_name": inputs.product_name.toString(),&#13;
             "delivery_root_dir": inputs.delivery_root_dir.sys_id.toString(),&#13;
             "product_model_table": inputs.product_model_table.toString(),&#13;
-            "assignment_group": inputs.assignment_group.sys_id.toString()&#13;
+            "assignment_group": inputs.assignment_group.sys_id.toString(),&#13;
+            "instance_url": inputs.instance_url.toString()&#13;
         }&#13;
     });&#13;
     &#13;
@@ -2757,6 +2997,18 @@ if (catItem.next()) {&#13;
         <value>{{action.government_portal_root_category}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>instance_url</field>
+        <id>2cc73908ff9782103ca0f6648c4fd942</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:35</sys_created_on>
+        <sys_id>4a416e48873c5614da92fff6cebb357d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:35</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2cc73908ff9782103ca0f6648c4fd942</table>
+        <value>{{action.instance_url}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>product_id</field>
         <id>2cc73908ff9782103ca0f6648c4fd942</id>
         <sys_created_by>jspirko</sys_created_by>
@@ -2792,9 +3044,21 @@ if (catItem.next()) {&#13;
         <table>var__m_sys_hub_step_ext_input_2cc73908ff9782103ca0f6648c4fd942</table>
         <value>{{action.new_product_name}}</value>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>2cc73908ff9782103ca0f6648c4fd942</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:11</sys_created_on>
+        <sys_id>cbe7b900876c1a9099eab88c8bbb35ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2cc73908ff9782103ca0f6648c4fd942^id=2cc73908ff9782103ca0f6648c4fd942"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=2cc73908ff9782103ca0f6648c4fd942"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=2cc73908ff9782103ca0f6648c4fd942^sys_idNOT IN07f84505ff534a103ca0f6648c4fd9c8,2cc73908ff9782103ca0f6648c4fd94a,65c5a7ecff3f82503ca0f6648c4fd948,ca37ac89ffdb0a103ca0f6648c4fd99d,e4c73908ff9782103ca0f6648c4fd946"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2cc73908ff9782103ca0f6648c4fd942^sys_idNOT IN07f84505ff534a103ca0f6648c4fd9c8,0e416e48873c5614da92fff6cebb3572,2cc73908ff9782103ca0f6648c4fd94a,65c5a7ecff3f82503ca0f6648c4fd948,ca37ac89ffdb0a103ca0f6648c4fd99d,e4c73908ff9782103ca0f6648c4fd946"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2866,6 +3130,89 @@ if (catItem.next()) {&#13;
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 01:44:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>instance_url</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">2cc73908ff9782103ca0f6648c4fd942</model>
+        <model_id>2cc73908ff9782103ca0f6648c4fd942</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2cc73908ff9782103ca0f6648c4fd942</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:34</sys_created_on>
+        <sys_id>0e416e48873c5614da92fff6cebb3572</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3392,11 +3739,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 03:02:09</sys_created_on>
         <sys_id>26fd758cffd782103ca0f6648c4fd970</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Output</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_2cc73908ff9782103ca0f6648c4fd942_output_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 03:02:09</sys_updated_on>
         <url/>
@@ -3415,11 +3762,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:23:43</sys_created_on>
         <sys_id>f53057a9fff78a503ca0f6648c4fd936</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Request Record</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_2cc73908ff9782103ca0f6648c4fd942_request_record_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 21:23:43</sys_updated_on>
         <url/>
@@ -3708,14 +4055,14 @@ if (catItem.next()) {&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-03 21:23:43</sys_created_on>
         <sys_id>f53057a9fff78a503ca0f6648c4fd93e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-03 21:23:43</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:11</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f53057a9fff78a503ca0f6648c4fd93e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3735,6 +4082,20 @@ if (catItem.next()) {&#13;
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>f53057a9fff78a503ca0f6648c4fd93e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:11</sys_created_on>
+        <sys_id>87e7b900876c1a9099eab88c8bbb35d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:11</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f53057a9fff78a503ca0f6648c4fd93e</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
@@ -3748,6 +4109,18 @@ if (catItem.next()) {&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f53057a9fff78a503ca0f6648c4fd93e^id=f53057a9fff78a503ca0f6648c4fd93e"/>
     <sys_element_mapping action="delete_multiple" query="id=f53057a9fff78a503ca0f6648c4fd93e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>f53057a9fff78a503ca0f6648c4fd93e</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:11</sys_created_on>
+        <sys_id>07e7b900876c1a9099eab88c8bbb35d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>sample_payload</field>
         <id>f53057a9fff78a503ca0f6648c4fd93e</id>
@@ -3797,15 +4170,15 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:23:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>713057a9fff78a503ca0f6648c4fd941</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:31:36</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:34</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -3906,17 +4279,17 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:23:43</sys_created_on>
         <sys_id>3d3057a9fff78a503ca0f6648c4fd944</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>root</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_f53057a9fff78a503ca0f6648c4fd93e_root_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 21:23:43</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=e4c73908ff9782103ca0f6648c4fd933^sys_idNOT IN2c088981ff534a103ca0f6648c4fd91a,4f766049ffdb0a103ca0f6648c4fd904,a0c73908ff9782103ca0f6648c4fd938,a4c73908ff9782103ca0f6648c4fd93d,e5c567ecff3f82503ca0f6648c4fd9ef"/>
+    <sys_hub_action_input action="delete_multiple" query="model=e4c73908ff9782103ca0f6648c4fd933^sys_idNOT IN2c088981ff534a103ca0f6648c4fd91a,4f766049ffdb0a103ca0f6648c4fd904,87e7b900876c1a9099eab88c8bbb35b1,a0c73908ff9782103ca0f6648c4fd938,a4c73908ff9782103ca0f6648c4fd93d,b1416e48873c5614da92fff6cebb354b"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4089,6 +4462,90 @@ if (catItem.next()) {&#13;
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=be154d97-39f5-477f-b2c4-176761f86bd4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assignment_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Assignment Group ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Initialize Product">e4c73908ff9782103ca0f6648c4fd933</model>
+        <model_id>e4c73908ff9782103ca0f6648c4fd933</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:11</sys_created_on>
+        <sys_id>87e7b900876c1a9099eab88c8bbb35b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=87e7b900876c1a9099eab88c8bbb35b1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
         <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6c297ffe-365b-403c-ad18-80811c75d18d</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
@@ -4257,7 +4714,7 @@ if (catItem.next()) {&#13;
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=be154d97-39f5-477f-b2c4-176761f86bd4</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f7a15b3a-6604-4225-a037-dac01e186938</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -4267,7 +4724,7 @@ if (catItem.next()) {&#13;
 })(current);]]></calculation>
         <choice/>
         <choice_field/>
-        <choice_table>sys_user_group</choice_table>
+        <choice_table/>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -4281,7 +4738,7 @@ if (catItem.next()) {&#13;
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>assignment_group</element>
+        <element>instance_url</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -4289,20 +4746,20 @@ if (catItem.next()) {&#13;
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label>Assignment Group</label>
+        <internal_type display_value="String">string</internal_type>
+        <label>Instance URL</label>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
+        <max_length>8000</max_length>
         <model display_value="Initialize Product">e4c73908ff9782103ca0f6648c4fd933</model>
         <model_id>e4c73908ff9782103ca0f6648c4fd933</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933</name>
         <next_element/>
-        <order>5</order>
+        <order>6</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sys_user_group">sys_user_group</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -4313,17 +4770,17 @@ if (catItem.next()) {&#13;
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
-        <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2024-07-31 20:23:59</sys_created_on>
-        <sys_id>e5c567ecff3f82503ca0f6648c4fd9ef</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:34</sys_created_on>
+        <sys_id>b1416e48873c5614da92fff6cebb354b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-07-31 20:23:59</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4336,7 +4793,7 @@ if (catItem.next()) {&#13;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e5c567ecff3f82503ca0f6648c4fd9ef"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b1416e48873c5614da92fff6cebb354b"/>
     <sys_hub_action_output action="delete_multiple" query="model=e4c73908ff9782103ca0f6648c4fd933^sys_idNOT IN176293a1ff3b8a503ca0f6648c4fd9bd,a1664422ffc016903ca0f6648c4fd99a,acc73908ff9782103ca0f6648c4fd955,ecc73908ff9782103ca0f6648c4fd95a"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -4664,14 +5121,14 @@ if (catItem.next()) {&#13;
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-07-05 02:34:59</sys_created_on>
         <sys_id>ecc73908ff9782103ca0f6648c4fd95a</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-08-18 19:31:36</sys_updated_on>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-22 17:57:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4698,7 +5155,7 @@ if (catItem.next()) {&#13;
         <sys_updated_on>2024-07-05 02:34:59</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=bcc73908ff9782103ca0f6648c4fd964"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933^sys_idNOT IN2c088981ff534a103ca0f6648c4fd91d,68c73908ff9782103ca0f6648c4fd93c,a4c73908ff9782103ca0f6648c4fd940,adc5a7ecff3f82503ca0f6648c4fd924,cb766049ffdb0a103ca0f6648c4fd908"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933^sys_idNOT IN2c088981ff534a103ca0f6648c4fd91d,68c73908ff9782103ca0f6648c4fd93c,71416e48873c5614da92fff6cebb354e,a4c73908ff9782103ca0f6648c4fd940,cb766049ffdb0a103ca0f6648c4fd908,cfe7b900876c1a9099eab88c8bbb35b5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>product_model_table</element>
         <help/>
@@ -4712,11 +5169,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-08 01:40:17</sys_created_on>
         <sys_id>2c088981ff534a103ca0f6648c4fd91d</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Product Model Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933_product_model_table_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-08 01:41:13</sys_updated_on>
         <url/>
@@ -4735,13 +5192,36 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:34:58</sys_created_on>
         <sys_id>68c73908ff9782103ca0f6648c4fd93c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>New Product Name</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933_new_product_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:34:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>instance_url</element>
+        <help/>
+        <hint/>
+        <label>Instance URL</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-17 19:10:34</sys_created_on>
+        <sys_id>71416e48873c5614da92fff6cebb354e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-17 19:10:34</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4758,36 +5238,13 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:34:58</sys_created_on>
         <sys_id>a4c73908ff9782103ca0f6648c4fd940</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>New Product SYS_ID</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933_new_product_sys_id_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:34:58</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>assignment_group</element>
-        <help/>
-        <hint/>
-        <label>Assignment Group</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>jspirko</sys_created_by>
-        <sys_created_on>2024-07-31 20:23:59</sys_created_on>
-        <sys_id>adc5a7ecff3f82503ca0f6648c4fd924</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Assignment Group</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933_assignment_group_en</sys_update_name>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2024-07-31 20:23:59</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4804,13 +5261,36 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-07 23:13:48</sys_created_on>
         <sys_id>cb766049ffdb0a103ca0f6648c4fd908</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Government Portal Root Category</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933_government_portal_root_category_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-07 23:13:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assignment_group</element>
+        <help/>
+        <hint/>
+        <label>Assignment Group ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e4c73908ff9782103ca0f6648c4fd933</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-05 05:54:11</sys_created_on>
+        <sys_id>cfe7b900876c1a9099eab88c8bbb35b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-05 05:54:11</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4829,11 +5309,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-03 21:33:23</sys_created_on>
         <sys_id>536293a1ff3b8a503ca0f6648c4fd9c1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Category ID</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e4c73908ff9782103ca0f6648c4fd933_category_id_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-03 21:33:23</sys_updated_on>
         <url/>
@@ -4852,11 +5332,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:34:59</sys_created_on>
         <sys_id>a0c73908ff9782103ca0f6648c4fd95a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Action Status</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e4c73908ff9782103ca0f6648c4fd933___action_status___en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:34:59</sys_updated_on>
         <url/>
@@ -4875,11 +5355,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-07-05 02:34:59</sys_created_on>
         <sys_id>bcc73908ff9782103ca0f6648c4fd95f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Don't Treat as Error</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e4c73908ff9782103ca0f6648c4fd933___dont_treat_as_error___en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-07-05 02:34:59</sys_updated_on>
         <url/>
@@ -4898,11 +5378,11 @@ if (catItem.next()) {&#13;
         <sys_created_on>2024-08-18 19:31:36</sys_created_on>
         <sys_id>e9664422ffc016903ca0f6648c4fd99d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Topic ID</sys_name>
+        <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e4c73908ff9782103ca0f6648c4fd933_topic_id_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2024-08-18 19:31:36</sys_updated_on>
         <url/>
@@ -4912,6 +5392,6 @@ if (catItem.next()) {&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>1a5d70c8ff1382103ca0f6648c4fd9ff</sys_id>
         <latest_snapshot>e4c73908ff9782103ca0f6648c4fd933</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch0-07-16-2024_07-27-2024_1019.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-08-24-2024_09-01-2024_1853.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

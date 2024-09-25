@@ -1,4 +1,4 @@
-# Digital-Product-Factory-Core
+![image](https://github.com/user-attachments/assets/2892501b-610b-4ac4-89e8-7cbbfd07c5f0)# Digital-Product-Factory-Core
 The Digital Product Factory fast-tracks digital transformation by automating the builds of secure, compliant, and user-friendly digital products and services that run on the ServiceNow platform.
 # Factory Installation Instructions
 1. Install the following pre-requisite plugins onto the target instance (instance that will contain the factory application)
@@ -45,3 +45,17 @@ The factory runs purpose-built factory templates.  This section will walk you th
 <summary>Government Factory Templates</summary>
 	This is the start of templates
 </details>
+
+# Creating New Factory Templates
+In this section, we call out how to build and add a new template to the Digital Product Factory.
+1. Open App Engine Studio and Go to Templates
+   ![image](https://github.com/user-attachments/assets/a6853d7d-c21d-4496-a8fa-3fb2d1fc3d73)
+1. hover over any of the existing factory templates and choose "use template"
+1. When the app creator comes up, choose a name that represents your new template
+1. In the example below, I'm creating a template for licensing and permitting, so I named it "Pub Sub" to represent a Public Sector Sub-App and "licenses and permits" to represent the type of app
+   ![image](https://github.com/user-attachments/assets/7c0d66bb-cea3-42bb-af85-0d8efbc3614e)
+1.   
+
+
+
+

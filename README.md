@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2892501b-610b-4ac4-89e8-7cbbfd07c5f0)# Digital-Product-Factory-Core
+![image](https://github.com/user-attachments/assets/c7dee6b6-7e99-4077-8b37-66c56ba88495)![image](https://github.com/user-attachments/assets/2892501b-610b-4ac4-89e8-7cbbfd07c5f0)# Digital-Product-Factory-Core
 The Digital Product Factory fast-tracks digital transformation by automating the builds of secure, compliant, and user-friendly digital products and services that run on the ServiceNow platform.
 # Factory Installation Instructions
 1. Install the following pre-requisite plugins onto the target instance (instance that will contain the factory application)
@@ -54,7 +54,16 @@ In this section, we call out how to build and add a new template to the Digital 
 1. When the app creator comes up, choose a name that represents your new template
 1. In the example below, I'm creating a template for licensing and permitting, so I named it "Pub Sub" to represent a Public Sector Sub-App and "licenses and permits" to represent the type of app
    ![image](https://github.com/user-attachments/assets/7c0d66bb-cea3-42bb-af85-0d8efbc3614e)
-1.   
+1. You now have an app that your template will be based on, as shown below
+   ![image](https://github.com/user-attachments/assets/74884486-f00c-4a24-8b91-9821388580d2)
+1. Configure the app as needed
+	- Configure Tables - Use the {program name} tag in your table labels (our factory workflows will fill that in with the Product Name during the app builds)
+	- Configure the record producers
+		- There are two types of record producers; one type is used on the Service Delivery Side, and the other on the Service Support side
+		-  	     
+
+
+   
 
 
 

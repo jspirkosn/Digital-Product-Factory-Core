@@ -56,11 +56,20 @@ In this section, we call out how to build and add a new template to the Digital 
    ![image](https://github.com/user-attachments/assets/7c0d66bb-cea3-42bb-af85-0d8efbc3614e)
 1. You now have an app that your template will be based on, as shown below
    ![image](https://github.com/user-attachments/assets/74884486-f00c-4a24-8b91-9821388580d2)
-1. Configure the app as needed
-	- Configure Tables - Use the {program name} tag in your table labels (our factory workflows will fill that in with the Product Name during the app builds)
+1. Configure the app that will be the basis for the template
+	- Configure Tables - Use the {program name} tag in your table labels (our factory workflows will replace that tag with the Product Name during the app builds)
 	- Configure the record producers
-		- There are two types of record producers; one type is used on the Service Delivery Side, and the other on the Service Support side
-		-  	     
+		- There are two types of record producers: one used on the Service Delivery Side and the other on the Service Support side. The difference between the two is in the objects they are mapped to. The support side record producers are classified according to the CSDM, and the delivery side uses the industry product models and case types. 
+		- For the support type, the factory populates the business service and provides a list selector for the offering (Note: you can only submit delivery or planning tasks against the services contained in this product)
+ 		- For the support type, use the {program name support} tag in the label; this is how the factory knows to pre-populate the business service and service offering fields in the record producer
+		- For the support type, you must leave the Business Service ID and the Service Offering questions on the record producer for the factory to populate them; see example below
+		  ![image](https://github.com/user-attachments/assets/8c43f56c-c46a-452c-bcfb-f03b1f94b77b)
+ 
+ 	 	
+		- For the delivery type, the factory populates the product model, service (CSM Service, not CSDM service), and assignment group 
+		- For the delivery type, use the {program name deliver} tag in the label; this is how the factory knows to pre-populate the product model, assignment group, and case type
+		- For the delivery type, you must leave the Product, Service, and Assignment Group questions on the record producer for the factory to populate them; see example below
+		  ![image](https://github.com/user-attachments/assets/85b98ae6-fe9a-44c9-9448-dd2cbf8b0a5b)
 
 
    

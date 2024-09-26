@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c7dee6b6-7e99-4077-8b37-66c56ba88495)![image](https://github.com/user-attachments/assets/2892501b-610b-4ac4-89e8-7cbbfd07c5f0)# Digital-Product-Factory-Core
+# Digital-Product-Factory-Core
 The Digital Product Factory fast-tracks digital transformation by automating the builds of secure, compliant, and user-friendly digital products and services that run on the ServiceNow platform.
 # Factory Installation Instructions
 1. Install the following pre-requisite plugins onto the target instance (instance that will contain the factory application)
@@ -47,21 +47,23 @@ The factory runs purpose-built factory templates.  This section will walk you th
 </details>
 
 # Creating New Factory Templates
-In this section, we call out how to build and add a new template to the Digital Product Factory.
+This section provides the details needed to build and add a new template to the Digital Product Factory.
 1. Open App Engine Studio and Go to Templates
    ![image](https://github.com/user-attachments/assets/a6853d7d-c21d-4496-a8fa-3fb2d1fc3d73)
 1. hover over any of the existing factory templates and choose "use template"
-1. When the app creator comes up, choose a name that represents your new template
-1. In the example below, I'm creating a template for licensing and permitting, so I named it "Pub Sub" to represent a Public Sector Sub-App and "licenses and permits" to represent the type of app
+1. When the app creator comes up, choose a name that represents your new template but don't name it the same as your template
+1. In the example below, I'm creating a template for licensing and permitting, so I named it "Pub Sub" to represent a Public Sector Sub-App and "licenses and permits" to represent the type of services the app will provide
    ![image](https://github.com/user-attachments/assets/7c0d66bb-cea3-42bb-af85-0d8efbc3614e)
 1. You now have an app that your template will be based on, as shown below
    ![image](https://github.com/user-attachments/assets/74884486-f00c-4a24-8b91-9821388580d2)
 1. Configure the app that will be the basis for the template
-	- Configure Tables - Use the {program name} tag in your table labels (our factory workflows will replace that tag with the Product Name during the app builds)
+	- Configure Tables
+		- Use the {program name} tag in your table labels (A factory workflow will replace that tag with the Product Name)
+ 		- In the next step, you will create at least one record producer for each of these tables (these tables should extend the industry model tables and comply with the industry reference architecture) 
 	- Configure the record producers
-		- There are two types of record producers: one used on the Service Delivery Side and the other on the Service Support side. The difference between the two is in the objects they are mapped to. The support side record producers are classified according to the CSDM, and the delivery side uses the industry product models and case types. 
-		- For the support type, the factory populates the business service and provides a list selector for the offering (Note: you can only submit delivery or planning tasks against the services contained in this product)
- 		- For the support type, use the {program name support} tag in the label; this is how the factory knows to pre-populate the business service and service offering fields in the record producer
+		- There are two types of record producers: one used on the Service Delivery Side and the other on the Service Support side. The difference between the two is in the objects associated with them by the factory. The support side records producers are classified according to the CSDM, and the delivery side uses the industry data models provided by the ServiceNow industry teams. 
+		- For the support type, the factory populates the business service and provides a list selector for the offering (Note: you can only submit tasks against the services contained in this product)
+ 		- For the support type, use the {program name support} tag in the label; this is how the factory knows to pre-populate the business service, and the service offering selector is dependent on it
 		- For the support type, you must leave the Business Service ID and the Service Offering questions on the record producer for the factory to populate them; see example below
 		  ![image](https://github.com/user-attachments/assets/8c43f56c-c46a-452c-bcfb-f03b1f94b77b)
  

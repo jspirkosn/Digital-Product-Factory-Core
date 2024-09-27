@@ -72,7 +72,9 @@ This section provides the details needed to build and add a new template to the 
 		- For the delivery type, use the {program name deliver} tag in the label; this is how the factory knows to pre-populate the product model, assignment group, and case type
 		- For the delivery type, you must leave the Product, Service, and Assignment Group questions on the record producer for the factory to populate them; see example below
 		  ![image](https://github.com/user-attachments/assets/85b98ae6-fe9a-44c9-9448-dd2cbf8b0a5b)
-
+	- Configure the playbook and flows
+		- Do not alter the {program name} Initialize flow; the factory calls this flow to configure the application 
+		- 
 
    
 

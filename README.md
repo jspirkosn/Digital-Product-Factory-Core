@@ -74,8 +74,20 @@ This section provides the details needed to build and add a new template to the 
 		  ![image](https://github.com/user-attachments/assets/85b98ae6-fe9a-44c9-9448-dd2cbf8b0a5b)
 	- Configure the playbook and flows
 		- Do not alter the {program name} Initialize flow; the factory calls this flow to configure the application 
-		- 
+		- Use the {program name} tag in your table labels (A factory workflow will replace that tag with the Product Name)
+  		  ![image](https://github.com/user-attachments/assets/947e14ce-0e11-4a41-9336-6f9da2c0b006)
 
+1. In App Engine Studio, Go to Templates
+1. Click "Create new template" in the upper right and select "Existing app"
+1. Open Workflow Studio and open the "Build a New Digital Product" flow
+1. Copy one of the sections shown in steps 13 through 17 below
+   ![image](https://github.com/user-attachments/assets/764b6309-e7a4-4f63-8e78-01e52a25d66a)
+1. In the navigator, type "sys_app_template.list" to open the App Template table
+1. Find your template to open the template record 
+
+
+          
+		
    
 
 

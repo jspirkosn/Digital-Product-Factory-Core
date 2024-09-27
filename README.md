@@ -89,8 +89,16 @@ This section provides the details needed to build and add a new template to the 
 1. Go back to the Workflow "Build a New Digital Product" workflow and past your sys_id in the "Invoke Product Templates" Action Step as shown below
    ![image](https://github.com/user-attachments/assets/dd269303-0c6f-4f2a-af22-dc1ce733e09e)
 1. After the "Invoke Product Templates" call the "Initialize Product" action as shown below (this is a call back to the newly build app to configure names)
-   [image](https://github.com/user-attachments/assets/df4272a4-e0ca-4fd7-8763-46921f6431ce)
-1. 
+   ![image](https://github.com/user-attachments/assets/df4272a4-e0ca-4fd7-8763-46921f6431ce)
+1. After the "Initialize Product" set flow variables as shown below
+   ![image](https://github.com/user-attachments/assets/a154e477-49fa-4549-80b1-a005a3818118)
+1. After the flow variables configure the developer notification email as shown below
+   ![image](https://github.com/user-attachments/assets/121ec302-e04f-4f0c-8e94-0434fcbe4e89)
+   ![image](https://github.com/user-attachments/assets/1d9a70f0-6fc7-44bf-84ea-267af52d3c6b)
+
+
+   
+ 
 
    
 

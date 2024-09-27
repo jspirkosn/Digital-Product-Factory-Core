@@ -83,7 +83,16 @@ This section provides the details needed to build and add a new template to the 
 1. Copy one of the sections shown in steps 13 through 17 below
    ![image](https://github.com/user-attachments/assets/764b6309-e7a4-4f63-8e78-01e52a25d66a)
 1. In the navigator, type "sys_app_template.list" to open the App Template table
-1. Find your template to open the template record 
+1. Find your template and open the template record
+1. Open the hamburger menu and copy the sys_id as shown below
+   ![image](https://github.com/user-attachments/assets/89d67855-6955-4111-8b66-18fdf9f24f5b)
+1. Go back to the Workflow "Build a New Digital Product" workflow and past your sys_id in the "Invoke Product Templates" Action Step as shown below
+   ![image](https://github.com/user-attachments/assets/dd269303-0c6f-4f2a-af22-dc1ce733e09e)
+1. After the "Invoke Product Templates" call the "Initialize Product" action as shown below (this is a call back to the newly build app to configure names)
+   [image](https://github.com/user-attachments/assets/df4272a4-e0ca-4fd7-8763-46921f6431ce)
+1. 
+
+   
 
 
           

@@ -19,7 +19,7 @@ The Digital Product Factory fast-tracks digital transformation by automating the
 1. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
 1. A dialog appears - click on "Import from Source Control"
     - URL: https://github.com/[your github user]/Digital-Product-Factory-Core (this is a reference to the forked repo you created)
-    - Branch: master
+    - Branch: main
     - Credential: chose credential from step 7   
 1. Access the Employee Service Center - [your instance]/esc
 	- Click on the "Digital Factory Services" topic

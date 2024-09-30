@@ -43,7 +43,14 @@ The core install is now complete!
 The factory runs purpose-built factory templates.  This section will walk you through how to install the available templates. 
 <details>
 <summary>Government Factory Templates</summary>
-	This is the start of templates
+- All Public Sector template repositories are pre-fixed with PST; for example, "PST- HHS Program Support Desk"
+- List of Available Public Sector Factory Templates
+	- PST - HHS Program Support Desk - https://github.com/jspirkosn/PST---HHS-Program-Support-Desk 
+ 	- PST - Licensing and Permitting - https://github.com/jspirkosn/PST---Licensing-and-Permitting 
+	
+
+
+	
 </details>
 
 # Creating New Factory Templates

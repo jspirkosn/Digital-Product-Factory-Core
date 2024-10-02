@@ -19,7 +19,7 @@ The Digital Product Factory fast-tracks digital transformation by automating the
 1. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
 1. A dialog appears - click on "Import from Source Control"
     - URL: https://github.com/[your github user]/Digital-Product-Factory-Core (this is a reference to the forked repo you created)
-    - Branch: master
+    - Branch: main
     - Credential: chose credential from step 7   
 1. Access the Employee Service Center - [your instance]/esc
 	- Click on the "Digital Factory Services" topic
@@ -42,8 +42,20 @@ The core install is now complete!
 # Installing Factory Templates
 The factory runs purpose-built factory templates.  This section will walk you through how to install the available templates. 
 <details>
-<summary>Government Factory Templates</summary>
-	This is the start of templates
+<summary>Public Sector Factory Templates</summary>
+All Public Sector template repositories are pre-fixed with PST; for example, "PST- HHS Program Support Desk." The Digital Product Factory for Public Sector is part of the Digital Product Factory Core but you will need to install the templates below or create your own templates for the factory to function.
+	
+**List of Available Public Sector Factory Templates:**
+1. **PST - HHS Program Support Desk** https://github.com/jspirkosn/PST---HHS-Program-Support-Desk
+1. **PST - Licensing and Permitting** https://github.com/jspirkosn/PST---Licensing-and-Permitting
+</details>
+<details>
+<summary>Financial Services Factory Templates</summary>
+All Financial Services template repositories are pre-fixed with FST; for example, "FST - Power of Attorney." The Digital Product Factory for Financial Services is part of the Digital Product Factory Core but you will need to install the templates below or create your own templates for the factory to function.
+	
+**List of Available Financial Service Factory Templates:**
+1. **Coming Soon** 
+1. **Coming Soon** 
 </details>
 
 # Creating New Factory Templates

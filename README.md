@@ -1,5 +1,16 @@
 # Digital-Product-Factory-Core
 The Digital Product Factory fast-tracks digital transformation by automating the builds of secure, compliant, and user-friendly digital products and services that run on the ServiceNow platform.
+# Using the Digital Product Factory
+There are two ways to use the Digital Product Factory: either install it on your own instance following the installation instructions below or use the current version on our shared instance. <li><a href="mailto:john.spirko@servicenow.com?subject=Request to access the Digital Services Forum shared ServiceNow instance &amp;body= Please grant me admin access to the dswrkgrpdemo instance." target="_self">Get a Link to our shared instance (Request in email)</a></li> 
+- Once logged in to an instance with the factory installed go to the Employee Center and click on the "Digital Factory Services" menu item
+  ![image](https://github.com/user-attachments/assets/a87cd96f-a043-4da6-aab7-1f5c2df38040)
+- Select one of the available factories and fill out the form
+
+  Note: If the developer is not a user, the factory will create the user and assign them development privledges to this app only
+- Submit the form
+- Within five minutes an email will be sent to the developer and the submitter with instructions on how to proceed. See the example below:
+  ![image](https://github.com/user-attachments/assets/391324c2-010d-4660-af36-18f018f0244b)
+
 # Factory Installation Instructions
 1. Install the following pre-requisite plugins onto the target instance (instance that will contain the factory application)
     - Workflow Studio
@@ -43,11 +54,25 @@ The core install is now complete!
 The factory runs purpose-built factory templates.  This section will walk you through how to install the available templates. 
 <details>
 <summary>Public Sector Factory Templates</summary>
-All Public Sector template repositories are pre-fixed with PST; for example, "PST- HHS Program Support Desk." The Digital Product Factory for Public Sector is part of the Digital Product Factory Core but you will need to install the templates below or create your own templates for the factory to function.
+All Public Sector template repositories are pre-fixed with PST; for example, "PST- HHS Program Support Desk." The Digital Product Factory for Public Sector is part of the Digital Product Factory Core, but you will need to install the templates below or create  templates for the factory to function.
+
+The list below contains a series of templates. Follow these instructions for each template. The illustration below the templates shows a list of dependent plugins.
+1. Log into your GitHub Account (see the factory installation section above for more details) 
+1. In the browser where you logged in to GitHub, paste the template URL you want to install from the List of Available Public Sector Factory Templates below  
+1. In the upper right-hand corner of the page, you should see a button to fork the repo. Click to create your fork
+1. Note the URL of your new repository that was created, it should be similar to the name of the repo you forked in the last step 
+1. You should already have a GitHub credential in your SeviceNow instance, if you don't (see the factory installation section above for more details on how to get one)
+1. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
+1. A dialog appears - click on "Import from Source Control"
+    - URL: https://github.com/[your github user]/[template repository] (this is a reference to the forked repo you created above)
+    - Branch: main
+    - Credential: chose GitHub credential   
 	
 **List of Available Public Sector Factory Templates:**
 1. **PST - HHS Program Support Desk** https://github.com/jspirkosn/PST---HHS-Program-Support-Desk
+   ![image](https://github.com/user-attachments/assets/ec4a6e39-cc0a-439c-ba74-b5775a64b724)
 1. **PST - Licensing and Permitting** https://github.com/jspirkosn/PST---Licensing-and-Permitting
+    ![image](https://github.com/user-attachments/assets/cae07e6b-9bfd-4cca-8f15-5430c3df2945)
 </details>
 <details>
 <summary>Financial Services Factory Templates</summary>

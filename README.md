@@ -6,9 +6,11 @@ There are two ways to use the Digital Product Factory: either install it on your
   ![image](https://github.com/user-attachments/assets/a87cd96f-a043-4da6-aab7-1f5c2df38040)
 - Select one of the available factories and fill out the form
 
-  Note: If the developer is not a user on this instance, the factory will create the user and assign them development privledges to this app only
+  Note: If the developer is not a user, the factory will create the user and assign them development privledges to this app only
 - Submit the form
-- Within five minutes an email will be sent to the developer and the submitter with instructions on how to proceed.
+- Within five minutes an email will be sent to the developer and the submitter with instructions on how to proceed. See the example below:
+  ![image](https://github.com/user-attachments/assets/391324c2-010d-4660-af36-18f018f0244b)
+
 # Factory Installation Instructions
 1. Install the following pre-requisite plugins onto the target instance (instance that will contain the factory application)
     - Workflow Studio

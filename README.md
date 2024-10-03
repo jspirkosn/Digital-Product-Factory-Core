@@ -1,5 +1,14 @@
 # Digital-Product-Factory-Core
 The Digital Product Factory fast-tracks digital transformation by automating the builds of secure, compliant, and user-friendly digital products and services that run on the ServiceNow platform.
+# Using the Digital Product Factory
+There are two ways to use the Digital Product Factory: either install it on your own instance following the installation instructions below or use the current version on our shared instance. <li><a href="mailto:john.spirko@servicenow.com?subject=Request to access the Digital Services Forum shared ServiceNow instance &amp;body= Please grant me admin access to the dswrkgrpdemo instance." target="_self">Get a Link to our shared instance (Request in email)</a></li> 
+- Once logged in to an instance with the factory installed go to the Employee Center and click on the "Digital Factory Services" menu item
+  ![image](https://github.com/user-attachments/assets/a87cd96f-a043-4da6-aab7-1f5c2df38040)
+- Select one of the available factories and fill out the form
+
+  Note: If the developer is not a user on this instance, the factory will create the user and assign them development privledges to this app only
+- Submit the form
+- Within five minutes an email will be sent to the developer and the submitter with instructions on how to proceed.
 # Factory Installation Instructions
 1. Install the following pre-requisite plugins onto the target instance (instance that will contain the factory application)
     - Workflow Studio

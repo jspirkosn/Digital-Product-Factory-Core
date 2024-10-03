@@ -2,7 +2,7 @@
 The Digital Product Factory fast-tracks digital transformation by automating the builds of secure, compliant, and user-friendly digital products and services that run on the ServiceNow platform.
 # Using the Digital Product Factory
 There are two ways to use the Digital Product Factory: either install it on your own instance following the installation instructions below or use the current version on our shared instance. <li><a href="mailto:john.spirko@servicenow.com?subject=Request to access the Digital Services Forum shared ServiceNow instance &amp;body= Please grant me admin access to the dswrkgrpdemo instance." target="_self">Get a Link to our shared instance (Request in email)</a></li> 
-- Once logged in to an instance with the factory installed go to the Employee Center and click on the "Digital Factory Services" menu item
+- Once logged in to an instance with the factory installed, go to the Employee Center (https://[your_instance].service-now.com/esc) and click on the "Digital Factory Services" menu item
   ![image](https://github.com/user-attachments/assets/a87cd96f-a043-4da6-aab7-1f5c2df38040)
 - Select one of the available factories and fill out the form
 
@@ -60,8 +60,8 @@ The list below contains a series of templates. Follow these instructions for eac
 1. Log into your GitHub Account (see the factory installation section above for more details) 
 1. In the browser where you logged in to GitHub, paste the template URL you want to install from the List of Available Public Sector Factory Templates below  
 1. In the upper right-hand corner of the page, you should see a button to fork the repo. Click to create your fork
-1. Note the URL of your new repository that was created, it should be similar to the name of the repo you forked in the last step 
-1. You should already have a GitHub credential in your SeviceNow instance, if you don't (see the factory installation section above for more details on how to get one)
+1. Note the URL of your new repository that was created. It should be similar to the name of the repo you forked in the last step 
+1. You should already have a GitHub credential in your ServiceNow instance, if you don't (see the factory installation section above for more details on how to get one)
 1. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
 1. A dialog appears - click on "Import from Source Control"
     - URL: https://github.com/[your github user]/[template repository] (this is a reference to the forked repo you created above)

@@ -54,7 +54,7 @@ The core install is now complete!
 The factory runs purpose-built factory templates.  This section will walk you through how to install the available templates. 
 <details>
 <summary>Public Sector Factory Templates</summary>
-All Public Sector template repositories are pre-fixed with PST; for example, "PST- HHS Program Support Desk." The Digital Product Factory for Public Sector is part of the Digital Product Factory Core, but you will need to install the templates below or create  templates for the factory to function.
+All Public Sector template repositories are pre-fixed with PST; for example, "PST- HHS Program Support Desk." The Digital Product Factory for Public Sector is part of the Digital Product Factory Core. Still, you will need to install the templates below or create  templates for the factory to function.
 
 The list below contains a series of templates. Follow these instructions for each template. The illustration below the templates shows a list of dependent plugins.
 1. Log into your GitHub Account (see the factory installation section above for more details) 

@@ -29,7 +29,7 @@ There are two ways to use the Digital Product Factory: install it on your instan
     - Give it a name and enter your **GitHub** User Name and Enter the token from above as your password (Note: your GitHub password won't work)
 1. In the ServiceNow Navigator, go to "System Applications" -> "Studio"
 1. A dialog appears - click on "Import from Source Control"
-    - URL: https://github.com/[your GitHub user]/Digital-Product-Factory-Core (this is a reference to the forked repo you created)
+    - URL: https://github.com/[your_GitHub_user]/Digital-Product-Factory-Core (this is a reference to the forked repo you created)
     - Branch: main
     - Credential: chose your GitHub credential   
 1. Post Installation Instructions

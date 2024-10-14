@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <before>false</before>
+        <description/>
+        <name>test role query</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var roles = new GlideRecord('sys_user_has_role');
+var roleSysIDs = new Array();
+
+roles.addQuery('user', 'fabbc01beba68e105204f635cad0cdf7');
+roles.query();
+
+gs.info("deleting " + roles.getRowCount() + " rows");
+
+while(roles.next()){
+ roles.deleteRecord();   
+}
+
+ gs.info(roleSysIDs);]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-06-05 23:19:45</sys_created_on>
+        <sys_id>b8547f22ebe68a105204f635cad0cdea</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>test role query</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_script_fix_b8547f22ebe68a105204f635cad0cdea</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-06-07 16:26:52</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sys_script_fix_b8547f22ebe68a105204f635cad0cdea</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;
+    &lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;
+        &lt;before&gt;false&lt;/before&gt;
+        &lt;description/&gt;
+        &lt;name&gt;test role query&lt;/name&gt;
+        &lt;record_for_rollback&gt;true&lt;/record_for_rollback&gt;
+        &lt;script&gt;&lt;![CDATA[var roles = new GlideRecord('sys_user_has_role');
+var roleSysIDs = new Array();
+
+roles.addQuery('user', 'fabbc01beba68e105204f635cad0cdf7');
+roles.query();
+
+gs.info("deleting " + roles.getRowCount() + " rows");
+
+while(roles.next()){
+ roles.deleteRecord();   
+}
+
+ gs.info(roleSysIDs);]]&gt;&lt;/script&gt;
+        &lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;jspirko&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-06-05 23:19:45&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;b8547f22ebe68a105204f635cad0cdea&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;test role query&lt;/sys_name&gt;
+        &lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_script_fix_b8547f22ebe68a105204f635cad0cdea&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;jspirko&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-06-07 16:26:52&lt;/sys_updated_on&gt;
+        &lt;unloadable&gt;false&lt;/unloadable&gt;
+    &lt;/sys_script_fix&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1916786352</payload_hash>
+        <record_name>test role query</record_name>
+        <reverted_from/>
+        <source>be5ce1178758929099eab88c8bbb3541</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-09-02 21:09:27</sys_created_on>
+        <sys_id>8daca9978758929099eab88c8bbb355e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191b492390f0000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-09-02 21:09:27</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>4daca99799589290c428100ef290405e</update_guid>
+        <update_guid_history>4daca99799589290c428100ef290405e:-1916786352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2024-10-14 20:26:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>3fa82b315019411eb73e91e2136b6ca4</sys_id>
+        <sys_metadata>b8547f22ebe68a105204f635cad0cdea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test role query</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_script_fix_b8547f22ebe68a105204f635cad0cdea</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_b8547f22ebe68a105204f635cad0cdea">8daca9978758929099eab88c8bbb355e</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 20:26:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=63585199000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Ensure the factory integration user can access the local instance and has the necessary privileges. </description>
+        <display_name_after_preview>Setup Digital Factory user and group with roles</display_name_after_preview>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>text2flow</generation_source>
+        <internal_name>setup_digital_factory_user_and_group_with_rolese6f</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Validate integration user</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus>preview</substatus>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>eaf2cdd997815a90e328f01de053afab</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Validate integration user</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_hub_flow_eaf2cdd997815a90e328f01de053afab</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:41</sys_updated_on>
+        <type>flow</type>
+        <version>1</version>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN62f2011d97815a90e328f01de053af1d"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>eaf2cdd997815a90e328f01de053afab</id>
+        <name>Setup Digital Factory user and group with rolese6f</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:40</sys_created_on>
+        <sys_id>62f2011d97815a90e328f01de053af1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope/>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-03 19:46:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=62f2011d97815a90e328f01de053af1d"/>
+    <sys_hub_flow_input action="DELETE" query="model=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN36534e7cfb951210c04cfbac7befdcde,72534e7cfb951210c04cfbac7befdce4"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</model>
+        <model_id>eaf2cdd997815a90e328f01de053afab</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-10-14 21:26:40</sys_created_on>
+        <sys_id>36534e7cfb951210c04cfbac7befdcde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=36534e7cfb951210c04cfbac7befdcde"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</model>
+        <model_id>eaf2cdd997815a90e328f01de053afab</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-10-14 21:26:40</sys_created_on>
+        <sys_id>72534e7cfb951210c04cfbac7befdce4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=72534e7cfb951210c04cfbac7befdce4"/>
+    <sys_hub_flow_output action="DELETE" query="model=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=eaf2cdd997815a90e328f01de053afab^sys_idNOT INb6534e7cfb951210c04cfbac7befdcec"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-10-14 21:26:40</sys_created_on>
+        <sys_id>b6534e7cfb951210c04cfbac7befdcec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:40</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=b6534e7cfb951210c04cfbac7befdcec"/>
+    <sys_hub_action_instance action="DELETE" query="flow=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN07f2011d97815a90e328f01de053af52"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>create a group named "Digital Factory Integration"</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:41</sys_created_on>
+        <sys_id>07f2011d97815a90e328f01de053af52</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:41</sys_updated_on>
+        <ui_id>76f2011d-c181-5a90-c6be-b190e973b928</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=07f2011d97815a90e328f01de053af52"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1^id=07f2011d97815a90e328f01de053af52"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=07f2011d97815a90e328f01de053af52"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=07f2011d97815a90e328f01de053af52"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN03f2011d97815a90e328f01de053af50,03f2011d97815a90e328f01de053af54,32f2011d97815a90e328f01de053af2d,87f2011d97815a90e328f01de053af59,c7f2011d97815a90e328f01de053af34,cbf2011d97815a90e328f01de053af56"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">81f2427cfb951210c04cfbac7befdcf6</block>
+        <comment>update_user</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Placeholder">4fa4aa3bfbb031100a4a3d6176af26d2</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:41</sys_created_on>
+        <sys_id>03f2011d97815a90e328f01de053af50</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:41</sys_updated_on>
+        <ui_id>76f2011d-7081-5a90-9c4f-a8b0995aeb24</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=03f2011d97815a90e328f01de053af50"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=03f2011d97815a90e328f01de053af50"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=03f2011d97815a90e328f01de053af50"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">cdf2427cfb951210c04cfbac7befdcfb</block>
+        <comment>add_user_to_group</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Placeholder">4fa4aa3bfbb031100a4a3d6176af26d2</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:41</sys_created_on>
+        <sys_id>03f2011d97815a90e328f01de053af54</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:41</sys_updated_on>
+        <ui_id>baf2011d-3b81-5a90-e800-be0694c4bf28</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=03f2011d97815a90e328f01de053af54"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=03f2011d97815a90e328f01de053af54"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=03f2011d97815a90e328f01de053af54"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">05f2427cfb951210c04cfbac7befdcec</block>
+        <comment>create_user</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Placeholder">4fa4aa3bfbb031100a4a3d6176af26d2</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:40</sys_created_on>
+        <sys_id>32f2011d97815a90e328f01de053af2d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:40</sys_updated_on>
+        <ui_id>faf2011d-2b81-5a90-e9f0-db21afda0f23</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=32f2011d97815a90e328f01de053af2d"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=32f2011d97815a90e328f01de053af2d"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=32f2011d97815a90e328f01de053af2d"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">05f2827cfb951210c04cfbac7befdc11</block>
+        <comment>exit</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:41</sys_created_on>
+        <sys_id>87f2011d97815a90e328f01de053af59</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:41</sys_updated_on>
+        <ui_id>f2f2011d-8b81-5a90-480a-12ed1a157029</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=87f2011d97815a90e328f01de053af59"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=87f2011d97815a90e328f01de053af59"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=87f2011d97815a90e328f01de053af59"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">0df2427cfb951210c04cfbac7befdcf1</block>
+        <comment>create_user_v2</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Placeholder">4fa4aa3bfbb031100a4a3d6176af26d2</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:41</sys_created_on>
+        <sys_id>c7f2011d97815a90e328f01de053af34</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:40</sys_updated_on>
+        <ui_id>32f2011d-3c81-5a90-7ef1-1365987b5d24</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=c7f2011d97815a90e328f01de053af34"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=c7f2011d97815a90e328f01de053af34"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=c7f2011d97815a90e328f01de053af34"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">85f2827cfb951210c04cfbac7befdc00</block>
+        <comment>add_user_to_group</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Validate integration user">eaf2cdd997815a90e328f01de053afab</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Placeholder">4fa4aa3bfbb031100a4a3d6176af26d2</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 19:46:41</sys_created_on>
+        <sys_id>cbf2011d97815a90e328f01de053af56</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:41</sys_updated_on>
+        <ui_id>fef2011d-f481-5a90-b2e1-6e0f62d75c28</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=cbf2011d97815a90e328f01de053af56"/>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=cbf2011d97815a90e328f01de053af56"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=cbf2011d97815a90e328f01de053af56"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_hub_flow_variable action="DELETE" query="model=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab^sys_idNOT IN32534e7cfb951210c04cfbac7befdce9,7a534e7cfb951210c04cfbac7befdce2"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-10-14 21:26:40</sys_created_on>
+        <sys_id>32534e7cfb951210c04cfbac7befdce9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-10-14 21:26:40</sys_created_on>
+        <sys_id>7a534e7cfb951210c04cfbac7befdce2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_eaf2cdd997815a90e328f01de053afab"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_eaf2cdd997815a90e328f01de053afab"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=eaf2cdd997815a90e328f01de053afab"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sys_hub_flow_eaf2cdd997815a90e328f01de053afab</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=63585199000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Ensure the factory integration user can access the local instance and has the necessary privileges. &lt;/description&gt;&lt;display_name_after_preview&gt;Setup Digital Factory user and group with roles&lt;/display_name_after_preview&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source&gt;text2flow&lt;/generation_source&gt;&lt;internal_name&gt;setup_digital_factory_user_and_group_with_rolese6f&lt;/internal_name&gt;&lt;label_cache&gt;[]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Validate integration user&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus&gt;preview&lt;/substatus&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;eaf2cdd997815a90e328f01de053afab&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate integration user&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_eaf2cdd997815a90e328f01de053afab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:41&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;1&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN62f2011d97815a90e328f01de053af1d"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;eaf2cdd997815a90e328f01de053afab&lt;/id&gt;&lt;name&gt;Setup Digital Factory user and group with rolese6f&lt;/name&gt;&lt;sys_class_name&gt;sys_flow_cat_variable_model&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:40&lt;/sys_created_on&gt;&lt;sys_id&gt;62f2011d97815a90e328f01de053af1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope/&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-03 19:46:40&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=62f2011d97815a90e328f01de053af1d"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN36534e7cfb951210c04cfbac7befdcde,72534e7cfb951210c04cfbac7befdce4"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/model&gt;&lt;model_id&gt;eaf2cdd997815a90e328f01de053afab&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-14 21:26:40&lt;/sys_created_on&gt;&lt;sys_id&gt;36534e7cfb951210c04cfbac7befdcde&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=36534e7cfb951210c04cfbac7befdcde"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/model&gt;&lt;model_id&gt;eaf2cdd997815a90e328f01de053afab&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-14 21:26:40&lt;/sys_created_on&gt;&lt;sys_id&gt;72534e7cfb951210c04cfbac7befdce4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=72534e7cfb951210c04cfbac7befdce4"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=eaf2cdd997815a90e328f01de053afab^sys_idNOT INb6534e7cfb951210c04cfbac7befdcec"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_class_name&gt;sys_hub_trigger_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-14 21:26:40&lt;/sys_created_on&gt;&lt;sys_id&gt;b6534e7cfb951210c04cfbac7befdcec&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:40&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b6534e7cfb951210c04cfbac7befdcec"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN07f2011d97815a90e328f01de053af52"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create Record"&gt;2de05916c31332002841b63b12d3aee1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment&gt;create a group named "Digital Factory Integration"&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:41&lt;/sys_created_on&gt;&lt;sys_id&gt;07f2011d97815a90e328f01de053af52&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;76f2011d-c181-5a90-c6be-b190e973b928&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=07f2011d97815a90e328f01de053af52"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1^id=07f2011d97815a90e328f01de053af52"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=07f2011d97815a90e328f01de053af52"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=07f2011d97815a90e328f01de053af52"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=eaf2cdd997815a90e328f01de053afab^sys_idNOT IN03f2011d97815a90e328f01de053af50,03f2011d97815a90e328f01de053af54,32f2011d97815a90e328f01de053af2d,87f2011d97815a90e328f01de053af59,c7f2011d97815a90e328f01de053af34,cbf2011d97815a90e328f01de053af56"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;81f2427cfb951210c04cfbac7befdcf6&lt;/block&gt;&lt;comment&gt;update_user&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Placeholder"&gt;4fa4aa3bfbb031100a4a3d6176af26d2&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:41&lt;/sys_created_on&gt;&lt;sys_id&gt;03f2011d97815a90e328f01de053af50&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;76f2011d-7081-5a90-9c4f-a8b0995aeb24&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=03f2011d97815a90e328f01de053af50"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=03f2011d97815a90e328f01de053af50"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=03f2011d97815a90e328f01de053af50"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;cdf2427cfb951210c04cfbac7befdcfb&lt;/block&gt;&lt;comment&gt;add_user_to_group&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Placeholder"&gt;4fa4aa3bfbb031100a4a3d6176af26d2&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:41&lt;/sys_created_on&gt;&lt;sys_id&gt;03f2011d97815a90e328f01de053af54&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;baf2011d-3b81-5a90-e800-be0694c4bf28&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=03f2011d97815a90e328f01de053af54"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=03f2011d97815a90e328f01de053af54"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=03f2011d97815a90e328f01de053af54"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;05f2427cfb951210c04cfbac7befdcec&lt;/block&gt;&lt;comment&gt;create_user&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Placeholder"&gt;4fa4aa3bfbb031100a4a3d6176af26d2&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:40&lt;/sys_created_on&gt;&lt;sys_id&gt;32f2011d97815a90e328f01de053af2d&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:40&lt;/sys_updated_on&gt;&lt;ui_id&gt;faf2011d-2b81-5a90-e9f0-db21afda0f23&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=32f2011d97815a90e328f01de053af2d"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=32f2011d97815a90e328f01de053af2d"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=32f2011d97815a90e328f01de053af2d"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;05f2827cfb951210c04cfbac7befdc11&lt;/block&gt;&lt;comment&gt;exit&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;7&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:41&lt;/sys_created_on&gt;&lt;sys_id&gt;87f2011d97815a90e328f01de053af59&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;f2f2011d-8b81-5a90-480a-12ed1a157029&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=87f2011d97815a90e328f01de053af59"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=87f2011d97815a90e328f01de053af59"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=87f2011d97815a90e328f01de053af59"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;0df2427cfb951210c04cfbac7befdcf1&lt;/block&gt;&lt;comment&gt;create_user_v2&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Placeholder"&gt;4fa4aa3bfbb031100a4a3d6176af26d2&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:41&lt;/sys_created_on&gt;&lt;sys_id&gt;c7f2011d97815a90e328f01de053af34&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:40&lt;/sys_updated_on&gt;&lt;ui_id&gt;32f2011d-3c81-5a90-7ef1-1365987b5d24&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=c7f2011d97815a90e328f01de053af34"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c7f2011d97815a90e328f01de053af34"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=c7f2011d97815a90e328f01de053af34"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;85f2827cfb951210c04cfbac7befdc00&lt;/block&gt;&lt;comment&gt;add_user_to_group&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Validate integration user"&gt;eaf2cdd997815a90e328f01de053afab&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Placeholder"&gt;4fa4aa3bfbb031100a4a3d6176af26d2&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-03 19:46:41&lt;/sys_created_on&gt;&lt;sys_id&gt;cbf2011d97815a90e328f01de053af56&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;fef2011d-f481-5a90-b2e1-6e0f62d75c28&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=cbf2011d97815a90e328f01de053af56"/&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cbf2011d97815a90e328f01de053af56"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=cbf2011d97815a90e328f01de053af56"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab^sys_idNOT IN32534e7cfb951210c04cfbac7befdce9,7a534e7cfb951210c04cfbac7befdce2"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-14 21:26:40&lt;/sys_created_on&gt;&lt;sys_id&gt;32534e7cfb951210c04cfbac7befdce9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:40&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-14 21:26:40&lt;/sys_created_on&gt;&lt;sys_id&gt;7a534e7cfb951210c04cfbac7befdce2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-14 21:26:40&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=eaf2cdd997815a90e328f01de053afab"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-974425613</payload_hash>
+        <record_name>Validate integration user</record_name>
+        <reverted_from/>
+        <source>205cc5b0fb119210c04cfbac7befdced</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-10-14 21:26:42</sys_created_on>
+        <sys_id>1b538e7cfb951210c04cfbac7befdc5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1928ced1c250000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:26:42</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>9b538e7c4b9512109929c2eb6100ba5c</update_guid>
+        <update_guid_history>9b538e7c4b9512109929c2eb6100ba5c:-974425613,9df2827c4f9512105ae602b52774d348:-490569177,a1ed8f203e9d1210829e2e3f1c644878:0,57bc8f2ce75d12107b742e55411fec16:1481593579,5c47a748b39d1e105ea37edd25412a85:876838524,63fdae6c70591210c85d429439bebfbc:0,5c47a748b39d1e105ea37edd25412a85:876838524,3987b95d594d5a5062bbc5a1b76fc052:-1536167611</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-10-14 21:28:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>591d930794e54438b65aea028f96d319</sys_id>
+        <sys_metadata>eaf2cdd997815a90e328f01de053afab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate integration user</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_eaf2cdd997815a90e328f01de053afab</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_eaf2cdd997815a90e328f01de053afab">1b538e7cfb951210c04cfbac7befdc5d</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-10-14 21:28:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

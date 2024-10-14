@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
         <inactive>false</inactive>
+        <misc>0</misc>
         <order>400</order>
         <published_ref/>
         <question display_value="Select the Type of Digital Product">114369bd471942104f6574fc416d4357</question>
+        <rec_misc>0</rec_misc>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-05-12 02:49:33</sys_created_on>
@@ -20,4 +22,38 @@
         <value>4</value>
     </question_choice>
     <fx_price action="delete_multiple" query="id=9894f7eaff42c2903ca0f6648c4fd922"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>9894f7eaff42c2903ca0f6648c4fd922</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-10-14 06:00:31</sys_created_on>
+        <sys_id>146faaa093dd9210d6aabe8d1dba10fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-10-14 06:00:31</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>9894f7eaff42c2903ca0f6648c4fd922</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-10-14 06:00:31</sys_created_on>
+        <sys_id>986faaa093dd9210d6aabe8d1dba10fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-10-14 06:00:31</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
 </record_update>

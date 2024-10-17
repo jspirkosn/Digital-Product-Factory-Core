@@ -14,31 +14,31 @@
         <copied_from_name>Post App Edit</copied_from_name>
         <description>Creates a catalog item request to initialize the new app based on create parameters.</description>
         <flow_priority/>
-        <ih_action>true</ih_action>
+        <ih_action>false</ih_action>
         <internal_name>update_table_labels</internal_name>
         <label_cache>[{"name":"{{action.name}}","label":"action➛name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.program_name}}","label":"action➛program name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.app_sys_id}}","label":"action➛App Sys ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.initiate_cat_item_sys_id}}","label":"action➛Initiate Cat Item Sys ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.product_name}}","label":"action➛Product Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.table_id}}","label":"action➛Record Id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"cd83f410-60f6-463f-9842-c7b5a68476de"}},{"name":"{{action.table_name}}","label":"action➛Table Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.current_table_label}}","label":"action➛Current Record Label","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"e333de4a-f7e4-47a5-8172-4ae593e37ede"}},{"name":"{{action.resource_path}}","label":"action➛resource_path","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.resource_path1}}","label":"action➛resource_path1","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.table_field}}","label":"action➛Table Field","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.table_field_name}}","label":"action➛Table Field Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.instance_uri}}","label":"action➛Instance URI","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ae535f8b-1394-423c-90df-ce87e88bddfa"}},{"name":"{{step[2e4a38ea-1d63-40bb-9f0e-eb9557f680a3].output}}","label":"step➛JSON Builder step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[22ddfbcb-1b70-4c1f-b783-f9557bd06c13].new_table_name}}","label":"step➛Script step➛new_table_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>fdc764cceb4c52505204f635cad0cd1d</master_snapshot>
         <master_snapshot_digest/>
-        <name>Update Record Label</name>
+        <name>Update Table Record Label</name>
         <natlang/>
         <outputs/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <state>published</state>
+        <state>draft</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-11 03:09:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>61622444eb4c52505204f635cad0cd86</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Update Record Label</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Update Table Record Label</sys_name>
         <sys_overrides/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_61622444eb4c52505204f635cad0cd86</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2024-10-14 16:49:02</sys_updated_on>
+        <sys_updated_on>2024-10-16 17:14:47</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -110,7 +110,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=61622444eb4c52505204f635cad0cd86^sys_idNOT IN1dc724cceb4c52505204f635cad0cd78,f5622444eb4c52505204f635cad0cdb8,f9622444eb4c52505204f635cad0cdc0"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</action>
+        <action display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</action>
         <cid>22ddfbcb-1b70-4c1f-b783-f9557bd06c13</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -472,7 +472,7 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</action>
+        <action display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</action>
         <cid>2e4a38ea-1d63-40bb-9f0e-eb9557f680a3</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -557,7 +557,7 @@
     </sys_hub_input_scripts>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f5622444eb4c52505204f635cad0cdb8"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</action>
+        <action display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</action>
         <cid>241755d8-c1d6-4f23-be0e-8978a55a2c62</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1047,7 +1047,7 @@
         <label>Current Record Label</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_61622444eb4c52505204f635cad0cd86</name>
@@ -1131,7 +1131,7 @@
         <label>Table Field Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_61622444eb4c52505204f635cad0cd86</name>
@@ -1215,7 +1215,7 @@
         <label>Record Id</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_61622444eb4c52505204f635cad0cd86</name>
@@ -1299,7 +1299,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_61622444eb4c52505204f635cad0cd86</name>
@@ -1383,7 +1383,7 @@
         <label>Product Name</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_61622444eb4c52505204f635cad0cd86</name>
@@ -1467,7 +1467,7 @@
         <label>Instance URI</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_61622444eb4c52505204f635cad0cd86</name>
@@ -1554,7 +1554,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_61622444eb4c52505204f635cad0cd86</name>
@@ -1577,14 +1577,14 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-11 03:09:08</sys_created_on>
         <sys_id>31622444eb4c52505204f635cad0cde4</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2024-10-14 16:48:57</sys_updated_on>
+        <sys_updated_on>2024-10-16 17:14:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1641,7 +1641,7 @@
         <label>New Label</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_61622444eb4c52505204f635cad0cd86</name>
@@ -1697,7 +1697,7 @@
         <sys_created_on>2024-08-11 03:09:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>b9622444eb4c52505204f635cad0cddc</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1705,7 +1705,7 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2024-10-14 16:48:57</sys_updated_on>
+        <sys_updated_on>2024-10-16 17:14:46</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -1750,7 +1750,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</model>
+        <model display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</model>
         <model_id>61622444eb4c52505204f635cad0cd86</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_61622444eb4c52505204f635cad0cd86</name>
@@ -1798,7 +1798,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=61622444eb4c52505204f635cad0cd86"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=61622444eb4c52505204f635cad0cd86^sys_idNOT IN06622444eb4c52505204f635cad0cdfc"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</action_type_id>
+        <action_type_id display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</action_type_id>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-11 03:09:09</sys_created_on>
         <sys_id>06622444eb4c52505204f635cad0cdfc</sys_id>
@@ -2020,7 +2020,7 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_61622444eb4c52505204f635cad0cd86"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=61622444eb4c52505204f635cad0cd86^sys_idNOT INd2c764cceb4c52505204f635cad0cdf6"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</action_id>
+        <action_id display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d2c764cceb4c52505204f635cad0cdf6","name":"plan","plan_signature":null}}</plan>
         <snapshot>37c3c970fb9d5210c04cfbac7befdc13</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
@@ -2059,7 +2059,7 @@
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="Update Record Label">61622444eb4c52505204f635cad0cd86</parent_action>
+        <parent_action display_value="Update Table Record Label">61622444eb4c52505204f635cad0cd86</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-08-11 03:32:37</sys_created_on>

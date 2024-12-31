@@ -55,9 +55,9 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
-        <reference>sys_app_template</reference>
-        <reference_qual>nameENDSWITHPub Sector^EQ</reference_qual>
-        <reference_qual_condition table="sys_app_template">nameENDSWITHPub Sector^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="ENDSWITH" or="false" value="Pub Sector"/>
+        <reference>x_snc_15_minute_se_registered_templates</reference>
+        <reference_qual/>
+        <reference_qual_condition table="x_snc_15_minute_se_registered_templates">registerd_to_factory=^EQ<item endquery="false" field="registerd_to_factory" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <rich_text/>
@@ -79,21 +79,21 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-04-02 01:31:43</sys_created_on>
         <sys_id>114369bd471942104f6574fc416d4357</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>Select the Type of Digital Product</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>item_option_new_114369bd471942104f6574fc416d4357</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2024-10-25 03:54:12</sys_updated_on>
+        <sys_updated_on>2024-12-28 19:39:35</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

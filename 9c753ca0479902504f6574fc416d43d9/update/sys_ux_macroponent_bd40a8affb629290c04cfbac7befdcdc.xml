@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles>[]</bundles>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementLabel": "Column layout 1",
+        "elementId": "column_layout_1",
+        "eventMappings": [],
+        "propertyValues": {
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "contents"
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            }
+        },
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "preset": null,
+        "slot": null,
+        "styles": {
+            "default": {
+                "display": "contents"
+            }
+        },
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementLabel": "Column 1",
+                    "elementId": "__RWoWgeehhFIAkeeddffjjzQIHeeddgeehhMhhyc__column_1",
+                    "eventMappings": [],
+                    "propertyValues": {
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    },
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "slot": null,
+                    "styles": {
+                        "default": {
+                            "display": "contents"
+                        }
+                    },
+                    "overrides": {
+                        "composition": [
+                            {
+                                "definition": {
+                                    "id": "be28c4f57dd4c19fb81c4999ea2ea98d",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementLabel": "My Component 1",
+                                "elementId": "my_component_1",
+                                "eventMappings": [],
+                                "propertyValues": {},
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "slot": null,
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "type": "flex",
+                                "root": null,
+                                "children": null,
+                                "styles": {
+                                    "flex-direction": "column",
+                                    "align-items": "stretch",
+                                    "justify-content": "flex-start",
+                                    "height": "100%",
+                                    "overflow": "auto",
+                                    "box-sizing": "border-box"
+                                },
+                                "items": [
+                                    {
+                                        "element_id": "my_component_1"
+                                    }
+                                ]
+                            },
+                            "disableAutoReflow": true,
+                            "version": "3.1.0"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "version": "1.0.0",
+                            "layout": {
+                                "type": "column",
+                                "column": {
+                                    "id": "default",
+                                    "columnNumber": 0,
+                                    "styleConfig": {
+                                        "internal": {},
+                                        "external": {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "isInline": null,
+                    "items": [
+                        {
+                            "element_id": "__RWoWgeehhFIAkeeddffjjzQIHeeddgeehhMhhyc__column_1"
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "width": "auto",
+                        "grid-template-rows": "1fr",
+                        "box-sizing": "border-box",
+                        "grid-template-columns": "100fr"
+                    },
+                    "type": "grid"
+                },
+                "disableAutoReflow": true,
+                "version": "3.1.0",
+                "queries": [
+                    {
+                        "query": {
+                            "max-width": 640
+                        },
+                        "layout": {
+                            "children": null,
+                            "isInline": null,
+                            "items": [],
+                            "root": null,
+                            "rules": null,
+                            "styles": {
+                                "grid-template-columns": "1fr",
+                                "height": "fit-content",
+                                "min-height": "min-content",
+                                "max-height": "max-content"
+                            },
+                            "type": "grid"
+                        }
+                    }
+                ]
+            }
+        },
+        "scratchPad": {
+            "uib": {
+                "version": "1.0.0",
+                "layout": {
+                    "type": "columnSection",
+                    "columnSection": {
+                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
+                        "breakpoints": [
+                            {
+                                "max-width": 640,
+                                "behavior": "stack",
+                                "styles": {
+                                    "grid-template-columns": "1fr",
+                                    "height": "fit-content",
+                                    "min-height": "min-content",
+                                    "max-height": "max-content"
+                                }
+                            }
+                        ],
+                        "children": [
+                            {
+                                "width": 100,
+                                "unit": "%",
+                                "columnNumber": 1
+                            }
+                        ],
+                        "styleConfig": {
+                            "internal": {},
+                            "external": {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[]</data>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{
+    "custom_ff_1": {
+        "max-width": 640,
+        "reference": "macroponent"
+    }
+}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "type": "flex",
+        "root": null,
+        "children": null,
+        "rules": null,
+        "styles": {
+            "flex-direction": "column"
+        },
+        "items": [
+            {
+                "element_id": "column_layout_1"
+            }
+        ],
+        "templateId": "5832fd4d53c31010e6bcddeeff7b12db"
+    },
+    "queries": [
+        {
+            "layout": {
+                "items": [],
+                "styles": {
+                    "flex-direction": "column",
+                    "min-width": null,
+                    "height": "auto"
+                },
+                "type": "flex"
+            },
+            "queryId": "custom_ff_1"
+        }
+    ],
+    "version": "3.1.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Default</name>
+        <output_prop_mapping/>
+        <props>[]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config/>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-24 06:35:35</sys_created_on>
+        <sys_id>bd40a8affb629290c04cfbac7befdcdc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Default</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_ux_macroponent_bd40a8affb629290c04cfbac7befdcdc</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-24 07:54:39</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

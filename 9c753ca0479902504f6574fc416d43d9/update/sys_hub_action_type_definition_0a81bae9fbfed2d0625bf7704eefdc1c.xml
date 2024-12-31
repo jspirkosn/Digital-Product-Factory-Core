@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Build Cat Item with Now Assist</description>
+        <flow_priority/>
+        <ih_action>true</ih_action>
+        <internal_name>build_cat_item_with_now_assist</internal_name>
+        <label_cache>[{"name":"{{step[041a7757-af6d-4a7f-9e3f-3faae5858cd1].output}}","label":"step➛JSON Builder step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>e8da4369fbb216d0625bf7704eefdcec</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Build Cat Item with Now Assist</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-30 22:18:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0a81bae9fbfed2d0625bf7704eefdc1c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Build Cat Item with Now Assist</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_0a81bae9fbfed2d0625bf7704eefdc1c</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=0a81bae9fbfed2d0625bf7704eefdc1c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>0a81bae9fbfed2d0625bf7704eefdc1c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>90da4369fbb216d0625bf7704eefdca0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">5cda4369fbb216d0625bf7704eefdc90</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>0a81bae9fbfed2d0625bf7704eefdc1c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>dcda4369fbb216d0625bf7704eefdc9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">d4da4369fbb216d0625bf7704eefdc96</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_0a81bae9fbfed2d0625bf7704eefdc1c^id=0a81bae9fbfed2d0625bf7704eefdc1c"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=0a81bae9fbfed2d0625bf7704eefdc1c^sys_idNOT IN4cda4369fbb216d0625bf7704eefdc68,c8da4369fbb216d0625bf7704eefdc70"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Cat Item with Now Assist">0a81bae9fbfed2d0625bf7704eefdc1c</action>
+        <cid>041a7757-af6d-4a7f-9e3f-3faae5858cd1</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>JSON Builder step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:29</sys_created_on>
+        <sys_id>4cda4369fbb216d0625bf7704eefdc68</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:29</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4cda4369fbb216d0625bf7704eefdc68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4cda4369fbb216d0625bf7704eefdc68</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:29</sys_created_on>
+        <sys_id>40da4369fbb216d0625bf7704eefdc6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:29</sys_updated_on>
+        <value>[{"id":"dc8d3617-71c1-476f-bef1-9f523f3a279c","name":"now_assist_question","value":"{\"prompt\":\"Here's a list of fields suitable for a Utah foster care application, keeping it concise for ServiceNow import:\\n\\nApplicant Information\\n\\nApplicant Name (Text)\\nDate of Birth (Date/Time)\\nSocial Security Number (Text)\\nPhone Number (Phone Number)\\nEmail Address (Email)\\nMailing Address (Address)\\nCurrent Residence Status (Choice List): Own, Rent, Other\\nMarital Status (Choice List): Single, Married, Divorced, Widowed\\nSpouse Name (If Applicable) (Text)\\nSpouse Date of Birth (If Applicable) (Date/Time)\\nHousehold Information\\n\\nNumber of Adults in Household (Number)\\nNumber of Children in Household (Number)\\nAges of Children in Household (Text)\\nPets (Choice List): Yes, No\\nPet Types (If Yes) (Text)\\nExperience\\n\\nPrior Foster Care Experience (Choice List): Yes, No\\nPrior Childcare Experience (Choice List): Yes, No\\nExperience with Special Needs Children (Choice List): Yes, No\\nWillingness to Care for Infants/Toddlers (Choice List): Yes, No\\nWillingness to Care for School-Aged Children (Choice List): Yes, No\\nWillingness to Care for Adolescents (Choice List): Yes, No\\nWillingness to Care for Siblings (Choice List): Yes, No\\nWillingness to Care for Children with Special Needs (Choice List): Yes, No\\nLifestyle\\n\\nSmoking Habits (Choice List): Non-Smoker, Smoker (Specify Location)\\nAlcohol Consumption (Choice List): None, Social, Other\\nReligious Affiliation (Text)\\nHobbies/Interests (Text)\\nReferences\\n\\nReference 1 Name (Text)\\nReference 1 Contact Information (Text)\\nReference 2 Name (Text)\\nReference 2 Contact Information (Text)\\n\"}","type":"string","path":[],"choice":"empty string"}]</value>
+        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3^id=4cda4369fbb216d0625bf7704eefdc68"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=4cda4369fbb216d0625bf7704eefdc68"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=4cda4369fbb216d0625bf7704eefdc68"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4cda4369fbb216d0625bf7704eefdc68"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_4cda4369fbb216d0625bf7704eefdc68"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Cat Item with Now Assist">0a81bae9fbfed2d0625bf7704eefdc1c</action>
+        <cid>866e707d-73f9-47b6-b4c4-bb27e60886cc</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:29</sys_created_on>
+        <sys_id>c8da4369fbb216d0625bf7704eefdc70</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c8da4369fbb216d0625bf7704eefdc70"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>10da4369fbb216d0625bf7704eefdc8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>18da4369fbb216d0625bf7704eefdc8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>1cda4369fbb216d0625bf7704eefdc8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>54da4369fbb216d0625bf7704eefdc8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>88afac3effc6c2903ca0f6648c4fd9d1</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>58da4369fbb216d0625bf7704eefdc8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>/api/sn_text2catalog/nowassistcb/catgen</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>90da4369fbb216d0625bf7704eefdc8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>https://empjspirkosc2.service-now.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>94da4369fbb216d0625bf7704eefdc8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>d0da4369fbb216d0625bf7704eefdc8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>d8da4369fbb216d0625bf7704eefdc8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c8da4369fbb216d0625bf7704eefdc70</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>dcda4369fbb216d0625bf7704eefdc8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c8da4369fbb216d0625bf7704eefdc70^id=c8da4369fbb216d0625bf7704eefdc70"/>
+    <sys_element_mapping action="delete_multiple" query="id=c8da4369fbb216d0625bf7704eefdc70"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>d8da4369fbb216d0625bf7704eefdc89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>54da4369fbb216d0625bf7704eefdc89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>d0da4369fbb216d0625bf7704eefdc88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[041a7757-af6d-4a7f-9e3f-3faae5858cd1].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>90da4369fbb216d0625bf7704eefdc89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>dcda4369fbb216d0625bf7704eefdc88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>9cda4369fbb216d0625bf7704eefdc89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>18da4369fbb216d0625bf7704eefdc89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>10da4369fbb216d0625bf7704eefdc88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>94da4369fbb216d0625bf7704eefdc88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>58da4369fbb216d0625bf7704eefdc88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>c8da4369fbb216d0625bf7704eefdc70</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>1cda4369fbb216d0625bf7704eefdc88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c8da4369fbb216d0625bf7704eefdc70"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c8da4369fbb216d0625bf7704eefdc70^sys_idNOT IN84da4369fbb216d0625bf7704eefdc7a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">c8da4369fbb216d0625bf7704eefdc70</model>
+        <model_id>c8da4369fbb216d0625bf7704eefdc70</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c8da4369fbb216d0625bf7704eefdc70</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:29</sys_created_on>
+        <sys_id>84da4369fbb216d0625bf7704eefdc7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c8da4369fbb216d0625bf7704eefdc70"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_c8da4369fbb216d0625bf7704eefdc70^sys_idNOT IN48da4369fbb216d0625bf7704eefdc80"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c8da4369fbb216d0625bf7704eefdc70</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>48da4369fbb216d0625bf7704eefdc80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=0a81bae9fbfed2d0625bf7704eefdc1c"/>
+    <sys_hub_action_output action="delete_multiple" query="model=0a81bae9fbfed2d0625bf7704eefdc1c^sys_idNOT IN5cda4369fbb216d0625bf7704eefdc90,d4da4369fbb216d0625bf7704eefdc96"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=2f985258-35fc-4daa-9f00-d245ec8e91e6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Cat Item with Now Assist">0a81bae9fbfed2d0625bf7704eefdc1c</model>
+        <model_id>0a81bae9fbfed2d0625bf7704eefdc1c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_0a81bae9fbfed2d0625bf7704eefdc1c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>5cda4369fbb216d0625bf7704eefdc90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5cda4369fbb216d0625bf7704eefdc90"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5cda4369fbb216d0625bf7704eefdc90"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f4e1976c-e8bc-459d-a07e-a5770843fc70,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Build Cat Item with Now Assist">0a81bae9fbfed2d0625bf7704eefdc1c</model>
+        <model_id>0a81bae9fbfed2d0625bf7704eefdc1c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_0a81bae9fbfed2d0625bf7704eefdc1c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>d4da4369fbb216d0625bf7704eefdc96</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d4da4369fbb216d0625bf7704eefdc96"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d4da4369fbb216d0625bf7704eefdc96"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0a81bae9fbfed2d0625bf7704eefdc1c"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=0a81bae9fbfed2d0625bf7704eefdc1c^sys_idNOT INdcda4369fbb216d0625bf7704eefdcad"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Build Cat Item with Now Assist">0a81bae9fbfed2d0625bf7704eefdc1c</action_type_id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>dcda4369fbb216d0625bf7704eefdcad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=dcda4369fbb216d0625bf7704eefdcad"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0a81bae9fbfed2d0625bf7704eefdc1c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_0a81bae9fbfed2d0625bf7704eefdc1c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_0a81bae9fbfed2d0625bf7704eefdc1c^sys_idNOT IN1cda4369fbb216d0625bf7704eefdc9c,d4da4369fbb216d0625bf7704eefdc95"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0a81bae9fbfed2d0625bf7704eefdc1c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>1cda4369fbb216d0625bf7704eefdc9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0a81bae9fbfed2d0625bf7704eefdc1c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:30</sys_created_on>
+        <sys_id>d4da4369fbb216d0625bf7704eefdc95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_0a81bae9fbfed2d0625bf7704eefdc1c"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=0a81bae9fbfed2d0625bf7704eefdc1c^sys_idNOT INc1da8369fbb216d0625bf7704eefdcef"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Build Cat Item with Now Assist">0a81bae9fbfed2d0625bf7704eefdc1c</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c1da8369fbb216d0625bf7704eefdcef","name":"plan","plan_signature":null}}</plan>
+        <snapshot>38da8369fbb216d0625bf7704eefdc5d</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c1da8369fbb216d0625bf7704eefdcef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:33</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Build Cat Item with Now Assist</description>
+        <flow_priority/>
+        <internal_name>build_cat_item_with_now_assist</internal_name>
+        <label_cache>[{"name":"{{step[041a7757-af6d-4a7f-9e3f-3faae5858cd1].output}}","label":"step➛JSON Builder step➛Output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Build Cat Item with Now Assist</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Build Cat Item with Now Assist">0a81bae9fbfed2d0625bf7704eefdc1c</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e8da4369fbb216d0625bf7704eefdcec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:31</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=e8da4369fbb216d0625bf7704eefdcec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e8da4369fbb216d0625bf7704eefdcec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>3cda8369fbb216d0625bf7704eefdc5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">a4da8369fbb216d0625bf7704eefdc35</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e8da4369fbb216d0625bf7704eefdcec</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>78da8369fbb216d0625bf7704eefdc5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">e8da8369fbb216d0625bf7704eefdc46</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_e8da4369fbb216d0625bf7704eefdcec^id=e8da4369fbb216d0625bf7704eefdcec"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=e8da4369fbb216d0625bf7704eefdcec^sys_idNOT IN20da4369fbb216d0625bf7704eefdcf1,a0da4369fbb216d0625bf7704eefdcf6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Cat Item with Now Assist">e8da4369fbb216d0625bf7704eefdcec</action>
+        <cid>041a7757-af6d-4a7f-9e3f-3faae5858cd1</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>JSON Builder step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Builder">dfd9f353b733111007402a91de11a9e3</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:31</sys_created_on>
+        <sys_id>20da4369fbb216d0625bf7704eefdcf1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:31</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=20da4369fbb216d0625bf7704eefdcf1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>20da4369fbb216d0625bf7704eefdcf1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:31</sys_created_on>
+        <sys_id>e0da4369fbb216d0625bf7704eefdcf5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:31</sys_updated_on>
+        <value>[{"id":"dc8d3617-71c1-476f-bef1-9f523f3a279c","name":"now_assist_question","value":"{\"prompt\":\"Here's a list of fields suitable for a Utah foster care application, keeping it concise for ServiceNow import:\\n\\nApplicant Information\\n\\nApplicant Name (Text)\\nDate of Birth (Date/Time)\\nSocial Security Number (Text)\\nPhone Number (Phone Number)\\nEmail Address (Email)\\nMailing Address (Address)\\nCurrent Residence Status (Choice List): Own, Rent, Other\\nMarital Status (Choice List): Single, Married, Divorced, Widowed\\nSpouse Name (If Applicable) (Text)\\nSpouse Date of Birth (If Applicable) (Date/Time)\\nHousehold Information\\n\\nNumber of Adults in Household (Number)\\nNumber of Children in Household (Number)\\nAges of Children in Household (Text)\\nPets (Choice List): Yes, No\\nPet Types (If Yes) (Text)\\nExperience\\n\\nPrior Foster Care Experience (Choice List): Yes, No\\nPrior Childcare Experience (Choice List): Yes, No\\nExperience with Special Needs Children (Choice List): Yes, No\\nWillingness to Care for Infants/Toddlers (Choice List): Yes, No\\nWillingness to Care for School-Aged Children (Choice List): Yes, No\\nWillingness to Care for Adolescents (Choice List): Yes, No\\nWillingness to Care for Siblings (Choice List): Yes, No\\nWillingness to Care for Children with Special Needs (Choice List): Yes, No\\nLifestyle\\n\\nSmoking Habits (Choice List): Non-Smoker, Smoker (Specify Location)\\nAlcohol Consumption (Choice List): None, Social, Other\\nReligious Affiliation (Text)\\nHobbies/Interests (Text)\\nReferences\\n\\nReference 1 Name (Text)\\nReference 1 Contact Information (Text)\\nReference 2 Name (Text)\\nReference 2 Contact Information (Text)\\n\"}","type":"string","path":[],"choice":"empty string"}]</value>
+        <variable display_value="Structure">92da7393b733111007402a91de11a980</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_dfd9f353b733111007402a91de11a9e3^id=20da4369fbb216d0625bf7704eefdcf1"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=20da4369fbb216d0625bf7704eefdcf1"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=20da4369fbb216d0625bf7704eefdcf1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=20da4369fbb216d0625bf7704eefdcf1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_20da4369fbb216d0625bf7704eefdcf1"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Build Cat Item with Now Assist">e8da4369fbb216d0625bf7704eefdcec</action>
+        <cid>866e707d-73f9-47b6-b4c4-bb27e60886cc</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:31</sys_created_on>
+        <sys_id>a0da4369fbb216d0625bf7704eefdcf6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a0da4369fbb216d0625bf7704eefdcf6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>20da8369fbb216d0625bf7704eefdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>28da8369fbb216d0625bf7704eefdc30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>2cda8369fbb216d0625bf7704eefdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>64da8369fbb216d0625bf7704eefdc30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>68da8369fbb216d0625bf7704eefdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>6cda8369fbb216d0625bf7704eefdc2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>a0da8369fbb216d0625bf7704eefdc30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>88afac3effc6c2903ca0f6648c4fd9d1</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>a4da8369fbb216d0625bf7704eefdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>/api/sn_text2catalog/nowassistcb/catgen</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>e0da8369fbb216d0625bf7704eefdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a0da4369fbb216d0625bf7704eefdcf6</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>ecda8369fbb216d0625bf7704eefdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <value>https://empjspirkosc2.service-now.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a0da4369fbb216d0625bf7704eefdcf6^id=a0da4369fbb216d0625bf7704eefdcf6"/>
+    <sys_element_mapping action="delete_multiple" query="id=a0da4369fbb216d0625bf7704eefdcf6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>28da8369fbb216d0625bf7704eefdc2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>a0da8369fbb216d0625bf7704eefdc2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>20da8369fbb216d0625bf7704eefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[041a7757-af6d-4a7f-9e3f-3faae5858cd1].output}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>ecda8369fbb216d0625bf7704eefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>2cda8369fbb216d0625bf7704eefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>e8da8369fbb216d0625bf7704eefdc2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>64da8369fbb216d0625bf7704eefdc2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>6cda8369fbb216d0625bf7704eefdc2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>e0da8369fbb216d0625bf7704eefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>a4da8369fbb216d0625bf7704eefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>a0da4369fbb216d0625bf7704eefdcf6</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>68da8369fbb216d0625bf7704eefdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a0da4369fbb216d0625bf7704eefdcf6"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a0da4369fbb216d0625bf7704eefdcf6^sys_idNOT INacda8369fbb216d0625bf7704eefdc09"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">a0da4369fbb216d0625bf7704eefdcf6</model>
+        <model_id>a0da4369fbb216d0625bf7704eefdcf6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_a0da4369fbb216d0625bf7704eefdcf6</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:31</sys_created_on>
+        <sys_id>acda8369fbb216d0625bf7704eefdc09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a0da4369fbb216d0625bf7704eefdcf6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_a0da4369fbb216d0625bf7704eefdcf6^sys_idNOT IN60da8369fbb216d0625bf7704eefdc0d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_a0da4369fbb216d0625bf7704eefdcf6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:31</sys_created_on>
+        <sys_id>60da8369fbb216d0625bf7704eefdc0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=e8da4369fbb216d0625bf7704eefdcec"/>
+    <sys_hub_action_output action="delete_multiple" query="model=e8da4369fbb216d0625bf7704eefdcec^sys_idNOT INa4da8369fbb216d0625bf7704eefdc35,e8da8369fbb216d0625bf7704eefdc46"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=2f985258-35fc-4daa-9f00-d245ec8e91e6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Build Cat Item with Now Assist">e8da4369fbb216d0625bf7704eefdcec</model>
+        <model_id>e8da4369fbb216d0625bf7704eefdcec</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e8da4369fbb216d0625bf7704eefdcec</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>a4da8369fbb216d0625bf7704eefdc35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a4da8369fbb216d0625bf7704eefdc35"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a4da8369fbb216d0625bf7704eefdc35"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=f4e1976c-e8bc-459d-a07e-a5770843fc70,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Build Cat Item with Now Assist">e8da4369fbb216d0625bf7704eefdcec</model>
+        <model_id>e8da4369fbb216d0625bf7704eefdcec</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e8da4369fbb216d0625bf7704eefdcec</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>e8da8369fbb216d0625bf7704eefdc46</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e8da8369fbb216d0625bf7704eefdc46"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e8da8369fbb216d0625bf7704eefdc46"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e8da4369fbb216d0625bf7704eefdcec"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e8da4369fbb216d0625bf7704eefdcec^sys_idNOT INb0da8369fbb216d0625bf7704eefdc5d"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Build Cat Item with Now Assist">e8da4369fbb216d0625bf7704eefdcec</action_type_id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>b0da8369fbb216d0625bf7704eefdc5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=b0da8369fbb216d0625bf7704eefdc5d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e8da4369fbb216d0625bf7704eefdcec"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_e8da4369fbb216d0625bf7704eefdcec"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e8da4369fbb216d0625bf7704eefdcec^sys_idNOT IN70da8369fbb216d0625bf7704eefdc4c,e8da8369fbb216d0625bf7704eefdc45"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e8da4369fbb216d0625bf7704eefdcec</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>70da8369fbb216d0625bf7704eefdc4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e8da4369fbb216d0625bf7704eefdcec</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2024-12-31 00:08:32</sys_created_on>
+        <sys_id>e8da8369fbb216d0625bf7704eefdc45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2024-12-31 00:08:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_e8da4369fbb216d0625bf7704eefdcec"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>0a81bae9fbfed2d0625bf7704eefdc1c</sys_id>
+        <latest_snapshot>e8da4369fbb216d0625bf7704eefdcec</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch2-09-25-2024_10-06-2024_2304.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

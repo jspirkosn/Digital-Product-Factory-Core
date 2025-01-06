@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations>{}</additional_configurations>
+        <definition>287712f2fbbe5ad0c04cfbac7befdcb2</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic</model>
+        <name>Prompt name</name>
+        <parent display_value="OneExtend Capability Definition: Digital Product Factory Assistants">667fc3f2fb369ad0c04cfbac7befdc22</parent>
+        <prompt>You are a ServiceNow developer. Create a series of variables for a ServiceNow record producer to serve a program with this description {{program_description}}that serves the {{type_of_record}} function. Consider these fields as possibilities for the label values, but add your own: {{suggested_form_fields}}.
+Render the output in a JSON format so that a ServiceNow workflow can create the variables and add them to an existing record producer. Add the short description in the JSON data set.
+You can only return the JSON result and nothing else.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>6942</request_tokens>
+        <state>archived</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-01-03 22:54:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3e30e372fbb69ad0c04cfbac7befdcd5</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>287712f2fbbe5ad0c04cfbac7befdcb2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_generative_ai_config_3e30e372fbb69ad0c04cfbac7befdcd5</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-01-04 00:24:51</sys_updated_on>
+        <temperature>0.2</temperature>
+        <version>3</version>
+    </sys_generative_ai_config>
+</record_update>

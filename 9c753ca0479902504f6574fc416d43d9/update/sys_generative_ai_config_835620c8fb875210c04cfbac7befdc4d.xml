@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations>{}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>a6f44c43fbba9ad0c04cfbac7befdcc6</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic</model>
+        <name>Prompt name</name>
+        <parent display_value="OneExtend Capability Definition: Factory Assist for Record Producers">ac6ac2a7fb32ded0c04cfbac7befdc22</parent>
+        <prompt>You are a ServiceNow developer. Create a ServiceNow record producer to serve a program with this description {{program_description}} that provides the {{record_type}} function.
+Create a description of the service being provided by this form, no longer than 100 characters, and always name it "description" in the JSON set.
+Create a title for the service being provided, no longer than 50 characters, and always name it "title" in the JSON data set.
+Create a set of relevant ServiceNow record producer variables including a set of properties for each. Consider the fields in this list as possibilities for the label values, but add your own if you believe them to be better: {{suggested_fields}}. The variable label can be up to 4 words. Make sure the values of the name property in the variables are only in snake case with no special characters, capital letters or spaces. Make sure the value of the type properties are valid ServiceNow record producer variable types. This is a list of valid types: Masked, Multi Line Text, Multiple Choice, Numeric Scale, Reference, Requested For, Rich Text Label, Select Box, Single Line Text, UI Page, URL, Wide Single Line Text, Yes/No, Attachment, Break, CheckBox, Container End, Container Split, Container Start, Custom, Custom with Label, Date, Date/Time, Duration, Email, HTML, IP Address, Label, List Collector, Lookup Multiple Choice, Lookup Select Box.  Add any other relevant properties for the variables.
+Render the output in a JSON format so that a ServiceNow workflow can create the record producer and variables from the data.
+Return the JSON result only.  Do not provide additional characters outside of it.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>6942</request_tokens>
+        <show_in_prompt_library>false</show_in_prompt_library>
+        <state>archived</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-01-07 06:34:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>835620c8fb875210c04cfbac7befdc4d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>a6f44c43fbba9ad0c04cfbac7befdcc6</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_generative_ai_config_835620c8fb875210c04cfbac7befdc4d</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-01-07 16:07:33</sys_updated_on>
+        <temperature>0.2</temperature>
+        <version>12</version>
+    </sys_generative_ai_config>
+</record_update>

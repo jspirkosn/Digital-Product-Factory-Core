@@ -7,6 +7,7 @@
         <choice_direction>down</choice_direction>
         <choice_field/>
         <choice_table/>
+        <conversational_label/>
         <create_roles/>
         <default_html_value/>
         <default_value/>
@@ -42,6 +43,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>select_product_type</name>
+        <not_available_conversation>false</not_available_conversation>
         <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
@@ -56,8 +58,8 @@
         <record/>
         <record_producer_table/>
         <reference>x_snc_15_minute_se_registered_templates</reference>
-        <reference_qual/>
-        <reference_qual_condition table="x_snc_15_minute_se_registered_templates">registerd_to_factory=^EQ<item endquery="false" field="registerd_to_factory" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <reference_qual>delivery_catalog=a4327f6173b700108f12d9be2bf6a735^EQ</reference_qual>
+        <reference_qual_condition table="x_snc_15_minute_se_registered_templates">delivery_catalog=a4327f6173b700108f12d9be2bf6a735^EQ<item display_table="sc_catalog" display_value="Financial Services" endquery="false" field="delivery_catalog" goto="false" newquery="false" operator="=" or="false" value="a4327f6173b700108f12d9be2bf6a735"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <rich_text/>
@@ -79,21 +81,22 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2024-04-02 01:31:43</sys_created_on>
         <sys_id>114369bd471942104f6574fc416d4357</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Select the Type of Digital Product</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>item_option_new_114369bd471942104f6574fc416d4357</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2024-12-28 19:39:35</sys_updated_on>
+        <sys_updated_on>2025-01-17 22:10:04</sys_updated_on>
         <table/>
         <tooltip/>
+        <topic_block/>
         <type>8</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="DELETE">
+        <active>true</active>
+        <business_rule display_value="Provision a new email for Fulton School ">a6b6d0f2fbf352d0c04cfbac7befdc22</business_rule>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="x_snc_provision_0_program_name_now_assist_hhs_services">opened_byISNOTEMPTY^EQ<item endquery="false" field="opened_by" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <objective_template><![CDATA[Build a playbook for the service with the id: ${service}]]></objective_template>
+        <run_as>opened_by</run_as>
+        <show_notifications>false</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-22 01:16:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>09f518b2fbf352d0c04cfbac7befdc62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_provision_0_program_name_now_assist_hhs_services</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_09f518b2fbf352d0c04cfbac7befdc62</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-22 01:16:52</sys_updated_on>
+        <target_table>x_snc_provision_0_program_name_now_assist_hhs_services</target_table>
+        <usecase display_value="Build a Playbook test assistant">1851947afbb352d0c04cfbac7befdcb4</usecase>
+    </sn_aia_trigger_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sn_aia_trigger_configuration_09f518b2fbf352d0c04cfbac7befdc62</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_configuration"&gt;&lt;sn_aia_trigger_configuration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_rule display_value="Provision a new email for Fulton School "&gt;a6b6d0f2fbf352d0c04cfbac7befdc22&lt;/business_rule&gt;&lt;channel display_value="Now Assist Panel"&gt;b023fcb3537321106167ddeeff7b12a8&lt;/channel&gt;&lt;condition table="x_snc_provision_0_program_name_now_assist_hhs_services"&gt;opened_byISNOTEMPTY^EQ&lt;item endquery="false" field="opened_by" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;objective_template&gt;&lt;![CDATA[Build a playbook for the service with the id: ${service}]]&gt;&lt;/objective_template&gt;&lt;run_as&gt;opened_by&lt;/run_as&gt;&lt;show_notifications&gt;false&lt;/show_notifications&gt;&lt;sys_class_name&gt;sn_aia_trigger_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-22 01:16:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;09f518b2fbf352d0c04cfbac7befdc62&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_snc_provision_0_program_name_now_assist_hhs_services&lt;/sys_name&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_configuration_09f518b2fbf352d0c04cfbac7befdc62&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-22 01:16:52&lt;/sys_updated_on&gt;&lt;target_table&gt;x_snc_provision_0_program_name_now_assist_hhs_services&lt;/target_table&gt;&lt;usecase display_value="Build a Playbook test assistant"&gt;1851947afbb352d0c04cfbac7befdcb4&lt;/usecase&gt;&lt;/sn_aia_trigger_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>24744965</payload_hash>
+        <record_name>x_snc_provision_0_program_name_now_assist_hhs_services</record_name>
+        <reverted_from/>
+        <source>674d13f5fbb296d0625bf7704eefdcc4</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-22 01:16:52</sys_created_on>
+        <sys_id>2eb65cf2fbf352d0c04cfbac7befdcad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1952b3a8e0c0000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-22 01:16:52</sys_updated_on>
+        <type>AIA Trigger Configuration</type>
+        <update_guid>eeb65cf2d5f352d007f141ea5faae7ac</update_guid>
+        <update_guid_history>eeb65cf2d5f352d007f141ea5faae7ac:24744965</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2025-03-01 14:10:55">28e8bcd5fbc42214625bf7704eefdc2e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-01 22:10:55</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_configuration">sn_aia_trigger_configuration</sys_db_object>
+        <sys_id>d19c1fe9778243cdbb295dc2e78a79e9</sys_id>
+        <sys_metadata>09f518b2fbf352d0c04cfbac7befdc62</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_provision_0_program_name_now_assist_hhs_services</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_configuration_09f518b2fbf352d0c04cfbac7befdc62</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_configuration_09f518b2fbf352d0c04cfbac7befdc62">2eb65cf2fbf352d0c04cfbac7befdcad</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-01 22:10:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

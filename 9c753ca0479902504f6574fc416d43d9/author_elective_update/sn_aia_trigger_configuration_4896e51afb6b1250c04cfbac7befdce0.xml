@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="DELETE">
+        <active>true</active>
+        <business_rule display_value="Supplemental Nutrition Assistance Progra">10a7299afb6b1250c04cfbac7befdc05</business_rule>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="x_snc_supplement_0_hhs_questions_and_complaints">assigned_toISNOTEMPTY^EQ<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <objective_template><![CDATA[
+A need for assistance if you have to come into our office?: ${a_need_for_assistance}
+Action status: ${action_status}
+Actual end: ${work_end}]]></objective_template>
+        <run_as>assigned_to</run_as>
+        <show_notifications>false</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-08 07:37:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4896e51afb6b1250c04cfbac7befdce0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_supplement_0_hhs_questions_and_complaints</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_4896e51afb6b1250c04cfbac7befdce0</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-08 07:37:41</sys_updated_on>
+        <target_table>x_snc_supplement_0_hhs_questions_and_complaints</target_table>
+        <usecase display_value="Play generation for new playbook build">9c5665d6fb6b1250c04cfbac7befdc14</usecase>
+    </sn_aia_trigger_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sn_aia_trigger_configuration_4896e51afb6b1250c04cfbac7befdce0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_configuration"&gt;&lt;sn_aia_trigger_configuration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_rule display_value="Supplemental Nutrition Assistance Progra"&gt;10a7299afb6b1250c04cfbac7befdc05&lt;/business_rule&gt;&lt;channel display_value="Now Assist Panel"&gt;b023fcb3537321106167ddeeff7b12a8&lt;/channel&gt;&lt;condition table="x_snc_supplement_0_hhs_questions_and_complaints"&gt;assigned_toISNOTEMPTY^EQ&lt;item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;objective_template&gt;&lt;![CDATA[
+A need for assistance if you have to come into our office?: ${a_need_for_assistance}
+Action status: ${action_status}
+Actual end: ${work_end}]]&gt;&lt;/objective_template&gt;&lt;run_as&gt;assigned_to&lt;/run_as&gt;&lt;show_notifications&gt;false&lt;/show_notifications&gt;&lt;sys_class_name&gt;sn_aia_trigger_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-08 07:37:41&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;4896e51afb6b1250c04cfbac7befdce0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_snc_supplement_0_hhs_questions_and_complaints&lt;/sys_name&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_configuration_4896e51afb6b1250c04cfbac7befdce0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-08 07:37:41&lt;/sys_updated_on&gt;&lt;target_table&gt;x_snc_supplement_0_hhs_questions_and_complaints&lt;/target_table&gt;&lt;usecase display_value="Play generation for new playbook build"&gt;9c5665d6fb6b1250c04cfbac7befdc14&lt;/usecase&gt;&lt;/sn_aia_trigger_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2029282125</payload_hash>
+        <record_name>x_snc_supplement_0_hhs_questions_and_complaints</record_name>
+        <reverted_from/>
+        <source>674d13f5fbb296d0625bf7704eefdcc4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-08 07:37:41</sys_created_on>
+        <sys_id>24a7299afb6b1250c04cfbac7befdc1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194e47e2d5c0000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-08 07:37:41</sys_updated_on>
+        <type>AIA Trigger Configuration</type>
+        <update_guid>e4a7299a156b12507384af7cad073e1d</update_guid>
+        <update_guid_history>e4a7299a156b12507384af7cad073e1d:2029282125</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2025-02-14 15:37:27">bddc73d0fb771e50625bf7704eefdc85</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-14 23:37:27</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_configuration">sn_aia_trigger_configuration</sys_db_object>
+        <sys_id>07ba12fce173464988730718380bb801</sys_id>
+        <sys_metadata>4896e51afb6b1250c04cfbac7befdce0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_supplement_0_hhs_questions_and_complaints</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_configuration_4896e51afb6b1250c04cfbac7befdce0</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_configuration_4896e51afb6b1250c04cfbac7befdce0">24a7299afb6b1250c04cfbac7befdc1e</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-14 23:37:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

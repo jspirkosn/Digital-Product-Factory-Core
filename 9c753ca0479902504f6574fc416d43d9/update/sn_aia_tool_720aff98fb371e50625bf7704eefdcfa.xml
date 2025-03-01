@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Return the application id and status of success or not found.</description>
+        <input_schema>[{"name":"sys_id","description":"Factory request"}]</input_schema>
+        <name>Get application sys_id based on a requested item sys_id</name>
+        <script><![CDATA[(function(inputs) {
+    // only string inputs are allowed 
+    // return outputs object where the keys in it are understandable by LLM
+    var output;
+    var varLink = new GlideRecord('sc_item_option_mtom');
+    var varVal = new GlideRecord('sc_item_option');
+    varLink.addQuery('request_item', inputs.sys_id);
+    varLink.query();
+    gs.info("AAI found " + varLink.getRowCount() + " links for this request");
+
+    while (varLink.next()) {
+        varVal.initialize();
+        varVal.addQuery('sys_id', varLink.sc_item_option.sys_id);
+        varVal.query();
+
+        if (varVal.next()) {
+            if (varVal.item_option_new.getDisplayValue() == 'Digital Product Name') {
+                gs.info("AAI Name of App is: " + varVal.value);
+                var myApp = new GlideRecord('sys_app');
+                myApp.addQuery('name', varVal.value);
+                myApp.query();
+
+                if (myApp.next()) {
+                    gs.info("AAI found app: " + myApp.sys_id + " = " + myApp.short_description);
+                    output = "Application Found it's name is: " + myApp.name +
+                    " Description is: " + myApp.short_description +
+                    " and the sys_id is: " + myApp.sys_id;
+                } else {
+                    output = 'error: app not found';
+                }
+            }
+        }
+    }
+    return "I found the application it's sys_id is: " + output;
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-14 23:25:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>720aff98fb371e50625bf7704eefdcfa</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Get application sys_id based on a requested item sys_id</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_tool_720aff98fb371e50625bf7704eefdcfa</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-17 04:58:55</sys_updated_on>
+        <target_document/>
+        <target_document_table>undefined</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

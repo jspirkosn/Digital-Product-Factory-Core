@@ -42,14 +42,14 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>select_product_type</name>
+        <name>template_variables</name>
         <not_available_conversation>false</not_available_conversation>
         <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Select the Type of Digital Product</question_text>
+        <question_text>Select a Digital Product Template</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -57,11 +57,9 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
-        <reference>sys_app_template</reference>
-        <reference_qual>nameENDSWITHHigher Ed^active=true^EQ</reference_qual>
-        <reference_qual_condition table="sys_app_template">nameENDSWITHHigher Ed^active=true^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="ENDSWITH" or="false" value="Higher Ed"/>
-            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <reference>x_snc_15_minute_se_registered_templates</reference>
+        <reference_qual>registerd_to_factory=17e5a9fffb059a10c04cfbac7befdcc1</reference_qual>
+        <reference_qual_condition table="x_snc_15_minute_se_registered_templates">registerd_to_factory=17e5a9fffb059a10c04cfbac7befdcc1<item display_table="sc_cat_item" display_value="Digital Product Factory for Higher Education" endquery="false" field="registerd_to_factory" goto="false" newquery="false" operator="=" or="false" value="17e5a9fffb059a10c04cfbac7befdcc1"/>
         </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -82,14 +80,14 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2024-10-11 16:44:13</sys_created_on>
         <sys_id>18f52dfffb059a10c04cfbac7befdc79</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Select the Type of Digital Product</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Select a Digital Product Template</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>item_option_new_18f52dfffb059a10c04cfbac7befdc79</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2024-11-08 18:12:45</sys_updated_on>
+        <sys_updated_on>2025-03-01 01:17:37</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

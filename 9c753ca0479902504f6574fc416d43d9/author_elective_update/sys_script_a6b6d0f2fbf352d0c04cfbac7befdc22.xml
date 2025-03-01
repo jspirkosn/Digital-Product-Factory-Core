@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_provision_0_program_name_now_assist_hhs_services</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_snc_provision_0_program_name_now_assist_hhs_services">opened_byISNOTEMPTY^EQ<item endquery="false" field="opened_by" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Provision a new email for Fulton School </name>
+        <order>99999</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) /*null when async*/ {
+	var context = Object.assign({"use_case_id":"1851947afbb352d0c04cfbac7befdcb4"}, {
+        taskRecordId: current.sys_id.toString(),
+        taskRecordTable: current.sys_class_name.toString()
+    });
+    var trigger = {"trigger_id":"09f518b2fbf352d0c04cfbac7befdc62","run_as":"opened_by"};
+    var isDiffConsumer = true;
+    var runAsUser = trigger["run_as"];
+	var execPlanGr = sn_aia.TriggerRuntimeUtil.getExecutionPlansByTaskAndUsecase(context.taskRecordTable, context.taskRecordId, context.use_case_id);
+    while (execPlanGr.next()) {
+        if ([sn_aia.AIAgentConstants.CONVERSATION_STATE.CHAT_IN_PROGRESS, sn_aia.AIAgentConstants.CONVERSATION_STATE.OPEN].includes(execPlanGr.conversation.state.toString()) && sn_aia.TriggerRuntimeUtil.isSameConsumer(execPlanGr.conversation.consumer.user_id.toString(), current, runAsUser)) {
+            isDiffConsumer = false;
+        } else {
+            sn_aia.TriggerRuntimeUtil.terminateExecutionPlanAndConversation(execPlanGr);
+        }
+    }
+    sn_aia.TriggerRuntimeUtil.invokeAIATrigger(isDiffConsumer, runAsUser, current, context, trigger);
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-22 01:16:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>a6b6d0f2fbf352d0c04cfbac7befdc22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Provision a new email for Fulton School </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_script_a6b6d0f2fbf352d0c04cfbac7befdc22</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-22 01:16:52</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=a6b6d0f2fbf352d0c04cfbac7befdc22"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sys_script_a6b6d0f2fbf352d0c04cfbac7befdc22</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_snc_provision_0_program_name_now_assist_hhs_services&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_snc_provision_0_program_name_now_assist_hhs_services"&gt;opened_byISNOTEMPTY^EQ&lt;item endquery="false" field="opened_by" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Provision a new email for Fulton School &lt;/name&gt;&lt;order&gt;99999&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous) /*null when async*/ {
+	var context = Object.assign({"use_case_id":"1851947afbb352d0c04cfbac7befdcb4"}, {
+        taskRecordId: current.sys_id.toString(),
+        taskRecordTable: current.sys_class_name.toString()
+    });
+    var trigger = {"trigger_id":"09f518b2fbf352d0c04cfbac7befdc62","run_as":"opened_by"};
+    var isDiffConsumer = true;
+    var runAsUser = trigger["run_as"];
+	var execPlanGr = sn_aia.TriggerRuntimeUtil.getExecutionPlansByTaskAndUsecase(context.taskRecordTable, context.taskRecordId, context.use_case_id);
+    while (execPlanGr.next()) {
+        if ([sn_aia.AIAgentConstants.CONVERSATION_STATE.CHAT_IN_PROGRESS, sn_aia.AIAgentConstants.CONVERSATION_STATE.OPEN].includes(execPlanGr.conversation.state.toString()) &amp;&amp; sn_aia.TriggerRuntimeUtil.isSameConsumer(execPlanGr.conversation.consumer.user_id.toString(), current, runAsUser)) {
+            isDiffConsumer = false;
+        } else {
+            sn_aia.TriggerRuntimeUtil.terminateExecutionPlanAndConversation(execPlanGr);
+        }
+    }
+    sn_aia.TriggerRuntimeUtil.invokeAIATrigger(isDiffConsumer, runAsUser, current, context, trigger);
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;john.spirko&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-22 01:16:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;a6b6d0f2fbf352d0c04cfbac7befdc22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Provision a new email for Fulton School &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="15-Minute Digital Product Prototype"&gt;9c753ca0479902504f6574fc416d43d9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_a6b6d0f2fbf352d0c04cfbac7befdc22&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;john.spirko&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-22 01:16:52&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async_always&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a6b6d0f2fbf352d0c04cfbac7befdc22"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-400698180</payload_hash>
+        <record_name>Provision a new email for Fulton School </record_name>
+        <reverted_from/>
+        <source>674d13f5fbb296d0625bf7704eefdcc4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-22 01:16:52</sys_created_on>
+        <sys_id>6ab6d0f2fbf352d0c04cfbac7befdc27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1952b3a8d9a0000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-22 01:16:52</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>eab6d0f241f352d081de222f356e2226</update_guid>
+        <update_guid_history>eab6d0f241f352d081de222f356e2226:-400698180</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-01 22:10:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>7a81092aaeb742e48a89d79263210dc1</sys_id>
+        <sys_metadata>a6b6d0f2fbf352d0c04cfbac7befdc22</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Provision a new email for Fulton School </sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent display_value="">e0329fe2fbfb12d0c04cfbac7befdcab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_script_a6b6d0f2fbf352d0c04cfbac7befdc22</sys_update_name>
+        <sys_update_version display_value="sys_script_a6b6d0f2fbf352d0c04cfbac7befdc22">6ab6d0f2fbf352d0c04cfbac7befdc27</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-01 22:10:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

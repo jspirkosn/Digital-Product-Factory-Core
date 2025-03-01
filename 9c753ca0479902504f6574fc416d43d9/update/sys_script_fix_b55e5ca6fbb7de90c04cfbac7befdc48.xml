@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>testLaunchPlaybookAssist</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var ga = new x_snc_15_minute_se.GeneratePlaybookUtils();
+
+//ga.addParam('sysparm_user_name', "Bob");
+gs.info('PB Script: ' + ga.canGeneratePlaybook());
+gs.info('PB Script: ' + ga.callGeneratePlaybook('create some playbook', {
+                label: 'Generated Playbook from API', // required
+                sysScope: 'ab221fe2f6fb12d00a58c2c9fd01c13e'}));
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-21 07:23:09</sys_created_on>
+        <sys_id>b55e5ca6fbb7de90c04cfbac7befdc48</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>testLaunchPlaybookAssist</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_script_fix_b55e5ca6fbb7de90c04cfbac7befdc48</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-22 01:43:20</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

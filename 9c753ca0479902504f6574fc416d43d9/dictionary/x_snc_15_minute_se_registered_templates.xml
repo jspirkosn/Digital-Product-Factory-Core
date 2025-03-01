@@ -6,9 +6,18 @@
         <element label="Registerd to Factory" max_length="32" name="registerd_to_factory" reference="sc_cat_item" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Portal URL suffix" max_length="40" name="portal_url_suffix" type="string"/>
         <element label="Delivery Category" max_length="32" name="delivery_category" reference="sc_category" type="reference"/>
+        <element label="Deliver in ESC" max_length="255" name="deliver_in_esc" type="boolean"/>
         <element label="Privledges for Test Agent" max_length="1024" name="privs_for_test_agent" reference="sys_user_role" type="glide_list"/>
         <element label="Service Definition Table" max_length="40" name="service_definition_table" type="table_name"/>
         <element label="Support Taxonomy Node" max_length="32" name="support_taxonomy_node" reference="spm_taxonomy_node" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Industry / Sector" max_length="40" name="industry_sector" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Government / Federal" sequence="3" value="government_federal"/>
+                <element inactive_on_update="false" label="Higher Education" sequence="1" value="higher_education"/>
+                <element inactive_on_update="false" label="Government / State and Local" sequence="0" value="government_state_and_local"/>
+                <element inactive_on_update="false" label="Insurance / General" sequence="2" value="insurance_general"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="app_template"/>
         </index>

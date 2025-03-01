@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Generate a playbook</description>
+        <input_schema>[]</input_schema>
+        <name>Generate a playbook</name>
+        <script><![CDATA[(function(inputs) {
+// only string inputs are allowed 
+// return outputs object where the keys in it are understandable by LLM     
+
+var ga = new x_snc_15_minute_se.GeneratePlaybookUtils();
+
+ga.callGeneratePlaybook('create some playbook', {
+                label: 'Generated Playbook from API', // required
+                sysScope: 'ab221fe2f6fb12d00a58c2c9fd01c13e'});
+                gs.setRedirect("www.google.com");
+
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-02-23 04:21:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>208a4e87fb7fd2d0c04cfbac7befdc5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate a playbook</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_tool_208a4e87fb7fd2d0c04cfbac7befdc5c</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-02-23 04:21:12</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

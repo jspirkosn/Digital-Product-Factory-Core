@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations>{"skill_config_id":"2a08905bfb8c6e10625bf7704eefdc64"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>da08905bfb8c6e10625bf7704eefdc34</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic</model>
+        <name>Prompt name</name>
+        <parent/>
+        <prompt>"You are a service designer. 
+
+Follow these instructions:
+
+1. The form is for a new service, described as: {{service_description}}  
+
+2. Do not insert line breaks or unnecessary formatting.
+
+3. Select the most appropriate variable type.  
+
+4. Do not create values for default Value.  
+
+5. The JSON must follow this format: [{"name":"masked_example","type":"Masked","order":100,"label":"Masked Input Example","defaultValue":"123-45-6789"},{"name":"multi_line_text_example","type":"Multi Line Text","order":100,"label":"Multi Line Text Example","defaultValue":"This is an example of a multi line text field."},{"name":"multiple_choice_example","type":"Multiple Choice","order":100,"label":"Multiple Choice Example","choices":[{"value":"option1","label":"Option 1"},{"value":"option2","label":"Option 2"},{"value":"option3","label":"Option 3"}]},{"name":"numeric_scale_example","type":"Numeric Scale","order":100,"label":"Numeric Scale Example","minValue":0,"maxValue":10,"defaultValue":5},{"name":"reference_example","type":"Reference","order":100,"label":"Reference Example","referenceTable":"cmdb_ci_server","referenceField":"name"},{"name":"requested_for_example","type":"Requested For","order":100,"label":"Requested For Example"},{"name":"rich_text_label_example","type":"Rich Text Label","order":100,"label":"Rich Text Label Example","defaultValue":"&lt;p&gt;This is an example of a rich text label.&lt;/p&gt;"},{"name":"select_box_example","type":"Select Box","order":100,"label":"Select Box Example","choices":[{"value":"option1","label":"Option 1"},{"value":"option2","label":"Option 2"},{"value":"option3","label":"Option 3"}]},{"name":"single_line_text_example","type":"Single Line Text","order":100,"label":"Single Line Text Example","defaultValue":"Example"},{"name":"ui_page_example","type":"UI Page","order":100,"label":"UI Page Example","uiPage":"example_ui_page"},{"name":"url_example","type":"URL","order":100,"label":"URL Example","defaultValue":"https://www.example.com"},{"name":"wide_single_line_text_example","type":"Wide Single Line Text","order":100,"label":"Wide Single Line Text Example","defaultValue":"Example"},{"name":"yes_no_example","type":"Yes/No","order":100,"label":"Yes/No Example"},{"name":"attachment_example","type":"Attachment","order":100,"label":"Attachment Example"},{"name":"break_example","type":"Break","order":100,"label":"Break Example"},{"name":"checkbox_example","type":"CheckBox","order":100,"label":"CheckBox Example"}]
+
+
+6. Return ONLY the JSON, without any additional text or formatting.
+
+7. Create a logical order for the variables and set the order field in increments of 100 where the smallest comes first.  
+
+8. "generationConfig": {"response_mime_type": "application/json"})</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>15134</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>archived</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-08 00:55:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1608905bfb8c6e10625bf7704eefdc41</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>da08905bfb8c6e10625bf7704eefdc34</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_generative_ai_config_1608905bfb8c6e10625bf7704eefdc41</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-08 01:00:22</sys_updated_on>
+        <temperature>0.2</temperature>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

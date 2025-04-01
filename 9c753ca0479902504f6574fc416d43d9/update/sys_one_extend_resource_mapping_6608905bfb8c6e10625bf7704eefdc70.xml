@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_resource_mapping">
+    <sys_one_extend_resource_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability_condition/>
+        <applicability_condition_expression/>
+        <applicability_condition_table/>
+        <applicability_failed_policy/>
+        <applicability_script><![CDATA[(function(currentInputs, context) {
+    /* @param {Object} currentInputs - Inputs provided for the current step.*/
+    /* @param {Object} context - Execution context, which may include:*/
+    /*						   - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/
+    /*						   - Additional context information (e.g., context.getAllValues()).*/
+    /* @returns {Boolean} - Return 'true' if the condition is met; otherwise 'false'.*/
+    return true;
+})(currentInputs, context);]]></applicability_script>
+        <applicability_type/>
+        <depends_on_list/>
+        <error_handler_script><![CDATA[(function handleError() {  
+	// customize condition logic here,  
+	return ;
+})();]]></error_handler_script>
+        <error_policy/>
+        <metadata>{"diagramInstanceId":"ae08905bfb8c6e10625bf7704eefdc6c"}</metadata>
+        <parent_capability display_value="Generate Catalog Vars from Definition">0e08981bfb8c6e10625bf7704eefdc4a</parent_capability>
+        <resource_capability display_value="Generate Catalog Vars from Definition">0e08981bfb8c6e10625bf7704eefdc4a</resource_capability>
+        <resource_name>Generate Catalog Vars from Definition</resource_name>
+        <sys_class_name>sys_one_extend_resource_mapping</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-08 00:55:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6608905bfb8c6e10625bf7704eefdc70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate Catalog Vars from Definition</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_one_extend_resource_mapping_6608905bfb8c6e10625bf7704eefdc70</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-08 00:55:16</sys_updated_on>
+    </sys_one_extend_resource_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=6608905bfb8c6e10625bf7704eefdc70"/>
+</record_update>

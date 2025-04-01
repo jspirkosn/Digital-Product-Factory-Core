@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>test scope</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[const scopeGr = new GlideRecord('sys_scope');
+            //if (!scopeGr.get('sys_id', additionalProcessInfo.sysScope) || !scopeGr.canRead()) {
+gs.info("Tscop Get: " + scopeGr.get('sys_id', 'f7c44240801826500a33c6dc9b0c68da'));
+gs.info("Tscop Can Read: " + scopeGr.canRead());
+
+                //throw Error(gs.getMessage('Current user does not have access to the scope provided'));
+            //}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-12 22:21:48</sys_created_on>
+        <sys_id>4634a93cfb5c6a50625bf7704eefdc35</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>test scope</sys_name>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_script_fix_4634a93cfb5c6a50625bf7704eefdc35</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-12 22:24:56</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

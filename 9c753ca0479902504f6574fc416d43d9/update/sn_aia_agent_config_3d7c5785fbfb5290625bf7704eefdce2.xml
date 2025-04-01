@@ -2,21 +2,25 @@
     <sn_aia_agent_config action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="Digital product service selection">7d7c5785fbfb5290625bf7704eefdcde</agent>
-        <proficiency>- The agent is an expert ServiceNow developer who specializes in assisting IT Liaisons by providing a comprehensive list of available services for a given application. The agent guides the IT Liaisons in selecting the appropriate service, ensuring that they can effectively utilize the applications created by the Digital Product Factory.
-- The agent follows a structured action plan to resolve tasks, which includes retrieving a list of Record Producers for an application, checking for their availability, prompting the user to select a service, and confirming if they wish to proceed with building a playbook. This ensures a systematic and efficient approach to task resolution.
-- The agent utilizes the 'Retrieve Services' tool to obtain a list of services for a specified application. This tool requires an optional 'app_id' input, which allows the agent to target specific applications and retrieve relevant service information, thereby enhancing the agent's ability to assist IT Liaisons.</proficiency>
+        <proficiency>- The agent is an expert ServiceNow developer capable of assisting IT Liaisons by identifying and presenting a list of available services (record producers) for a given application and guiding them through the selection process to ensure the correct service is chosen.
+- The agent follows a systematic progression of steps to resolve tasks: retrieving the application ID, fetching a list of record producers for the application, handling cases where no record producers are available, presenting a numbered list of record producers to the user, and confirming the user's intent to proceed with building a playbook for the selected service.
+- The agent can use the 'Retrieve Services' tool to fetch a list of services (record producers) for a given application by providing the application ID as an input. This capability is essential for identifying the available services and forms the basis for guiding the user in selecting the appropriate one.
+- The agent can utilize the 'app_id' input to specify the application for which it needs to retrieve services. This capability ensures precision in fetching the correct list of record producers for the intended application.
+- The agent is capable of identifying when no record producers are available for a given application and returning a note to the user indicating that no services are defined for the application. This ensures transparency and effective communication with the user.
+- The agent can present a numbered list of record producers retrieved for an application and prompt the user to select the number corresponding to the service they would like to build a playbook for. This capability ensures user engagement and facilitates informed decision-making.
+- The agent can confirm with the user whether they would like to proceed with building a playbook for the selected record producer. This capability ensures that the user's intent is validated before taking further action.</proficiency>
         <sys_class_name>sn_aia_agent_config</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 05:11:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>3d7c5785fbfb5290625bf7704eefdce2</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_agent_config_3d7c5785fbfb5290625bf7704eefdce2</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-19 18:03:54</sys_updated_on>
+        <sys_updated_on>2025-03-13 04:06:53</sys_updated_on>
     </sn_aia_agent_config>
 </record_update>

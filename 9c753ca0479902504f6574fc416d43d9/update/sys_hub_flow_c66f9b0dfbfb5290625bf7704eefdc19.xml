@@ -4,21 +4,21 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4277000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2474601000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>Give the sys_id of the factory request, get the services that were build as a result.</description>
         <display_name_after_preview>Get Services for a ServiceNow Application</display_name_after_preview>
         <flow_priority>MEDIUM</flow_priority>
         <generation_source>text2flow</generation_source>
         <internal_name>get_services_for_a_servicenow_applicationc26</internal_name>
-        <label_cache>[{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item.name","label":"2 - For Each➛Record Producer Record➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item_producer","column_name":"name","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]}},{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item","label":"2 - For Each➛Record Producer Record","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.app_id","label":"Input➛App ID","type":"string","base_type":"string","usedInstances":{"1e6f9b0d-37fb-5290-4905-b00ab517b25a":["conditions"],"35b834fc-b855-4284-a627-0d9ce31d110f":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"17fe3777-4c99-4ec0-beb7-4cd95d7f56e8"}},{"name":"35b834fc-b855-4284-a627-0d9ce31d110f.Records","label":"1 - Look Up Records➛Record Producer Records","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"records","base_type":"records","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["output-0"],"bf2af467-eea1-44a6-992f-dc31ebb0c34c":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.names_of_services","label":"Flow Variables➛Names of Services","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ccca6c86-64f8-4160-a421-26588d915e7f"}}]</label_cache>
+        <label_cache>[{"name":"a482b9b1-f080-453d-9434-e3cdda3ef06a.context","label":"1 - Get Factory Built App➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["app_scope-1"]},"attributes":{}},{"name":"subflow.factory_request_number","label":"Input➛Factory Request Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"1e6f9b0d-37fb-5290-4905-b00ab517b25a":["conditions"],"a482b9b1-f080-453d-9434-e3cdda3ef06a":["factory_request_sys_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"17fe3777-4c99-4ec0-beb7-4cd95d7f56e8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"a482b9b1-f080-453d-9434-e3cdda3ef06a.factory_application","label":"1 - Get Factory Built App➛Factory Application ID","reference_display":"Factory Application ID","type":"GUID","base_type":"GUID","usedInstances":{"35b834fc-b855-4284-a627-0d9ce31d110f":["conditions"]},"attributes":{"uiType":"GUID","uiTypeLabel":"Sys ID (GUID)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"888446cf-2759-413a-bfe4-1efdbf5c7e43"}},{"name":"flow_variable.names_of_services","label":"Flow Variables➛Names of Services","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ccca6c86-64f8-4160-a421-26588d915e7f"}},{"name":"35b834fc-b855-4284-a627-0d9ce31d110f.Records","label":"2 - Look Up Records➛Record Producer Records","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"records","base_type":"records","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["output-0"],"bf2af467-eea1-44a6-992f-dc31ebb0c34c":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item","label":"3 - For Each➛Record Producer Record","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item.name","label":"3 - For Each➛Record Producer Record➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item_producer","column_name":"name","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]}},{"name":"a482b9b1-f080-453d-9434-e3cdda3ef06a.sys_scope","label":"1 - Get Factory Built App➛Sys Scope","type":"string","base_type":"string","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["app_scope-1","app_scope-2"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7967e817-9d1b-4e80-8cf8-728ba10d8ce4"}}]</label_cache>
         <master_snapshot>4c7223c1fb3f5290625bf7704eefdc75</master_snapshot>
         <master_snapshot_digest/>
-        <name>Get Services for a ServiceNow Application</name>
+        <name>Get Services Built by Digital Factory</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -35,15 +35,15 @@
         <sys_created_on>2025-02-17 05:24:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>c66f9b0dfbfb5290625bf7704eefdc19</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Get Services for a ServiceNow Application</sys_name>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>Get Services Built by Digital Factory</sys_name>
         <sys_overrides/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_flow_c66f9b0dfbfb5290625bf7704eefdc19</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:37</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:42</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -68,7 +68,7 @@
         <sys_updated_on>2025-02-17 05:24:18</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=826f9b0dfbfb5290625bf7704eefdc1c"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=c66f9b0dfbfb5290625bf7704eefdc19^sys_idNOT INaf62ef81fb3f5290625bf7704eefdcb7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c66f9b0dfbfb5290625bf7704eefdc19^sys_idNOT IN19a2c9c9fb58ea50625bf7704eefdca3"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -97,7 +97,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>app_id</element>
+        <element>factory_request_number</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -106,10 +106,10 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>App ID</label>
+        <label>Factory Request Number</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</model>
+        <model display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</model>
         <model_id>c66f9b0dfbfb5290625bf7704eefdc19</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_c66f9b0dfbfb5290625bf7704eefdc19</name>
@@ -130,8 +130,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
-        <sys_created_on>2025-02-17 05:37:30</sys_created_on>
-        <sys_id>af62ef81fb3f5290625bf7704eefdcb7</sys_id>
+        <sys_created_on>2025-03-13 14:30:48</sys_created_on>
+        <sys_id>19a2c9c9fb58ea50625bf7704eefdca3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -139,7 +139,7 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 05:37:30</sys_updated_on>
+        <sys_updated_on>2025-03-13 14:30:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -152,8 +152,178 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=af62ef81fb3f5290625bf7704eefdcb7"/>
-    <sys_hub_flow_output action="delete_multiple" query="model=c66f9b0dfbfb5290625bf7704eefdc19^sys_idNOT INa7bd2389fb7f5290625bf7704eefdce9"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=19a2c9c9fb58ea50625bf7704eefdca3"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c66f9b0dfbfb5290625bf7704eefdc19^sys_idNOT IN73b1b945fbdcea50625bf7704eefdce8,83b5b18dfbdcea50625bf7704eefdcf0,a7bd2389fb7f5290625bf7704eefdce9"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3ddf481e-69fa-40a5-ac86-e8244d995178</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>app_scope</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Application Scope</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</model>
+        <model_id>c66f9b0dfbfb5290625bf7704eefdc19</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_c66f9b0dfbfb5290625bf7704eefdc19</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 17:56:34</sys_created_on>
+        <sys_id>73b1b945fbdcea50625bf7704eefdce8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-17 21:40:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73b1b945fbdcea50625bf7704eefdce8"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=95cca32c-7c3d-4bc4-9e43-524de3b3ad7a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Instance URL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</model>
+        <model_id>c66f9b0dfbfb5290625bf7704eefdc19</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_c66f9b0dfbfb5290625bf7704eefdc19</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 18:14:00</sys_created_on>
+        <sys_id>83b5b18dfbdcea50625bf7704eefdcf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-13 18:14:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=83b5b18dfbdcea50625bf7704eefdcf0"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -195,12 +365,12 @@
         <label>Names</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</model>
+        <model display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</model>
         <model_id>c66f9b0dfbfb5290625bf7704eefdc19</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_output_c66f9b0dfbfb5290625bf7704eefdc19</name>
         <next_element/>
-        <order>1</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -218,14 +388,14 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 06:26:56</sys_created_on>
         <sys_id>a7bd2389fb7f5290625bf7704eefdce9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:26:56</sys_updated_on>
+        <sys_updated_on>2025-03-13 18:14:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -249,26 +419,51 @@
         <comment/>
         <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</flow>
+        <flow display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</flow>
         <generation_source/>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 05:37:31</sys_created_on>
         <sys_id>3f6223c1fb3f5290625bf7704eefdc55</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:40:24</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:49:07</sys_updated_on>
         <ui_id>35b834fc-b855-4284-a627-0d9ce31d110f</ui_id>
-        <values>H4sIAAAAAAAA/+VXXU/bMBT9K1WeoyqhpTDeJhDSJD4mQLwwZDm201pz7cx2WkrV/77r2EmjNrBWKhJoj74f9rn3nuM4T8uI0+gsOs2HSYLT49OTJBkMkmQ0GhCcZtlgRLIkG2ZRHEk8ZRBpcSYYLGdYlG5tCCLYIm7ZFBVa0ZIwDW7KTSHw4jFE3TGiNO39XAeQCRdUMxmdPT3HUYE1bG/Bc7bccO2KT+CMCQh9CAA38NpF0SxR5fO2q3Za78Y7AKuDksQRe7FMUgYYciwMi6MplhRbpReNRTNMb6VYGyZcWtgxcsEvhr/CuaeJi8sZVEWY9zVLFHrlzfkFtvje6pLYUodQMlGcMOP7QVmOS2HP2zYfcFtYrqRP8WX7bCXKqbzx7YiaDerRgKU0AIIVrlCHPJSR30/U/K5Gecll1ZPgFIpg0aywtZpnpXV4lhETbAoboSkuCi7HjhYzXiUDlml/LGDRz4Waw6GGj2UfEwe8D33F/UuwX1TmR6y5q+Iatqkok3MBDEF+hEaVumrlDBFRmsqhsTR+r2gVR2ZhzgU2Zl05tBz9KR1u34dQMfJNcylE88J+hy1mLBS3ineSyHGyphxRknKHwrR1sjDIEFWwXyXk0+XSlJnrQR+qQ5yuVtui2SXlkDKqaqhldN4uoquwIKgt21XXBkFQ6cEEBXV8JUnB4Z9PUftrxLfgH0IhJ++S7HjNJ6O0Rb6XLaVsC2Fvnu8Aoeb5rWNmL1u8hSrQPOdM0K7vxqVzbHw3jv7P78anJDkAoshPj0vBZfUIAKAfxf7k/Sv22wbPKnq1vhLOhg3Z1gDuWdV73VsJO8CplXAPZ/cePJ4OiPV9X1Fm866vjUEAg4MJYHB0GAEsmzKbRnb0vH73uWnW8a8uHm/GAwVbCemqS2B7nZnue+bRalvAg70U3Cab91y8wbkDPxDfUGT8kVfABFLDecjrF805HTO7Pr2OosrOsfjd5Q+MQ/WgqvI+4LE5fFe2o3QtUVAK0szA8NqvzRSeR9t3SBp7835XyA5Y6nZc45feXQOmE2G4RkDpbFzNpn2P/GisgeTDAz4YP+2XtB5WpwbrmX2Jf7TDCeH5L0SNQJyaEAAA</values>
+        <values>H4sIAAAAAAAA/+VXTU/jMBD9K1XObZU0aSncViCklfhYAeKyiyzHdlpr3SRrO4VS9b/vOHbSqA1sKwUJtEfPjMdvZt5znJ9rj1PvzJsmke/jYDw98f0w9P3JJCQ4iONwQmI/jmKv76V4wSBS41gwWC6xKMxaEUSwRlyzBcplRgvCJLgpV7nAq0cXdcdIJmnvxzaAzLmgkqXe2c+nvpdjCek1eM7WO65D8QkcMwGhDw7gDl69yuslKn3WdtXc1ruxDsBqoPh9j71ollIGGBIsFOt7C5xSrDO5qi2SYXqbiq1hzlMNGT0T/KL4K5w79U1cwqAqwqyvXiLXK2tOLrDG91oWRBfShZJ5xglTth+UJbgQ+rxpswG3ueZZarfYsu3uTBSL9Ma2w6sTVKMBS6EABMtNoQa5KyO5n2fPdxXKS56WPXFOkREs6hXWWvK40AbP2mOCLSARWuA85+nM0GLJy82AZTGcCVgME5E9w6GKz9IhJgb4EPqKh5dgvyjNj1hyU8U1pCkpk3ABDEF2hCorZNnKJSKiUKVD4lTZXN6m76mVOhdYqW3l0HL0pzC4bR9cxcg2zWwhkuf6G6RYMlfcpn+QRMb+lnIkSyk3KFRTJyuFFMly9quA/XS9xtF0FJ/GwSDxp/4gGod0cBqF0YCFhFIcssSf4GEC5QDXELRAcNAZJN1s9uXVbfIupVn2pZLmebMxbc1yIt2zXbUlcCINOhMp1PGVZAqHfz6VHq8724J/iI+cvEuy8ZZPKpMa2V421LcvmaN5fgCEiue3hpm9ePUWKkfzhDNB275Fl8ax8y0a/Z/fok9JcgBEkZ0eTwVPy4cFAP0o9vvvX7GnOzwr6dX48hgbVmRfA7ins97r0Uo4AE6lhHs4u/dg8bRArO77kjK7d31ldAIIOxNAOOpGAOu6zLqRLT2v3pJmmlX8q4nHu/FAwcaGYNMmsKPODI49c7TZF3B4lIKbZLOeizc41/Gj8w1F9j/yCpjDVncesvpFz5zOmN6eXkXRTD9j8bvN7xiHqkGV5X3AAzZ6V7aTYCtRUAqSTMHwmi/YAJ5H+3dI0Lfm466QA7BU7bjGL727GkwrQneNgNLZrJxN8x75XlsdyaMOH4yf9ktaDatVg9XMvsR/X3dCePoLCFh9ee4QAAA=</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c66f9b0dfbfb5290625bf7704eefdc19"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c66f9b0dfbfb5290625bf7704eefdc19^sys_idNOT IN8d6153bcfbd8aa50625bf7704eefdcce"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <subflow display_value="Get Factory Built App">d2bef634fb58aa50625bf7704eefdc50</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/5VSXWvjMBD8K0XPjnHc2EnzdnAEDu5aaO/6UopZy6tEIMuqPtLmQv77rSwnhTz1HjU7uzszq5cjkx1bs6psUdS3C9FWK4CqqMuqFctlsUAUHa9KljENPRJTAPeDPTQW3wI637iDa2hExvagQiQcjy60Qg3v+TVVh75FezoRuZPOKDg8/08P30nVWdRs/fKaMQOWBHm0bH28KvmDwUZBi4pGP3kr9Zbav+rz3LhJSm4ek5Kb+1HJF4KI66nuzosH20WV84zhh0fdIQkRoBxmrAfdQZxyQSxC96DVJ7CT2tM0FskfTv6l0auiKCJTIFnmmKqXZzNlm2C+GyTHB+PloBPioVVTDx9U6PV98hOvggKC8uerEBIczUMTVUcZkybxtBveH88LN1KPBqeiGjioyws8xdAGjy7eKcjfV+Ek5Of1sVBhTxubHowhpDF22MtxC4nu862iRx4/DKlzcqtzOgY5zClNyDeEfx/hZ7Ay2v1FY8bbBflHS7rXj/EzIM4Bl3xWzbu7GX2BxeyuXJQzBFHPb+uK16sVO43RNm8hmkohTXE0KVEiOG6l8d9Iwh4n56fXf/26t4VbAwAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 06:15:59</sys_created_on>
+        <sys_id>8d6153bcfbd8aa50625bf7704eefdcce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-13 17:28:14</sys_updated_on>
+        <ui_id>a482b9b1-f080-453d-9434-e3cdda3ef06a</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c66f9b0dfbfb5290625bf7704eefdc19^sys_idNOT IN12bf638dfb7f5290625bf7704eefdc14,7f6223c1fb3f5290625bf7704eefdc56,f3bd6389fb7f5290625bf7704eefdc1c"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
@@ -277,27 +472,27 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</flow>
+        <flow display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</flow>
         <flow_variables_assigned>names_of_services</flow_variables_assigned>
         <generation_source/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>3</order>
+        <order>4</order>
         <outputs_assigned/>
         <parent_ui_id>bf2af467-eea1-44a6-992f-dc31ebb0c34c</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 06:35:35</sys_created_on>
         <sys_id>12bf638dfb7f5290625bf7704eefdc14</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:35</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:39</sys_updated_on>
         <ui_id>966b6bd0-58d6-403e-95aa-97382abea523</ui_id>
-        <values>H4sIAAAAAAAA/51SwW4TMRD9lZGPSeQUuKWnSIDKiUMrLmxlOfZsYuq1VzN2ShTl3xlvNwUJhBAnW2/evPf85LPKtYy18EPeMod9UpuvjysVUsPkflbBq41SK5XsgHJrB5vcG0Y6Bocso6ONFV9Y7hCiJ5xl2FEYy9aVcJR5byPj5bHxKdhdxP8x8IHHaE9f/s2yUMUrpjbnP4gL+LcVtV50abHYOuEyfIz5ed2IOYG3xULlkPZQDgi9NxOSd9/QFQ33kwAMlQsQlkoJLEzv0NAUP5NHglSHnRyBIfc9Y4HdCZZvICT4QJQJ7mzysVnc4+SqpzBHG2LrD/LYQIa5FKijBBtJoradTulOge2LOMzx2jp+t8MYcSNpCPiQqbxHdtDVm5t3/krUhcJ+j6RdJem26IloPL4UI663TWt+2atKA9ddmuGrVi+1GXHTv9UPS0m5kpTLV7J5a0yfyaB1Bx0KDtPWrbpc2tfx6AKL+0N7/6frL22Dk9CC+xV6zvTUrH9ilx8gn4+y7wIAAA==</values>
+        <values>H4sIAAAAAAAA/+1WXU/bMBT9K1YeoQ1p6RfdU6UNDWkb0sp4WVHkONetN8cO/ih0qP99105SEEjseVKfWh/fj3OOb6/6lGjvau/sjV5YK9Yqmf+86yVCBQy/PyWKVpDM44fNNc8tmK1gYJNesqXShzv8WgpbS7q7fUbYRsjSQFuwpgYLODDJ/OnVldvVkEtagMTEpTNCrTFdlHi6mBR8eD4reTHl4+FFNhmOCz6dZiMAXjJOMa5L/Bb4Ec3J8pnfO9RDU7yyXTttysAt6yXw6ECVgO05lRZ6SUVVSZ02uwNigJbXSj4DG6Fco7qij1b8wdKzLMtCJAcUylpPDse89auzSiOt69oJrRrE0UJ2PmrpK/WtkRKcBk69dC+c9hbrQR1YBxotJ77c6IfvXcNLoaLA9lJqRuXhRB3aUHiHzuDreHHzypwG+fL6iUBChR3zitY1Inlt9FbELki6StcSDymX+gHZhdFKKQsKU3STppeIf4zwLTUiyP2KZTA5tPuhxL2HqzACjDE6YbNJfzLis/5oMMn6dDQc9IeT8WxWXgzGMOXJPlqb3/sgqjGptSNvHMUAy4yo3QIpbFGcMx46LIh+OyMIvpeSnJ2s1MnJgmGsJUHN2SLKI0Ee8RYdIW4DhJd5RHTxC5hLyTIWIJW3jhhw3ihCSfwlpSRUvA6TSJSvCvwQYaS5BUeKHTkdEKHIJ2O0IZ9xKGVosYTG1EhmS4UMVhIdZ8mSdsyIr5FYbZBqyFkl6SohlOPPsaMX0uGRVrWEObIxxG60cfhAjKx8lp2XXWCKr79eg0mZNzhZLo2B4YWjLuz6IdRqlR2qBPBspVq4qxWHA7ulb+wnp8iyhyxPD8H5eZ5zbXKgbJMKB1XMioGkT/4R+pZlst/v78IOa6avWXZx67y/OY5L77j0jkvvuPT+56VXAhMWzzfBt6vuv1642GF5wV5CD9r8DpSfsf1f2/qYODUKAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -307,27 +502,27 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</flow>
+        <flow display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>4</order>
-        <outputs_assigned>names</outputs_assigned>
+        <order>5</order>
+        <outputs_assigned>names,instance_url,app_scope</outputs_assigned>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 05:37:31</sys_created_on>
         <sys_id>7f6223c1fb3f5290625bf7704eefdc56</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:35</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:39</sys_updated_on>
         <ui_id>0dcfff6b-0d67-47a3-bd39-50301f47fe9d</ui_id>
-        <values>H4sIAAAAAAAA/5VTyW7bMBD9F55twYu8yLcARYAAWYDGzaUohBE5tIlSpMJFjmv43zuUZCfwqT0J82Z773F0YjaGJga/tXfeq51hm58npgTbMFhVYjZfF7JaycWsmCxni0quVpMcUQqOBRsxAzVSZfp4ClvQMcWnk9T2ULbgFFQasy5fWll6dK3i6M9nqhbKNxqOb//VxPdKC4eJ5q8Ra8BRVUDHNqebVDg2WGqoUNPs1+CU2VH7vwq7ND4Pym6EpuEU+stY60TiMB0x/AhoBNIaCdrjiNVgBATrjlfEIYgXoz+BvTKBprFU/OHVHxq9nkwmqVIiCeLYZ69hOVjXw3xvyZ6XJihreiQkA4ek1bE2zz39ZDpKiDpcTCckepqHTWKdaAyc5OveHr5fFt4r0wkcktpy0NcIAtlQxUDO0CtEtb0xp0ceb58CNda0sayhaQgpG2db1W0h0nW20xRk3UkITIeZAU8KM3ITsnvCv3Xw23AvTzSGmtO6H0a9R3xITz3NZZXn+XIspgUf53ydj6HK52NYFPOlkIBrBHburC3fYxLVmzTYUfaOUoHnTjXhjii0OCg/05Upk/6d/uIulzuEArnyRHibsIcvdeJIZ6T4V+hg3e8k9RM7/wUV4qiLmQMAAA==</values>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYOnFrUU2ZJsyT0FKAIESJMi26UuBC5DmygtKSLlxDX07x1asp24SZEGPfTQkzCPsz4+atakqG1ZW3NdHBujZjmZfF0TJciE0DETwzBJJRvLeJgGo2HM5HgcRABScEhJn+R0AejpPgbNJdW1s9drqYv7bEkrRZkGf3OeFTIzUC0VB9M0Pa+HAUKZUtPV7Z/G8bnSogLX7Lc+KWmFjhYqMlkfHNlVCZmmDDSmv7KVymcY/trxtoHn3XwH47rkaJpt2qISroewT+DBQi4Ay0iqDfTJguaC2qJa7ZAKqLjI9R6Yq9xiNuKcH4z6gamTIAicpwQciEN7ujOzjr0W5vMCGboorSryFrGOw+6w0PUiP2/bd7yDpLW2W94RqQ3mg9J17droepJX8+L+clvwROWbAbtDXXCqdxa1SAOrLTKDt1Cr6wNyWuTs8CpAwwIrZgtalohkZVUs1aYKNr3wZxoNf6MKAU6ePuVuQh/ZpP4J4p828G0nmc+YBoNduZtc3dVw6q56EEkWRdHIE4OUexFPIo+yKPRonIYjISkkQEmzoTa7q91QLUkdHVnLKDoYXqnSHmMLS+gmb/rdc0lCFrNBIiRD9dD4QE8y2OtH5cZSd4F1pR+9ml/fw19S+is62waedq31bi7PXmz4Bd0P/uv+H9N9GnNOwyH3xjwUXsR45KWAuo+HkYCQhVSM36J7W9WwxdzQT+SB9u+8sZatq7w3JXNrSzM5OpqS3ofezPgzsF+qAqewq3fTOgiG411eJ8MWeo++U+J3+8DLi3sf6ZqSj6Rpdi9xHLIBS6P4eb1Dshc2spYZjkWfLC8aJUOWsoEngyTwohi5S6Mw8iDkQtAQZDCivlmZNrRpnltkb8jx9D0/96tBWOVuWbcu2z3ZmQK4MqiRa4edPvITKxxX8cfQfVF9d+raY81Pxu8cmAoIAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -337,25 +532,25 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</flow>
+        <flow display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>2</order>
+        <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 06:26:56</sys_created_on>
         <sys_id>f3bd6389fb7f5290625bf7704eefdc1c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:35</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:39</sys_updated_on>
         <ui_id>bf2af467-eea1-44a6-992f-dc31ebb0c34c</ui_id>
         <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj+SLMmtwFCgh7ZAV/QyFAYt0YkwWdL0kdQz/N9HxU469LiTzUfyvUeRAzMx2Bj8q7nzXh402/98XzCpE0b/A9PQIdszGbDzbMFOoGKKh6FaN9tq1fJls12vl6tyu1rCpvy2zMWOY1WIosjb7AW5ccKPI7UK6a2C/u3/GfhRKuFwNmnBkbeAju2HL6nQW6wVNKhIaGagfikoLHai3RX5jlflpirznGSLZlM1RSkqQLGhumvnwzz0lzdI7BS6Gy99kosyXzD8CKgFklALyuOCdaAFBON6tg8uEuAQxLNW/a3iKHUgOpZqP7z8Q9xFnqfCFmkijlPyFtbzQ04wPxrJ8dkGafSEBGjU3MONip1+muynFWALUYXrCgiJnvjQJs/JxWyp/XE055er4L3Ul/nmpDIc1C2CEJxsYkCf1oAKOyKqO7BW6kNtnTnJSzN56bKDoiBrlTmTaDq3DHgyntETQXZP+PcL/AZOpikeiYaax8v09e+YdKc5Zsf1NDQVeO6kDXdEd8LZ3Pie7nVi8tNhCOTSk+Brwh6uV54SPS1Z8n+hs3G/ktVPbPwLgQzDmi8DAAA=</values>
         <workflow_reference/>
@@ -402,7 +597,7 @@
         <label>Names of Services</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</model>
+        <model display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</model>
         <model_id>c66f9b0dfbfb5290625bf7704eefdc19</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_c66f9b0dfbfb5290625bf7704eefdc19</name>
@@ -446,17 +641,17 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>app_id</element>
+        <element>factory_request_number</element>
         <help/>
         <hint/>
-        <label>App ID</label>
+        <label>Factory Request Number</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_c66f9b0dfbfb5290625bf7704eefdc19</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
-        <sys_created_on>2025-02-17 05:37:31</sys_created_on>
-        <sys_id>bf62ef81fb3f5290625bf7704eefdcba</sys_id>
+        <sys_created_on>2025-03-13 14:30:48</sys_created_on>
+        <sys_id>91a20dc9fb58ea50625bf7704eefdc3f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
@@ -464,11 +659,34 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 05:37:31</sys_updated_on>
+        <sys_updated_on>2025-03-13 14:30:48</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c66f9b0dfbfb5290625bf7704eefdc19"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>app_scope</element>
+        <help/>
+        <hint/>
+        <label>Application Scope</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_c66f9b0dfbfb5290625bf7704eefdc19</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 17:56:34</sys_created_on>
+        <sys_id>33b1b945fbdcea50625bf7704eefdceb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-17 21:40:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>names</element>
         <help/>
@@ -492,6 +710,29 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>instance_url</element>
+        <help/>
+        <hint/>
+        <label>Instance URL</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_c66f9b0dfbfb5290625bf7704eefdc19</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 18:14:00</sys_created_on>
+        <sys_id>8fb5b18dfbdcea50625bf7704eefdcf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-13 18:14:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c66f9b0dfbfb5290625bf7704eefdc19"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -504,15 +745,15 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>Give the sys_id of the factory request, get the services that were build as a result.</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>get_services_for_a_servicenow_application</internal_name>
-        <label_cache>[{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item.name","label":"2 - For Each➛Record Producer Record➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item_producer","column_name":"name","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]}},{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item","label":"2 - For Each➛Record Producer Record","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.app_id","label":"Input➛App ID","type":"string","base_type":"string","usedInstances":{"1e6f9b0d-37fb-5290-4905-b00ab517b25a":["conditions"],"35b834fc-b855-4284-a627-0d9ce31d110f":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"17fe3777-4c99-4ec0-beb7-4cd95d7f56e8"}},{"name":"35b834fc-b855-4284-a627-0d9ce31d110f.Records","label":"1 - Look Up Records➛Record Producer Records","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"records","base_type":"records","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["output-0"],"bf2af467-eea1-44a6-992f-dc31ebb0c34c":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.names_of_services","label":"Flow Variables➛Names of Services","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ccca6c86-64f8-4160-a421-26588d915e7f"}}]</label_cache>
+        <label_cache>[{"name":"a482b9b1-f080-453d-9434-e3cdda3ef06a.context","label":"1 - Get Factory Built App➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["app_scope-1"]},"attributes":{}},{"name":"subflow.factory_request_number","label":"Input➛Factory Request Number","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"1e6f9b0d-37fb-5290-4905-b00ab517b25a":["conditions"],"a482b9b1-f080-453d-9434-e3cdda3ef06a":["factory_request_sys_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"17fe3777-4c99-4ec0-beb7-4cd95d7f56e8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"a482b9b1-f080-453d-9434-e3cdda3ef06a.factory_application","label":"1 - Get Factory Built App➛Factory Application ID","reference_display":"Factory Application ID","type":"GUID","base_type":"GUID","usedInstances":{"35b834fc-b855-4284-a627-0d9ce31d110f":["conditions"]},"attributes":{"uiType":"GUID","uiTypeLabel":"Sys ID (GUID)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"888446cf-2759-413a-bfe4-1efdbf5c7e43"}},{"name":"flow_variable.names_of_services","label":"Flow Variables➛Names of Services","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ccca6c86-64f8-4160-a421-26588d915e7f"}},{"name":"35b834fc-b855-4284-a627-0d9ce31d110f.Records","label":"2 - Look Up Records➛Record Producer Records","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"records","base_type":"records","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["output-0"],"bf2af467-eea1-44a6-992f-dc31ebb0c34c":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item","label":"3 - For Each➛Record Producer Record","reference":"sc_cat_item_producer","reference_display":"Record Producer","type":"reference","base_type":"reference","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"bf2af467-eea1-44a6-992f-dc31ebb0c34c.item.name","label":"3 - For Each➛Record Producer Record➛Name","reference":"","reference_display":"Name","type":"translated_text","base_type":"translated_text","parent_table_name":"sc_cat_item_producer","column_name":"name","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["names-0"]}},{"name":"a482b9b1-f080-453d-9434-e3cdda3ef06a.sys_scope","label":"1 - Get Factory Built App➛Sys Scope","type":"string","base_type":"string","usedInstances":{"0dcfff6b-0d67-47a3-bd39-50301f47fe9d":["app_scope-1","app_scope-2"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7967e817-9d1b-4e80-8cf8-728ba10d8ce4"}}]</label_cache>
         <master>true</master>
-        <name>Get Services for a ServiceNow Application</name>
+        <name>Get Services Built by Digital Factory</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</parent_flow>
+        <parent_flow display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -523,7 +764,7 @@
         <sys_created_on>2025-02-17 05:37:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>4c7223c1fb3f5290625bf7704eefdc75</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -531,7 +772,7 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:36</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:41</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -556,7 +797,7 @@
         <sys_updated_on>2025-02-17 05:37:32</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=087223c1fb3f5290625bf7704eefdc76"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=4c7223c1fb3f5290625bf7704eefdc75^sys_idNOT IN8c7223c1fb3f5290625bf7704eefdc77"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4c7223c1fb3f5290625bf7704eefdc75^sys_idNOT INb5a20dc9fb58ea50625bf7704eefdceb"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -585,7 +826,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>app_id</element>
+        <element>factory_request_number</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -594,10 +835,10 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>App ID</label>
+        <label>Factory Request Number</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Services for a ServiceNow Application">4c7223c1fb3f5290625bf7704eefdc75</model>
+        <model display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</model>
         <model_id>4c7223c1fb3f5290625bf7704eefdc75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_4c7223c1fb3f5290625bf7704eefdc75</name>
@@ -618,8 +859,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
-        <sys_created_on>2025-02-17 05:37:32</sys_created_on>
-        <sys_id>8c7223c1fb3f5290625bf7704eefdc77</sys_id>
+        <sys_created_on>2025-03-13 14:30:50</sys_created_on>
+        <sys_id>b5a20dc9fb58ea50625bf7704eefdceb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -627,7 +868,7 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 05:37:32</sys_updated_on>
+        <sys_updated_on>2025-03-13 14:30:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -640,8 +881,178 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8c7223c1fb3f5290625bf7704eefdc77"/>
-    <sys_hub_flow_output action="delete_multiple" query="model=4c7223c1fb3f5290625bf7704eefdc75^sys_idNOT INc0cd6389fb7f5290625bf7704eefdc83"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b5a20dc9fb58ea50625bf7704eefdceb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4c7223c1fb3f5290625bf7704eefdc75^sys_idNOT IN63b5f18dfbdcea50625bf7704eefdcd2,88e1fd45fbdcea50625bf7704eefdc00,c0cd6389fb7f5290625bf7704eefdc83"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=95cca32c-7c3d-4bc4-9e43-524de3b3ad7a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Instance URL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</model>
+        <model_id>4c7223c1fb3f5290625bf7704eefdc75</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_4c7223c1fb3f5290625bf7704eefdc75</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 18:14:02</sys_created_on>
+        <sys_id>63b5f18dfbdcea50625bf7704eefdcd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-13 18:14:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=63b5f18dfbdcea50625bf7704eefdcd2"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3ddf481e-69fa-40a5-ac86-e8244d995178</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>app_scope</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Application Scope</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</model>
+        <model_id>4c7223c1fb3f5290625bf7704eefdc75</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_4c7223c1fb3f5290625bf7704eefdc75</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 17:57:08</sys_created_on>
+        <sys_id>88e1fd45fbdcea50625bf7704eefdc00</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-17 21:40:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88e1fd45fbdcea50625bf7704eefdc00"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -683,12 +1094,12 @@
         <label>Names</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Services for a ServiceNow Application">4c7223c1fb3f5290625bf7704eefdc75</model>
+        <model display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</model>
         <model_id>4c7223c1fb3f5290625bf7704eefdc75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_output_4c7223c1fb3f5290625bf7704eefdc75</name>
         <next_element/>
-        <order>1</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -706,14 +1117,14 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 06:26:58</sys_created_on>
         <sys_id>c0cd6389fb7f5290625bf7704eefdc83</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:26:58</sys_updated_on>
+        <sys_updated_on>2025-03-13 18:14:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -737,26 +1148,51 @@
         <comment/>
         <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">4c7223c1fb3f5290625bf7704eefdc75</flow>
+        <flow display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</flow>
         <generation_source/>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 05:37:32</sys_created_on>
         <sys_id>c47223c1fb3f5290625bf7704eefdcee</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 05:37:32</sys_updated_on>
+        <sys_updated_on>2025-03-13 06:16:01</sys_updated_on>
         <ui_id>35b834fc-b855-4284-a627-0d9ce31d110f</ui_id>
-        <values>H4sIAAAAAAAA/+VXXU/bMBT9K1WeoyqhpTDeJhDSJD4mQLwwZDm201pz7cx2WkrV/77r2EmjNrBWKhJoj74f9rn3nuM4T8uI0+gsOs2HSYLT49OTJBkMkmQ0GhCcZtlgRLIkG2ZRHEk8ZRBpcSYYLGdYlG5tCCLYIm7ZFBVa0ZIwDW7KTSHw4jFE3TGiNO39XAeQCRdUMxmdPT3HUYE1bG/Bc7bccO2KT+CMCQh9CAA38NpF0SxR5fO2q3Za78Y7AKuDksQRe7FMUgYYciwMi6MplhRbpReNRTNMb6VYGyZcWtgxcsEvhr/CuaeJi8sZVEWY9zVLFHrlzfkFtvje6pLYUodQMlGcMOP7QVmOS2HP2zYfcFtYrqRP8WX7bCXKqbzx7YiaDerRgKU0AIIVrlCHPJSR30/U/K5Gecll1ZPgFIpg0aywtZpnpXV4lhETbAoboSkuCi7HjhYzXiUDlml/LGDRz4Waw6GGj2UfEwe8D33F/UuwX1TmR6y5q+Iatqkok3MBDEF+hEaVumrlDBFRmsqhsTR+r2gVR2ZhzgU2Zl05tBz9KR1u34dQMfJNcylE88J+hy1mLBS3ineSyHGyphxRknKHwrR1sjDIEFWwXyXk0+XSlJnrQR+qQ5yuVtui2SXlkDKqaqhldN4uoquwIKgt21XXBkFQ6cEEBXV8JUnB4Z9PUftrxLfgH0IhJ++S7HjNJ6O0Rb6XLaVsC2Fvnu8Aoeb5rWNmL1u8hSrQPOdM0K7vxqVzbHw3jv7P78anJDkAoshPj0vBZfUIAKAfxf7k/Sv22wbPKnq1vhLOhg3Z1gDuWdV73VsJO8CplXAPZ/cePJ4OiPV9X1Fm866vjUEAg4MJYHB0GAEsmzKbRnb0vH73uWnW8a8uHm/GAwVbCemqS2B7nZnue+bRalvAg70U3Cab91y8wbkDPxDfUGT8kVfABFLDecjrF805HTO7Pr2OosrOsfjd5Q+MQ/WgqvI+4LE5fFe2o3QtUVAK0szA8NqvzRSeR9t3SBp7835XyA5Y6nZc45feXQOmE2G4RkDpbFzNpn2P/GisgeTDAz4YP+2XtB5WpwbrmX2Jf7TDCeH5L0SNQJyaEAAA</values>
+        <values>H4sIAAAAAAAA/+VXTU/jMBD9K1XObZU0aSncViCklfhYAeKyiyzHdlpr3SRrO4VS9b/vOHbSqA1sKwUJtEfPjMdvZt5znJ9rj1PvzJsmke/jYDw98f0w9P3JJCQ4iONwQmI/jmKv76V4wSBS41gwWC6xKMxaEUSwRlyzBcplRgvCJLgpV7nAq0cXdcdIJmnvxzaAzLmgkqXe2c+nvpdjCek1eM7WO65D8QkcMwGhDw7gDl69yuslKn3WdtXc1ruxDsBqoPh9j71ollIGGBIsFOt7C5xSrDO5qi2SYXqbiq1hzlMNGT0T/KL4K5w79U1cwqAqwqyvXiLXK2tOLrDG91oWRBfShZJ5xglTth+UJbgQ+rxpswG3ueZZarfYsu3uTBSL9Ma2w6sTVKMBS6EABMtNoQa5KyO5n2fPdxXKS56WPXFOkREs6hXWWvK40AbP2mOCLSARWuA85+nM0GLJy82AZTGcCVgME5E9w6GKz9IhJgb4EPqKh5dgvyjNj1hyU8U1pCkpk3ABDEF2hCorZNnKJSKiUKVD4lTZXN6m76mVOhdYqW3l0HL0pzC4bR9cxcg2zWwhkuf6G6RYMlfcpn+QRMb+lnIkSyk3KFRTJyuFFMly9quA/XS9xtF0FJ/GwSDxp/4gGod0cBqF0YCFhFIcssSf4GEC5QDXELRAcNAZJN1s9uXVbfIupVn2pZLmebMxbc1yIt2zXbUlcCINOhMp1PGVZAqHfz6VHq8724J/iI+cvEuy8ZZPKpMa2V421LcvmaN5fgCEiue3hpm9ePUWKkfzhDNB275Fl8ax8y0a/Z/fok9JcgBEkZ0eTwVPy4cFAP0o9vvvX7GnOzwr6dX48hgbVmRfA7ins97r0Uo4AE6lhHs4u/dg8bRArO77kjK7d31ldAIIOxNAOOpGAOu6zLqRLT2v3pJmmlX8q4nHu/FAwcaGYNMmsKPODI49c7TZF3B4lIKbZLOeizc41/Gj8w1F9j/yCpjDVncesvpFz5zOmN6eXkXRTD9j8bvN7xiHqkGV5X3AAzZ6V7aTYCtRUAqSTMHwmi/YAJ5H+3dI0Lfm466QA7BU7bjGL727GkwrQneNgNLZrJxN8x75XlsdyaMOH4yf9ktaDatVg9XMvsR/X3dCePoLCFh9ee4QAAA=</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4c7223c1fb3f5290625bf7704eefdc75"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4c7223c1fb3f5290625bf7704eefdc75^sys_idNOT INf96193bcfbd8aa50625bf7704eefdc75"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <subflow display_value="Get Factory Built App">d2bef634fb58aa50625bf7704eefdc50</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/5VSy27jMAz8lUJnx0jc2ElzW7QIsEAfQLvbS1EYtEwlAmTZ1SNt1si/L2U5aZG9dI8cDsnhkC89kzVbsTyrUBSXc1HlS4B8WmR5JRaL6RxR1DzPWMI0NEhMAdy1Zl8afPNoXWn3tqQWCduB8oHQ99ZXQrXv6TlV+6ZCczgQuZa2U7B//p8avpWqNqjZ6uU1YR0YEuTQsFV/lvruRgoqVERdx5kXj3Hmxf0w8xsru30X8tYZqTdjfDs2fTqCramDyFnC8MOhrpHUCVAWE9aAriG0PiEGoX7Q6hPYSu2oGwvkDyv/0LzldDoNTIG0MceYPYXlaG2ExQ04ICmeO29GKt+2kqONXtUowCt3/RWLhIfOyVbHEgeVOla3yjf6PjrDTg2OlyTEWxKBXVg1aB8XEU/b9v3xqHIt9eDKmFQtB3WKwJF3lXdBT8+8/HVmc0T+MRoVNjSxbKDrCCk70+7kMIVEN+lGUZCGJyN1Vm50SmelDVM6AaRrwm8G+BmMDOveUZvhC7z8rSVd/ufwVogzwAWf5LP6akLPNJ9cZfNsgiCK2WWR82K5ZIeE0Y9cK7D20yi6UPnmw5rRttGgMnocSriRnftBonY4enF4/Qu/7VtzoQMAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 06:16:01</sys_created_on>
+        <sys_id>f96193bcfbd8aa50625bf7704eefdc75</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-13 17:10:13</sys_updated_on>
+        <ui_id>a482b9b1-f080-453d-9434-e3cdda3ef06a</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4c7223c1fb3f5290625bf7704eefdc75^sys_idNOT IN2ebf638dfb7f5290625bf7704eefdc6f,54cd6389fb7f5290625bf7704eefdcb5,c07223c1fb3f5290625bf7704eefdced"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
@@ -765,27 +1201,27 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">4c7223c1fb3f5290625bf7704eefdc75</flow>
+        <flow display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</flow>
         <flow_variables_assigned>names_of_services</flow_variables_assigned>
         <generation_source/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>3</order>
+        <order>4</order>
         <outputs_assigned/>
         <parent_ui_id>bf2af467-eea1-44a6-992f-dc31ebb0c34c</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 06:35:36</sys_created_on>
         <sys_id>2ebf638dfb7f5290625bf7704eefdc6f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:36</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:41</sys_updated_on>
         <ui_id>966b6bd0-58d6-403e-95aa-97382abea523</ui_id>
-        <values>H4sIAAAAAAAA/+1WXU/bMBT9K5YfoYTQQVvgqWJDQ9qGtLK9rFPkONetN8fO/FHoqv733ZukLRrS/sB4Snx8P845vrGy4S7FJsXw4KYh6IXlV9++D7i2hOH7huuKX3E+4FbUgG/0CIVTRQC/0hICbq2ESdBFVTo0Rqy/HhC51Kby0BduhMcCETy/2vy11Ta6HJVq+GZSqXKsLoaX+Wh4UarxOD8HUJVUAgsaUYLB0E/EhDnFZgcm/yAZ1w1thei1XfTrD32p2Q50viJq+YDDUwRbAXJSwgQY8FrYSkTn13vEg6jurTkAS21jJ7oWT0H/xn6TPM8pUgHqlL0l+2XR29XB6q2IAqkkGZPfu+da/q1DFSiRTLx5jnUB903UznYpUZRml+1Mqu2nzhS+L/DsdFJAEtCQVOLeC1GzpXv8vGN5q23rSr9pnBRmvxIRvStTJD4bnvTDXzZ3yAujwUCNHYtaNA0iRePdSrddkHSdLQwuMmXcI7KjscyEJIUZHoHIbhF/28Jfhdck9yOWwWRq98XqXwnuaJiklGIkJ6OT0bmanJyfjfITcT48OxmOLiaT6vLsAsaKbwc8rMONESEcjMITKn4lktnZ1htUdB5TivS6iVMktcIUPDPYYWTDy/lD8F8p/PRobo+OphJjAyN9p9NWMCPBLAX0iMUlMFUVLeLKHyBjxmZtAVanEJkHnBvLBGu/x4xRxXsaaGZTXeJD0+eiAkRWrtnxGdOWvfPeefYeZ9tQixl0NrdkVkIbMpe5droC66eVpQaJNR6pUs6cZ3POhMKPekeP0uFJ1I2BK2TjWVg6H/HIJJunPH9T7QIznIfFAnwmk8dZi1kbSGfe6sKu11SrV7avQuDp3PbwrlY7Ltgte2E/O0aWA2R5vA8uhkWhnC9AyGWmI9Rt1jXfbrff6Ubr5ur1Cny9Al+vwNcr8D+8AiuQOmD3B9J/t/sfpI01hmn5HHp0/ie1PmDbPxv3vwFZCgAA</values>
+        <values>H4sIAAAAAAAA/+1W227bOBD9FYKPia0oTuI46VPQbrEFdhtgnfalLgSKGtrcpUiVFyfewP/eGUq2gwZo+wF+kng4lzNnRgM9c5dil2J4cHch6KXlt1++jri2hOH7M9cNv+V8xK1oAd/oESqnqgB+rSUEvFoLk6C3anTojNh8PiBypU3jYQjcCY8BInh++/zDVU50M63V5GLWqPpaXU1uyunkqlbX1+UlgGqkEhjQiBoMmn4kJswpNj8w+QnJuOnoKkSv7XI4/zWEmu9A5xuiVo44PEWwDSAnJUyAEW+FbUR0frNHPIjm3poDsNI29kW34ino/zHfrCxLslSAdcpBkv2xGuTqYfVORIFUkozJ79VzmX9WqAElkolvX2K9wX0XtbO9SxS12Xk7k1r7sReF7wO86E4KSAI6KpW4D4Wo+co9/rNj+V7brMpwaZwUZn8SEbWrUyQ+zzzphx9k7pFXQoOBFjNWreg6RKrOu7XOWZB0WywNHgpl3COyo7EshKQKC2yBKN4j/i7Dn4XXVO7fGAadKd0nq78l+EDDJKUUUzmbjqeXaja+PJ+WY3E5OR9PplezWXNzfgXXim9HPGzCWyNCOAiFHaq+JSqzl20QqOo1JhfpdRfvkNQaXbBnsMNIhtfzh+DPXPjZycKenNxJtA2M6ju7ywUzKpilgBqxuAKmmiojrv4XZCzYPAdgbQqRecC5sUyw/D0WjCLe00Azm9oaH5o+FxUgsnrDTs+ZtuwP751nf+JsG0oxh17mTGYttCFxmcvTFdgwrSx1SKzzSJV8FrxYcCYUftQ7euQOT6LtDNwiG8/CyvmILZNskcryotkZFjgPyyX4QiaPsxaLbEg9z3Vh1jcUa6hsH4XAs4Ud4F2sPC6YrXglPztFliNkebo3ri6qSjlfgZCrQkdos1c2ZGP2C9PXLPl2u/1Km7Cfx+PqPK7O4+o8rs7j6vzt1dmA1AHPD6Tbh93/J11sMLyWL6FH5/8jygds+x1ab/gdyQoAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -795,25 +1231,25 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">4c7223c1fb3f5290625bf7704eefdc75</flow>
+        <flow display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>2</order>
+        <order>3</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 06:26:58</sys_created_on>
         <sys_id>54cd6389fb7f5290625bf7704eefdcb5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:36</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:41</sys_updated_on>
         <ui_id>bf2af467-eea1-44a6-992f-dc31ebb0c34c</ui_id>
         <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI8kl+StalWpUnuV0qovpwot9pJYZ2zONkk5xH+/dSC06uM9wY53Z2cG0zPT+qb17tXcOCcPmu1+vUdM6oDRe8801Mh2THqsHYvYCVQb6r7PV+UmX1Z8UW5Wq8Uy2ywXsM5+LBKx5ZinIk2TKt4jN1a4YaBRIV2joHv7fwZ+lEpYnEQ2YEmbR8t2/bcjKWhBuhXVNk22PM/WeZYkxJ+W67xMM5EDijURKihRUevD5O6bWd81obSjhAl4nGb2M0qPICJLIoYfHrVAWl+BchixGrQAb2zHdt62BFgE8axVN3ccpfZEx0Lvh5N/aWOaJKGxQjLEcTycy2LKcYSrO/DwQtTct3Zq5UcjOboxCoEVtMrffsXGhufGS6PHEQ+luk4b1db655gEmwmun42Q1pEIbILRIH3yUb0czXl/VXkv9SWU6VAZDmquwHsry9YHPT1DhTURFTU0jdSHorHmJC/DpKWOD4qKuFLmTEvDFY2BB+Ex5QrxPeF3F/gNrAwunoiGhoeIuc7dKnDu0wuFWPxpg5LR2eShGGMII9zKxt/QghNOcof3cOtH7jlTLh1JeA3Yw/VfCQcd3SDJv0JnY38H8Z/Y8A/KTRNbdQMAAA==</values>
         <workflow_reference/>
@@ -825,27 +1261,27 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Get Services for a ServiceNow Application">4c7223c1fb3f5290625bf7704eefdc75</flow>
+        <flow display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>4</order>
-        <outputs_assigned>names</outputs_assigned>
+        <order>5</order>
+        <outputs_assigned>names,instance_url,app_scope</outputs_assigned>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 05:37:32</sys_created_on>
         <sys_id>c07223c1fb3f5290625bf7704eefdced</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:36</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:41</sys_updated_on>
         <ui_id>0dcfff6b-0d67-47a3-bd39-50301f47fe9d</ui_id>
-        <values>H4sIAAAAAAAA/5VTy27jMAz8F50TIw/neStaFCjQbYFttpfFwqAlKhEqS64eSbNB/n2p2HGC9tI92RyR4syQOjAbQx2DX9kb79XasOXvA1OCLRnMSjEazxeynMnJaDGYjialnM0GOaIUHBesxwxUSJnp4yncgo4pPhyktrtiC05BqTE7nRdWFh7dVnH0xyNlC+VrDfvX/yriG6WFw0TzT4/V4CgroGNLIm3ox4B+VOaN7vuS/F1RGkrUlPrUqvokMuzrFPrglFm38WNb8nIGrROJ1LDH8COgEUi9JWiPPVaBERCs23eIQxDPRl+ADUlpFFTw4dVf6jcfDAYpUyLp4dicdmHRetnA8g4CEJXIQ3R4tsImDxsnBEqIOtxeY03Ccx2UNU1JSGNoq62OlXlqjGDdBefRERI9kcA6SU3cWyHyZWN3P88s75U5udIeastBdxEE8q6MIfE5sKhWn2xukC9Go8aKOhYV1DUhRe3sVp26EOkqW2sKstNiCUzrnQFPCjMaAWT3hN+d4Nd2637QNVSc2v0y6j3iQ1qaYS7LPM+nfTFc8H7O53kfynzch8liPBUScI7Ajj3m9/5Wg/cXo2hCxXtMMhvbWoOKxuNUwp2qww2R2mLrxTHtqklvspnM+UV0w+PKk4RVwh6u8sSeVlTxa2hn3VsSf8GO/wCv6jm88QMAAA==</values>
+        <values>H4sIAAAAAAAA/+1WTW/bOBD9KwZPW9RSZYmypewpaFEgQNoumrSX9cIYkUOHKC2pIuXUNfTfd2jJH5uki2Q3p6Inex5nyHlvZkhtWdW6unX2ujq3Vi9LdvbnlmnJzhjMChknWa6KmUrjPJrGaaFms4gjKikwZ2NWwgrJ0/9YMtdgWm9vt8pUt4s1NBoKg+FufVGphcVmrQXarhsFIwqQ2tYGNp+fGidutJEN+mT/GrMaGnJ02LAzSr2kPyWYS11+oS3vOT+WmoECDbm+H7jdoeo2tTeta3S5HOzLIeRqD1aN9EklY4bfHJYS6WwFxuKYraCU4Kpmc0AaBPmhNEfghqj0DFbwzervdF4WRZH3VEh8BParB3MxyNnD6g04oFRa4doG91JUXsZeCYkKWuNen2K9w4fa6arsQ5yvxBBdmXZVvu+FYIcN9tUjpLWUBNaeqs99IKKubqrbj/ss3+pyp8qwaCoB5mCBI+2K1vl8tqzV13dk7pF7QqPBFZ24WEFdE7Kom2qtd6dQ0qtwacgId70l0Td5CMIzDKkEEL4l/M0O/jw03jvahoL9cZ9K/bXFC980E64Kzvk0kJNcBFxkPICCJwGkeTKVCjBDYN2Y2Y19bcDao1BUocXX1tPsZRsEWvQa+xDR6NqdU1JrHLToxsMYZkmRFpNMqoI6E9I7vaqiY2/q0jrwfdA25mQa78/ZM0zQI7LaT9DFkNbo08fLHyb7lHma/Jqnn2Ge8lQISGIRzEQiA14IHuRI85TGXGJSJCBnzzNPVDPcY32Dn7Qe2f/mTWdRucvRnN04V9uzV6/mbPRytLThEt0fTUW83Oa3eRtF8eywr2/xHnpBvnMWDu9XUFa3IQk4Z7+zrjtM+CwpJkXO04dnCbPj0JCOCyvo0H88tsCzuMiLSaCiLAp4SmrmPOEBJkJKSFBFUwhJxT606x56eP/DHv/3CnkE7f0Vcl7XRgvwPTa6Gvg/IMlTLpH41yXyM1wiiZSKZxMMprmCgEeQBiCyaYBZzLnM83Qyy57xUfa9W/rP5b4y+y/VQ/GEtkTh2mMXJ35yQ92qxSl0WzVfPPkj1v0Ne9Y+34wLAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=4c7223c1fb3f5290625bf7704eefdc75"/>
@@ -890,7 +1326,7 @@
         <label>Names of Services</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Get Services for a ServiceNow Application">4c7223c1fb3f5290625bf7704eefdc75</model>
+        <model display_value="Get Services Built by Digital Factory">4c7223c1fb3f5290625bf7704eefdc75</model>
         <model_id>4c7223c1fb3f5290625bf7704eefdc75</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_4c7223c1fb3f5290625bf7704eefdc75</name>
@@ -934,17 +1370,17 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>app_id</element>
+        <element>factory_request_number</element>
         <help/>
         <hint/>
-        <label>App ID</label>
+        <label>Factory Request Number</label>
         <language>en</language>
         <name>var__m_sys_hub_flow_input_4c7223c1fb3f5290625bf7704eefdc75</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
-        <sys_created_on>2025-02-17 05:37:32</sys_created_on>
-        <sys_id>847223c1fb3f5290625bf7704eefdcb2</sys_id>
+        <sys_created_on>2025-03-13 14:30:50</sys_created_on>
+        <sys_id>0aa20dc9fb58ea50625bf7704eefdcf5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
@@ -952,11 +1388,57 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 05:37:32</sys_updated_on>
+        <sys_updated_on>2025-03-13 14:30:50</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4c7223c1fb3f5290625bf7704eefdc75"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>app_scope</element>
+        <help/>
+        <hint/>
+        <label>Application Scope</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_4c7223c1fb3f5290625bf7704eefdc75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 17:57:08</sys_created_on>
+        <sys_id>0ce1fd45fbdcea50625bf7704eefdc05</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-17 21:40:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>instance_url</element>
+        <help/>
+        <hint/>
+        <label>Instance URL</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_4c7223c1fb3f5290625bf7704eefdc75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 18:14:02</sys_created_on>
+        <sys_id>27b5f18dfbdcea50625bf7704eefdcd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-03-13 18:14:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>names</element>
         <help/>
@@ -990,14 +1472,14 @@
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c66f9b0dfbfb5290625bf7704eefdc19^sys_idNOT IN9c7263c1fb3f5290625bf7704eefdc1d"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"9c7263c1fb3f5290625bf7704eefdc1d","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="Get Services for a ServiceNow Application">c66f9b0dfbfb5290625bf7704eefdc19</plan_id>
-        <snapshot>b8d0f701fbbf5290625bf7704eefdc9c</snapshot>
+        <plan_id display_value="Get Services Built by Digital Factory">c66f9b0dfbfb5290625bf7704eefdc19</plan_id>
+        <snapshot>895d0bd6fb50a690625bf7704eefdc33</snapshot>
         <sys_class_name>sys_flow_subflow_plan</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 05:37:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>9c7263c1fb3f5290625bf7704eefdc1d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1005,6 +1487,6 @@
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 06:35:37</sys_updated_on>
+        <sys_updated_on>2025-03-17 21:47:42</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

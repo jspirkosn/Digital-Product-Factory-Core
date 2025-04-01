@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
     <sn_aia_trigger_configuration action="INSERT_OR_UPDATE">
         <active>true</active>
-        <business_rule display_value="Requested Item - Agentic Playbook Genera">5dd3c860fbb71e50625bf7704eefdc3a</business_rule>
+        <business_rule display_value="Requested Item - Digital Product Factory">5dd3c860fbb71e50625bf7704eefdc3a</business_rule>
         <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
-        <condition table="sc_req_item">cat_item=bfe53424479902504f6574fc416d4337^ORcat_item=c9e85f9ffb839650625bf7704eefdccd^opened_byISNOTEMPTY^state=3^EQ<item display_table="sc_cat_item" display_value="Digital Product Factory for Public Sector" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="bfe53424479902504f6574fc416d4337"/>
-            <item display_table="sc_cat_item" display_value="Digital Product Factory for Insurance" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="true" value="c9e85f9ffb839650625bf7704eefdccd"/>
+        <condition table="sc_req_item">cat_item=bfe53424479902504f6574fc416d4337^ORcat_item=17e5a9fffb059a10c04cfbac7befdcc1^opened_byISNOTEMPTY^state=3^EQ<item display_table="sc_cat_item" display_value="Digital Product Factory for Public Sector" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="bfe53424479902504f6574fc416d4337"/>
+            <item display_table="sc_cat_item" display_value="Digital Product Factory for Higher Education" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="true" value="17e5a9fffb059a10c04cfbac7befdcc1"/>
             <item endquery="false" field="opened_by" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
@@ -17,14 +17,14 @@
         <sys_created_on>2025-02-15 00:08:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>09fcbfd0fb771e50625bf7704eefdc3b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>sc_req_item</sys_name>
         <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_trigger_configuration_09fcbfd0fb771e50625bf7704eefdc3b</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-19 17:34:48</sys_updated_on>
+        <sys_updated_on>2025-03-10 14:37:32</sys_updated_on>
         <target_table>sc_req_item</target_table>
         <usecase display_value="Digital Product Factory Playbook Assistant">9c5665d6fb6b1250c04cfbac7befdc14</usecase>
     </sn_aia_trigger_configuration>

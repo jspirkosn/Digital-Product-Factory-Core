@@ -33,6 +33,37 @@ GeneratePlaybookCallbackHandler.prototype = {
             case 'PERSISTED': {
                 // Playbook has been saved
                 const playbookId = JSON.parse(playbookJSON)?.process?.sysId?.value;
+                const table_name = JSON.parse(meta)?.table_name;
+                const service = JSON.parse(meta)?.service_name;
+                const servid_id = JSON.parse(meta)?.service_id;
+
+                gs.info("GeneratePlaybookCallbackHandler | Playbook ID: " + playbookId + " Service: " + service + " Service ID: " + servid_id + " Table: " + table_name);
+
+                var ti = new GlideRecord('sys_pd_trigger_instance');
+                ti.process_definition = playbookId;
+                ti.trigger_type = 'ab6951170f1200108c87f4f0ff767e4f'; //Record Created
+                var tiId = ti.insert();
+
+                gs.info("GeneratePlaybookCallbackHandler: Trigger Instance: " + tiId);
+
+                var tiVarTable = new GlideRecord('sys_variable_value');
+                tiVarTable.action = 'INSERT_OR_UPDATE';
+                tiVarTable.document = 'sys_pd_trigger_instance';
+                tiVarTable.document_key = tiId;
+                tiVarTable.order = 100;
+                tiVarTable.value = table_name;
+                tiVarTable.variable = 'a8ae38d1ff2200108c8733af793bf15c'; //This is table variable
+                tiVarTable.insert();
+
+                var tiVarCondition = new GlideRecord('sys_variable_value');
+                tiVarCondition.action = 'INSERT_OR_UPDATE';
+                tiVarCondition.document = 'sys_pd_trigger_instance';
+                tiVarCondition.order = 200;
+                tiVarCondition.document_key = tiId;
+                tiVarCondition.value = 'service=' + servid_id;
+                tiVarCondition.variable = '2a8a7851ff2200108c8733af793bf131'; //This is a reference to a condition
+                tiVarCondition.insert();
+
                 break;
             }
             case 'CANCELLED':
@@ -55,13 +86,13 @@ GeneratePlaybookCallbackHandler.prototype = {
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-22 06:02:28</sys_created_on>
         <sys_id>4ee7d13afbbb52d0c04cfbac7befdc19</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>GeneratePlaybookCallbackHandler</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_script_include_4ee7d13afbbb52d0c04cfbac7befdc19</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-25 01:19:20</sys_updated_on>
+        <sys_updated_on>2025-05-06 07:15:04</sys_updated_on>
     </sys_script_include>
 </record_update>

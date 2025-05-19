@@ -3,30 +3,44 @@
         <active>true</active>
         <business_rule display_value="Requested Item - Digital Product Factory">aa614509fb58ea50625bf7704eefdc59</business_rule>
         <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
-        <condition table="sc_req_item">cat_item=17e5a9fffb059a10c04cfbac7befdcc1^ORcat_item=bfe53424479902504f6574fc416d4337^state=3^opened_byISNOTEMPTY^EQ<item display_table="sc_cat_item" display_value="Digital Product Factory for Higher Education" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="17e5a9fffb059a10c04cfbac7befdcc1"/>
-            <item display_table="sc_cat_item" display_value="Digital Product Factory for Public Sector" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="true" value="bfe53424479902504f6574fc416d4337"/>
+        <condition table="sc_req_item">cat_item=17e5a9fffb059a10c04cfbac7befdcc1^ORcat_item=bfe53424479902504f6574fc416d4337^state=3^opened_byISNOTEMPTY^EQ<item display_table="sc_cat_item" display_value="Agentic Builders for Higher Education" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="false" value="17e5a9fffb059a10c04cfbac7befdcc1"/>
+            <item display_table="sc_cat_item" display_value="Agentic Builders for Public Sector" endquery="false" field="cat_item" goto="false" newquery="false" operator="=" or="true" value="bfe53424479902504f6574fc416d4337"/>
             <item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="false" field="opened_by" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name/>
+        <name>Digital Product Factory Playbook Builder - Create or Update on Requested Item</name>
         <objective_template><![CDATA[Please help me build a playbook for the service built by this Request Item Number: ${number}
 ]]></objective_template>
+        <portal/>
+        <profile/>
         <run_as>opened_by</run_as>
+        <run_as_script/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
         <show_notifications>false</show_notifications>
         <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-13 14:25:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>b5804dc5fb58ea50625bf7704eefdc6c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>sc_req_item</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_trigger_configuration_b5804dc5fb58ea50625bf7704eefdc6c</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-13 14:25:24</sys_updated_on>
+        <sys_updated_on>2025-05-06 05:02:47</sys_updated_on>
         <target_table>sc_req_item</target_table>
+        <trigger_flow display_value="Requested Item - Use case: Digital Product Factory Playbook Builder - 5620c4f4fb4d6690c04cfbac7befdca6">1a20c4f4fb4d6690c04cfbac7befdca6</trigger_flow>
+        <trigger_flow_definition_type>record_create_or_update</trigger_flow_definition_type>
         <usecase display_value="Digital Product Factory Playbook Builder">9a8fb845fb58ea50625bf7704eefdc3e</usecase>
     </sn_aia_trigger_configuration>
 </record_update>

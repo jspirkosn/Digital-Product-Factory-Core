@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Build Digital Products for Industries">7becfb25fb05e610c04cfbac7befdc39</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"cc6ac344ebb0443aaebd601a976090d2","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"cc6ac344ebb0443aaebd601a976090d2"}],"goals":[{"name":"primary","trigger_id":"cc6ac344ebb0443aaebd601a976090d2","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"a331a92534cb41b0bfc1a26e495453e0","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"1d0f5b795aa1461b9181995340fc03d1","name":"End","expert_mode":false},{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"which_industry_\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Which industry are you building this product for?\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"helpText\":\"false\",\"choices\":[{\"value\":\"GOV\",\"label\":\"Government\"},{\"value\":\"ED\",\"label\":\"Higher Education\"},{\"value\":\"INS\",\"label\":\"Insurance\"},{\"value\":\"HCLS\",\"label\":\"HealthCare and Life Sciences\"}],\"applicability\":\"\",\"validation\":\"\"},{\"name\":\"which_template_\",\"type\":\"reference\",\"discoverable\":true,\"description\":\"Select from the templates available for this industry\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"helpText\":\"false\",\"choiceMode\":\"'simple'\",\"table\":\"'x_snc_15_minute_se_registered_templates'\",\"multipleSelect\":\"false\",\"autoSelect\":\"true\",\"conditionMode\":\"'simple'\",\"condition\":\"\\\"industry_sectorLIKE_dataCollectorLiteral.which_industry_.getValue()\\\"\",\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[{\"name\":\"add_additional_services_to_your_product\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Would you like to add additional services to your product?\",\"validation\":\"\",\"choices\":[{\"value\":\"Yes\",\"label\":\"Yes\"},{\"value\":\"No\",\"label\":\"No\"}]},{\"name\":\"service_to_add\",\"type\":\"string\",\"discoverable\":true,\"description\":\"Describe the service that you would like our AI Assistants to add to your product.\",\"validation\":\"\"}],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output"}],"header_card_fields":[],"id":"73cd01c9af6944edacef9df962a5603b","name":"Which Industry?","goal_id":"primary","expert_mode":false,"variableIds":["696c56963fd04cf58f00616ee5be3fb2","17fb8bf6760340508f1ad6a32d11edc6"]},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"No more services to add","expression":{"type":"Applicability","mode":"query","value":"add_additional_services_to_your_product=No"},"id":"712edd7c35614f20b441022f31d562f2","name":"No more services to add","expert_mode":false},{"type":"Branch","label":"Add Services","expression":{"type":"Applicability","mode":"query","value":"add_additional_services_to_your_product=Yes"},"id":"5537cac824fa494599dddd151548b3d3","name":"Add Services","expert_mode":false}],"id":"da81c53e0c6a4929aa05b6502db27146","goal_id":"primary","expert_mode":false},{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"add_additional_services_to_your_product\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Would you like to add additional services to your product?\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"helpText\":\"false\",\"choices\":[{\"value\":\"Yes\",\"label\":\"Yes\"},{\"value\":\"No\",\"label\":\"No\"}],\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[{\"name\":\"which_template_\",\"type\":\"reference\",\"discoverable\":true,\"description\":\"Select from the templates available for this industry\",\"validation\":\"\",\"choiceMode\":\"'simple'\",\"table\":\"'x_snc_15_minute_se_registered_templates'\",\"multipleSelect\":\"false\",\"autoSelect\":\"true\",\"conditionMode\":\"'simple'\",\"condition\":\"\\\"industry_sectorLIKE{{4}}\\\"\"},{\"name\":\"which_industry_\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Which industry are you building this product for?\",\"validation\":\"\",\"choices\":[{\"value\":\"GOV\",\"label\":\"Government\"},{\"value\":\"ED\",\"label\":\"Higher Education\"},{\"value\":\"INS\",\"label\":\"Insurance\"},{\"value\":\"HCLS\",\"label\":\"HealthCare and Life Sciences\"}]},{\"name\":\"service_to_add\",\"type\":\"string\",\"discoverable\":true,\"description\":\"Describe the service that you would like our AI Assistants to add to your product.\",\"validation\":\"\"}],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":"Collect user input"},{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"},{"type":"String","mode":"script","value":"(function() { return vaInputs.which_industry_.getValue()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output"}],"header_card_fields":[],"id":"63fa584749c24ebface0fe9cfb3530da","name":"Add additional services to your product","goal_id":"primary","expert_mode":false,"variableIds":["69c7eb4637c941faaefca01825b34299"]},{"type":"InputPrompt","variable_id":"c13d9e9945f24829a350d9fbd96ce335","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Set by NLU\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":false},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"metadataScript":"","cardName":"","cardFields":[],"id":"4f247c979a5d4282b085c416776c771b","name":"Services to Add","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"(function() { return (function() { return false; })()})()"},"expert_mode":false,"formatType":"Text","validationScript":"","description":"Detailed explanation of the services to be added by AI."},{"type":"ScriptedAction","script":"(function execute() {\n    if (vaInputs.services_to_add == \"\"){\n        vaInputs.services_to_add = \"\\\"Workflow Directives\\\": [\";\n    } else {\n        vaInputs.services_to_add = vaInputs.services_to_add + \", \";\n    }\n    vaInputs.services_to_add = vaInputs.services_to_add + \"{\\\"describe_the_type_of_workflow_needed\\\": \\\"\" + vaInputs.service_to_add + \"\\\", \\\"embed_payment\\\": false,\\\"include_digital_signature\\\": false,\\\"map\\\": false}\";\n})()\n","id":"214597ce531e4fca8b85f7d7b40e1001","name":"Add new service to variable","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"service_to_add\",\"type\":\"string\",\"discoverable\":true,\"description\":\"Describe the service that you would like our AI Assistants to add to your product.\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"helpText\":\"false\",\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[{\"name\":\"which_template_\",\"type\":\"reference\",\"discoverable\":true,\"description\":\"Select from the templates available for this industry\",\"validation\":\"\",\"choiceMode\":\"'simple'\",\"table\":\"'x_snc_15_minute_se_registered_templates'\",\"multipleSelect\":\"false\",\"autoSelect\":\"true\",\"conditionMode\":\"'simple'\",\"condition\":\"\\\"industry_sectorLIKE{{4}}\\\"\"},{\"name\":\"which_industry_\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Which industry are you building this product for?\",\"validation\":\"\",\"choices\":[{\"value\":\"GOV\",\"label\":\"Government\"},{\"value\":\"ED\",\"label\":\"Higher Education\"},{\"value\":\"INS\",\"label\":\"Insurance\"},{\"value\":\"HCLS\",\"label\":\"HealthCare and Life Sciences\"}]},{\"name\":\"add_additional_services_to_your_product\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Would you like to add additional services to your product?\",\"validation\":\"\",\"choices\":[{\"value\":\"Yes\",\"label\":\"Yes\"},{\"value\":\"No\",\"label\":\"No\"}]}],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":"Collect user input"},{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"},{"type":"String","mode":"script","value":"(function() { return vaInputs.which_industry_.getValue()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output"}],"header_card_fields":[],"id":"0a0fa68792d94ee5ae73fa82ba67c65f","name":"Service to add","goal_id":"primary","expert_mode":false,"variableIds":["93636bb8b83f40cc96cf5315e51346e1"]},{"type":"ScriptedAction","script":"(function execute() {\n    if (vaInputs.services_to_add != \"\"){\n        vaInputs.services_to_add = vaInputs.services_to_add + \"]}\";\n    } \n})()\n","id":"379caa66ed074561b942eaca192c22eb","name":"Services to add close out","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"{{vaInputs.services_to_add}}"}],"request_feedback":true,"isCollapsible":true,"id":"70b631a648ac4e24bb3a123d347afb4e","name":"debug output","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ScriptedAction","script":"(function execute() {\n                    var mappings = {\"which_industry_\":\"which_industry_\",\"which_template_\":\"which_template_\",\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\":\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\"};\n                    var output = JSON.parse(vaInputs['ai_data_collector_73cd01c9af6944edacef9df962a5603b_output']);\n                    var variables = {\"user\":{\"category\":\"vaInputs\",\"id\":\"807f337061a34d10a860d66925fdfff3\",\"label\":\"User\",\"name\":\"user\",\"table\":\"sys_user\",\"varType\":\"reference\"},\"ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\":{\"id\":\"dcfd831966534838bf41da5d150da415\",\"name\":\"ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\",\"label\":\"Ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\":{\"id\":\"242fba0f4fb84beb9d23b3b64077cee5\",\"name\":\"ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\",\"label\":\"Ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"which_template_\":{\"id\":\"17fb8bf6760340508f1ad6a32d11edc6\",\"varType\":\"reference\",\"category\":\"vaInputs\",\"label\":\"Which Template?\",\"name\":\"which_template_\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"glide_record\",\"table\":\"x_snc_15_minute_se_registered_templates\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"fc55ac35fda24a398199d3a2e39c6795\",\"isHidden\":false,\"description\":\"Select from the templates available for this industry\"},\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\":{\"id\":\"a49a57f82a60499989e1f3651ec94de2\",\"name\":\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\",\"label\":\"Ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"which_industry_\":{\"id\":\"696c56963fd04cf58f00616ee5be3fb2\",\"varType\":\"choice\",\"category\":\"vaInputs\",\"label\":\"Which Industry?\",\"name\":\"which_industry_\",\"choices\":[{\"label\":\"Government\",\"value\":\"GOV\"},{\"label\":\"Higher Education\",\"value\":\"ED\"},{\"label\":\"Insurance\",\"value\":\"INS\",\"checked\":true,\"meta\":{}},{\"label\":\"HealthCare and Life Sciences\",\"value\":\"HCLS\",\"checked\":true,\"meta\":{}}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"73cd01c9af6944edacef9df962a5603b\",\"isHidden\":false,\"description\":\"Which industry are you building this product for?\",\"translation\":true},\"ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\":{\"id\":\"53cc6f5cb5754470bcc118e62a741b8e\",\"name\":\"ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\",\"label\":\"Ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\":{\"id\":\"c7c155d7015545f6ae0821aac2ba55f6\",\"name\":\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\",\"label\":\"Ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"add_additional_services_to_your_product\":{\"id\":\"69c7eb4637c941faaefca01825b34299\",\"varType\":\"choice\",\"category\":\"vaInputs\",\"label\":\"Add Additional Services To Your Product\",\"name\":\"add_additional_services_to_your_product\",\"choices\":[{\"label\":\"Yes\",\"value\":\"Yes\"},{\"label\":\"No\",\"value\":\"No\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"63fa584749c24ebface0fe9cfb3530da\",\"isHidden\":false,\"description\":\"Would you like to add additional services to your product?\",\"translation\":true},\"services_to_add\":{\"id\":\"c13d9e9945f24829a350d9fbd96ce335\",\"name\":\"services_to_add\",\"label\":\"Services To Add\",\"varType\":\"string\",\"category\":\"vaInputs\",\"nodeId\":\"4f247c979a5d4282b085c416776c771b\",\"isHidden\":true,\"description\":\"Detailed explanation of the services to be added by AI.\"},\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\":{\"id\":\"d841ff6e845444cea94a03d40f81736b\",\"name\":\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\",\"label\":\"Ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"service_to_add\":{\"id\":\"93636bb8b83f40cc96cf5315e51346e1\",\"varType\":\"string\",\"category\":\"vaInputs\",\"label\":\"Service To Add\",\"name\":\"service_to_add\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"0a0fa68792d94ee5ae73fa82ba67c65f\",\"isHidden\":false,\"description\":\"Describe the service that you would like our AI Assistants to add to your product.\"}}\n                    Object.keys(output).forEach(function(key) {\n                        var mappedKey = mappings[key];\n                        if (!vaInputs[mappedKey]) {vaInputs.initialize(mappedKey);}\n                        var isMultiSelect = variables[mappedKey] &amp;&amp; variables[mappedKey].varType === 'array.reference';\n                        if (isMultiSelect) {vaInputs[mappedKey] = output[key] ? JSON.parse(output[key]) : '';}\n                        else {vaInputs[mappedKey] = output[key];}\n                    });\n                })()","id":"bfc8742d127c440c815d0319b56b8fc8","name":"73cd01c9af6944edacef9df962a5603b_ai_data_collector_output_handler","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"ScriptedAction","script":"(function execute() {\n                    var mappings = {\"add_additional_services_to_your_product\":\"add_additional_services_to_your_product\",\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\":\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\"};\n                    var output = JSON.parse(vaInputs['ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output']);\n                    var variables = {\"user\":{\"category\":\"vaInputs\",\"id\":\"807f337061a34d10a860d66925fdfff3\",\"label\":\"User\",\"name\":\"user\",\"table\":\"sys_user\",\"varType\":\"reference\"},\"ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\":{\"id\":\"dcfd831966534838bf41da5d150da415\",\"name\":\"ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\",\"label\":\"Ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\":{\"id\":\"242fba0f4fb84beb9d23b3b64077cee5\",\"name\":\"ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\",\"label\":\"Ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"which_template_\":{\"id\":\"17fb8bf6760340508f1ad6a32d11edc6\",\"varType\":\"reference\",\"category\":\"vaInputs\",\"label\":\"Which Template?\",\"name\":\"which_template_\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"glide_record\",\"table\":\"x_snc_15_minute_se_registered_templates\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"fc55ac35fda24a398199d3a2e39c6795\",\"isHidden\":false,\"description\":\"Select from the templates available for this industry\"},\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\":{\"id\":\"a49a57f82a60499989e1f3651ec94de2\",\"name\":\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\",\"label\":\"Ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"which_industry_\":{\"id\":\"696c56963fd04cf58f00616ee5be3fb2\",\"varType\":\"choice\",\"category\":\"vaInputs\",\"label\":\"Which Industry?\",\"name\":\"which_industry_\",\"choices\":[{\"label\":\"Government\",\"value\":\"GOV\"},{\"label\":\"Higher Education\",\"value\":\"ED\"},{\"label\":\"Insurance\",\"value\":\"INS\",\"checked\":true,\"meta\":{}},{\"label\":\"HealthCare and Life Sciences\",\"value\":\"HCLS\",\"checked\":true,\"meta\":{}}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"73cd01c9af6944edacef9df962a5603b\",\"isHidden\":false,\"description\":\"Which industry are you building this product for?\",\"translation\":true},\"ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\":{\"id\":\"53cc6f5cb5754470bcc118e62a741b8e\",\"name\":\"ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\",\"label\":\"Ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\":{\"id\":\"c7c155d7015545f6ae0821aac2ba55f6\",\"name\":\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\",\"label\":\"Ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"add_additional_services_to_your_product\":{\"id\":\"69c7eb4637c941faaefca01825b34299\",\"varType\":\"choice\",\"category\":\"vaInputs\",\"label\":\"Add Additional Services To Your Product\",\"name\":\"add_additional_services_to_your_product\",\"choices\":[{\"label\":\"Yes\",\"value\":\"Yes\"},{\"label\":\"No\",\"value\":\"No\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"63fa584749c24ebface0fe9cfb3530da\",\"isHidden\":false,\"description\":\"Would you like to add additional services to your product?\",\"translation\":true},\"services_to_add\":{\"id\":\"c13d9e9945f24829a350d9fbd96ce335\",\"name\":\"services_to_add\",\"label\":\"Services To Add\",\"varType\":\"string\",\"category\":\"vaInputs\",\"nodeId\":\"4f247c979a5d4282b085c416776c771b\",\"isHidden\":true,\"description\":\"Detailed explanation of the services to be added by AI.\"},\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\":{\"id\":\"d841ff6e845444cea94a03d40f81736b\",\"name\":\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\",\"label\":\"Ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"service_to_add\":{\"id\":\"93636bb8b83f40cc96cf5315e51346e1\",\"varType\":\"string\",\"category\":\"vaInputs\",\"label\":\"Service To Add\",\"name\":\"service_to_add\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"0a0fa68792d94ee5ae73fa82ba67c65f\",\"isHidden\":false,\"description\":\"Describe the service that you would like our AI Assistants to add to your product.\"}}\n                    Object.keys(output).forEach(function(key) {\n                        var mappedKey = mappings[key];\n                        if (!vaInputs[mappedKey]) {vaInputs.initialize(mappedKey);}\n                        var isMultiSelect = variables[mappedKey] &amp;&amp; variables[mappedKey].varType === 'array.reference';\n                        if (isMultiSelect) {vaInputs[mappedKey] = output[key] ? JSON.parse(output[key]) : '';}\n                        else {vaInputs[mappedKey] = output[key];}\n                    });\n                })()","id":"b6a6821dfdcd4df6be66f00dc6a5959e","name":"63fa584749c24ebface0fe9cfb3530da_ai_data_collector_output_handler","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"ScriptedAction","script":"(function execute() {\n                    var mappings = {\"service_to_add\":\"service_to_add\",\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\":\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\"};\n                    var output = JSON.parse(vaInputs['ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output']);\n                    var variables = {\"user\":{\"category\":\"vaInputs\",\"id\":\"807f337061a34d10a860d66925fdfff3\",\"label\":\"User\",\"name\":\"user\",\"table\":\"sys_user\",\"varType\":\"reference\"},\"ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\":{\"id\":\"dcfd831966534838bf41da5d150da415\",\"name\":\"ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\",\"label\":\"Ai_data_collector_057c6c81e815433ea0516e82c07501d9_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\":{\"id\":\"242fba0f4fb84beb9d23b3b64077cee5\",\"name\":\"ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\",\"label\":\"Ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"which_template_\":{\"id\":\"17fb8bf6760340508f1ad6a32d11edc6\",\"varType\":\"reference\",\"category\":\"vaInputs\",\"label\":\"Which Template?\",\"name\":\"which_template_\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"glide_record\",\"table\":\"x_snc_15_minute_se_registered_templates\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"fc55ac35fda24a398199d3a2e39c6795\",\"isHidden\":false,\"description\":\"Select from the templates available for this industry\"},\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\":{\"id\":\"a49a57f82a60499989e1f3651ec94de2\",\"name\":\"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\",\"label\":\"Ai_data_collector_73cd01c9af6944edacef9df962a5603b_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"which_industry_\":{\"id\":\"696c56963fd04cf58f00616ee5be3fb2\",\"varType\":\"choice\",\"category\":\"vaInputs\",\"label\":\"Which Industry?\",\"name\":\"which_industry_\",\"choices\":[{\"label\":\"Government\",\"value\":\"GOV\"},{\"label\":\"Higher Education\",\"value\":\"ED\"},{\"label\":\"Insurance\",\"value\":\"INS\",\"checked\":true,\"meta\":{}},{\"label\":\"HealthCare and Life Sciences\",\"value\":\"HCLS\",\"checked\":true,\"meta\":{}}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"73cd01c9af6944edacef9df962a5603b\",\"isHidden\":false,\"description\":\"Which industry are you building this product for?\",\"translation\":true},\"ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\":{\"id\":\"53cc6f5cb5754470bcc118e62a741b8e\",\"name\":\"ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\",\"label\":\"Ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\":{\"id\":\"c7c155d7015545f6ae0821aac2ba55f6\",\"name\":\"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\",\"label\":\"Ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"add_additional_services_to_your_product\":{\"id\":\"69c7eb4637c941faaefca01825b34299\",\"varType\":\"choice\",\"category\":\"vaInputs\",\"label\":\"Add Additional Services To Your Product\",\"name\":\"add_additional_services_to_your_product\",\"choices\":[{\"label\":\"Yes\",\"value\":\"Yes\"},{\"label\":\"No\",\"value\":\"No\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"63fa584749c24ebface0fe9cfb3530da\",\"isHidden\":false,\"description\":\"Would you like to add additional services to your product?\",\"translation\":true},\"services_to_add\":{\"id\":\"c13d9e9945f24829a350d9fbd96ce335\",\"name\":\"services_to_add\",\"label\":\"Services To Add\",\"varType\":\"string\",\"category\":\"vaInputs\",\"nodeId\":\"4f247c979a5d4282b085c416776c771b\",\"isHidden\":true,\"description\":\"Detailed explanation of the services to be added by AI.\"},\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\":{\"id\":\"d841ff6e845444cea94a03d40f81736b\",\"name\":\"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\",\"label\":\"Ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output\",\"isReferenceable\":false,\"varType\":\"string\",\"category\":\"vaInputs\",\"metadata\":{\"libraryMappingType\":\"output\"}},\"service_to_add\":{\"id\":\"93636bb8b83f40cc96cf5315e51346e1\",\"varType\":\"string\",\"category\":\"vaInputs\",\"label\":\"Service To Add\",\"name\":\"service_to_add\",\"choices\":[{\"label\":\"\",\"value\":\"\"},{\"label\":\"\",\"value\":\"\"}],\"mode\":\"\",\"table\":\"\",\"aiInput\":true,\"inputId\":0,\"nodeId\":\"0a0fa68792d94ee5ae73fa82ba67c65f\",\"isHidden\":false,\"description\":\"Describe the service that you would like our AI Assistants to add to your product.\"}}\n                    Object.keys(output).forEach(function(key) {\n                        var mappedKey = mappings[key];\n                        if (!vaInputs[mappedKey]) {vaInputs.initialize(mappedKey);}\n                        var isMultiSelect = variables[mappedKey] &amp;&amp; variables[mappedKey].varType === 'array.reference';\n                        if (isMultiSelect) {vaInputs[mappedKey] = output[key] ? JSON.parse(output[key]) : '';}\n                        else {vaInputs[mappedKey] = output[key];}\n                    });\n                })()","id":"95de1842dc934abd877569e2ee0b7f87","name":"0a0fa68792d94ee5ae73fa82ba67c65f_ai_data_collector_output_handler","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"73cd01c9af6944edacef9df962a5603b","target_node_id":"bfc8742d127c440c815d0319b56b8fc8","id":"173f85c55597481fbc35293b015b453a"},{"type":"Edge","source_node_id":"bfc8742d127c440c815d0319b56b8fc8","target_node_id":"63fa584749c24ebface0fe9cfb3530da","id":"703dda760921451697fa1c71bf3feaf9"},{"type":"Edge","source_node_id":"da81c53e0c6a4929aa05b6502db27146","target_node_id":"379caa66ed074561b942eaca192c22eb","branch_id":"712edd7c35614f20b441022f31d562f2","id":"d33b84773ff9466894c01b8193cf84bd","name":"712edd7c35614f20b441022f31d562f2"},{"type":"Edge","source_node_id":"70b631a648ac4e24bb3a123d347afb4e","target_node_id":"1d0f5b795aa1461b9181995340fc03d1","id":"07fcce13fda6482aa7083f23c4c69686"},{"type":"Edge","source_node_id":"214597ce531e4fca8b85f7d7b40e1001","target_node_id":"63fa584749c24ebface0fe9cfb3530da","id":"1fe73b1a686549b78838d7765f0a3463"},{"type":"Edge","source_node_id":"0a0fa68792d94ee5ae73fa82ba67c65f","target_node_id":"95de1842dc934abd877569e2ee0b7f87","id":"1cc89c51cc5443a5ac16c8f37588c92e"},{"type":"Edge","source_node_id":"95de1842dc934abd877569e2ee0b7f87","target_node_id":"214597ce531e4fca8b85f7d7b40e1001","id":"5ecab932d6c146b59d539f8889ac009c"},{"type":"Edge","source_node_id":"a331a92534cb41b0bfc1a26e495453e0","target_node_id":"4f247c979a5d4282b085c416776c771b","id":"3529582ff8614c62be0783ffd496bc36"},{"type":"Edge","source_node_id":"63fa584749c24ebface0fe9cfb3530da","target_node_id":"b6a6821dfdcd4df6be66f00dc6a5959e","id":"e756733b6d4a4bcabcf5d855aaaf2172"},{"type":"Edge","source_node_id":"b6a6821dfdcd4df6be66f00dc6a5959e","target_node_id":"da81c53e0c6a4929aa05b6502db27146","id":"eec74d6443cb4153b7ce9928788fa994"},{"type":"Edge","source_node_id":"4f247c979a5d4282b085c416776c771b","target_node_id":"73cd01c9af6944edacef9df962a5603b","id":"706ac5fc642743588418e160f6ade47f"},{"type":"Edge","source_node_id":"da81c53e0c6a4929aa05b6502db27146","target_node_id":"0a0fa68792d94ee5ae73fa82ba67c65f","branch_id":"5537cac824fa494599dddd151548b3d3","id":"19a72c2e911547a78b10ae2a79d973d8","name":"5537cac824fa494599dddd151548b3d3"},{"type":"Edge","source_node_id":"379caa66ed074561b942eaca192c22eb","target_node_id":"70b631a648ac4e24bb3a123d347afb4e","id":"a21e2b6ee4774e7bbb14f999b0264de5"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"807f337061a34d10a860d66925fdfff3","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"ai_data_collector_057c6c81e815433ea0516e82c07501d9_output","list":false,"id":"dcfd831966534838bf41da5d150da415","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output","list":false,"id":"242fba0f4fb84beb9d23b3b64077cee5","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"x_snc_15_minute_se_registered_templates","auto_select":false,"id":"17fb8bf6760340508f1ad6a32d11edc6","name":"which_template_","description":"Select from the templates available for this industry","formatType":"text","secure":false,"sensitive":false,"aiInput":true,"list":false},{"type":"String","name":"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output","list":false,"id":"a49a57f82a60499989e1f3651ec94de2","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"Choice","choices":[{"name":"Government","element":"GOV"},{"name":"Higher Education","element":"ED"},{"name":"Insurance","element":"INS"},{"name":"HealthCare and Life Sciences","element":"HCLS"}],"id":"696c56963fd04cf58f00616ee5be3fb2","name":"which_industry_","description":"Which industry are you building this product for?","formatType":"text","secure":false,"sensitive":false,"aiInput":true,"list":false,"translation":true,"label":"Which Industry?"},{"type":"String","name":"ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output","list":false,"id":"53cc6f5cb5754470bcc118e62a741b8e","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output","list":false,"id":"c7c155d7015545f6ae0821aac2ba55f6","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"Choice","choices":[{"name":"Yes","element":"Yes"},{"name":"No","element":"No"}],"id":"69c7eb4637c941faaefca01825b34299","name":"add_additional_services_to_your_product","description":"Would you like to add additional services to your product?","formatType":"text","secure":false,"sensitive":false,"aiInput":true,"list":false,"translation":true,"label":"Add Additional Services To Your Product"},{"type":"String","name":"services_to_add","description":"Detailed explanation of the services to be added by AI.","list":false,"id":"c13d9e9945f24829a350d9fbd96ce335","formatType":"text","secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output","list":false,"id":"d841ff6e845444cea94a03d40f81736b","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"service_to_add","description":"Describe the service that you would like our AI Assistants to add to your product.","list":false,"id":"93636bb8b83f40cc96cf5315e51346e1","formatType":"text","secure":false,"sensitive":false,"aiInput":true}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"9c753ca0479902504f6574fc416d43d9","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"59f6c0fcfb8d6690c04cfbac7befdc24","name":"Build Digital Products for Industries","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Create a conversational interface for the Agentic Industry Builders","model_type":"llm","foundational":false,"modify_confirmation_enabled":false,"context_profiles":["e13840cf77d53110569156391e5a99ba"],"title":"Build Digital Products for Industries","library":false,"csTopicId":"7becfb25fb05e610c04cfbac7befdc39","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>59f6c0fcfb8d6690c04cfbac7befdc24</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "a331a92534cb41b0bfc1a26e495453e0": {
+          "id": "a331a92534cb41b0bfc1a26e495453e0",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "1d0f5b795aa1461b9181995340fc03d1": {
+          "id": "1d0f5b795aa1461b9181995340fc03d1",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "fc55ac35fda24a398199d3a2e39c6795": {
+          "id": "fc55ac35fda24a398199d3a2e39c6795",
+          "stepType": "StandaloneAIReferenceChoicePrompt",
+          "name": "Which Template?",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "5bc1f4d661e74fe4b022d452351cd7f5",
+              "displayName": "Which Template?",
+              "name": "which_template_",
+              "description": "Select from the templates available for this industry",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "reference",
+              "variableId": "17fb8bf6760340508f1ad6a32d11edc6",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "glide_record",
+              "script": "",
+              "condition": {
+                "mode": "glide_query",
+                "value": "industry_sectorLIKE{{vaInputs.which_industry_}}"
+              },
+              "stepType": "ReferenceChoicePrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "242fba0f4fb84beb9d23b3b64077cee5"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "17fb8bf6760340508f1ad6a32d11edc6"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "73cd01c9af6944edacef9df962a5603b": {
+          "id": "73cd01c9af6944edacef9df962a5603b",
+          "stepType": "StandaloneAIChoicePrompt",
+          "name": "Which Industry?",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "c0dc5de69ab2410294f3f0cb9f913f1e",
+              "displayName": "Which Industry?",
+              "name": "which_industry_",
+              "description": "Which industry are you building this product for?",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "choice",
+              "variableId": "696c56963fd04cf58f00616ee5be3fb2",
+              "choices": [
+                {
+                  "label": "Government",
+                  "value": "GOV"
+                },
+                {
+                  "label": "Higher Education",
+                  "value": "ED"
+                },
+                {
+                  "label": "Insurance",
+                  "value": "INS",
+                  "checked": true,
+                  "meta": {}
+                },
+                {
+                  "label": "HealthCare and Life Sciences",
+                  "value": "HCLS",
+                  "checked": true,
+                  "meta": {}
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "ChoicePrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "a49a57f82a60499989e1f3651ec94de2"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_73cd01c9af6944edacef9df962a5603b_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "696c56963fd04cf58f00616ee5be3fb2"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "da81c53e0c6a4929aa05b6502db27146": {
+          "id": "da81c53e0c6a4929aa05b6502db27146",
+          "stepType": "Decision",
+          "name": "Decision",
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "63fa584749c24ebface0fe9cfb3530da": {
+          "id": "63fa584749c24ebface0fe9cfb3530da",
+          "stepType": "StandaloneAIChoicePrompt",
+          "name": "Add additional services to your product",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "b65cca5f813e4642888f5c475ab13796",
+              "displayName": "Add additional services to your product",
+              "name": "add_additional_services_to_your_product",
+              "description": "Would you like to add additional services to your product?",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "choice",
+              "variableId": "69c7eb4637c941faaefca01825b34299",
+              "choices": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "ChoicePrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "c7c155d7015545f6ae0821aac2ba55f6"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "69c7eb4637c941faaefca01825b34299"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "4f247c979a5d4282b085c416776c771b": {
+          "id": "4f247c979a5d4282b085c416776c771b",
+          "stepType": "SlotFillPrompt",
+          "name": "Services to Add",
+          "type": "string",
+          "withNluUserInput": false,
+          "skipIfFulfilled": true,
+          "variableId": "c13d9e9945f24829a350d9fbd96ce335",
+          "values": {
+            "supportedControlNote": "",
+            "name": "",
+            "variableName": "",
+            "label": "Text 80",
+            "prompt": {
+              "mode": "simple",
+              "value": "Set by NLU"
+            },
+            "inputType": {
+              "format": "Text",
+              "script": ""
+            },
+            "detailDescription": "",
+            "skipIfFulfilled": false,
+            "node_id": "",
+            "variable_name": "",
+            "secureNote": "User input will be securely masked. For passwords, please use Action inputs instead.",
+            "secure": false,
+            "encryptionHashFunction": "SHA-256",
+            "encryptionSalt": {
+              "value": "MTc0NDkyNjA4NTk1MCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+              "mode": "simple"
+            },
+            "defaultValueNote": "Define a value for the user response to the prompt. For example, if we already know the user name, the default value might be (Script Variables &gt; Last username).",
+            "defaultValue": {
+              "value": "",
+              "mode": "simple"
+            },
+            "acknowledgeMsg": {
+              "value": "",
+              "mode": "simple"
+            },
+            "confirmMessage": {
+              "value": "",
+              "mode": "simple"
+            },
+            "withNluUserInput": false,
+            "applicabilityNote": "By default, this node will be shown in the conversation and input from the user will be required.",
+            "applicability": {
+              "mode": "script",
+              "value": "(function() { return false; })()"
+            },
+            "skippable": {
+              "value": "",
+              "mode": "query"
+            },
+            "skipReprompt": {
+              "value": "",
+              "mode": "query"
+            }
+          },
+          "hidden": true,
+          "detailDescription": "Detailed explanation of the services to be added by AI.",
+          "node_id": "4f247c979a5d4282b085c416776c771b",
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "214597ce531e4fca8b85f7d7b40e1001": {
+          "id": "214597ce531e4fca8b85f7d7b40e1001",
+          "name": "Add new service to variable",
+          "script": "(function execute() {\n    if (vaInputs.services_to_add == \"\"){\n        vaInputs.services_to_add = \"\\\"Workflow Directives\\\": [\";\n    } else {\n        vaInputs.services_to_add = vaInputs.services_to_add + \", \";\n    }\n    vaInputs.services_to_add = vaInputs.services_to_add + \"{\\\"describe_the_type_of_workflow_needed\\\": \\\"\" + vaInputs.service_to_add + \"\\\", \\\"embed_payment\\\": false,\\\"include_digital_signature\\\": false,\\\"map\\\": false}\";\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "0a0fa68792d94ee5ae73fa82ba67c65f": {
+          "id": "0a0fa68792d94ee5ae73fa82ba67c65f",
+          "stepType": "StandaloneAITextPrompt",
+          "name": "Service to add",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "b21844416c304fb7b7484ae79a412da7",
+              "displayName": "Service to add",
+              "name": "service_to_add",
+              "description": "Describe the service that you would like our AI Assistants to add to your product.",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "string",
+              "variableId": "93636bb8b83f40cc96cf5315e51346e1",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "TextPrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "d841ff6e845444cea94a03d40f81736b"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "93636bb8b83f40cc96cf5315e51346e1"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "379caa66ed074561b942eaca192c22eb": {
+          "id": "379caa66ed074561b942eaca192c22eb",
+          "name": "Services to add close out",
+          "script": "(function execute() {\n    if (vaInputs.services_to_add != \"\"){\n        vaInputs.services_to_add = vaInputs.services_to_add + \"]}\";\n    } \n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "70b631a648ac4e24bb3a123d347afb4e": {
+          "id": "70b631a648ac4e24bb3a123d347afb4e",
+          "stepType": "TextOutput",
+          "name": "debug output",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.services_to_add}}",
+                        "displayValue": "Input Variables➛Services To Add"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "6ab2099bfeb1470ea22d2719dea910c1"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "isCollapsible": true
+        }
+      },
+      "edges": [
+        {
+          "id": "d33b84773ff9466894c01b8193cf84bd",
+          "edgeType": "Branch",
+          "source": "da81c53e0c6a4929aa05b6502db27146",
+          "target": "379caa66ed074561b942eaca192c22eb",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.add_additional_services_to_your_product=No",
+            "mode": "query"
+          },
+          "label": "No more services to add"
+        },
+        {
+          "id": "07fcce13fda6482aa7083f23c4c69686",
+          "edgeType": "Edge",
+          "source": "70b631a648ac4e24bb3a123d347afb4e",
+          "target": "1d0f5b795aa1461b9181995340fc03d1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1fe73b1a686549b78838d7765f0a3463",
+          "edgeType": "Edge",
+          "source": "214597ce531e4fca8b85f7d7b40e1001",
+          "target": "63fa584749c24ebface0fe9cfb3530da",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f41c5dbd49e14750b2e3cf67113d6dfd",
+          "edgeType": "Edge",
+          "source": "0a0fa68792d94ee5ae73fa82ba67c65f",
+          "target": "214597ce531e4fca8b85f7d7b40e1001",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3529582ff8614c62be0783ffd496bc36",
+          "edgeType": "Edge",
+          "source": "a331a92534cb41b0bfc1a26e495453e0",
+          "target": "4f247c979a5d4282b085c416776c771b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "594bd15aafad497181f10dd528ffc699",
+          "edgeType": "Edge",
+          "source": "73cd01c9af6944edacef9df962a5603b",
+          "target": "fc55ac35fda24a398199d3a2e39c6795",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "28b7220651cc4a54a64855bf0e7b9902",
+          "edgeType": "Edge",
+          "source": "fc55ac35fda24a398199d3a2e39c6795",
+          "target": "63fa584749c24ebface0fe9cfb3530da",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9d77f60c90c240b2831c200d4603cf0f",
+          "edgeType": "Edge",
+          "source": "63fa584749c24ebface0fe9cfb3530da",
+          "target": "da81c53e0c6a4929aa05b6502db27146",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "706ac5fc642743588418e160f6ade47f",
+          "edgeType": "Edge",
+          "source": "4f247c979a5d4282b085c416776c771b",
+          "target": "73cd01c9af6944edacef9df962a5603b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "19a72c2e911547a78b10ae2a79d973d8",
+          "edgeType": "Branch",
+          "source": "da81c53e0c6a4929aa05b6502db27146",
+          "target": "0a0fa68792d94ee5ae73fa82ba67c65f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.add_additional_services_to_your_product=Yes",
+            "mode": "query"
+          },
+          "label": "Add Services"
+        },
+        {
+          "id": "a21e2b6ee4774e7bbb14f999b0264de5",
+          "edgeType": "Edge",
+          "source": "379caa66ed074561b942eaca192c22eb",
+          "target": "70b631a648ac4e24bb3a123d347afb4e",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "807f337061a34d10a860d66925fdfff3": {
+      "category": "vaInputs",
+      "id": "807f337061a34d10a860d66925fdfff3",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "dcfd831966534838bf41da5d150da415": {
+      "id": "dcfd831966534838bf41da5d150da415",
+      "name": "ai_data_collector_057c6c81e815433ea0516e82c07501d9_output",
+      "label": "Ai_data_collector_057c6c81e815433ea0516e82c07501d9_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "242fba0f4fb84beb9d23b3b64077cee5": {
+      "id": "242fba0f4fb84beb9d23b3b64077cee5",
+      "name": "ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output",
+      "label": "Ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "17fb8bf6760340508f1ad6a32d11edc6": {
+      "id": "17fb8bf6760340508f1ad6a32d11edc6",
+      "varType": "reference",
+      "category": "vaInputs",
+      "label": "Which Template?",
+      "name": "which_template_",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "glide_record",
+      "table": "x_snc_15_minute_se_registered_templates",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "fc55ac35fda24a398199d3a2e39c6795",
+      "isHidden": false,
+      "description": "Select from the templates available for this industry"
+    },
+    "a49a57f82a60499989e1f3651ec94de2": {
+      "id": "a49a57f82a60499989e1f3651ec94de2",
+      "name": "ai_data_collector_73cd01c9af6944edacef9df962a5603b_output",
+      "label": "Ai_data_collector_73cd01c9af6944edacef9df962a5603b_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "696c56963fd04cf58f00616ee5be3fb2": {
+      "id": "696c56963fd04cf58f00616ee5be3fb2",
+      "varType": "choice",
+      "category": "vaInputs",
+      "label": "Which Industry?",
+      "name": "which_industry_",
+      "choices": [
+        {
+          "label": "Government",
+          "value": "GOV"
+        },
+        {
+          "label": "Higher Education",
+          "value": "ED"
+        },
+        {
+          "label": "Insurance",
+          "value": "INS",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "HealthCare and Life Sciences",
+          "value": "HCLS",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "73cd01c9af6944edacef9df962a5603b",
+      "isHidden": false,
+      "description": "Which industry are you building this product for?",
+      "translation": true
+    },
+    "53cc6f5cb5754470bcc118e62a741b8e": {
+      "id": "53cc6f5cb5754470bcc118e62a741b8e",
+      "name": "ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output",
+      "label": "Ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "c7c155d7015545f6ae0821aac2ba55f6": {
+      "id": "c7c155d7015545f6ae0821aac2ba55f6",
+      "name": "ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output",
+      "label": "Ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "69c7eb4637c941faaefca01825b34299": {
+      "id": "69c7eb4637c941faaefca01825b34299",
+      "varType": "choice",
+      "category": "vaInputs",
+      "label": "Add Additional Services To Your Product",
+      "name": "add_additional_services_to_your_product",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "63fa584749c24ebface0fe9cfb3530da",
+      "isHidden": false,
+      "description": "Would you like to add additional services to your product?",
+      "translation": true
+    },
+    "c13d9e9945f24829a350d9fbd96ce335": {
+      "id": "c13d9e9945f24829a350d9fbd96ce335",
+      "name": "services_to_add",
+      "label": "Services To Add",
+      "varType": "string",
+      "category": "vaInputs",
+      "nodeId": "4f247c979a5d4282b085c416776c771b",
+      "isHidden": true,
+      "description": "Detailed explanation of the services to be added by AI."
+    },
+    "d841ff6e845444cea94a03d40f81736b": {
+      "id": "d841ff6e845444cea94a03d40f81736b",
+      "name": "ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output",
+      "label": "Ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "93636bb8b83f40cc96cf5315e51346e1": {
+      "id": "93636bb8b83f40cc96cf5315e51346e1",
+      "varType": "string",
+      "category": "vaInputs",
+      "label": "Service To Add",
+      "name": "service_to_add",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "0a0fa68792d94ee5ae73fa82ba67c65f",
+      "isHidden": false,
+      "description": "Describe the service that you would like our AI Assistants to add to your product."
+    }
+  }
+}</graph>
+        <name>Build Digital Products for Industries</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-22 00:08:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4cfcfb25fb05e610c04cfbac7befdc5b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_cb_design_topic_4cfcfb25fb05e610c04cfbac7befdc5b</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-04 19:55:06</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

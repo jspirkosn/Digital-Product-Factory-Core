@@ -16,10 +16,10 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>clean_public_llm_response</internal_name>
-        <label_cache>[{"name":"{{action.public_llm_response}}","label":"action➛Public LLM Response","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.response_type}}","label":"action➛Response Type","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Service Name","value":"service_name","order":1.0},{"label":"Service Description","value":"service_desc","order":2.0}],"attributes":{}},{"name":"{{step[ff033b76-7ed5-4f42-982d-f5971bce3be0].clean_output}}","label":"step➛Script step➛clean_output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.public_llm_response}}","label":"action➛LLM Response","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a99af3cd-a617-44b4-8154-d7c5d7b7a6aa"}},{"name":"{{action.response_type}}","label":"action➛Response Type","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Service Name","value":"service_name","order":0.0},{"label":"Service Description","value":"service_desc","order":1.0},{"label":"Now LLM","value":"Now LLM","order":2.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"f3f07635-4d37-47fd-b3bf-962c07e6e09b"}},{"name":"{{step[ff033b76-7ed5-4f42-982d-f5971bce3be0].clean_output}}","label":"step➛Script step➛clean_output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>695d10a7fb8cee10625bf7704eefdc08</master_snapshot>
         <master_snapshot_digest/>
-        <name>Clean Public LLM Response</name>
+        <name>Clean LLM Response</name>
         <natlang/>
         <outputs/>
         <outputs/>
@@ -30,15 +30,15 @@
         <sys_created_on>2025-03-08 19:41:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>45b9dcaffb4cee10625bf7704eefdc3f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Clean Public LLM Response</sys_name>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Clean LLM Response</sys_name>
         <sys_overrides/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_45b9dcaffb4cee10625bf7704eefdc3f</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:42</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:56:00</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -51,10 +51,10 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:54</sys_created_on>
         <sys_id>a15ddc67fb8cee10625bf7704eefdce1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 19:56:54</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2025-05-06 06:22:43</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">555ddc67fb8cee10625bf7704eefdcce</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -110,7 +110,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=45b9dcaffb4cee10625bf7704eefdc3f^sys_idNOT IN995ddc67fb8cee10625bf7704eefdcb7"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</action>
+        <action display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</action>
         <cid>ff033b76-7ed5-4f42-982d-f5971bce3be0</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -127,14 +127,14 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:53</sys_created_on>
         <sys_id>995ddc67fb8cee10625bf7704eefdcb7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:39</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:48:05</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=995ddc67fb8cee10625bf7704eefdcb7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -159,19 +159,27 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:53</sys_created_on>
         <sys_id>d95ddc67fb8cee10625bf7704eefdcca</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:39</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:48:05</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
 if (inputs.respType === 'service_name'){&#13;
     outputs.clean_output = inputs.dataIn&#13;
-    .replace(/##/g, '')&#13;
+    .replace(/##/g, '');&#13;
 }&#13;
 else{&#13;
     outputs.clean_output = inputs.dataIn&#13;
     .replace(/##.*$/gm, '')&#13;
-    .replace(/^\s\n+|\s\n+$/g,'');;  &#13;
+    .replace(/^\s\n+|\s\n+$/g,'');  &#13;
+}&#13;
+&#13;
+if(inputs.respType === 'Now LLM'){&#13;
+    outputs.clean_output = inputs.dataIn&#13;
+    .replace(/Response : {"model_output":"/g, '')&#13;
+    .replace(/"}/g, '')&#13;
+    .replace(/\\n/g, '')&#13;
+    .replace(/\*\*/g, '');&#13;
 }&#13;
 })(inputs, outputs);&#13;
 </value>
@@ -296,7 +304,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:53</sys_updated_on>
@@ -375,14 +383,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 20:53:38</sys_created_on>
         <sys_id>b45a20e3fb002250625bf7704eefdc3a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:38</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -463,7 +471,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:53</sys_updated_on>
@@ -494,9 +502,9 @@ else{&#13;
         <sys_id>555ddc67fb8cee10625bf7704eefdcc3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:53</sys_updated_on>
@@ -542,9 +550,9 @@ else{&#13;
         <hint/>
         <internal_type display_value="Choice">choice</internal_type>
         <label>Response Type</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
+        <model display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
         <model_id>45b9dcaffb4cee10625bf7704eefdc3f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f</name>
@@ -567,14 +575,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 20:53:38</sys_created_on>
         <sys_id>6c5a20e3fb002250625bf7704eefdc0a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:38</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -625,10 +633,10 @@ else{&#13;
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Public LLM Response</label>
-        <mandatory>false</mandatory>
+        <label>LLM Response</label>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
+        <model display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
         <model_id>45b9dcaffb4cee10625bf7704eefdc3f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f</name>
@@ -651,14 +659,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:53</sys_created_on>
         <sys_id>955d5067fb8cee10625bf7704eefdc0f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 19:56:53</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -715,7 +723,7 @@ else{&#13;
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
+        <model display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
         <model_id>45b9dcaffb4cee10625bf7704eefdc3f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_45b9dcaffb4cee10625bf7704eefdc3f</name>
@@ -742,7 +750,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:53</sys_updated_on>
@@ -802,7 +810,7 @@ else{&#13;
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
+        <model display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
         <model_id>45b9dcaffb4cee10625bf7704eefdc3f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_45b9dcaffb4cee10625bf7704eefdc3f</name>
@@ -825,14 +833,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:54</sys_created_on>
         <sys_id>695ddc67fb8cee10625bf7704eefdcd6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:39</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -889,7 +897,7 @@ else{&#13;
         <label>Cleaned Output</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
+        <model display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</model>
         <model_id>45b9dcaffb4cee10625bf7704eefdc3f</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_45b9dcaffb4cee10625bf7704eefdc3f</name>
@@ -916,7 +924,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:54</sys_updated_on>
@@ -937,7 +945,7 @@ else{&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=45b9dcaffb4cee10625bf7704eefdc3f"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=45b9dcaffb4cee10625bf7704eefdc3f^sys_idNOT IN2d5ddc67fb8cee10625bf7704eefdce2"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</action_type_id>
+        <action_type_id display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</action_type_id>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:54</sys_created_on>
         <sys_id>2d5ddc67fb8cee10625bf7704eefdce2</sys_id>
@@ -960,9 +968,9 @@ else{&#13;
         <sys_id>6c5a20e3fb002250625bf7704eefdc1e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 20:53:38</sys_updated_on>
@@ -973,7 +981,7 @@ else{&#13;
         <element>public_llm_response</element>
         <help/>
         <hint/>
-        <label>Public LLM Response</label>
+        <label>LLM Response</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f</name>
         <plural/>
@@ -981,18 +989,18 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:53</sys_created_on>
         <sys_id>d95ddc67fb8cee10625bf7704eefdcb2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 19:56:53</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:56</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f^sys_idNOT IN205a20e3fb002250625bf7704eefdc1b,685a20e3fb002250625bf7704eefdc1a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f^sys_idNOT IN205a20e3fb002250625bf7704eefdc1b,685a20e3fb002250625bf7704eefdc1a,9ec8dd5efb156a10c04cfbac7befdcc5"/>
     <sys_choice field="response_type" table="var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -1002,16 +1010,16 @@ else{&#13;
             <label>Service Description</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f</name>
-            <sequence>2</sequence>
+            <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>john.spirko</sys_created_by>
             <sys_created_on>2025-03-08 20:53:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>205a20e3fb002250625bf7704eefdc1b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>john.spirko</sys_updated_by>
-            <sys_updated_on>2025-03-08 20:53:38</sys_updated_on>
+            <sys_updated_on>2025-05-06 06:22:42</sys_updated_on>
             <value>service_desc</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -1022,17 +1030,37 @@ else{&#13;
             <label>Service Name</label>
             <language>en</language>
             <name>var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f</name>
-            <sequence>1</sequence>
+            <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>john.spirko</sys_created_by>
             <sys_created_on>2025-03-08 20:53:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>685a20e3fb002250625bf7704eefdc1a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>john.spirko</sys_updated_by>
-            <sys_updated_on>2025-03-08 20:53:38</sys_updated_on>
+            <sys_updated_on>2025-05-06 06:22:42</sys_updated_on>
             <value>service_name</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>response_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now LLM</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_45b9dcaffb4cee10625bf7704eefdc3f</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>john.spirko</sys_created_by>
+            <sys_created_on>2025-05-06 06:22:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9ec8dd5efb156a10c04cfbac7befdcc5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>john.spirko</sys_updated_by>
+            <sys_updated_on>2025-05-06 06:33:50</sys_updated_on>
+            <value>Now LLM</value>
         </sys_choice>
     </sys_choice>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -1049,9 +1077,9 @@ else{&#13;
         <sys_id>a15ddc67fb8cee10625bf7704eefdcd2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:54</sys_updated_on>
@@ -1072,9 +1100,9 @@ else{&#13;
         <sys_id>ad5ddc67fb8cee10625bf7704eefdcd5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:54</sys_updated_on>
@@ -1095,9 +1123,9 @@ else{&#13;
         <sys_id>e95ddc67fb8cee10625bf7704eefdcdb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:54</sys_updated_on>
@@ -1107,23 +1135,23 @@ else{&#13;
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_45b9dcaffb4cee10625bf7704eefdc3f"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=45b9dcaffb4cee10625bf7704eefdc3f^sys_idNOT INd65d10a7fb8cee10625bf7704eefdc70"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</action_id>
+        <action_id display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d65d10a7fb8cee10625bf7704eefdc70","name":"plan","plan_signature":null}}</plan>
-        <snapshot>615a20e3fb002250625bf7704eefdcf1</snapshot>
+        <snapshot>4a60ed9efb556a10c04cfbac7befdcc9</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>d65d10a7fb8cee10625bf7704eefdc70</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:43</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:56:01</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1140,27 +1168,27 @@ else{&#13;
         <description>Stripe headers and special characters</description>
         <flow_priority/>
         <internal_name>clean_public_llm_response</internal_name>
-        <label_cache>[{"name":"{{action.public_llm_response}}","label":"action➛Public LLM Response","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.response_type}}","label":"action➛Response Type","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Service Name","value":"service_name","order":1.0},{"label":"Service Description","value":"service_desc","order":2.0}],"attributes":{}},{"name":"{{step[ff033b76-7ed5-4f42-982d-f5971bce3be0].clean_output}}","label":"step➛Script step➛clean_output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.public_llm_response}}","label":"action➛LLM Response","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a99af3cd-a617-44b4-8154-d7c5d7b7a6aa"}},{"name":"{{action.response_type}}","label":"action➛Response Type","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Service Name","value":"service_name","order":0.0},{"label":"Service Description","value":"service_desc","order":1.0},{"label":"Now LLM","value":"Now LLM","order":2.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"f3f07635-4d37-47fd-b3bf-962c07e6e09b"}},{"name":"{{step[ff033b76-7ed5-4f42-982d-f5971bce3be0].clean_output}}","label":"step➛Script step➛clean_output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
-        <name>Clean Public LLM Response</name>
+        <name>Clean LLM Response</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="Clean Public LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</parent_action>
+        <parent_action display_value="Clean LLM Response">45b9dcaffb4cee10625bf7704eefdc3f</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>695d10a7fb8cee10625bf7704eefdc08</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:40</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:58</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1173,10 +1201,10 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:55</sys_created_on>
         <sys_id>b95d10a7fb8cee10625bf7704eefdc3c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2025-05-06 06:56:00</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">355d10a7fb8cee10625bf7704eefdc2a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1232,7 +1260,7 @@ else{&#13;
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=695d10a7fb8cee10625bf7704eefdc08^sys_idNOT IN395d10a7fb8cee10625bf7704eefdc14"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Clean Public LLM Response">695d10a7fb8cee10625bf7704eefdc08</action>
+        <action display_value="Clean LLM Response">695d10a7fb8cee10625bf7704eefdc08</action>
         <cid>ff033b76-7ed5-4f42-982d-f5971bce3be0</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1249,14 +1277,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:55</sys_created_on>
         <sys_id>395d10a7fb8cee10625bf7704eefdc14</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:41</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=395d10a7fb8cee10625bf7704eefdc14"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1267,19 +1295,27 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:55</sys_created_on>
         <sys_id>b95d10a7fb8cee10625bf7704eefdc26</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:41</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:59</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
 &#13;
 if (inputs.respType === 'service_name'){&#13;
     outputs.clean_output = inputs.dataIn&#13;
-    .replace(/##/g, '')&#13;
+    .replace(/##/g, '');&#13;
 }&#13;
 else{&#13;
     outputs.clean_output = inputs.dataIn&#13;
     .replace(/##.*$/gm, '')&#13;
-    .replace(/^\s\n+|\s\n+$/g,'');;  &#13;
+    .replace(/^\s\n+|\s\n+$/g,'');  &#13;
+}&#13;
+&#13;
+if(inputs.respType === 'Now LLM'){&#13;
+    outputs.clean_output = inputs.dataIn&#13;
+    .replace(/Response : {"model_output":"/g, '')&#13;
+    .replace(/"}/g, '')&#13;
+    .replace(/\\n/g, '')&#13;
+    .replace(/\*\*/g, '');&#13;
 }&#13;
 })(inputs, outputs);&#13;
 </value>
@@ -1418,7 +1454,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 20:53:41</sys_updated_on>
@@ -1501,7 +1537,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -1585,7 +1621,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -1616,9 +1652,9 @@ else{&#13;
         <sys_id>f95d10a7fb8cee10625bf7704eefdc1f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -1663,10 +1699,10 @@ else{&#13;
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Public LLM Response</label>
-        <mandatory>false</mandatory>
+        <label>LLM Response</label>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Clean Public LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
+        <model display_value="Clean LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
         <model_id>695d10a7fb8cee10625bf7704eefdc08</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_695d10a7fb8cee10625bf7704eefdc08</name>
@@ -1689,14 +1725,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:54</sys_created_on>
         <sys_id>6d5d10a7fb8cee10625bf7704eefdc0b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 19:56:54</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1748,9 +1784,9 @@ else{&#13;
         <hint/>
         <internal_type display_value="Choice">choice</internal_type>
         <label>Response Type</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Clean Public LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
+        <model display_value="Clean LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
         <model_id>695d10a7fb8cee10625bf7704eefdc08</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_695d10a7fb8cee10625bf7704eefdc08</name>
@@ -1773,14 +1809,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 20:53:41</sys_created_on>
         <sys_id>d15a20e3fb002250625bf7704eefdca8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:41</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1837,7 +1873,7 @@ else{&#13;
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Clean Public LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
+        <model display_value="Clean LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
         <model_id>695d10a7fb8cee10625bf7704eefdc08</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_695d10a7fb8cee10625bf7704eefdc08</name>
@@ -1864,7 +1900,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -1924,7 +1960,7 @@ else{&#13;
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Clean Public LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
+        <model display_value="Clean LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
         <model_id>695d10a7fb8cee10625bf7704eefdc08</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_695d10a7fb8cee10625bf7704eefdc08</name>
@@ -1947,14 +1983,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:55</sys_created_on>
         <sys_id>355d10a7fb8cee10625bf7704eefdc32</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 20:53:41</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:56:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2011,7 +2047,7 @@ else{&#13;
         <label>Cleaned Output</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Clean Public LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
+        <model display_value="Clean LLM Response">695d10a7fb8cee10625bf7704eefdc08</model>
         <model_id>695d10a7fb8cee10625bf7704eefdc08</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_695d10a7fb8cee10625bf7704eefdc08</name>
@@ -2038,7 +2074,7 @@ else{&#13;
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -2059,7 +2095,7 @@ else{&#13;
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=695d10a7fb8cee10625bf7704eefdc08"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=695d10a7fb8cee10625bf7704eefdc08^sys_idNOT IN065d10a7fb8cee10625bf7704eefdc3e"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Clean Public LLM Response">695d10a7fb8cee10625bf7704eefdc08</action_type_id>
+        <action_type_id display_value="Clean LLM Response">695d10a7fb8cee10625bf7704eefdc08</action_type_id>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:56</sys_created_on>
         <sys_id>065d10a7fb8cee10625bf7704eefdc3e</sys_id>
@@ -2072,7 +2108,7 @@ else{&#13;
         <element>public_llm_response</element>
         <help/>
         <hint/>
-        <label>Public LLM Response</label>
+        <label>LLM Response</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_695d10a7fb8cee10625bf7704eefdc08</name>
         <plural/>
@@ -2080,14 +2116,14 @@ else{&#13;
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-08 19:56:55</sys_created_on>
         <sys_id>395d10a7fb8cee10625bf7704eefdc0f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
+        <sys_updated_on>2025-05-06 06:55:59</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2105,16 +2141,16 @@ else{&#13;
         <sys_id>d15a20e3fb002250625bf7704eefdcae</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 20:53:41</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_695d10a7fb8cee10625bf7704eefdc08^sys_idNOT IN115a20e3fb002250625bf7704eefdcab,595a20e3fb002250625bf7704eefdcaa"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_695d10a7fb8cee10625bf7704eefdc08^sys_idNOT IN115a20e3fb002250625bf7704eefdcab,595a20e3fb002250625bf7704eefdcaa,fd60ed9efb556a10c04cfbac7befdc38"/>
     <sys_choice field="response_type" table="var__m_sys_hub_action_input_695d10a7fb8cee10625bf7704eefdc08">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -2156,6 +2192,26 @@ else{&#13;
             <sys_updated_on>2025-03-08 20:53:41</sys_updated_on>
             <value>service_name</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>response_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Now LLM</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_695d10a7fb8cee10625bf7704eefdc08</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>john.spirko</sys_created_by>
+            <sys_created_on>2025-05-06 06:55:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd60ed9efb556a10c04cfbac7befdc38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>john.spirko</sys_updated_by>
+            <sys_updated_on>2025-05-06 06:55:59</sys_updated_on>
+            <value>Now LLM</value>
+        </sys_choice>
     </sys_choice>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
@@ -2171,9 +2227,9 @@ else{&#13;
         <sys_id>355d10a7fb8cee10625bf7704eefdc37</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -2194,9 +2250,9 @@ else{&#13;
         <sys_id>795d10a7fb8cee10625bf7704eefdc31</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -2217,9 +2273,9 @@ else{&#13;
         <sys_id>fd5d10a7fb8cee10625bf7704eefdc2d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-08 19:56:55</sys_updated_on>
@@ -2230,6 +2286,6 @@ else{&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>45b9dcaffb4cee10625bf7704eefdc3f</sys_id>
         <latest_snapshot>695d10a7fb8cee10625bf7704eefdc08</latest_snapshot>
-        <compiler_build>glide-yokohama-12-18-2024__patch0-01-14-2025_01-22-2025_0439.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

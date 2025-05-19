@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1806096000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Allows now assist to self-serve the digital product factory requests to end users.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>conversational_factory_request</internal_name>
+        <label_cache>[{"name":"cab5b2f4-2d48-47e8-9cf7-630d888ed04f.__action_status__.message","label":"1 - Submit Catalog Item Request➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"428dfa5d-9e40-40e1-b7e1-d3442a5d06e9":["output-0"]},"attributes":{}}]</label_cache>
+        <master_snapshot>8859f4b3fb7cae50c04cfbac7befdc0f</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Factory Request through VA</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:22:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>86d8b073fb7cae50c04cfbac7befdcb0</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Factory Request through VA</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_hub_flow_86d8b073fb7cae50c04cfbac7befdcb0</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:18</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_86d8b073fb7cae50c04cfbac7befdcb0^id=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=86d8b073fb7cae50c04cfbac7befdcb0^sys_idNOT INac985e0dfb916610c04cfbac7befdc9f,e4985e0dfb916610c04cfbac7befdc9f"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</flow>
+        <label>Assign Outputs</label>
+        <order>1</order>
+        <stage_id>76df8be8-9a13-4ba0-88f8-0d8ee704eea1</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-02 13:48:59</sys_created_on>
+        <sys_id>ac985e0dfb916610c04cfbac7befdc9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-02 13:48:59</sys_updated_on>
+        <type>standard</type>
+        <value>assign</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>0</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</flow>
+        <label>Submit the Request</label>
+        <order>0</order>
+        <stage_id>68a526a7-2028-45d4-b769-ccf1ff2848a0</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-02 13:48:59</sys_created_on>
+        <sys_id>e4985e0dfb916610c04cfbac7befdc9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-02 13:48:59</sys_updated_on>
+        <type>standard</type>
+        <value>submit</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=86d8b073fb7cae50c04cfbac7befdcb0^sys_idNOT IN46d8b073fb7cae50c04cfbac7befdcb1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>86d8b073fb7cae50c04cfbac7befdcb0</id>
+        <name>Conversational Factory Request</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:22:39</sys_created_on>
+        <sys_id>46d8b073fb7cae50c04cfbac7befdcb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-15 23:22:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=46d8b073fb7cae50c04cfbac7befdcb1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=86d8b073fb7cae50c04cfbac7befdcb0^sys_idNOT IN9577f9f0fb892210c04cfbac7befdcb4,dd77f9f0fb892210c04cfbac7befdc39"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5fa3e321-98dc-443d-9e62-1c3cd33c2ea5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>template</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</model>
+        <model_id>86d8b073fb7cae50c04cfbac7befdcb0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_86d8b073fb7cae50c04cfbac7befdcb0</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:09</sys_created_on>
+        <sys_id>9577f9f0fb892210c04cfbac7befdcb4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9577f9f0fb892210c04cfbac7befdcb4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b4b7a795-589f-4579-a014-763204f497ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>industry</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Industry</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</model>
+        <model_id>86d8b073fb7cae50c04cfbac7befdcb0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_86d8b073fb7cae50c04cfbac7befdcb0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:08</sys_created_on>
+        <sys_id>dd77f9f0fb892210c04cfbac7befdc39</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dd77f9f0fb892210c04cfbac7befdc39"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=86d8b073fb7cae50c04cfbac7befdcb0^sys_idNOT INb269b8b3fb7cae50c04cfbac7befdcc3"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=89d4f6e7-2bc5-49db-8f2f-a496f3be7b3b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</model>
+        <model_id>86d8b073fb7cae50c04cfbac7befdcb0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_86d8b073fb7cae50c04cfbac7befdcb0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:25:09</sys_created_on>
+        <sys_id>b269b8b3fb7cae50c04cfbac7befdcc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-15 23:25:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b269b8b3fb7cae50c04cfbac7befdcc3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=86d8b073fb7cae50c04cfbac7befdcb0^sys_idNOT IN3b49b4b3fb7cae50c04cfbac7befdce9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Submit Catalog Item Request">c7a04c607312001098e194596bf6a72a</action_type>
+        <action_type_parent display_value="Submit Catalog Item Request">bfb5ea807312001098e194596bf6a707</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c7a04c607312001098e194596bf6a72a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:24:41</sys_created_on>
+        <sys_id>3b49b4b3fb7cae50c04cfbac7befdce9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-02 13:43:16</sys_updated_on>
+        <ui_id>cab5b2f4-2d48-47e8-9cf7-630d888ed04f</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=86d8b073fb7cae50c04cfbac7befdcb0^sys_idNOT IN110e743ffb7cae50c04cfbac7befdc6d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">950e743ffb7cae50c04cfbac7befdc6c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:45:16</sys_created_on>
+        <sys_id>110e743ffb7cae50c04cfbac7befdc6d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:15</sys_updated_on>
+        <ui_id>428dfa5d-9e40-40e1-b7e1-d3442a5d06e9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/61TwY7aMBD9F59JlEIggdtK1UortUXq0r1UlTW2x2DVsbOxA0sR/94xCeyKUw89zvPMmzdvxifm+9j2MWz8Qwhm69jq54kZxVZMTBdLUYuZFpUEnBeyKKUWICuBWkk5YxPmoEHKHCgo3oPtE3A6SRBzMdVlNlVlnZUV1tlS6ipbzApV1zWqotQ55yCj8Y6HCLEPnOcNhgBbPJ+JTJnQWji+/E9OuTNWdZim/DVhLXQ0QMSOrU53T/HYIrcg0FLr59gZt6Xyf/XlWri+GnNvVKKnOFyJfaeSik8Thm8RnUJqpMEGnLAGnILou+MN6RDU2tl3YGdcJDaWkt+C+UPUdVEUKVMjjSRxeL2FfPR2gOXOG4nrNtk2IBGEHWukt33jvg3601ZQQ2/jdSuE9IH4sE2qk4xRk37e+cP3a8NH4y4Djo/WS7C3CCLZIPqIIe2hN5s7cwbky/0y0GJDHXkDbUsIbzu/N5cuJLrJt5aCXFt/IHXpsvPhMHJyE/JHwj9f4BfoTBr3K9FQcWr3w5nXHp/SsuulKvUCq2wq5Dwrl0pktZ7qDMrlQs8EVmIm2PliLX/t01CDSaMdfHCUEoLsTBsfSMIex8nPdGfGpc833Nx+VDKGCqUJJHiTsKcPeepI52TkR+jgu99p1Hfs/Bf5wKag2gMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>template</element>
+        <help/>
+        <hint/>
+        <label>template</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_86d8b073fb7cae50c04cfbac7befdcb0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:09</sys_created_on>
+        <sys_id>1977f9f0fb892210c04cfbac7befdcb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-19 06:30:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>industry</element>
+        <help/>
+        <hint/>
+        <label>Industry</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_86d8b073fb7cae50c04cfbac7befdcb0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:09</sys_created_on>
+        <sys_id>5577f9f0fb892210c04cfbac7befdcb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-19 06:30:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_86d8b073fb7cae50c04cfbac7befdcb0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:25:09</sys_created_on>
+        <sys_id>b669b8b3fb7cae50c04cfbac7befdcc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-15 23:25:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Allows now assist to self-serve the digital product factory requests to end users.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>conversational_factory_request</internal_name>
+        <label_cache>[{"name":"cab5b2f4-2d48-47e8-9cf7-630d888ed04f.__action_status__.message","label":"1 - Submit Catalog Item Request➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"428dfa5d-9e40-40e1-b7e1-d3442a5d06e9":["output-0"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Factory Request through VA</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:24:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8859f4b3fb7cae50c04cfbac7befdc0f</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:17</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_8859f4b3fb7cae50c04cfbac7befdc0f^id=8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8859f4b3fb7cae50c04cfbac7befdc0f^sys_idNOT IN41989e0dfb916610c04cfbac7befdc2e,cd989e0dfb916610c04cfbac7befdc2d"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Factory Request through VA">8859f4b3fb7cae50c04cfbac7befdc0f</flow>
+        <label>Assign Outputs</label>
+        <order>1</order>
+        <stage_id>76df8be8-9a13-4ba0-88f8-0d8ee704eea1</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-02 13:49:01</sys_created_on>
+        <sys_id>41989e0dfb916610c04cfbac7befdc2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-02 13:49:01</sys_updated_on>
+        <type>standard</type>
+        <value>assign</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>0</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Factory Request through VA">8859f4b3fb7cae50c04cfbac7befdc0f</flow>
+        <label>Submit the Request</label>
+        <order>0</order>
+        <stage_id>68a526a7-2028-45d4-b769-ccf1ff2848a0</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-02 13:49:01</sys_created_on>
+        <sys_id>cd989e0dfb916610c04cfbac7befdc2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-02 13:49:01</sys_updated_on>
+        <type>standard</type>
+        <value>submit</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8859f4b3fb7cae50c04cfbac7befdc0f^sys_idNOT IN4459f4b3fb7cae50c04cfbac7befdc10"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8859f4b3fb7cae50c04cfbac7befdc0f</id>
+        <name>Conversational Factory Request</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:24:42</sys_created_on>
+        <sys_id>4459f4b3fb7cae50c04cfbac7befdc10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-15 23:24:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4459f4b3fb7cae50c04cfbac7befdc10"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8859f4b3fb7cae50c04cfbac7befdc0f^sys_idNOT IN75773df0fb892210c04cfbac7befdc12,f1773df0fb892210c04cfbac7befdc1e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b4b7a795-589f-4579-a014-763204f497ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>industry</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Industry</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Factory Request through VA">8859f4b3fb7cae50c04cfbac7befdc0f</model>
+        <model_id>8859f4b3fb7cae50c04cfbac7befdc0f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8859f4b3fb7cae50c04cfbac7befdc0f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:10</sys_created_on>
+        <sys_id>75773df0fb892210c04cfbac7befdc12</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=75773df0fb892210c04cfbac7befdc12"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5fa3e321-98dc-443d-9e62-1c3cd33c2ea5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>template</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Factory Request through VA">8859f4b3fb7cae50c04cfbac7befdc0f</model>
+        <model_id>8859f4b3fb7cae50c04cfbac7befdc0f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8859f4b3fb7cae50c04cfbac7befdc0f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:10</sys_created_on>
+        <sys_id>f1773df0fb892210c04cfbac7befdc1e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f1773df0fb892210c04cfbac7befdc1e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8859f4b3fb7cae50c04cfbac7befdc0f^sys_idNOT IN0769f8b3fb7cae50c04cfbac7befdc34"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=89d4f6e7-2bc5-49db-8f2f-a496f3be7b3b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Factory Request through VA">8859f4b3fb7cae50c04cfbac7befdc0f</model>
+        <model_id>8859f4b3fb7cae50c04cfbac7befdc0f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_8859f4b3fb7cae50c04cfbac7befdc0f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:25:11</sys_created_on>
+        <sys_id>0769f8b3fb7cae50c04cfbac7befdc34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-15 23:25:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0769f8b3fb7cae50c04cfbac7befdc34"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8859f4b3fb7cae50c04cfbac7befdc0f^sys_idNOT INd059f4b3fb7cae50c04cfbac7befdc2e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Submit Catalog Item Request">c7a04c607312001098e194596bf6a72a</action_type>
+        <action_type_parent display_value="Submit Catalog Item Request">bfb5ea807312001098e194596bf6a707</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c7a04c607312001098e194596bf6a72a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Factory Request through VA">8859f4b3fb7cae50c04cfbac7befdc0f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:24:42</sys_created_on>
+        <sys_id>d059f4b3fb7cae50c04cfbac7befdc2e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-02 13:43:18</sys_updated_on>
+        <ui_id>cab5b2f4-2d48-47e8-9cf7-630d888ed04f</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8859f4b3fb7cae50c04cfbac7befdc0f^sys_idNOT INe90e743ffb7cae50c04cfbac7befdcb0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">950e743ffb7cae50c04cfbac7befdc6c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Factory Request through VA">8859f4b3fb7cae50c04cfbac7befdc0f</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>output</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:45:17</sys_created_on>
+        <sys_id>e90e743ffb7cae50c04cfbac7befdcb0</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:17</sys_updated_on>
+        <ui_id>428dfa5d-9e40-40e1-b7e1-d3442a5d06e9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/61TTW/iMBD9Lz6TKAsBQm9Vq0qVuou0ZXtZraKxPaZWHSeNbSiL+O87xgGq9tLD3jLP8/Hem8metcF3wbtVe+2cXlt29XvPtGRXjI9nC17xieJzATgtRFEKxUHMOSopxISNmIUGKTO1oHgDJkRgvxfAp3ysymwsyyor51hlC6Hm2WxSyKqqUBalyusahNetrZ0HH1xd5w06B2s8HKiZ1K4zsHv6nz3Fszayx6jyz4h10JMAjz27Is2WPiyYB21faNyn5K96YoCjodTlyZSPJvldF2Pne23XQ/wwFD2ewLaXkda3EcM3j1YiTVdgHI5YA1aCb/vdGekR5NKaC/BMYpKGBt6c/kvzqqIoYqZCUiQwvZ7DejA7weoWPBCVIHzo8WRGqwW65IVEBcH4m/dYSlh20fxU4oGbU3VrQmN/JCfYucFpt4QERySwi1Ij90GIenxutz9PLO+0PboyPJpWgDlH4Mk7Hnzks2dBrz7YnJBPRqPBhibWDXQdIXXXtxt9nEKkm3xtKMiVabfELv4feTqvnFYA+R3ht0f4CXod5X6nNlQcx/2y+jXgfTybaiFLNcN5NuZimpULybNKjVUG5WKmJhznfMLZYcTczt0YcO5iFG2ofg1RZrJtMKhOHscS0evOXxOpDQ5eHOK12vhTp81sBm7n5QntSMIqYvfv8uSOTlWL99C27V+i+At2+AdPaf8KMgQAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>industry</element>
+        <help/>
+        <hint/>
+        <label>Industry</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8859f4b3fb7cae50c04cfbac7befdc0f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:10</sys_created_on>
+        <sys_id>35773df0fb892210c04cfbac7befdc1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-19 06:30:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>template</element>
+        <help/>
+        <hint/>
+        <label>template</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8859f4b3fb7cae50c04cfbac7befdc0f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-19 06:30:10</sys_created_on>
+        <sys_id>35773df0fb892210c04cfbac7befdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-19 06:30:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output</element>
+        <help/>
+        <hint/>
+        <label>Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_8859f4b3fb7cae50c04cfbac7befdc0f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:25:11</sys_created_on>
+        <sys_id>5b69f8b3fb7cae50c04cfbac7befdc45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-04-15 23:25:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8859f4b3fb7cae50c04cfbac7befdc0f"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>86d8b073fb7cae50c04cfbac7befdcb0</sys_id>
+        <latest_snapshot>8859f4b3fb7cae50c04cfbac7befdc0f</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=86d8b073fb7cae50c04cfbac7befdcb0"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=86d8b073fb7cae50c04cfbac7befdcb0^sys_idNOT IN9c59f4b3fb7cae50c04cfbac7befdc45"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@6c7043e9</plan>
+        <plan_id display_value="Factory Request through VA">86d8b073fb7cae50c04cfbac7befdcb0</plan_id>
+        <snapshot>8859f4b3fb7cae50c04cfbac7befdc0f</snapshot>
+        <sys_class_name>sys_flow_subflow_plan</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-15 23:24:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9c59f4b3fb7cae50c04cfbac7befdc45</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 21:04:18</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

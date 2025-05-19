@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"bc096dc1fb9cea50625bf7704eefdc2d"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>3c092dc1fb9cea50625bf7704eefdcc9</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic</model>
+        <name>Prompt name</name>
+        <parent display_value="OneExtend Capability Definition: Create a Playbook Prompt (Now LLM Generic - Now LLM Generic)">03904e81fb502e50625bf7704eefdc10</parent>
+        <prompt>You are a playbook creator. Create a prompt for the agents working on this service: {{service_information}}. Stay as close as you can to the formatting in any of the below examples.     
+
+Example 1: Create a customer support playbook, the primary point of contact for handling customer inquiries, 
+problems, and requests. It starts by receiving and categorizing customer inquiries based on urgency and complexity. 
+Support tickets are then assigned to agents who troubleshoot and resolve them, with the option to escalate to higher 
+support tiers if needed. After resolution, please follow-up with the customer. A satisfaction survey gathers feedback for 
+improvement, and all interactions are documented, updating the knowledge base for future reference.
+
+Example 2: Create an employee onboarding playbook that integrates new hires into the organization. 
+HR initiates it upon job offer acceptance, gathering documents, assigning mentors, providing orientation, 
+setting up IT access, ensuring compliance, and job-specific training. The playbook ends with feedback from the employee and HR, 
+resulting in an onboarding checklist.
+
+Example 3: Create a travel expense reimbursement playbook for managing employee travel expenses efficiently. 
+Employees submit expense reports with valid receipts. Finance verifies expenses against policies, ensuring budget compliance. 
+Managers approve expenses, initiating payment processing.
+
+Example 4: Create a playbook for generating, reviewing, and approving a control document. Suppliers and Quality managers collaborate 
+to upload documents and conduct appropriate refinement before a final document is approved.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>15134</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 06:07:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8a659596fb156a10c04cfbac7befdc25</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>3c092dc1fb9cea50625bf7704eefdcc9</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_generative_ai_config_8a659596fb156a10c04cfbac7befdc25</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 06:11:15</sys_updated_on>
+        <temperature>0.2</temperature>
+        <version>3</version>
+    </sys_generative_ai_config>
+</record_update>

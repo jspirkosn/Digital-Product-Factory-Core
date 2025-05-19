@@ -2,28 +2,42 @@
     <sys_script_fix action="INSERT_OR_UPDATE">
         <before>false</before>
         <description/>
-        <name>testLaunchPlaybookAssist</name>
+        <name>Test Playbook Trigger Insert</name>
         <record_for_rollback>true</record_for_rollback>
-        <script><![CDATA[var ga = new x_snc_15_minute_se.GeneratePlaybookUtils();
+        <script><![CDATA[var ti = new GlideRecord('sys_pd_trigger_instance');
+ti.process_definition = 'e4f8e38afb552a10c04cfbac7befdcae';
+ti.trigger_type = 'ab6951170f1200108c87f4f0ff767e4f';
+var tiId = ti.insert();
 
-//ga.addParam('sysparm_user_name', "Bob");
-gs.info('PB Script: ' + ga.canGeneratePlaybook());
-gs.info('PB Script: ' + ga.callGeneratePlaybook('create some playbook', {
-                label: 'Generated Playbook from API', // required
-                sysScope: 'ab221fe2f6fb12d00a58c2c9fd01c13e'}));
-]]></script>
+var tiVarTable = new GlideRecord('sys_variable_value');
+tiVarTable.action = 'INSERT_OR_UPDATE';
+tiVarTable.document = 'sys_pd_trigger_instance';
+tiVarTable.document_key = tiId;
+tiVarTable.order = 100;
+tiVarTable.value = 'x_snc_disaster_a_0_program_name_applications';
+tiVarTable.variable = 'a8ae38d1ff2200108c8733af793bf15c';
+tiVarTable.insert();
+
+var tiVarCondition = new GlideRecord('sys_variable_value');
+tiVarCondition.action = 'INSERT_OR_UPDATE';
+tiVarCondition.document = 'sys_pd_trigger_instance';
+tiVarCondition.order = 200;
+tiVarCondition.document_key = tiId;
+tiVarCondition.value = 'service=fc0ec286fb11e610625bf7704eefdca5';
+tiVarCondition.variable = '2a8a7851ff2200108c8733af793bf131';
+tiVarCondition.insert();]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-21 07:23:09</sys_created_on>
         <sys_id>b55e5ca6fbb7de90c04cfbac7befdc48</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>testLaunchPlaybookAssist</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Test Playbook Trigger Insert</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_script_fix_b55e5ca6fbb7de90c04cfbac7befdc48</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-22 01:43:20</sys_updated_on>
+        <sys_updated_on>2025-05-06 00:04:34</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

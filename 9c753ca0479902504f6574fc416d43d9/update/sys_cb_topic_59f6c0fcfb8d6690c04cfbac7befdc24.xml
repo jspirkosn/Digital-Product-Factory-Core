@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Create a conversational interface for the Agentic Industry Builders</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "a331a92534cb41b0bfc1a26e495453e0": {
+          "id": "a331a92534cb41b0bfc1a26e495453e0",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "1d0f5b795aa1461b9181995340fc03d1": {
+          "id": "1d0f5b795aa1461b9181995340fc03d1",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "fc55ac35fda24a398199d3a2e39c6795": {
+          "id": "fc55ac35fda24a398199d3a2e39c6795",
+          "stepType": "StandaloneAIReferenceChoicePrompt",
+          "name": "Which Template?",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "5bc1f4d661e74fe4b022d452351cd7f5",
+              "displayName": "Which Template?",
+              "name": "which_template_",
+              "description": "Select from the templates available for this industry",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "reference",
+              "variableId": "17fb8bf6760340508f1ad6a32d11edc6",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "glide_record",
+              "script": "",
+              "condition": {
+                "mode": "glide_query",
+                "value": "industry_sectorLIKE{{vaInputs.which_industry_}}"
+              },
+              "stepType": "ReferenceChoicePrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "242fba0f4fb84beb9d23b3b64077cee5"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "17fb8bf6760340508f1ad6a32d11edc6"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "73cd01c9af6944edacef9df962a5603b": {
+          "id": "73cd01c9af6944edacef9df962a5603b",
+          "stepType": "StandaloneAIChoicePrompt",
+          "name": "Which Industry?",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "c0dc5de69ab2410294f3f0cb9f913f1e",
+              "displayName": "Which Industry?",
+              "name": "which_industry_",
+              "description": "Which industry are you building this product for?",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "choice",
+              "variableId": "696c56963fd04cf58f00616ee5be3fb2",
+              "choices": [
+                {
+                  "label": "Government",
+                  "value": "GOV"
+                },
+                {
+                  "label": "Higher Education",
+                  "value": "ED"
+                },
+                {
+                  "label": "Insurance",
+                  "value": "INS",
+                  "checked": true,
+                  "meta": {}
+                },
+                {
+                  "label": "HealthCare and Life Sciences",
+                  "value": "HCLS",
+                  "checked": true,
+                  "meta": {}
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "ChoicePrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "a49a57f82a60499989e1f3651ec94de2"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_73cd01c9af6944edacef9df962a5603b_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "696c56963fd04cf58f00616ee5be3fb2"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "da81c53e0c6a4929aa05b6502db27146": {
+          "id": "da81c53e0c6a4929aa05b6502db27146",
+          "stepType": "Decision",
+          "name": "Decision",
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "63fa584749c24ebface0fe9cfb3530da": {
+          "id": "63fa584749c24ebface0fe9cfb3530da",
+          "stepType": "StandaloneAIChoicePrompt",
+          "name": "Add additional services to your product",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "b65cca5f813e4642888f5c475ab13796",
+              "displayName": "Add additional services to your product",
+              "name": "add_additional_services_to_your_product",
+              "description": "Would you like to add additional services to your product?",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "choice",
+              "variableId": "69c7eb4637c941faaefca01825b34299",
+              "choices": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "ChoicePrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "c7c155d7015545f6ae0821aac2ba55f6"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "69c7eb4637c941faaefca01825b34299"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "4f247c979a5d4282b085c416776c771b": {
+          "id": "4f247c979a5d4282b085c416776c771b",
+          "stepType": "SlotFillPrompt",
+          "name": "Services to Add",
+          "type": "string",
+          "withNluUserInput": false,
+          "skipIfFulfilled": true,
+          "variableId": "c13d9e9945f24829a350d9fbd96ce335",
+          "values": {
+            "supportedControlNote": "",
+            "name": "",
+            "variableName": "",
+            "label": "Text 80",
+            "prompt": {
+              "mode": "simple",
+              "value": "Set by NLU"
+            },
+            "inputType": {
+              "format": "Text",
+              "script": ""
+            },
+            "detailDescription": "",
+            "skipIfFulfilled": false,
+            "node_id": "",
+            "variable_name": "",
+            "secureNote": "User input will be securely masked. For passwords, please use Action inputs instead.",
+            "secure": false,
+            "encryptionHashFunction": "SHA-256",
+            "encryptionSalt": {
+              "value": "MTc0NDkyNjA4NTk1MCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+              "mode": "simple"
+            },
+            "defaultValueNote": "Define a value for the user response to the prompt. For example, if we already know the user name, the default value might be (Script Variables &gt; Last username).",
+            "defaultValue": {
+              "value": "",
+              "mode": "simple"
+            },
+            "acknowledgeMsg": {
+              "value": "",
+              "mode": "simple"
+            },
+            "confirmMessage": {
+              "value": "",
+              "mode": "simple"
+            },
+            "withNluUserInput": false,
+            "applicabilityNote": "By default, this node will be shown in the conversation and input from the user will be required.",
+            "applicability": {
+              "mode": "script",
+              "value": "(function() { return false; })()"
+            },
+            "skippable": {
+              "value": "",
+              "mode": "query"
+            },
+            "skipReprompt": {
+              "value": "",
+              "mode": "query"
+            }
+          },
+          "hidden": true,
+          "detailDescription": "Detailed explanation of the services to be added by AI.",
+          "node_id": "4f247c979a5d4282b085c416776c771b",
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "214597ce531e4fca8b85f7d7b40e1001": {
+          "id": "214597ce531e4fca8b85f7d7b40e1001",
+          "name": "Add new service to variable",
+          "script": "(function execute() {\n    if (vaInputs.services_to_add == \"\"){\n        vaInputs.services_to_add = \"\\\"Workflow Directives\\\": [\";\n    } else {\n        vaInputs.services_to_add = vaInputs.services_to_add + \", \";\n    }\n    vaInputs.services_to_add = vaInputs.services_to_add + \"{\\\"describe_the_type_of_workflow_needed\\\": \\\"\" + vaInputs.service_to_add + \"\\\", \\\"embed_payment\\\": false,\\\"include_digital_signature\\\": false,\\\"map\\\": false}\";\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "0a0fa68792d94ee5ae73fa82ba67c65f": {
+          "id": "0a0fa68792d94ee5ae73fa82ba67c65f",
+          "stepType": "StandaloneAITextPrompt",
+          "name": "Service to add",
+          "purpose": {
+            "value": "",
+            "mode": "simple"
+          },
+          "instructions": {
+            "value": "",
+            "mode": "simple"
+          },
+          "inputs": [
+            {
+              "itemId": "b21844416c304fb7b7484ae79a412da7",
+              "displayName": "Service to add",
+              "name": "service_to_add",
+              "description": "Describe the service that you would like our AI Assistants to add to your product.",
+              "discoverable": true,
+              "dynamicDescription": {
+                "value": "",
+                "mode": "simple"
+              },
+              "type": "string",
+              "variableId": "93636bb8b83f40cc96cf5315e51346e1",
+              "choices": [
+                {
+                  "label": "",
+                  "value": ""
+                },
+                {
+                  "label": "",
+                  "value": ""
+                }
+              ],
+              "mode": "",
+              "script": "",
+              "condition": {
+                "value": "",
+                "mode": "glide_query"
+              },
+              "stepType": "TextPrompt",
+              "enforcePrompt": false,
+              "skippable": {
+                "value": "",
+                "mode": "query"
+              },
+              "applicability": {
+                "value": "",
+                "mode": "query"
+              },
+              "promptMessage": {
+                "value": "",
+                "mode": "simple"
+              },
+              "inputType": {
+                "format": "Text",
+                "script": ""
+              },
+              "isMultipleSelect": false,
+              "validation": "",
+              "autoSelect": true,
+              "hasCardHeader": false,
+              "cardMetadata": {
+                "mode": "card",
+                "metadataScript": "",
+                "cardTemplate": "",
+                "cardFields": {},
+                "cardDefinition": {}
+              },
+              "helpText": false,
+              "helpTextMessage": {
+                "value": "",
+                "mode": "simple"
+              }
+            }
+          ],
+          "outputs": [],
+          "advanced_parameters": "",
+          "confirmSummary": false,
+          "useSlots": false,
+          "slots": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "hiddenVariableIds": [
+            "d841ff6e845444cea94a03d40f81736b"
+          ],
+          "hiddenVariableNames": [
+            "ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output"
+          ],
+          "standalone": true,
+          "variableIds": [
+            "93636bb8b83f40cc96cf5315e51346e1"
+          ],
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "379caa66ed074561b942eaca192c22eb": {
+          "id": "379caa66ed074561b942eaca192c22eb",
+          "name": "Services to add close out",
+          "script": "(function execute() {\n    if (vaInputs.services_to_add != \"\"){\n        vaInputs.services_to_add = vaInputs.services_to_add + \"]}\";\n    } \n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "70b631a648ac4e24bb3a123d347afb4e": {
+          "id": "70b631a648ac4e24bb3a123d347afb4e",
+          "stepType": "TextOutput",
+          "name": "debug output",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.services_to_add}}",
+                        "displayValue": "Input Variables➛Services To Add"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "6ab2099bfeb1470ea22d2719dea910c1"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "isCollapsible": true
+        },
+        "4fb1b083762f4dc683b097575d544b53": {
+          "id": "4fb1b083762f4dc683b097575d544b53",
+          "name": "Submit Factory Request",
+          "invocationType": "subflow",
+          "stepType": "FlowAction",
+          "actionRunAs": "session_user",
+          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "subflowSpoke": "b97c4977c70310100a9b5d83c7c260af",
+          "subflowSpokeSubflow": "89f3b4c3c71310100a9b5d83c7c260cb",
+          "subflowWaitType": "sync",
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowInputs": {},
+          "subflowOutputs": {
+            "output-is_password_valid": [
+              {
+                "id": "dd134b99e9bd47bd84e2c0a548e4ce25",
+                "mapping": "is_password_valid",
+                "disabled": false,
+                "type": "boolean",
+                "value": "is_password_valid",
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": "",
+                "variable": "Is_password_valid",
+                "variableName": "is_password_valid"
+              }
+            ],
+            "output-pwd_reset_status": [
+              {
+                "id": "3bfb720674214421b7915b992e466512",
+                "mapping": "pwd_reset_status",
+                "disabled": false,
+                "type": "string",
+                "value": "pwd_reset_status",
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": "",
+                "variable": "Pwd_reset_status",
+                "variableName": "pwd_reset_status"
+              }
+            ],
+            "output-pwd_reset_error_message": [
+              {
+                "id": "42aafaf497ec4e51b52a931562d8a15d",
+                "mapping": "pwd_reset_error_message",
+                "disabled": false,
+                "type": "string",
+                "value": "pwd_reset_error_message",
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": "",
+                "variable": "Pwd_reset_error_message",
+                "variableName": "pwd_reset_error_message"
+              }
+            ]
+          },
+          "subflowDefinition": {
+            "id": "89f3b4c3c71310100a9b5d83c7c260cb",
+            "latest_snapshot_id": "2acf050bc71310100a9b5d83c7c2604d",
+            "parent_id": null,
+            "type": "subflow",
+            "name": "reset_password_va",
+            "label": "Reset Password",
+            "scope_id": "b97c4977c70310100a9b5d83c7c260af",
+            "description": "Reset Password via Virtual Agent Conversation",
+            "category": null,
+            "parameters_have_loaded": true,
+            "input_parameters": [
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "password_reset_request_id",
+                "label": "password_reset_request_id",
+                "type": "string",
+                "order": 1,
+                "required": true,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": ""
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill"
+                ],
+                "name": "new_password",
+                "label": "new_password",
+                "type": "password2",
+                "order": 2,
+                "required": true,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": ""
+              },
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "password_reset_process_id",
+                "label": "password_reset_process_id",
+                "type": "string",
+                "order": 3,
+                "required": true,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": ""
+              }
+            ],
+            "output_parameters": [
+              {
+                "name": "is_password_valid",
+                "label": "is_password_valid",
+                "type": "boolean",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": ""
+              },
+              {
+                "name": "pwd_reset_status",
+                "label": "pwd_reset_status",
+                "type": "string",
+                "order": 2,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": ""
+              },
+              {
+                "name": "pwd_reset_error_message",
+                "label": "pwd_reset_error_message",
+                "type": "string",
+                "order": 3,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": ""
+              }
+            ]
+          },
+          "variableIds": [
+            "dd134b99e9bd47bd84e2c0a548e4ce25",
+            "3bfb720674214421b7915b992e466512",
+            "42aafaf497ec4e51b52a931562d8a15d"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "d33b84773ff9466894c01b8193cf84bd",
+          "edgeType": "Branch",
+          "source": "da81c53e0c6a4929aa05b6502db27146",
+          "target": "4fb1b083762f4dc683b097575d544b53",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.add_additional_services_to_your_product=No",
+            "mode": "query"
+          },
+          "label": "No more services to add"
+        },
+        {
+          "id": "07fcce13fda6482aa7083f23c4c69686",
+          "edgeType": "Edge",
+          "source": "70b631a648ac4e24bb3a123d347afb4e",
+          "target": "1d0f5b795aa1461b9181995340fc03d1",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "1fe73b1a686549b78838d7765f0a3463",
+          "edgeType": "Edge",
+          "source": "214597ce531e4fca8b85f7d7b40e1001",
+          "target": "63fa584749c24ebface0fe9cfb3530da",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f41c5dbd49e14750b2e3cf67113d6dfd",
+          "edgeType": "Edge",
+          "source": "0a0fa68792d94ee5ae73fa82ba67c65f",
+          "target": "214597ce531e4fca8b85f7d7b40e1001",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3529582ff8614c62be0783ffd496bc36",
+          "edgeType": "Edge",
+          "source": "a331a92534cb41b0bfc1a26e495453e0",
+          "target": "4f247c979a5d4282b085c416776c771b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "594bd15aafad497181f10dd528ffc699",
+          "edgeType": "Edge",
+          "source": "73cd01c9af6944edacef9df962a5603b",
+          "target": "fc55ac35fda24a398199d3a2e39c6795",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "28b7220651cc4a54a64855bf0e7b9902",
+          "edgeType": "Edge",
+          "source": "fc55ac35fda24a398199d3a2e39c6795",
+          "target": "63fa584749c24ebface0fe9cfb3530da",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9d77f60c90c240b2831c200d4603cf0f",
+          "edgeType": "Edge",
+          "source": "63fa584749c24ebface0fe9cfb3530da",
+          "target": "da81c53e0c6a4929aa05b6502db27146",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "706ac5fc642743588418e160f6ade47f",
+          "edgeType": "Edge",
+          "source": "4f247c979a5d4282b085c416776c771b",
+          "target": "73cd01c9af6944edacef9df962a5603b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "19a72c2e911547a78b10ae2a79d973d8",
+          "edgeType": "Branch",
+          "source": "da81c53e0c6a4929aa05b6502db27146",
+          "target": "0a0fa68792d94ee5ae73fa82ba67c65f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.add_additional_services_to_your_product=Yes",
+            "mode": "query"
+          },
+          "label": "Add Services"
+        },
+        {
+          "id": "a21e2b6ee4774e7bbb14f999b0264de5",
+          "edgeType": "Edge",
+          "source": "379caa66ed074561b942eaca192c22eb",
+          "target": "70b631a648ac4e24bb3a123d347afb4e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "279c573e0c964e7f8e4d5d6d4876bc64",
+          "edgeType": "Edge",
+          "source": "4fb1b083762f4dc683b097575d544b53",
+          "target": "379caa66ed074561b942eaca192c22eb",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "807f337061a34d10a860d66925fdfff3": {
+      "category": "vaInputs",
+      "id": "807f337061a34d10a860d66925fdfff3",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "dcfd831966534838bf41da5d150da415": {
+      "id": "dcfd831966534838bf41da5d150da415",
+      "name": "ai_data_collector_057c6c81e815433ea0516e82c07501d9_output",
+      "label": "Ai_data_collector_057c6c81e815433ea0516e82c07501d9_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "242fba0f4fb84beb9d23b3b64077cee5": {
+      "id": "242fba0f4fb84beb9d23b3b64077cee5",
+      "name": "ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output",
+      "label": "Ai_data_collector_fc55ac35fda24a398199d3a2e39c6795_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "17fb8bf6760340508f1ad6a32d11edc6": {
+      "id": "17fb8bf6760340508f1ad6a32d11edc6",
+      "varType": "reference",
+      "category": "vaInputs",
+      "label": "Which Template?",
+      "name": "which_template_",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "glide_record",
+      "table": "x_snc_15_minute_se_registered_templates",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "fc55ac35fda24a398199d3a2e39c6795",
+      "isHidden": false,
+      "description": "Select from the templates available for this industry"
+    },
+    "a49a57f82a60499989e1f3651ec94de2": {
+      "id": "a49a57f82a60499989e1f3651ec94de2",
+      "name": "ai_data_collector_73cd01c9af6944edacef9df962a5603b_output",
+      "label": "Ai_data_collector_73cd01c9af6944edacef9df962a5603b_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "696c56963fd04cf58f00616ee5be3fb2": {
+      "id": "696c56963fd04cf58f00616ee5be3fb2",
+      "varType": "choice",
+      "category": "vaInputs",
+      "label": "Which Industry?",
+      "name": "which_industry_",
+      "choices": [
+        {
+          "label": "Government",
+          "value": "GOV"
+        },
+        {
+          "label": "Higher Education",
+          "value": "ED"
+        },
+        {
+          "label": "Insurance",
+          "value": "INS",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "HealthCare and Life Sciences",
+          "value": "HCLS",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "73cd01c9af6944edacef9df962a5603b",
+      "isHidden": false,
+      "description": "Which industry are you building this product for?",
+      "translation": true
+    },
+    "53cc6f5cb5754470bcc118e62a741b8e": {
+      "id": "53cc6f5cb5754470bcc118e62a741b8e",
+      "name": "ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output",
+      "label": "Ai_data_collector_230b7ee3584a4782b802c4a60bb8df5b_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "c7c155d7015545f6ae0821aac2ba55f6": {
+      "id": "c7c155d7015545f6ae0821aac2ba55f6",
+      "name": "ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output",
+      "label": "Ai_data_collector_63fa584749c24ebface0fe9cfb3530da_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "69c7eb4637c941faaefca01825b34299": {
+      "id": "69c7eb4637c941faaefca01825b34299",
+      "varType": "choice",
+      "category": "vaInputs",
+      "label": "Add Additional Services To Your Product",
+      "name": "add_additional_services_to_your_product",
+      "choices": [
+        {
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "label": "No",
+          "value": "No"
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "63fa584749c24ebface0fe9cfb3530da",
+      "isHidden": false,
+      "description": "Would you like to add additional services to your product?",
+      "translation": true
+    },
+    "c13d9e9945f24829a350d9fbd96ce335": {
+      "id": "c13d9e9945f24829a350d9fbd96ce335",
+      "name": "services_to_add",
+      "label": "Services To Add",
+      "varType": "string",
+      "category": "vaInputs",
+      "nodeId": "4f247c979a5d4282b085c416776c771b",
+      "isHidden": true,
+      "description": "Detailed explanation of the services to be added by AI."
+    },
+    "d841ff6e845444cea94a03d40f81736b": {
+      "id": "d841ff6e845444cea94a03d40f81736b",
+      "name": "ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output",
+      "label": "Ai_data_collector_0a0fa68792d94ee5ae73fa82ba67c65f_output",
+      "isReferenceable": false,
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      }
+    },
+    "93636bb8b83f40cc96cf5315e51346e1": {
+      "id": "93636bb8b83f40cc96cf5315e51346e1",
+      "varType": "string",
+      "category": "vaInputs",
+      "label": "Service To Add",
+      "name": "service_to_add",
+      "choices": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "",
+          "value": ""
+        }
+      ],
+      "mode": "",
+      "table": "",
+      "aiInput": true,
+      "inputId": 0,
+      "nodeId": "0a0fa68792d94ee5ae73fa82ba67c65f",
+      "isHidden": false,
+      "description": "Describe the service that you would like our AI Assistants to add to your product."
+    },
+    "dd134b99e9bd47bd84e2c0a548e4ce25": {
+      "id": "dd134b99e9bd47bd84e2c0a548e4ce25",
+      "name": "is_password_valid",
+      "label": "Is_password_valid",
+      "defaultValue": "is_password_valid",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "dependent_on_field": "",
+      "nodeId": "4fb1b083762f4dc683b097575d544b53",
+      "isHidden": false
+    },
+    "3bfb720674214421b7915b992e466512": {
+      "id": "3bfb720674214421b7915b992e466512",
+      "name": "pwd_reset_status",
+      "label": "Pwd_reset_status",
+      "defaultValue": "pwd_reset_status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "dependent_on_field": "",
+      "nodeId": "4fb1b083762f4dc683b097575d544b53",
+      "isHidden": false
+    },
+    "42aafaf497ec4e51b52a931562d8a15d": {
+      "id": "42aafaf497ec4e51b52a931562d8a15d",
+      "name": "pwd_reset_error_message",
+      "label": "Pwd_reset_error_message",
+      "defaultValue": "pwd_reset_error_message",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "dependent_on_field": "",
+      "nodeId": "4fb1b083762f4dc683b097575d544b53",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases/>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>llm</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Build Digital Products for Industries</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id>095d0931fb742250c04cfbac7befdcca</root_topic_id>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id>095d0931fb742250c04cfbac7befdcca</source_topic_id>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-18 22:18:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>59f6c0fcfb8d6690c04cfbac7befdc24</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Build Digital Products for Industries</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_cb_topic_59f6c0fcfb8d6690c04cfbac7befdc24</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-18 19:40:20</sys_updated_on>
+        <title>Build Digital Products for Industries</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=59f6c0fcfb8d6690c04cfbac7befdc24"/>
+    <sys_variable_value action="delete_multiple" query="document_key=59f6c0fcfb8d6690c04cfbac7befdc24"/>
+</record_update>

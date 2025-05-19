@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>generate_playbook_for_factory_product</internal_name>
-        <label_cache>[{"name":"{{action.instance_uri}}","label":"action➛Instance URI","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"502f8436-9983-4ced-a3bb-12ad2e835a93"}},{"name":"{{action.prompt}}","label":"action➛Prompt","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1272ce60-a8b2-4134-9f33-41e536f1beda"}},{"name":"{{action.label}}","label":"action➛Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9ede01b-e3cd-45cb-9ef9-73c00c8b349e"}},{"name":"{{action.scope}}","label":"action➛App ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"358447f3-f6fb-4bed-9940-6977019b08c3"}},{"name":"{{action.app_id}}","label":"action➛Sys Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"19c620ba-daf4-433b-a202-d7443ec12bc6"}},{"name":"{{action.sys_scope}}","label":"action➛Application Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6baffc77-9510-4262-ad01-81a463cf4354"}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].pb_url}}","label":"step➛Script step➛PB URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].sys_id_suffix}}","label":"step➛Script step➛Sys ID Suffix","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.instance_uri}}","label":"action➛Instance URI","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"502f8436-9983-4ced-a3bb-12ad2e835a93"}},{"name":"{{action.prompt}}","label":"action➛Prompt","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1272ce60-a8b2-4134-9f33-41e536f1beda"}},{"name":"{{action.label}}","label":"action➛Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9ede01b-e3cd-45cb-9ef9-73c00c8b349e"}},{"name":"{{action.scope}}","label":"action➛App ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"358447f3-f6fb-4bed-9940-6977019b08c3"}},{"name":"{{action.app_id}}","label":"action➛Sys Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"19c620ba-daf4-433b-a202-d7443ec12bc6"}},{"name":"{{action.sys_scope}}","label":"action➛Application Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6baffc77-9510-4262-ad01-81a463cf4354"}},{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"Table","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service}}","label":"action➛Service","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.trigger_table}}","label":"action➛Trigger Table","type":"action","ref":"sys_db_object","reference_display":"Table","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.trigger_service}}","label":"action➛Trigger Service","type":"action","ref":"","reference_display":"Service Definition","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"153b5210-990b-4a8c-870a-fb671a97a3c7"}},{"name":"{{action.trigger_table.name}}","label":"action➛Trigger Table➛Name","type":"action","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"sys_db_object","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.trigger_table.sys_id}}","label":"action➛Trigger Table➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_db_object","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.trigger_service.name}}","label":"action➛Trigger Service➛Name","type":"action","ref":"","reference_display":"Name","base_type":"translated_text","parent_table_name":"sn_case_type_selection","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.trigger_service.id}}","label":"action➛Trigger Service➛ID","type":"action","ref":"","reference_display":"ID","base_type":"string","parent_table_name":"sn_case_type_selection","column_name":"id","choices":null,"attributes":{}},{"name":"{{action.trigger_service.table}}","label":"action➛Trigger Service➛Table","type":"action","ref":"","reference_display":"Table","base_type":"table_name","parent_table_name":"sn_case_type_selection","column_name":"table","choices":null,"attributes":{}},{"name":"{{action.trigger_service.sys_id}}","label":"action➛Trigger Service➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sn_case_type_selection","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].pb_url}}","label":"step➛Script step➛PB URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].sys_id_suffix}}","label":"step➛Script step➛Sys ID Suffix","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>4ccce65bfbbf56d0c04cfbac7befdc98</master_snapshot>
         <master_snapshot_digest/>
         <name>Generate Playbook for Factory Product</name>
@@ -30,15 +30,15 @@
         <sys_created_on>2025-02-24 00:25:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>fa2ed25ffb3f56d0c04cfbac7befdc5d</sys_id>
-        <sys_mod_count>206</sys_mod_count>
+        <sys_mod_count>224</sys_mod_count>
         <sys_name>Generate Playbook for Factory Product</sys_name>
         <sys_overrides/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_fa2ed25ffb3f56d0c04cfbac7befdc5d</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:15</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:07:01</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -51,10 +51,10 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 00:31:30</sys_created_on>
         <sys_id>518f1edffb3f56d0c04cfbac7befdc56</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 14:25:14</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2025-05-05 20:52:07</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">098f1edffb3f56d0c04cfbac7befdc18</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -139,14 +139,14 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 00:31:28</sys_created_on>
         <sys_id>c98f1edffb3f56d0c04cfbac7befdc07</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:12</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:06:57</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c98f1edffb3f56d0c04cfbac7befdc07"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -171,9 +171,9 @@
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 00:31:28</sys_created_on>
         <sys_id>818f1edffb3f56d0c04cfbac7befdc16</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:12</sys_updated_on>
+        <sys_updated_on>2025-05-06 00:53:18</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     var scopeID;&#13;
     var getScope = new GlideRecord('sys_app');&#13;
@@ -193,7 +193,10 @@
             sysScope: scopeID.toString() // id of scope&#13;
             },&#13;
             meta: { // any info you might want used in the callback&#13;
-                foo: 'bar',&#13;
+                table_name: inputs.table_name,&#13;
+                table_id: inputs.table_id,&#13;
+                service_name: inputs.service_name,&#13;
+                service_id: inputs.service_id,&#13;
             },&#13;
             callbackHandler: "x_snc_15_minute_se.GeneratePlaybookCallbackHandler", // script API name for wherever callback handlers are&#13;
             // requestId: "" // optional &#13;
@@ -206,7 +209,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
             requestId&#13;
         } = generateResponse;&#13;
 &#13;
-		outputs.pb_url = inputs.instance_url.toString() + url.toString();&#13;
+		outputs.pb_url = inputs.instance_url.toString().replace(/\/$/, "") + url.toString();&#13;
 &#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -322,9 +325,57 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>service_id</field>
+        <id>c98f1edffb3f56d0c04cfbac7befdc07</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:18</sys_created_on>
+        <sys_id>b06d8096fb992a10c04cfbac7befdc2f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:06:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c98f1edffb3f56d0c04cfbac7befdc07</table>
+        <value>{{action.trigger_service.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>service_name</field>
+        <id>c98f1edffb3f56d0c04cfbac7befdc07</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:18</sys_created_on>
+        <sys_id>f86d8096fb992a10c04cfbac7befdc2e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:06:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c98f1edffb3f56d0c04cfbac7befdc07</table>
+        <value>{{action.trigger_service.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_id</field>
+        <id>c98f1edffb3f56d0c04cfbac7befdc07</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:18</sys_created_on>
+        <sys_id>746d8096fb992a10c04cfbac7befdc2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:53:18</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c98f1edffb3f56d0c04cfbac7befdc07</table>
+        <value>{{action.trigger_table.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c98f1edffb3f56d0c04cfbac7befdc07</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:18</sys_created_on>
+        <sys_id>386d8096fb992a10c04cfbac7befdc2f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:57:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c98f1edffb3f56d0c04cfbac7befdc07</table>
+        <value>{{action.trigger_service.table}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c98f1edffb3f56d0c04cfbac7befdc07^id=c98f1edffb3f56d0c04cfbac7befdc07"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=c98f1edffb3f56d0c04cfbac7befdc07"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=c98f1edffb3f56d0c04cfbac7befdc07^sys_idNOT IN0664fa4cfbdce250c04cfbac7befdc77,1f82b9c5fbdcea50625bf7704eefdc47,b8ef6ef3fbbb5ad0c04cfbac7befdcbf,e6ca443bfbb71ad0c04cfbac7befdcf5"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c98f1edffb3f56d0c04cfbac7befdc07^sys_idNOT IN0664fa4cfbdce250c04cfbac7befdc77,1f82b9c5fbdcea50625bf7704eefdc47,386d8096fb992a10c04cfbac7befdc04,3c6d8096fb992a10c04cfbac7befdc06,ac6e041afb992a10c04cfbac7befdc7b,b8ef6ef3fbbb5ad0c04cfbac7befdcbf,e6ca443bfbb71ad0c04cfbac7befdcf5"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -392,7 +443,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2025-03-10 20:13:54</sys_updated_on>
@@ -475,10 +526,259 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-13 18:00:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=translated_text,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">translated_text</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">c98f1edffb3f56d0c04cfbac7befdc07</model>
+        <model_id>c98f1edffb3f56d0c04cfbac7befdc07</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c98f1edffb3f56d0c04cfbac7befdc07</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:17</sys_created_on>
+        <sys_id>386d8096fb992a10c04cfbac7befdc04</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:06:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">c98f1edffb3f56d0c04cfbac7befdc07</model>
+        <model_id>c98f1edffb3f56d0c04cfbac7befdc07</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c98f1edffb3f56d0c04cfbac7befdc07</name>
+        <next_element/>
+        <order>600</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:17</sys_created_on>
+        <sys_id>3c6d8096fb992a10c04cfbac7befdc06</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:57:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>80</max_length>
+        <model display_value="Script step">c98f1edffb3f56d0c04cfbac7befdc07</model>
+        <model_id>c98f1edffb3f56d0c04cfbac7befdc07</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c98f1edffb3f56d0c04cfbac7befdc07</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:57:39</sys_created_on>
+        <sys_id>ac6e041afb992a10c04cfbac7befdc7b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:06:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -558,7 +858,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 14:59:58</sys_updated_on>
@@ -641,7 +941,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:38</sys_updated_on>
@@ -725,7 +1025,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 18:51:36</sys_updated_on>
@@ -808,7 +1108,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:38</sys_updated_on>
@@ -839,9 +1139,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>66ca443bfbb71ad0c04cfbac7befdcfd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:38</sys_updated_on>
@@ -862,16 +1162,16 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>cb122a1efbd86690625bf7704eefdcb5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 18:40:17</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=fa2ed25ffb3f56d0c04cfbac7befdc5d^sys_idNOT IN1aca443bfbb71ad0c04cfbac7befdcb5,3fbcc03ffbb71ad0c04cfbac7befdc2e,44ccc03ffbb71ad0c04cfbac7befdc33,938279c5fbdcea50625bf7704eefdcfc"/>
+    <sys_hub_action_input action="delete_multiple" query="model=fa2ed25ffb3f56d0c04cfbac7befdc5d^sys_idNOT IN1aca443bfbb71ad0c04cfbac7befdcb5,3fbcc03ffbb71ad0c04cfbac7befdc2e,44ccc03ffbb71ad0c04cfbac7befdc33,938279c5fbdcea50625bf7704eefdcfc,d159c45efb592a10c04cfbac7befdcd9"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -935,14 +1235,14 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-25 02:58:38</sys_created_on>
         <sys_id>1aca443bfbb71ad0c04cfbac7befdcb5</sys_id>
-        <sys_mod_count>127</sys_mod_count>
+        <sys_mod_count>139</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:11</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:06:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1023,7 +1323,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-13 18:05:43</sys_updated_on>
@@ -1107,7 +1407,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:42:03</sys_updated_on>
@@ -1191,7 +1491,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:40:53</sys_updated_on>
@@ -1208,6 +1508,90 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=938279c5fbdcea50625bf7704eefdcfc"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=153b5210-990b-4a8c-870a-fb671a97a3c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_case_type_selection</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_service</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Trigger Service</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Generate Playbook for Factory Product">fa2ed25ffb3f56d0c04cfbac7befdc5d</model>
+        <model_id>fa2ed25ffb3f56d0c04cfbac7befdc5d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_fa2ed25ffb3f56d0c04cfbac7befdc5d</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_case_type_selection">sn_case_type_selection</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:35:35</sys_created_on>
+        <sys_id>d159c45efb592a10c04cfbac7befdcd9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:57:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d159c45efb592a10c04cfbac7befdcd9"/>
     <sys_hub_action_output action="delete_multiple" query="model=fa2ed25ffb3f56d0c04cfbac7befdc5d^sys_idNOT IN098f1edffb3f56d0c04cfbac7befdc18,d98f1edffb3f56d0c04cfbac7befdc3d,e2ca843bfbb71ad0c04cfbac7befdc16"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1278,7 +1662,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:53:12</sys_updated_on>
@@ -1361,14 +1745,14 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 00:31:29</sys_created_on>
         <sys_id>d98f1edffb3f56d0c04cfbac7befdc3d</sys_id>
-        <sys_mod_count>145</sys_mod_count>
+        <sys_mod_count>155</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:12</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:06:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1452,7 +1836,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:39</sys_updated_on>
@@ -1496,9 +1880,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>3bbcc03ffbb71ad0c04cfbac7befdc32</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 03:07:12</sys_updated_on>
@@ -1519,9 +1903,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>9eca443bfbb71ad0c04cfbac7befdcbc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:38</sys_updated_on>
@@ -1542,9 +1926,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>c4ccc03ffbb71ad0c04cfbac7befdc36</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2025-03-10 20:13:54</sys_updated_on>
@@ -1565,12 +1949,35 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>d382b9c5fbdcea50625bf7704eefdc00</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:40:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>trigger_service</element>
+        <help/>
+        <hint/>
+        <label>Trigger Service</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_fa2ed25ffb3f56d0c04cfbac7befdc5d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:35:35</sys_created_on>
+        <sys_id>d959c45efb592a10c04cfbac7befdce9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:35:35</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1589,9 +1996,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>598f1edffb3f56d0c04cfbac7befdc3c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-24 00:31:29</sys_updated_on>
@@ -1612,9 +2019,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>6aca843bfbb71ad0c04cfbac7befdc33</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:39</sys_updated_on>
@@ -1635,9 +2042,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>d58f1edffb3f56d0c04cfbac7befdc44</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-24 00:31:30</sys_updated_on>
@@ -1649,21 +2056,21 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Generate Playbook for Factory Product">fa2ed25ffb3f56d0c04cfbac7befdc5d</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a0cce65bfbbf56d0c04cfbac7befdcf5","name":"plan","plan_signature":null}}</plan>
-        <snapshot>bd4e8b5afb50a690625bf7704eefdc65</snapshot>
+        <snapshot>3580145efb992a10c04cfbac7befdc00</snapshot>
         <sys_class_name>sys_hub_action_plan</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:29:20</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>a0cce65bfbbf56d0c04cfbac7befdcf5</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:16</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:07:02</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1680,7 +2087,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <description>Once product is completed this action will be called to build a playbook using the context given from the product and the selected service that the playbook is being build for.</description>
         <flow_priority/>
         <internal_name>generate_playbook_for_factory_product</internal_name>
-        <label_cache>[{"name":"{{action.instance_uri}}","label":"action➛Instance URI","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"502f8436-9983-4ced-a3bb-12ad2e835a93"}},{"name":"{{action.prompt}}","label":"action➛Prompt","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1272ce60-a8b2-4134-9f33-41e536f1beda"}},{"name":"{{action.label}}","label":"action➛Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9ede01b-e3cd-45cb-9ef9-73c00c8b349e"}},{"name":"{{action.scope}}","label":"action➛App ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"358447f3-f6fb-4bed-9940-6977019b08c3"}},{"name":"{{action.app_id}}","label":"action➛Sys Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"19c620ba-daf4-433b-a202-d7443ec12bc6"}},{"name":"{{action.sys_scope}}","label":"action➛Application Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6baffc77-9510-4262-ad01-81a463cf4354"}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].pb_url}}","label":"step➛Script step➛PB URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].sys_id_suffix}}","label":"step➛Script step➛Sys ID Suffix","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.instance_uri}}","label":"action➛Instance URI","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"502f8436-9983-4ced-a3bb-12ad2e835a93"}},{"name":"{{action.prompt}}","label":"action➛Prompt","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1272ce60-a8b2-4134-9f33-41e536f1beda"}},{"name":"{{action.label}}","label":"action➛Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d9ede01b-e3cd-45cb-9ef9-73c00c8b349e"}},{"name":"{{action.scope}}","label":"action➛App ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"358447f3-f6fb-4bed-9940-6977019b08c3"}},{"name":"{{action.app_id}}","label":"action➛Sys Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"19c620ba-daf4-433b-a202-d7443ec12bc6"}},{"name":"{{action.sys_scope}}","label":"action➛Application Scope","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6baffc77-9510-4262-ad01-81a463cf4354"}},{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"Table","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service}}","label":"action➛Service","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.trigger_table}}","label":"action➛Trigger Table","type":"action","ref":"sys_db_object","reference_display":"Table","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.trigger_service}}","label":"action➛Trigger Service","type":"action","ref":"","reference_display":"Service Definition","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"153b5210-990b-4a8c-870a-fb671a97a3c7"}},{"name":"{{action.trigger_table.name}}","label":"action➛Trigger Table➛Name","type":"action","ref":"","reference_display":"Name","base_type":"string","parent_table_name":"sys_db_object","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.trigger_table.sys_id}}","label":"action➛Trigger Table➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_db_object","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.trigger_service.name}}","label":"action➛Trigger Service➛Name","type":"action","ref":"","reference_display":"Name","base_type":"translated_text","parent_table_name":"sn_case_type_selection","column_name":"name","choices":null,"attributes":{}},{"name":"{{action.trigger_service.id}}","label":"action➛Trigger Service➛ID","type":"action","ref":"","reference_display":"ID","base_type":"string","parent_table_name":"sn_case_type_selection","column_name":"id","choices":null,"attributes":{}},{"name":"{{action.trigger_service.table}}","label":"action➛Trigger Service➛Table","type":"action","ref":"","reference_display":"Table","base_type":"table_name","parent_table_name":"sn_case_type_selection","column_name":"table","choices":null,"attributes":{}},{"name":"{{action.trigger_service.sys_id}}","label":"action➛Trigger Service➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sn_case_type_selection","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].pb_url}}","label":"step➛Script step➛PB URL","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[bf33b3a7-3ee3-4255-981e-20a432d9168d].sys_id_suffix}}","label":"step➛Script step➛Sys ID Suffix","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
         <name>Generate Playbook for Factory Product</name>
         <natlang/>
@@ -1692,15 +2099,15 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_on>2025-02-24 01:29:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>4ccce65bfbbf56d0c04cfbac7befdc98</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:42:06</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:06:59</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1713,10 +2120,10 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:29:19</sys_created_on>
         <sys_id>90cce65bfbbf56d0c04cfbac7befdcc8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 14:27:19</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2025-05-05 20:52:09</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">1ccce65bfbbf56d0c04cfbac7befdcac</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1801,14 +2208,14 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:29:18</sys_created_on>
         <sys_id>8ccce65bfbbf56d0c04cfbac7befdc9f</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:15</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:07:01</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8ccce65bfbbf56d0c04cfbac7befdc9f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1819,9 +2226,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:29:18</sys_created_on>
         <sys_id>5ccce65bfbbf56d0c04cfbac7befdcaa</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:15</sys_updated_on>
+        <sys_updated_on>2025-05-06 00:53:52</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     var scopeID;&#13;
     var getScope = new GlideRecord('sys_app');&#13;
@@ -1841,7 +2248,10 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
             sysScope: scopeID.toString() // id of scope&#13;
             },&#13;
             meta: { // any info you might want used in the callback&#13;
-                foo: 'bar',&#13;
+                table_name: inputs.table_name,&#13;
+                table_id: inputs.table_id,&#13;
+                service_name: inputs.service_name,&#13;
+                service_id: inputs.service_id,&#13;
             },&#13;
             callbackHandler: "x_snc_15_minute_se.GeneratePlaybookCallbackHandler", // script API name for wherever callback handlers are&#13;
             // requestId: "" // optional &#13;
@@ -1854,7 +2264,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
             requestId&#13;
         } = generateResponse;&#13;
 &#13;
-		outputs.pb_url = inputs.instance_url.toString() + url.toString();&#13;
+		outputs.pb_url = inputs.instance_url.toString().replace(/\/$/, "") + url.toString();&#13;
 &#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -1984,9 +2394,57 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>service_id</field>
+        <id>8ccce65bfbbf56d0c04cfbac7befdc9f</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:52</sys_created_on>
+        <sys_id>9d8dc496fb992a10c04cfbac7befdc50</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:07:01</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8ccce65bfbbf56d0c04cfbac7befdc9f</table>
+        <value>{{action.trigger_service.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>service_name</field>
+        <id>8ccce65bfbbf56d0c04cfbac7befdc9f</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:52</sys_created_on>
+        <sys_id>d98dc496fb992a10c04cfbac7befdc50</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:07:01</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8ccce65bfbbf56d0c04cfbac7befdc9f</table>
+        <value>{{action.trigger_service.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_id</field>
+        <id>8ccce65bfbbf56d0c04cfbac7befdc9f</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:52</sys_created_on>
+        <sys_id>518dc496fb992a10c04cfbac7befdc51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:53:52</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8ccce65bfbbf56d0c04cfbac7befdc9f</table>
+        <value>{{action.trigger_table.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8ccce65bfbbf56d0c04cfbac7befdc9f</id>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:52</sys_created_on>
+        <sys_id>158dc496fb992a10c04cfbac7befdc51</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:57:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8ccce65bfbbf56d0c04cfbac7befdc9f</table>
+        <value>{{action.trigger_service.table}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8ccce65bfbbf56d0c04cfbac7befdc9f^id=8ccce65bfbbf56d0c04cfbac7befdc9f"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=8ccce65bfbbf56d0c04cfbac7befdc9f"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=8ccce65bfbbf56d0c04cfbac7befdc9f^sys_idNOT IN07dbdf04fb142650c04cfbac7befdc37,1492f9c5fbdcea50625bf7704eefdc48,c3ca843bfbb71ad0c04cfbac7befdc7c,d5efaef3fbbb5ad0c04cfbac7befdc37"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8ccce65bfbbf56d0c04cfbac7befdc9f^sys_idNOT IN07dbdf04fb142650c04cfbac7befdc37,1492f9c5fbdcea50625bf7704eefdc48,1d8dc496fb992a10c04cfbac7befdc32,616e441afb992a10c04cfbac7befdc3d,c3ca843bfbb71ad0c04cfbac7befdc7c,d5efaef3fbbb5ad0c04cfbac7befdc37,dd8dc496fb992a10c04cfbac7befdc35"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2054,7 +2512,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2025-03-10 23:06:16</sys_updated_on>
@@ -2137,10 +2595,176 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-13 18:00:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=translated_text,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">translated_text</internal_type>
+        <label>service_name</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">8ccce65bfbbf56d0c04cfbac7befdc9f</model>
+        <model_id>8ccce65bfbbf56d0c04cfbac7befdc9f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8ccce65bfbbf56d0c04cfbac7befdc9f</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:52</sys_created_on>
+        <sys_id>1d8dc496fb992a10c04cfbac7befdc32</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:07:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>table_name</label>
+        <mandatory>true</mandatory>
+        <max_length>80</max_length>
+        <model display_value="Script step">8ccce65bfbbf56d0c04cfbac7befdc9f</model>
+        <model_id>8ccce65bfbbf56d0c04cfbac7befdc9f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8ccce65bfbbf56d0c04cfbac7befdc9f</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:57:42</sys_created_on>
+        <sys_id>616e441afb992a10c04cfbac7befdc3d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 01:07:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2220,7 +2844,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:40</sys_updated_on>
@@ -2303,10 +2927,93 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 15:00:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>service_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>service_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">8ccce65bfbbf56d0c04cfbac7befdc9f</model>
+        <model_id>8ccce65bfbbf56d0c04cfbac7befdc9f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8ccce65bfbbf56d0c04cfbac7befdc9f</name>
+        <next_element/>
+        <order>600</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:52</sys_created_on>
+        <sys_id>dd8dc496fb992a10c04cfbac7befdc35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:57:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2387,7 +3094,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:40</sys_updated_on>
@@ -2470,7 +3177,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 18:51:39</sys_updated_on>
@@ -2501,9 +3208,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>1d22aa1efbd86690625bf7704eefdcaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 18:40:26</sys_updated_on>
@@ -2524,16 +3231,16 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>4bca843bfbb71ad0c04cfbac7befdc83</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:41</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=4ccce65bfbbf56d0c04cfbac7befdc98^sys_idNOT IN0092f9c5fbdcea50625bf7704eefdc13,0fca843bfbb71ad0c04cfbac7befdc6e,98ccc03ffbb71ad0c04cfbac7befdcb5,d4ccc03ffbb71ad0c04cfbac7befdcb9"/>
+    <sys_hub_action_input action="delete_multiple" query="model=4ccce65bfbbf56d0c04cfbac7befdc98^sys_idNOT IN0092f9c5fbdcea50625bf7704eefdc13,058d8496fb992a10c04cfbac7befdcd9,0fca843bfbb71ad0c04cfbac7befdc6e,98ccc03ffbb71ad0c04cfbac7befdcb5,d4ccc03ffbb71ad0c04cfbac7befdcb9"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2601,7 +3308,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:40:56</sys_updated_on>
@@ -2618,6 +3325,90 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0092f9c5fbdcea50625bf7704eefdc13"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=153b5210-990b-4a8c-870a-fb671a97a3c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_case_type_selection</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_service</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Trigger Service</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Generate Playbook for Factory Product">4ccce65bfbbf56d0c04cfbac7befdc98</model>
+        <model_id>4ccce65bfbbf56d0c04cfbac7befdc98</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_4ccce65bfbbf56d0c04cfbac7befdc98</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_case_type_selection">sn_case_type_selection</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:51</sys_created_on>
+        <sys_id>058d8496fb992a10c04cfbac7befdcd9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:57:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=058d8496fb992a10c04cfbac7befdcd9"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2681,14 +3472,14 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-25 02:58:40</sys_created_on>
         <sys_id>0fca843bfbb71ad0c04cfbac7befdc6e</sys_id>
-        <sys_mod_count>113</sys_mod_count>
+        <sys_mod_count>121</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:14</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:06:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2769,7 +3560,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-13 18:05:46</sys_updated_on>
@@ -2853,7 +3644,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:42:06</sys_updated_on>
@@ -2940,7 +3731,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:53:15</sys_updated_on>
@@ -3027,7 +3818,7 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:41</sys_updated_on>
@@ -3110,14 +3901,14 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:29:19</sys_created_on>
         <sys_id>5ccce65bfbbf56d0c04cfbac7befdcbd</sys_id>
-        <sys_mod_count>121</sys_mod_count>
+        <sys_mod_count>129</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-17 21:53:15</sys_updated_on>
+        <sys_updated_on>2025-05-06 01:07:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3145,6 +3936,29 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=58cce65bfbbf56d0c04cfbac7befdcc9"/>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>trigger_service</element>
+        <help/>
+        <hint/>
+        <label>Trigger Service</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_4ccce65bfbbf56d0c04cfbac7befdc98</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 00:53:51</sys_created_on>
+        <sys_id>058d8496fb992a10c04cfbac7befdcdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 00:53:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>sys_scope</element>
         <help/>
         <hint/>
@@ -3158,9 +3972,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>8092f9c5fbdcea50625bf7704eefdc16</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-03-17 21:40:57</sys_updated_on>
@@ -3181,9 +3995,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>98ccc03ffbb71ad0c04cfbac7befdcb8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 03:07:14</sys_updated_on>
@@ -3204,9 +4018,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>c7ca843bfbb71ad0c04cfbac7befdc72</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:40</sys_updated_on>
@@ -3227,9 +4041,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>e4ccc03ffbb71ad0c04cfbac7befdcbc</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jspirko</sys_updated_by>
         <sys_updated_on>2025-03-10 23:06:16</sys_updated_on>
@@ -3251,9 +4065,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>10cce65bfbbf56d0c04cfbac7befdcbd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-24 01:29:19</sys_updated_on>
@@ -3274,9 +4088,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>50cce65bfbbf56d0c04cfbac7befdcc3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-24 01:29:19</sys_updated_on>
@@ -3297,9 +4111,9 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
         <sys_id>8fca843bfbb71ad0c04cfbac7befdc91</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name/>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-25 02:58:41</sys_updated_on>
@@ -3310,6 +4124,6 @@ const generateResponse = global.PlaybookDesignerAPI.generatePlaybook(params);&#1
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>fa2ed25ffb3f56d0c04cfbac7befdc5d</sys_id>
         <latest_snapshot>4ccce65bfbbf56d0c04cfbac7befdc98</latest_snapshot>
-        <compiler_build>glide-yokohama-12-18-2024__patch0-01-14-2025_01-22-2025_0439.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

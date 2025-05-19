@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook>```markdown
+- **Step 1: Generate Playbook Prompt**
+  - Begin by using the 'Generate a solid prompt' tool to create a playbook prompt.
+  - Input the necessary 'service_information' to the tool. This information should be relevant to the service for which the playbook is being created.
+
+- **Step 2: Format the Prompt**
+  - Once the playbook prompt is generated, use the 'Format the prompt before finalizing' tool to clean any special characters from the prompt.
+  - Ensure the 'public_llm_response' input is the generated prompt, and set the 'response_type' to "Now LLM" to ensure proper formatting.
+
+- **Step 3: Analyze Content (Optional)**
+  - If there is a need to synthesize or analyze the generated prompt further, use the 'Content Analysis' tool.
+  - Provide a detailed 'analysis' of the prompt to ensure it meets the requirements and is free of errors.
+
+- **Step 4: User Interaction (Optional)**
+  - If user input is required to refine the playbook prompt, use the 'User Input' tool.
+  - Display a 'promptMessage' to the user asking for specific input or feedback on the generated prompt.
+
+- **Step 5: Display Information to User (Optional)**
+  - If necessary, use the 'User Output' tool to display the finalized playbook prompt to the user.
+  - Ensure the 'message' is informative and does not solicit further input unless required by the scenario.
+
+- **Step 6: Completion**
+  - Once the playbook prompt is finalized and all necessary steps are completed, use the 'Finish' tool to conclude the execution.
+```</compiled_handbook>
+        <description>Creates a Playbook Prompt for the selected service</description>
+        <external_agent_configuration/>
+        <instructions>Execute these steps:
+1. Get the Playbook prompt
+2. After getting the prompt pass it through the formatter to get rid of special characters from the "Now LLM"</instructions>
+        <internal_name>global.x_snc_15_minute_se.Playbook Prompt Creator</internal_name>
+        <name>Playbook Prompt Creator</name>
+        <processing_message/>
+        <proficiency>- The agent is proficient in creating comprehensive playbooks by generating prompts tailored for specific services, ensuring that the playbook is aligned with the service's requirements and objectives.
+- The agent is capable of obtaining the initial playbook prompt, which serves as the foundation for further processing and refinement in the playbook creation workflow.
+- The agent can generate a solid and effective prompt for a playbook by utilizing detailed service information, ensuring that the playbook is relevant and comprehensive.
+- The agent is capable of formatting the playbook prompt to remove special characters, particularly from the 'Now LLM' response type, ensuring the final prompt is clean and professional.
+- The agent can seamlessly integrate the generation and formatting of prompts, ensuring that the playbook is both well-structured and free of unnecessary characters, thus enhancing its usability and clarity.</proficiency>
+        <record_type>custom</record_type>
+        <role>You are a playbook creator and have to create a prompt to build a playbook for a given service.</role>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-03-13 17:15:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e2b7a541fb9cea50625bf7704eefdcb4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Playbook Prompt Creator</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_agent_e2b7a541fb9cea50625bf7704eefdcb4</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 06:54:57</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

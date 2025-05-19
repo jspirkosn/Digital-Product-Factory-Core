@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_conv_fa_metadata">
+    <sn_conv_fa_metadata action="INSERT_OR_UPDATE">
+        <asset_document>c66f9b0dfbfb5290625bf7704eefdc19</asset_document>
+        <asset_table>sys_hub_flow</asset_table>
+        <description>Give the sys_id of the factory request, get the services that were build as a result.</description>
+        <io_metadata>{"inputs":[{"internal_name":"factory_request_number","hint":"The request id of the factory request that built the service","defaultValue":"none","isHidden":false}],"outputs":[{"internal_name":"instance_url","hint":"URL of the ServiceNow instance","defaultValue":"http","isHidden":false},{"internal_name":"app_scope","hint":"The SysId of the ServiceNow Application built by the factory","defaultValue":"none","isHidden":false},{"internal_name":"names","hint":"The names and descriptions of the services that are part of the product","defaultValue":"None","isHidden":false}]}</io_metadata>
+        <name>Get Services Built by Digital Factory</name>
+        <required_translations>[{"message":"The request id of the factory request that built the service","comment":"Translation required for hint","code":"sn_conv_fa"},{"message":"URL of the ServiceNow instance","comment":"Translation required for hint","code":"sn_conv_fa"},{"message":"The SysId of the ServiceNow Application built by the factory","comment":"Translation required for hint","code":"sn_conv_fa"},{"message":"The names and descriptions of the services that are part of the product","comment":"Translation required for hint","code":"sn_conv_fa"}]</required_translations>
+        <state>compatible</state>
+        <sys_class_name>sn_conv_fa_metadata</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-05-06 03:33:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8e027416fbdd2a10c04cfbac7befdcb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Services Built by Digital Factory</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_conv_fa_metadata_8e027416fbdd2a10c04cfbac7befdcb6</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-06 03:33:23</sys_updated_on>
+    </sn_conv_fa_metadata>
+    <sys_translated_text action="delete_multiple" query="documentkey=8e027416fbdd2a10c04cfbac7befdcb6"/>
+</record_update>

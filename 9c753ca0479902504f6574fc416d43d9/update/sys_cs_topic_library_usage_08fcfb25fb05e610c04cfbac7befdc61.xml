@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage">
+    <sys_cs_topic_library_usage action="INSERT_OR_UPDATE">
+        <calling_cs_topic_id display_value="Build Digital Products for Industries">7becfb25fb05e610c04cfbac7befdc39</calling_cs_topic_id>
+        <library_cs_topic_id display_value="Data Collector">4c19933e4322211006650464dbb8f22d</library_cs_topic_id>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"Data Collector","library_topic_id":"4c19933e4322211006650464dbb8f22d","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"definition","value":{"type":"String","mode":"script","value":"(function execute() {\n        var config = {\n            configuration: {\"purpose\":\"{{0}}\",\"inputs\":[{\"name\":\"which_industry_\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Which industry are you building this product for?\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"helpText\":\"false\",\"choices\":[{\"value\":\"GOV\",\"label\":\"Government\"},{\"value\":\"ED\",\"label\":\"Higher Education\"},{\"value\":\"INS\",\"label\":\"Insurance\"},{\"value\":\"HCLS\",\"label\":\"HealthCare and Life Sciences\"}],\"applicability\":\"\",\"validation\":\"\"},{\"name\":\"which_template_\",\"type\":\"reference\",\"discoverable\":true,\"description\":\"Select from the templates available for this industry\",\"skipMode\":\"'simple'\",\"skipCondition\":\"\\\"\\\"\",\"helpText\":\"false\",\"choiceMode\":\"'simple'\",\"table\":\"'x_snc_15_minute_se_registered_templates'\",\"multipleSelect\":\"false\",\"autoSelect\":\"true\",\"conditionMode\":\"'simple'\",\"condition\":\"\\\"industry_sectorLIKE_dataCollectorLiteral.which_industry_.getValue()\\\"\",\"applicability\":\"\",\"validation\":\"\"}],\"instructions\":\"{{1}}\",\"advanced_parameters\":\"{{2}}\",\"callingTask\":\"{{3}}\",\"confirm_summary\":false,\"slots\":[{\"name\":\"add_additional_services_to_your_product\",\"type\":\"choice\",\"discoverable\":true,\"description\":\"Would you like to add additional services to your product?\",\"validation\":\"\",\"choices\":[{\"value\":\"Yes\",\"label\":\"Yes\"},{\"value\":\"No\",\"label\":\"No\"}]},{\"name\":\"service_to_add\",\"type\":\"string\",\"discoverable\":true,\"description\":\"Describe the service that you would like our AI Assistants to add to your product.\",\"validation\":\"\"}],\"applicability\":\"\"}\n        };\n        return JSON.stringify(config);\n    })()"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"inputs","metadata":{"type":"String","list":true,"items":[{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"string","value":""},{"type":"String","mode":"script","value":"(function() { return vaSystem.getConversationTaskId()})()"}],"use_items":true}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"outputs","main_topic_mapped_variable_name":"ai_data_collector_73cd01c9af6944edacef9df962a5603b_output"}],"header_card_fields":[],"id":"73cd01c9af6944edacef9df962a5603b","name":"Which Industry?","goal_id":"primary","expert_mode":false,"variableIds":["696c56963fd04cf58f00616ee5be3fb2","17fb8bf6760340508f1ad6a32d11edc6"]}</library_usage>
+        <node_id>73cd01c9af6944edacef9df962a5603b</node_id>
+        <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-04-22 00:08:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>08fcfb25fb05e610c04cfbac7befdc61</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_cs_topic_library_usage_08fcfb25fb05e610c04cfbac7befdc61</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-05-04 19:53:49</sys_updated_on>
+    </sys_cs_topic_library_usage>
+</record_update>

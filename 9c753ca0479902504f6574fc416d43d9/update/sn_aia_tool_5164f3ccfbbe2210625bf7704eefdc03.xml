@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Retrieve parts needed to give the user a link to the request status.</description>
+        <input_schema>[{"name":"request_item_sys_id","description":"Requested Item Sys ID"}]</input_schema>
+        <name>Get instance URL and Requested Item Request Sys ID</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+outputs = {};
+
+var reqItemId = new GlideRecord('sc_req_item');
+reqItemId.get('inputs.requested_item_id');
+outputs.instance_url = "https://" + gs.getProperty('instance_name') + ".service-now.com/";
+outputs.request_sys_id = reqItemId.request.sys_id;
+return outputs;
+
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-13 07:30:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5164f3ccfbbe2210625bf7704eefdc03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get instance URL and Requested Item Request Sys ID</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_tool_5164f3ccfbbe2210625bf7704eefdc03</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-13 07:30:26</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

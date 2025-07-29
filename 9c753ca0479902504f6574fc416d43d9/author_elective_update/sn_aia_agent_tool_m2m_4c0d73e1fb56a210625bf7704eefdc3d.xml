@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Digital Factory Template Selection Assistant">a9936b21fb92a210625bf7704eefdc31</agent>
+        <description>Retrieves the details of the selected base template chosen by the user.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"template","value":"","description":"Name of the selected template","invalidMessage":null},{"name":"crudInputs","value":{"operation":"lookup","table":{"value":"sys_app_template_detail","displayValue":"Template Details"},"query":"template.name={{template}}","returnFields":[{"id":"detailed_description","sublabel":"detailed_description","label":"Detailed Description","type":"translated_text","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"excludedOperators":[]}],"limit":"1","orderBy":"","sortType":""},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get Template Details</name>
+        <output_transformation_strategy>paraphrase</output_transformation_strategy>
+        <pre_message>Searching for the template definition</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-06-23 03:27:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4c0d73e1fb56a210625bf7704eefdc3d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Get Template Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_4c0d73e1fb56a210625bf7704eefdc3d</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-06-23 03:44:32</sys_updated_on>
+        <tool display_value="Get Template Details">800d73e1fb56a210625bf7704eefdc3a</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sn_aia_agent_tool_m2m_4c0d73e1fb56a210625bf7704eefdc3d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Digital Factory Template Selection Assistant">a9936b21fb92a210625bf7704eefdc31</agent><description>Retrieves the details of the selected base template chosen by the user.</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"template","value":"","description":"Name of the selected template","invalidMessage":null},{"name":"crudInputs","value":{"operation":"lookup","table":{"value":"sys_app_template_detail","displayValue":"Template Details"},"query":"template.name={{template}}","returnFields":[{"id":"detailed_description","sublabel":"detailed_description","label":"Detailed Description","type":"translated_text","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"excludedOperators":[]}],"limit":"1","orderBy":"","sortType":""},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs><max_auto_executions>10</max_auto_executions><name>Get Template Details</name><output_transformation_strategy>paraphrase</output_transformation_strategy><pre_message>Searching for the template definition</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>john.spirko</sys_created_by><sys_created_on>2025-06-23 03:27:32</sys_created_on><sys_domain>global</sys_domain><sys_id>4c0d73e1fb56a210625bf7704eefdc3d</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Get Template Details</sys_name><sys_overrides/><sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package><sys_policy/><sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_4c0d73e1fb56a210625bf7704eefdc3d</sys_update_name><sys_updated_by>john.spirko</sys_updated_by><sys_updated_on>2025-06-23 03:44:32</sys_updated_on><tool display_value="Get Template Details">800d73e1fb56a210625bf7704eefdc3a</tool><tool_attributes>{}</tool_attributes></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-449985217</payload_hash>
+        <record_name>Get Template Details</record_name>
+        <reverted_from/>
+        <source>674d13f5fbb296d0625bf7704eefdcc4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-06-23 03:44:32</sys_created_on>
+        <sys_id>95e044f9fb56a210625bf7704eefdc09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1979ae33cdd0000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-06-23 03:44:32</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>99e044f94256a2102bae3fdedab16e08</update_guid>
+        <update_guid_history>99e044f94256a2102bae3fdedab16e08:-449985217,5b40cc39bb56a210061a51b1a82730ee:-1246986975,70aeb7a55656a2101b695846fd88056b:2146681969,9c0db3e15156a2104254fca69000c6b6:1650095244</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2025-07-02 22:54:05">647efbf0fb622e50625bf7704eefdca5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-03 05:54:05</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>9c3f0714cdae4b39be7091fd2c2c4a01</sys_id>
+        <sys_metadata>4c0d73e1fb56a210625bf7704eefdc3d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Template Details</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_4c0d73e1fb56a210625bf7704eefdc3d</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_4c0d73e1fb56a210625bf7704eefdc3d">95e044f9fb56a210625bf7704eefdc09</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-03 05:54:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

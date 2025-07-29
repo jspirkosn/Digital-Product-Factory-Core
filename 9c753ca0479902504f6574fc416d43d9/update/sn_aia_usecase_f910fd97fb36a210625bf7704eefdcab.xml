@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <base_plan>1. Guide the user to a template that they can start with as a basis immediately.
+2. Prompt the user for their organization
+3. Prompt the user to name their Digital Product. Please note that this Digital Product is a package that will contain their services, data tables, and workflows.
+4. Ask the user for a detailed description of the Digital Product. 
+5. Ask the user if they would like to add additional service(s) to their product
+6. If they say yes, ask them to describe the details of the service, what they hope it can do from an intake and workflow perspective.
+7. Maintain a list called "Comma Separated List of Additional Services" and add the description from step 6, followed by a comma, to that list.  
+8. Ask them if they would like to add another service
+9. If they say yes, go back to step 5
+10. Tell the user that they will be the owner of the product and ask if they would like to add any collaborators
+11. If they said yes to adding collaborators, prompt them for a list of email addresses
+12. Make sure the email list is a comma-separated list of valid email addresses.  If it’s not, allow them to edit what they wrote.
+13. Describe the product by providing a list of the delivered services and supporting services, including any services they've asked to add, and describe how they will make up the digital product.
+14. Submit a request to the factory</base_plan>
+        <description>This agentic workflow helps users build digital product prototypes. The agent will guide you through collecting basic requirements, which should take about 10 minutes, and a prototype will be delivered within 10 minutes of submission.</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.x_snc_15_minute_se.Digital Product Factory Assistant (Copy)</internal_name>
+        <name>Digital Product Factory Assistant (Copy)</name>
+        <record_type>custom</record_type>
+        <strategy display_value="ReActive Planner">b264c470ff1022106c36ffffffffff67</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-23 00:12:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f910fd97fb36a210625bf7704eefdcab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Digital Product Factory Assistant (Copy)</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_usecase_f910fd97fb36a210625bf7704eefdcab</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-23 00:12:39</sys_updated_on>
+        <team display_value="Digital Product Factory Assistant (Copy)">bd10fd97fb36a210625bf7704eefdca8</team>
+    </sn_aia_usecase>
+</record_update>

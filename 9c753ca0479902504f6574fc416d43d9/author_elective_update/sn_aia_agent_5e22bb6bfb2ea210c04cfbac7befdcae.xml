@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook>```markdown
+- **Step 1: Gather Required Submission Information**
+  - Review the context and any information provided by the user to determine if all necessary details for submitting a factory request are available. These may include: Registered Template ID, Name of Product, Description of Product, Organization Name, Comma Separated List of Developer Emails, and Comma Separated List of Additional Services.
+  - If any required information is missing or unclear, use the 'User Input' tool to prompt the user for the specific missing details. Clearly specify what information is needed in the prompt.
+  - If the information provided is complex or ambiguous, use the 'Content Analysis' tool to analyze and clarify the requirements before proceeding.
+
+- **Step 2: Submit Factory Request**
+  - Once all required information is collected and clarified, use the 'Submit a request to the factory' tool.
+    - Input the gathered details into the corresponding fields: registered_template_id, name_of_product, description_of_product, organization_name, comma_separated_list_of_developer_emails, and comma_separated_list_of_additional_services.
+    - If the tool returns a success response, proceed to the next step.
+    - If the tool returns an error or unexpected result, use the 'User Output' tool to inform the user of the issue and, if possible, use the 'User Input' tool to collect any additional or corrected information needed to retry the submission.
+    - If the error cannot be resolved or is outside the scope of available tools, proceed to the Finish step.
+
+- **Step 3: Retrieve Instance URL and Parent Request ID**
+  - After a successful factory request submission, determine if you have the Requested Item ID or Parent Request ID needed to construct the link as per the instructions.
+  - If you do not have the Requested Item ID, use the 'User Input' tool to request it from the user.
+  - Once you have the Requested Item ID, use the 'Get the base URL of the instance and the parent request of the requested item' tool.
+    - Input the Requested Item ID as required.
+    - If the tool returns the base URL and Parent Request ID, proceed to the next step.
+    - If the tool fails or returns an unexpected result, use the 'User Output' tool to inform the user and, if possible, use the 'User Input' tool to collect any missing or corrected information.
+    - If the issue cannot be resolved, proceed to the Finish step.
+
+- **Step 4: Build and Present the Link to the User**
+  - Using the base instance URL and Parent Request ID obtained, construct the link in the format:  
+    `instance URL + 'id=sc_request&amp;table=sc_request&amp;sys_id=' + Parent Request ID`
+  - Use the 'User Output' tool to present this constructed link to the user, ensuring the message is informative and not a question.
+
+- **Step 5: Analysis and Clarification (Content Analysis Tool)**
+  - At any point, if you encounter complex, ambiguous, or unclear requirements, or need to synthesize information from multiple sources, use the 'Content Analysis' tool.
+    - Input a detailed analysis of the current problem or information to clarify your next steps.
+    - Use the insights gained to guide your actions in the subsequent steps.
+
+- **Step 6: User Communication (User Output Tool)**
+  - Use the 'User Output' tool whenever you need to display information to the user, such as status updates, error messages, or the final constructed link.
+  - Do not use this tool to ask questions or collect input.
+
+- **Step 7: Collecting Additional Information (User Input Tool)**
+  - Use the 'User Input' tool whenever you require additional information from the user that is not already available, such as missing submission details or Requested Item ID.
+  - Clearly specify what information is needed in the prompt.
+
+- **Step 8: Completion**
+  - Once the link has been successfully presented to the user and all instructions have been followed, use the 'Finish' tool to conclude the execution.
+
+- **Step 9: Handling Unexpected Scenarios**
+  - If at any point you encounter a scenario or tool outcome that is not covered by the available tools or cannot be resolved through user input or analysis, proceed directly to the 'Finish' tool to end the process.
+```</compiled_handbook>
+        <description>Takes the specification from the end user and submits their request to the factory.</description>
+        <external_agent_configuration/>
+        <instructions>1. Submit request
+2. Build and present this link to the user: instance URL + 'id=sc_request&amp;table=sc_request&amp;sys_id=' + Parent Request ID</instructions>
+        <internal_name>global.x_snc_15_minute_se.Digital Product Factory Submission Assistant</internal_name>
+        <name>Digital Product Factory Submission Assistant</name>
+        <processing_message/>
+        <proficiency>- Expert in submitting factory requests by utilizing contextual information gathered in previous stages, ensuring that all relevant data is incorporated into the request process. The agent specializes in interpreting the context and translating it into actionable factory requests, acting as the primary interface between the user and the factory system.
+- Capable of submitting detailed and customizable requests to the factory system, utilizing optional parameters such as registered template ID, product name, product description, organization name, developer emails, and additional services. This allows the agent to tailor each request to the specific needs of the user or organization, ensuring comprehensive and accurate submissions.
+- Proficient in retrieving the base URL of the instance and identifying the parent request associated with a requested item, enabling the agent to construct and present a direct link to the user for easy access and tracking of the factory request.
+- Adept at orchestrating multi-step procedures by first submitting the factory request and then constructing a user-facing link (instance URL + 'id=sc_request&amp;table=sc_request&amp;sys_id=' + Parent Request ID) for tracking and management purposes, ensuring end-to-end completion of the request process as outlined in the ACTION PLAN.</proficiency>
+        <record_type>custom</record_type>
+        <role>Based on the context, built in earlier stages, submit a factory request.</role>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-11 18:06:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5e22bb6bfb2ea210c04cfbac7befdcae</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>Digital Product Factory Submission Assistant</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_agent_5e22bb6bfb2ea210c04cfbac7befdcae</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-13 19:36:03</sys_updated_on>
+    </sn_aia_agent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sn_aia_agent_5e22bb6bfb2ea210c04cfbac7befdcae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent"><sn_aia_agent action="INSERT_OR_UPDATE"><agent_type>internal</agent_type><compiled_handbook>```markdown
+- **Step 1: Gather Required Submission Information**
+  - Review the context and any information provided by the user to determine if all necessary details for submitting a factory request are available. These may include: Registered Template ID, Name of Product, Description of Product, Organization Name, Comma Separated List of Developer Emails, and Comma Separated List of Additional Services.
+  - If any required information is missing or unclear, use the 'User Input' tool to prompt the user for the specific missing details. Clearly specify what information is needed in the prompt.
+  - If the information provided is complex or ambiguous, use the 'Content Analysis' tool to analyze and clarify the requirements before proceeding.
+
+- **Step 2: Submit Factory Request**
+  - Once all required information is collected and clarified, use the 'Submit a request to the factory' tool.
+    - Input the gathered details into the corresponding fields: registered_template_id, name_of_product, description_of_product, organization_name, comma_separated_list_of_developer_emails, and comma_separated_list_of_additional_services.
+    - If the tool returns a success response, proceed to the next step.
+    - If the tool returns an error or unexpected result, use the 'User Output' tool to inform the user of the issue and, if possible, use the 'User Input' tool to collect any additional or corrected information needed to retry the submission.
+    - If the error cannot be resolved or is outside the scope of available tools, proceed to the Finish step.
+
+- **Step 3: Retrieve Instance URL and Parent Request ID**
+  - After a successful factory request submission, determine if you have the Requested Item ID or Parent Request ID needed to construct the link as per the instructions.
+  - If you do not have the Requested Item ID, use the 'User Input' tool to request it from the user.
+  - Once you have the Requested Item ID, use the 'Get the base URL of the instance and the parent request of the requested item' tool.
+    - Input the Requested Item ID as required.
+    - If the tool returns the base URL and Parent Request ID, proceed to the next step.
+    - If the tool fails or returns an unexpected result, use the 'User Output' tool to inform the user and, if possible, use the 'User Input' tool to collect any missing or corrected information.
+    - If the issue cannot be resolved, proceed to the Finish step.
+
+- **Step 4: Build and Present the Link to the User**
+  - Using the base instance URL and Parent Request ID obtained, construct the link in the format:  
+    `instance URL + 'id=sc_request&amp;table=sc_request&amp;sys_id=' + Parent Request ID`
+  - Use the 'User Output' tool to present this constructed link to the user, ensuring the message is informative and not a question.
+
+- **Step 5: Analysis and Clarification (Content Analysis Tool)**
+  - At any point, if you encounter complex, ambiguous, or unclear requirements, or need to synthesize information from multiple sources, use the 'Content Analysis' tool.
+    - Input a detailed analysis of the current problem or information to clarify your next steps.
+    - Use the insights gained to guide your actions in the subsequent steps.
+
+- **Step 6: User Communication (User Output Tool)**
+  - Use the 'User Output' tool whenever you need to display information to the user, such as status updates, error messages, or the final constructed link.
+  - Do not use this tool to ask questions or collect input.
+
+- **Step 7: Collecting Additional Information (User Input Tool)**
+  - Use the 'User Input' tool whenever you require additional information from the user that is not already available, such as missing submission details or Requested Item ID.
+  - Clearly specify what information is needed in the prompt.
+
+- **Step 8: Completion**
+  - Once the link has been successfully presented to the user and all instructions have been followed, use the 'Finish' tool to conclude the execution.
+
+- **Step 9: Handling Unexpected Scenarios**
+  - If at any point you encounter a scenario or tool outcome that is not covered by the available tools or cannot be resolved through user input or analysis, proceed directly to the 'Finish' tool to end the process.
+```</compiled_handbook><description>Takes the specification from the end user and submits their request to the factory.</description><external_agent_configuration/><instructions>1. Submit request
+2. Build and present this link to the user: instance URL + 'id=sc_request&amp;table=sc_request&amp;sys_id=' + Parent Request ID</instructions><internal_name>global.x_snc_15_minute_se.Digital Product Factory Submission Assistant</internal_name><name>Digital Product Factory Submission Assistant</name><processing_message/><proficiency>- Expert in submitting factory requests by utilizing contextual information gathered in previous stages, ensuring that all relevant data is incorporated into the request process. The agent specializes in interpreting the context and translating it into actionable factory requests, acting as the primary interface between the user and the factory system.
+- Capable of submitting detailed and customizable requests to the factory system, utilizing optional parameters such as registered template ID, product name, product description, organization name, developer emails, and additional services. This allows the agent to tailor each request to the specific needs of the user or organization, ensuring comprehensive and accurate submissions.
+- Proficient in retrieving the base URL of the instance and identifying the parent request associated with a requested item, enabling the agent to construct and present a direct link to the user for easy access and tracking of the factory request.
+- Adept at orchestrating multi-step procedures by first submitting the factory request and then constructing a user-facing link (instance URL + 'id=sc_request&amp;table=sc_request&amp;sys_id=' + Parent Request ID) for tracking and management purposes, ensuring end-to-end completion of the request process as outlined in the ACTION PLAN.</proficiency><record_type>custom</record_type><role>Based on the context, built in earlier stages, submit a factory request.</role><strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy><sys_class_name>sn_aia_agent</sys_class_name><sys_created_by>john.spirko</sys_created_by><sys_created_on>2025-07-11 18:06:55</sys_created_on><sys_domain>global</sys_domain><sys_id>5e22bb6bfb2ea210c04cfbac7befdcae</sys_id><sys_mod_count>52</sys_mod_count><sys_name>Digital Product Factory Submission Assistant</sys_name><sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package><sys_policy/><sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope><sys_update_name>sn_aia_agent_5e22bb6bfb2ea210c04cfbac7befdcae</sys_update_name><sys_updated_by>john.spirko</sys_updated_by><sys_updated_on>2025-07-13 19:36:03</sys_updated_on></sn_aia_agent></record_update>]]></payload>
+        <payload_hash>-451456072</payload_hash>
+        <record_name>Digital Product Factory Submission Assistant</record_name>
+        <reverted_from/>
+        <source>674d13f5fbb296d0625bf7704eefdcc4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-13 19:36:03</sys_created_on>
+        <sys_id>6a7a9adcfbf2a210625bf7704eefdc79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19805498fd40000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-13 19:36:03</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>ae7a9adce8f2a2109dd16ca8a90edb78</update_guid>
+        <update_guid_history>ae7a9adce8f2a2109dd16ca8a90edb78:-451456072,ce7a1e947d3aa210d63c1eab78d10e4d:1109332312,507ad2dc5df2a210dca5a64cacad2d0e:20487697,fbf6561816f2a2108751bee8cae9a7ec:1816524273,63f656109c3aa210c9e86f2f24aed197:1595935129,9df69ad491f2a21071fc35596b1273ff:-645886583,77e49ad096f2a2108a72cdf76d65d8bd:-897170086,54409ed00ff6a210da88de5792b24f90:-1962232052,87305e1846b2a210f3416ef1add004a6:-656397152,4c7f46d4a6b2a210e059bace41231784:-1037336579,887477ccefbe221069aeae630b8af305:-492539472,ff6437cc8bbe221093e56b727daeeaa3:-107680973,f034b488a1f666102b57e4cd727168a2:120986572,e834b488cdf6661077bc466d04b5882c:-925580703,aa24748831f666100860539925074304:1536503048,c5e3bc806ff226d0b5d176f32bd7198b:1284574622,70e3bc8000f226d05e620e8862e9fc6b:-1888617241,36d3b8042df666100b8f7725c57e9b26:-806460801,fe73fc0816f6661063cf6d08d150b26e:1303811299,c673fc08f8f66610914781962be0a011:784588667,8e40b880cdf66610196f905e56f348c1:-292965941,5940b88074f666107ba8f3565c617747:830880787,77303c00f7f666108d3bdc2b8239087e:-599078880,dcdf2c40cff6661061c1560642f9969d:-1321086850,1fcf6c8858b226d02c3aa1cc035f38c9:1278892913,35cf6840baf6661092fa77d8b4236b52:-1697490370,499c2c8868b66610a3a184438680451f:1467034472,3d5c240464b226d06ba709709a491033:-1125928584,315c6488b4b666104931fce54c8908dc:304455810,2f4cec480bb66610faf525963ca67839:-1511140295,d2b5ecc8f576661056e1cb018a71440b:847474226,d5b5acc888766610ab59b41a278d74a1:-313219775,88b56cc86276661054df5ebcc7aecde8:552546766,d7c460887e766610bbfbc9393e45b6f6:972929987,fac460887676661037987ecb1920a6c0:253558331,26acdc487136661074e435c3a1c7afc7:606914233,9f3294c082b26610952e497304024334:-164905441,e94f047b1bae62d0a4729ec3d9bf9e90:153657189,184fc0377862e21062a458131358bccf:1636122669,144fc0370962e21013b9248fc3ea97d6:1358862357,9ffb0c3ff222e210dea8230a252afc53:-104754611,86fbc83fa222e210189a59decca415b6:-898008538,98fd7fe7ea2e62d0811cd72bd74774e7:243312321,7bedbfe7f1aea2109c06e0409f5dbbc3:351329702,71edbfa790aea2109ba21c0aeec9610f:940787283,e9bbbb6329aea210c47e18ace4f08a7c:-1233884981,34bb77e3072e62d0e06a4e81615b2a0a:896601656,47abfbefc06ea210d8bbacde8bf19d12:1129143172,1e73772f2a2ea210550edb0e9823e894:299638933,1173772fc62ea21067ed39f84d7f5f19:749507918,18f2bf636aea62d039cdfbba02cda19e:-994254028,26e237eb612ea2109f4437841d33f93e:859518323,15e2f3eb602ea210849abc25bc505d60:285252289</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2025-07-13 16:23:48">229ecb14fbbaa210625bf7704eefdcd5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-13 23:23:49</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>0020ec5234044e30a923970689818004</sys_id>
+        <sys_metadata>5e22bb6bfb2ea210c04cfbac7befdcae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Digital Product Factory Submission Assistant</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_5e22bb6bfb2ea210c04cfbac7befdcae</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_5e22bb6bfb2ea210c04cfbac7befdcae">6a7a9adcfbf2a210625bf7704eefdc79</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-13 23:23:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

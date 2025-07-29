@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="DELETE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook>```markdown
+- **Step 1: Variable Identification**
+  - Begin by determining the variable required for the flow as per the &lt;agent-instructions&gt;.
+  - Use the 'User Input' tool to request the variable from the user. For example, prompt the user with: "Please provide the variable required for the flow."
+  - If the user provides the variable, proceed to the next step.
+  - If the user does not provide the variable or the input is unclear, use the 'User Output' tool to inform the user: "I cannot proceed without the required variable. Please provide the necessary information to continue."
+
+- **Step 2: Variable Analysis**
+  - Once the variable is obtained, use the 'Content Analysis' tool to analyze the variable and ensure it is valid and appropriate for the flow.
+  - Input the variable into the 'Content Analysis' tool with a detailed analysis prompt, such as: "Analyze the provided variable to confirm its validity and relevance for the digital product factory workflow request."
+  - If the analysis confirms the variable is valid, proceed to the next step.
+  - If the analysis identifies issues with the variable, use the 'User Output' tool to inform the user: "The provided variable is invalid or unsuitable for the workflow. Please provide a valid variable to proceed." Then return to Step 1 to collect a new variable.
+
+- **Step 3: Submit the Workflow Request**
+  - Once the variable is validated, proceed to submit the digital product factory workflow request.
+  - Use the 'User Output' tool to inform the user: "Submitting the digital product factory workflow request with the provided variable."
+  - Simulate the submission process (if no explicit tool is provided for submission) and ensure the user is aware of the progress.
+
+- **Step 4: User Confirmation**
+  - After the submission, use the 'User Output' tool to inform the user: "The workflow request has been successfully submitted. If you have any further requirements, please let me know."
+  - If the user provides additional feedback or requests, return to Step 1 to handle the new input.
+
+- **Step 5: Completion**
+  - Once the workflow request is successfully submitted and no further input is required from the user, use the 'Finish' tool to conclude the execution.
+```</compiled_handbook>
+        <description>dsfg</description>
+        <external_agent_configuration/>
+        <instructions>Get the variable for the flow
+submit it</instructions>
+        <internal_name>global.x_snc_15_minute_se.vgd</internal_name>
+        <name>vgd</name>
+        <processing_message/>
+        <proficiency>- The agent specializes in submitting digital product factory workflow requests, acting as a facilitator to initiate and manage workflow processes within a digital product factory environment.
+- The agent is capable of retrieving the necessary variable for the workflow, ensuring that all required inputs are gathered before submission, as per the defined procedural steps.
+- The agent is capable of submitting the digital product factory workflow request after gathering the required variable, ensuring the workflow process is initiated successfully.</proficiency>
+        <record_type>custom</record_type>
+        <role>Submit a digital product factory workflow request</role>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-06-23 14:57:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e49a5e7dfb1ae210625bf7704eefdc69</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>vgd</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_agent_e49a5e7dfb1ae210625bf7704eefdc69</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-06-23 14:57:45</sys_updated_on>
+    </sn_aia_agent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sn_aia_agent_e49a5e7dfb1ae210625bf7704eefdc69</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent"><sn_aia_agent action="INSERT_OR_UPDATE"><agent_type>internal</agent_type><compiled_handbook>```markdown
+- **Step 1: Variable Identification**
+  - Begin by determining the variable required for the flow as per the &lt;agent-instructions&gt;.
+  - Use the 'User Input' tool to request the variable from the user. For example, prompt the user with: "Please provide the variable required for the flow."
+  - If the user provides the variable, proceed to the next step.
+  - If the user does not provide the variable or the input is unclear, use the 'User Output' tool to inform the user: "I cannot proceed without the required variable. Please provide the necessary information to continue."
+
+- **Step 2: Variable Analysis**
+  - Once the variable is obtained, use the 'Content Analysis' tool to analyze the variable and ensure it is valid and appropriate for the flow.
+  - Input the variable into the 'Content Analysis' tool with a detailed analysis prompt, such as: "Analyze the provided variable to confirm its validity and relevance for the digital product factory workflow request."
+  - If the analysis confirms the variable is valid, proceed to the next step.
+  - If the analysis identifies issues with the variable, use the 'User Output' tool to inform the user: "The provided variable is invalid or unsuitable for the workflow. Please provide a valid variable to proceed." Then return to Step 1 to collect a new variable.
+
+- **Step 3: Submit the Workflow Request**
+  - Once the variable is validated, proceed to submit the digital product factory workflow request.
+  - Use the 'User Output' tool to inform the user: "Submitting the digital product factory workflow request with the provided variable."
+  - Simulate the submission process (if no explicit tool is provided for submission) and ensure the user is aware of the progress.
+
+- **Step 4: User Confirmation**
+  - After the submission, use the 'User Output' tool to inform the user: "The workflow request has been successfully submitted. If you have any further requirements, please let me know."
+  - If the user provides additional feedback or requests, return to Step 1 to handle the new input.
+
+- **Step 5: Completion**
+  - Once the workflow request is successfully submitted and no further input is required from the user, use the 'Finish' tool to conclude the execution.
+```</compiled_handbook><description>dsfg</description><external_agent_configuration/><instructions>Get the variable for the flow
+submit it</instructions><internal_name>global.x_snc_15_minute_se.vgd</internal_name><name>vgd</name><processing_message/><proficiency>- The agent specializes in submitting digital product factory workflow requests, acting as a facilitator to initiate and manage workflow processes within a digital product factory environment.
+- The agent is capable of retrieving the necessary variable for the workflow, ensuring that all required inputs are gathered before submission, as per the defined procedural steps.
+- The agent is capable of submitting the digital product factory workflow request after gathering the required variable, ensuring the workflow process is initiated successfully.</proficiency><record_type>custom</record_type><role>Submit a digital product factory workflow request</role><strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy><sys_class_name>sn_aia_agent</sys_class_name><sys_created_by>john.spirko</sys_created_by><sys_created_on>2025-06-23 14:57:25</sys_created_on><sys_domain>global</sys_domain><sys_id>e49a5e7dfb1ae210625bf7704eefdc69</sys_id><sys_mod_count>2</sys_mod_count><sys_name>vgd</sys_name><sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package><sys_policy/><sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope><sys_update_name>sn_aia_agent_e49a5e7dfb1ae210625bf7704eefdc69</sys_update_name><sys_updated_by>john.spirko</sys_updated_by><sys_updated_on>2025-06-23 14:57:45</sys_updated_on></sn_aia_agent></record_update>]]></payload>
+        <payload_hash>-1631970404</payload_hash>
+        <record_name>vgd</record_name>
+        <reverted_from/>
+        <source>674d13f5fbb296d0625bf7704eefdcc4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-06-23 14:57:45</sys_created_on>
+        <sys_id>fafa5eb9fb5ee210c04cfbac7befdc6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1979d4b93b30000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-06-23 14:57:45</sys_updated_on>
+        <type>AI Agent</type>
+        <update_guid>32fa5eb9f75ee21037c5608f30a6d96c</update_guid>
+        <update_guid_history>32fa5eb9f75ee21037c5608f30a6d96c:-1631970404,9efa5eb9b85ee210b93c3848419bbe3a:714066471,3dea1ebd9e1ae210c0fe3765164f6d35:-535162559</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2025-06-27 14:14:29">d0979493fbd6ae10625bf7704eefdc5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-06-27 21:14:29</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent">sn_aia_agent</sys_db_object>
+        <sys_id>7128a0c0089e42dc8f62e29816de3c71</sys_id>
+        <sys_metadata>e49a5e7dfb1ae210625bf7704eefdc69</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>vgd</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_e49a5e7dfb1ae210625bf7704eefdc69</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_e49a5e7dfb1ae210625bf7704eefdc69">fafa5eb9fb5ee210c04cfbac7befdc6c</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-06-27 21:14:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

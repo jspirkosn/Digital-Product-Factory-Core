@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Get URL Parts for Request Status</description>
+        <input_schema>[{"name":"requested_item_sys_id","description":"Requested Item SysID"}]</input_schema>
+        <name>Get URL Parts for Request Status</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+
+var reqItemId = new GlideRecord('sc_req_item');
+reqItemId.get('inputs.requested_item_id');
+
+outputs.instance_url = "https://" + gs.getProperty('instance_name') + ".service-now.com/";
+outputs.parent_request_id = reqItemId.request.sys_id;
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-13 18:51:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1d3096d4fbb2a210625bf7704eefdc1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get URL Parts for Request Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_tool_1d3096d4fbb2a210625bf7704eefdc1c</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-13 18:51:11</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

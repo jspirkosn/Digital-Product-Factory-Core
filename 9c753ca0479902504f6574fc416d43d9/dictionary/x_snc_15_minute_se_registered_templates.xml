@@ -2,10 +2,12 @@
     <element db_object_id="b6f99f9efbaa9a50c04cfbac7befdc15" label="Registered Templates" max_length="40" name="x_snc_15_minute_se_registered_templates" type="collection">
         <element label="Delivery Catalog" max_length="32" name="delivery_catalog" reference="sc_catalog" type="reference"/>
         <element attributes="ref_autocompleter=AJAXTableCompleter,ref_ac_columns=registerd_to_factory,ref_ac_columns_search=true" display="true" label="App Template" max_length="32" name="app_template" reference="sys_app_template" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Delivered Services" max_length="512" name="delivered_services" type="html"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Product Model Table" max_length="32" name="product_model_table" type="table_name"/>
         <element label="Registerd to Factory" max_length="32" name="registerd_to_factory" reference="sc_cat_item" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Portal URL suffix" max_length="40" name="portal_url_suffix" type="string"/>
         <element label="Delivery Category" max_length="32" name="delivery_category" reference="sc_category" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Supporting Services" max_length="512" name="supporting_services" type="html"/>
         <element label="Deliver in ESC" max_length="255" name="deliver_in_esc" type="boolean"/>
         <element label="Privledges for Test Agent" max_length="1024" name="privs_for_test_agent" reference="sys_user_role" type="glide_list"/>
         <element label="Service Definition Table" max_length="40" name="service_definition_table" type="table_name"/>

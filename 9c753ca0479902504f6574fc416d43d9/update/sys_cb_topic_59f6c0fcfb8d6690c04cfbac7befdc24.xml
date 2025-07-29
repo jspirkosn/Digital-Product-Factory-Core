@@ -29,8 +29,17 @@
           "stepType": "Start",
           "name": "Start",
           "greetingResponse": {
-            "mode": "simple",
-            "value": ""
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello I look forward to helping build a Digital Product for You!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
           },
           "cardMetadata": {
             "mode": "card",
@@ -654,7 +663,7 @@
         "4fb1b083762f4dc683b097575d544b53": {
           "id": "4fb1b083762f4dc683b097575d544b53",
           "name": "Submit Factory Request",
-          "invocationType": "subflow",
+          "invocationType": "action",
           "stepType": "FlowAction",
           "actionRunAs": "session_user",
           "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
@@ -670,11 +679,8 @@
           },
           "actionNonSecureChannelMessage": {
             "mode": "simple",
-            "value": "This action is not supported on this channel."
+            "value": ""
           },
-          "subflowSpoke": "b97c4977c70310100a9b5d83c7c260af",
-          "subflowSpokeSubflow": "89f3b4c3c71310100a9b5d83c7c260cb",
-          "subflowWaitType": "sync",
           "subflowSecureField": false,
           "subflowSelectSecureField": "",
           "subflowPromptSecureField": {
@@ -689,61 +695,87 @@
             "mode": "simple",
             "value": ""
           },
-          "subflowInputs": {},
-          "subflowOutputs": {
-            "output-is_password_valid": [
+          "variableIds": [
+            "970bb466b8cf4eeb973e2e40d75ea677",
+            "f655449705d244bcbd2b6c2f0d1d50c5"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "actionSpoke": "9c753ca0479902504f6574fc416d43d9",
+          "actionSpokeAction": "bcde03a5fbde6210625bf7704eefdcd5",
+          "actionWaitType": "sync",
+          "actionInputs": {
+            "input-additional_services": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.services_to_add}}",
+                        "displayValue": "Input Variables➛Services To Add"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string"
+            }
+          },
+          "actionOutputs": {
+            "output-__action_status__": [
               {
-                "id": "dd134b99e9bd47bd84e2c0a548e4ce25",
-                "mapping": "is_password_valid",
+                "id": "970bb466b8cf4eeb973e2e40d75ea677",
+                "mapping": "Action Status",
+                "disabled": false,
+                "type": "object",
+                "value": "Action Status",
+                "description": "",
+                "is_list_data_entry": false,
+                "dependent_on_field": "",
+                "variable": "Action Status",
+                "variableName": "action_status"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "f655449705d244bcbd2b6c2f0d1d50c5",
+                "mapping": "Don't Treat as Error",
                 "disabled": false,
                 "type": "boolean",
-                "value": "is_password_valid",
+                "value": "Don't Treat as Error",
                 "description": "",
                 "is_list_data_entry": false,
                 "dependent_on_field": "",
-                "variable": "Is_password_valid",
-                "variableName": "is_password_valid"
-              }
-            ],
-            "output-pwd_reset_status": [
-              {
-                "id": "3bfb720674214421b7915b992e466512",
-                "mapping": "pwd_reset_status",
-                "disabled": false,
-                "type": "string",
-                "value": "pwd_reset_status",
-                "description": "",
-                "is_list_data_entry": false,
-                "dependent_on_field": "",
-                "variable": "Pwd_reset_status",
-                "variableName": "pwd_reset_status"
-              }
-            ],
-            "output-pwd_reset_error_message": [
-              {
-                "id": "42aafaf497ec4e51b52a931562d8a15d",
-                "mapping": "pwd_reset_error_message",
-                "disabled": false,
-                "type": "string",
-                "value": "pwd_reset_error_message",
-                "description": "",
-                "is_list_data_entry": false,
-                "dependent_on_field": "",
-                "variable": "Pwd_reset_error_message",
-                "variableName": "pwd_reset_error_message"
+                "variable": "Don't Treat As Error",
+                "variableName": "don_t_treat_as_error"
               }
             ]
           },
-          "subflowDefinition": {
-            "id": "89f3b4c3c71310100a9b5d83c7c260cb",
-            "latest_snapshot_id": "2acf050bc71310100a9b5d83c7c2604d",
-            "parent_id": null,
-            "type": "subflow",
-            "name": "reset_password_va",
-            "label": "Reset Password",
-            "scope_id": "b97c4977c70310100a9b5d83c7c260af",
-            "description": "Reset Password via Virtual Agent Conversation",
-            "category": null,
+          "actionDefinition": {
+            "id": "bcde03a5fbde6210625bf7704eefdcd5",
+            "latest_snapshot_id": "bcde03a5fbde6210625bf7704eefdcd5",
+            "parent_id": "2f3e8325fbde6210625bf7704eefdcf6",
+            "type": "action",
+            "name": "build_a_product_from_va",
+            "label": "Build a product from VA",
+            "scope_id": "9c753ca0479902504f6574fc416d43d9",
+            "description": "",
+            "category": "",
             "parameters_have_loaded": true,
             "input_parameters": [
               {
@@ -752,42 +784,11 @@
                   "data_pill",
                   "data_entry"
                 ],
-                "name": "password_reset_request_id",
-                "label": "password_reset_request_id",
+                "name": "additional_services",
+                "label": "Additional Services",
                 "type": "string",
                 "order": 1,
-                "required": true,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false,
-                "dependent_on_field": ""
-              },
-              {
-                "supported_input_modes": [
-                  "script",
-                  "data_pill"
-                ],
-                "name": "new_password",
-                "label": "new_password",
-                "type": "password2",
-                "order": 2,
-                "required": true,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false,
-                "dependent_on_field": ""
-              },
-              {
-                "supported_input_modes": [
-                  "script",
-                  "data_pill",
-                  "data_entry"
-                ],
-                "name": "password_reset_process_id",
-                "label": "password_reset_process_id",
-                "type": "string",
-                "order": 3,
-                "required": true,
+                "required": false,
                 "value": [],
                 "description": "",
                 "is_list_data_entry": false,
@@ -796,9 +797,9 @@
             ],
             "output_parameters": [
               {
-                "name": "is_password_valid",
-                "label": "is_password_valid",
-                "type": "boolean",
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
                 "order": 1,
                 "required": false,
                 "value": [],
@@ -807,21 +808,10 @@
                 "dependent_on_field": ""
               },
               {
-                "name": "pwd_reset_status",
-                "label": "pwd_reset_status",
-                "type": "string",
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
                 "order": 2,
-                "required": false,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false,
-                "dependent_on_field": ""
-              },
-              {
-                "name": "pwd_reset_error_message",
-                "label": "pwd_reset_error_message",
-                "type": "string",
-                "order": 3,
                 "required": false,
                 "value": [],
                 "description": "",
@@ -829,15 +819,6 @@
                 "dependent_on_field": ""
               }
             ]
-          },
-          "variableIds": [
-            "dd134b99e9bd47bd84e2c0a548e4ce25",
-            "3bfb720674214421b7915b992e466512",
-            "42aafaf497ec4e51b52a931562d8a15d"
-          ],
-          "applicability": {
-            "value": "",
-            "mode": "query"
           }
         }
       },
@@ -1146,44 +1127,28 @@
       "isHidden": false,
       "description": "Describe the service that you would like our AI Assistants to add to your product."
     },
-    "dd134b99e9bd47bd84e2c0a548e4ce25": {
-      "id": "dd134b99e9bd47bd84e2c0a548e4ce25",
-      "name": "is_password_valid",
-      "label": "Is_password_valid",
-      "defaultValue": "is_password_valid",
+    "970bb466b8cf4eeb973e2e40d75ea677": {
+      "id": "970bb466b8cf4eeb973e2e40d75ea677",
+      "name": "action_status",
+      "label": "Action Status",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "dependent_on_field": "",
+      "nodeId": "4fb1b083762f4dc683b097575d544b53",
+      "isHidden": false
+    },
+    "f655449705d244bcbd2b6c2f0d1d50c5": {
+      "id": "f655449705d244bcbd2b6c2f0d1d50c5",
+      "name": "don_t_treat_as_error",
+      "label": "Don't Treat As Error",
+      "defaultValue": "Don't Treat as Error",
       "varType": "boolean",
-      "category": "vaInputs",
-      "metadata": {
-        "libraryMappingType": "output"
-      },
-      "description": "",
-      "is_list_data_entry": false,
-      "dependent_on_field": "",
-      "nodeId": "4fb1b083762f4dc683b097575d544b53",
-      "isHidden": false
-    },
-    "3bfb720674214421b7915b992e466512": {
-      "id": "3bfb720674214421b7915b992e466512",
-      "name": "pwd_reset_status",
-      "label": "Pwd_reset_status",
-      "defaultValue": "pwd_reset_status",
-      "varType": "string",
-      "category": "vaInputs",
-      "metadata": {
-        "libraryMappingType": "output"
-      },
-      "description": "",
-      "is_list_data_entry": false,
-      "dependent_on_field": "",
-      "nodeId": "4fb1b083762f4dc683b097575d544b53",
-      "isHidden": false
-    },
-    "42aafaf497ec4e51b52a931562d8a15d": {
-      "id": "42aafaf497ec4e51b52a931562d8a15d",
-      "name": "pwd_reset_error_message",
-      "label": "Pwd_reset_error_message",
-      "defaultValue": "pwd_reset_error_message",
-      "varType": "string",
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "output"
@@ -1217,14 +1182,14 @@
         <sys_created_on>2025-04-18 22:18:37</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>59f6c0fcfb8d6690c04cfbac7befdc24</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Build Digital Products for Industries</sys_name>
         <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_cb_topic_59f6c0fcfb8d6690c04cfbac7befdc24</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-05-18 19:40:20</sys_updated_on>
+        <sys_updated_on>2025-06-23 00:11:50</sys_updated_on>
         <title>Build Digital Products for Industries</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>When somebody wants to build a digital factory template or get assistance.</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "e855e2197ba442379968d9f7617e35e1": {
+          "id": "e855e2197ba442379968d9f7617e35e1",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "f1204e4cab014b908a77bfc4dfd540f7": {
+          "id": "f1204e4cab014b908a77bfc4dfd540f7",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "a0260a20e79e45419ca1b784b9f091e0",
+          "edgeType": "Edge",
+          "source": "e855e2197ba442379968d9f7617e35e1",
+          "target": "f1204e4cab014b908a77bfc4dfd540f7",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases/>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>llm</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Digital Services Factory Greeting</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles>admin</roles>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-21 22:00:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fd38cc47fbfea650625bf7704eefdcda</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Digital Services Factory Greeting</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_cb_topic_fd38cc47fbfea650625bf7704eefdcda</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-21 23:42:01</sys_updated_on>
+        <title>Digital Services Factory Greeting</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_translated_text action="DELETE" query="documentkey=fd38cc47fbfea650625bf7704eefdcda"/>
+    <sys_variable_value action="DELETE" query="document_key=fd38cc47fbfea650625bf7704eefdcda"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sys_cb_topic_fd38cc47fbfea650625bf7704eefdcda</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><autopilot_topic>false</autopilot_topic><category/><channels/><connect_queue/><context_profiles/><description>When somebody wants to build a digital factory template or get assistance.</description><dialog_acts_enabled>false</dialog_acts_enabled><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>false</flexible_conversation_switching><foundational>false</foundational><graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "e855e2197ba442379968d9f7617e35e1": {
+          "id": "e855e2197ba442379968d9f7617e35e1",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "f1204e4cab014b908a77bfc4dfd540f7": {
+          "id": "f1204e4cab014b908a77bfc4dfd540f7",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "a0260a20e79e45419ca1b784b9f091e0",
+          "edgeType": "Edge",
+          "source": "e855e2197ba442379968d9f7617e35e1",
+          "target": "f1204e4cab014b908a77bfc4dfd540f7",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph><key_phrases/><library>false</library><live_agent>false</live_agent><model_type>llm</model_type><modify_confirmation_enabled>false</modify_confirmation_enabled><name>Digital Services Factory Greeting</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles>admin</roles><root_topic_id/><secure_custom_input_control>false</secure_custom_input_control><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>john.spirko</sys_created_by><sys_created_on>2025-07-21 22:00:20</sys_created_on><sys_domain>global</sys_domain><sys_id>fd38cc47fbfea650625bf7704eefdcda</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Digital Services Factory Greeting</sys_name><sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package><sys_policy/><sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope><sys_update_name>sys_cb_topic_fd38cc47fbfea650625bf7704eefdcda</sys_update_name><sys_updated_by>john.spirko</sys_updated_by><sys_updated_on>2025-07-21 23:42:01</sys_updated_on><title>Digital Services Factory Greeting</title><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_translated_text action="delete_multiple" query="documentkey=fd38cc47fbfea650625bf7704eefdcda"/><sys_variable_value action="delete_multiple" query="document_key=fd38cc47fbfea650625bf7704eefdcda"/></record_update>]]></payload>
+        <payload_hash>726345776</payload_hash>
+        <record_name>Digital Services Factory Greeting</record_name>
+        <reverted_from/>
+        <source>674d13f5fbb296d0625bf7704eefdcc4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-21 23:42:02</sys_created_on>
+        <sys_id>677f104bfbb2e650625bf7704eefdc03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1982f5da1e70000001</sys_recorded_at>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-21 23:42:02</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>a77f104b11b2e650570c6edc74959b02</update_guid>
+        <update_guid_history>a77f104b11b2e650570c6edc74959b02:726345776,e169c84b6ffea6504cecaff082eafe97:1128201082,9a38c4c790fea650776010698d6fd2bd:782261343</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-07-22 22:29:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>44741e4759164d2d8d4c9d3c0bc57429</sys_id>
+        <sys_metadata>fd38cc47fbfea650625bf7704eefdcda</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Digital Services Factory Greeting</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_fd38cc47fbfea650625bf7704eefdcda</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_fd38cc47fbfea650625bf7704eefdcda">677f104bfbb2e650625bf7704eefdc03</sys_update_version>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-07-22 22:29:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -8,9 +8,12 @@
         <label>This is a test playbook generation</label>
         <name>this_is_a_test_playbook_generation</name>
         <now_assist_prompt>This is for a speccific case where we're processing an insurance claim.  We start with the inake steps and after that its about processing the claim.  We may have to add incdents and people as we move through the claims process.</now_assist_prompt>
+        <permission/>
         <process_type/>
         <restartable>RESTARTABLE_FALSE</restartable>
         <run_on_pad_engine>false</run_on_pad_engine>
+        <run_strategy>run_once</run_strategy>
+        <run_strategy_on_process_definition>false</run_strategy_on_process_definition>
         <schema_version>2</schema_version>
         <snapshot/>
         <start_non_blocking>true</start_non_blocking>
@@ -23,14 +26,16 @@
         <sys_id>e74d629bfbbf56d0c04cfbac7befdc7b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>This is a test playbook generation</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_pd_process_definition_e74d629bfbbf56d0c04cfbac7befdc7b</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-24 01:49:38</sys_updated_on>
         <view_type>DIAGRAM</view_type>
     </sys_pd_process_definition>
+    <sys_pd_process_input action="delete_multiple" query="model=e74d629bfbbf56d0c04cfbac7befdc7b"/>
+    <sys_pd_process_output action="delete_multiple" query="model=e74d629bfbbf56d0c04cfbac7befdc7b"/>
     <sys_pd_lane action="delete_multiple" query="process_definition=e74d629bfbbf56d0c04cfbac7befdc7b^sys_idNOT IN315dea9bfbbf56d0c04cfbac7befdcad,f15dea9bfbbf56d0c04cfbac7befdcad,f55dea9bfbbf56d0c04cfbac7befdcad,b95dea9bfbbf56d0c04cfbac7befdcad"/>
     <sys_pd_lane action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -40,10 +45,15 @@
         <lane_condition/>
         <name>claim_intake</name>
         <order>1</order>
+        <permission/>
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">b823830967fc41ddb84959d97897b1ae</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:39</sys_created_on>
         <sys_id>315dea9bfbbf56d0c04cfbac7befdcad</sys_id>
@@ -61,10 +71,15 @@
         <lane_condition/>
         <name>claim_processing</name>
         <order>2</order>
+        <permission/>
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Lanes">7407ca1ac3e02110f1f504186e40dd50</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:39</sys_created_on>
         <sys_id>f15dea9bfbbf56d0c04cfbac7befdcad</sys_id>
@@ -96,10 +111,15 @@
         <lane_condition/>
         <name>incident_management</name>
         <order>3</order>
+        <permission/>
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Lanes">7407ca1ac3e02110f1f504186e40dd50</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:39</sys_created_on>
         <sys_id>f55dea9bfbbf56d0c04cfbac7befdcad</sys_id>
@@ -131,10 +151,15 @@
         <lane_condition/>
         <name>people_management</name>
         <order>4</order>
+        <permission/>
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Lanes">7407ca1ac3e02110f1f504186e40dd50</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:39</sys_created_on>
         <sys_id>b95dea9bfbbf56d0c04cfbac7befdcad</sys_id>
@@ -158,6 +183,7 @@
         <value>f15dea9bfbbf56d0c04cfbac7befdcad</value>
         <variable display_value="Lanes">9a070e1ac3e02110f1f504186e40ddd2</variable>
     </sys_variable_value>
+    <sys_pd_timer_attributes action="delete_multiple" query="process_definition=e74d629bfbbf56d0c04cfbac7befdc7b"/>
     <sys_pd_activity action="delete_multiple" query="process_definition=e74d629bfbbf56d0c04cfbac7befdc7b^sys_idNOT IN355dea9bfbbf56d0c04cfbac7befdcad,395dea9bfbbf56d0c04cfbac7befdcad,715dea9bfbbf56d0c04cfbac7befdcad,f95dea9bfbbf56d0c04cfbac7befdcad,3d5dea9bfbbf56d0c04cfbac7befdcad,755dea9bfbbf56d0c04cfbac7befdcad,795dea9bfbbf56d0c04cfbac7befdcad,b15dea9bfbbf56d0c04cfbac7befdcad,b55dea9bfbbf56d0c04cfbac7befdcad"/>
     <sys_pd_activity action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -175,7 +201,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">ef8ab8c0a3f04bceb117263f51401070</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:40</sys_created_on>
@@ -203,7 +233,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">ef8ab8c0a3f04bceb117263f51401070</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:40</sys_created_on>
@@ -781,7 +815,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">ef8ab8c0a3f04bceb117263f51401070</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:39</sys_created_on>
@@ -809,7 +847,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">ef8ab8c0a3f04bceb117263f51401070</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:42</sys_created_on>
@@ -837,7 +879,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="Immediately">ef8ab8c0a3f04bceb117263f51401070</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:42</sys_created_on>
@@ -866,7 +912,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Activities">7abaf173c35101102a86cb03b940dd62</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:40</sys_created_on>
@@ -1763,7 +1813,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Activities">7abaf173c35101102a86cb03b940dd62</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:41</sys_created_on>
@@ -2356,7 +2410,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Activities">7abaf173c35101102a86cb03b940dd62</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:39</sys_created_on>
@@ -3252,7 +3310,11 @@
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <restart_rule>RUN_ONLY_ONCE</restart_rule>
         <start_rule display_value="After Activities">7abaf173c35101102a86cb03b940dd62</start_rule>
+        <start_rule_name/>
         <start_rule_vars/>
+        <starts_after_activities/>
+        <starts_after_branches/>
+        <starts_after_lanes/>
         <swim_lane/>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:32:40</sys_created_on>
@@ -3311,13 +3373,11 @@
     <sys_pd_activity_override action="delete_multiple" query="override_parent=b15dea9bfbbf56d0c04cfbac7befdcad"/>
     <sys_pd_activity_override action="delete_multiple" query="override_parent=b55dea9bfbbf56d0c04cfbac7befdcad"/>
     <sys_pd_activity_override action="delete_multiple" query="override_parent=f95dea9bfbbf56d0c04cfbac7befdcad"/>
-    <sys_pd_snapshot action="delete_multiple" query="sys_id="/>
-    <sys_json_chunk action="delete_multiple" query="document_id="/>
-    <sys_pd_snapshot_chunk action="delete_multiple" query="document_id="/>
     <sys_pd_trigger_instance action="delete_multiple" query="sys_id=70a3938070a314b070a3719070a36b00^sys_idNOT IN70a3938070a314b070a3719070a36b00"/>
     <sys_pd_trigger_instance action="INSERT_OR_UPDATE">
         <label/>
         <name/>
+        <playbook_inputs/>
         <process_definition display_value="This is a test playbook generation">e74d629bfbbf56d0c04cfbac7befdc7b</process_definition>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-24 01:33:45</sys_created_on>
@@ -3354,9 +3414,12 @@
         <label>This is a test playbook generation</label>
         <name>this_is_a_test_playbook_generation</name>
         <now_assist_prompt>This is for a speccific case where we're processing an insurance claim.  We start with the inake steps and after that its about processing the claim.  We may have to add incdents and people as we move through the claims process.</now_assist_prompt>
+        <permission/>
         <process_type/>
         <restartable>RESTARTABLE_FALSE</restartable>
         <run_on_pad_engine>false</run_on_pad_engine>
+        <run_strategy>run_once</run_strategy>
+        <run_strategy_on_process_definition>false</run_strategy_on_process_definition>
         <schema_version>2</schema_version>
         <snapshot/>
         <start_non_blocking>true</start_non_blocking>
@@ -3369,9 +3432,9 @@
         <sys_id>e74d629bfbbf56d0c04cfbac7befdc7b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>This is a test playbook generation</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sys_pd_process_definition_e74d629bfbbf56d0c04cfbac7befdc7b</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
         <sys_updated_on>2025-02-24 01:49:38</sys_updated_on>

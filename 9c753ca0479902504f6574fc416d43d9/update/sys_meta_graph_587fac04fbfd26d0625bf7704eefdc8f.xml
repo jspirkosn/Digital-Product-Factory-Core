@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <graph_schema action="INSERT_OR_UPDATE" graph_id="587fac04fbfd26d0625bf7704eefdc8f" name="test_2" sys_domain="" table="sys_meta_graph" version="1">
+        <nodes>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <all_properties>false</all_properties>
+                <description>cmdb_rel_ci</description>
+                <encoded_query/>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <hidden>false</hidden>
+                <label>CI Relationship</label>
+                <node_type>cmdb_rel_ci</node_type>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>03ef2484fbfd26d0625bf7704eefdcdc</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <table>cmdb_rel_ci</table>
+            </sys_meta_graph_node>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <all_properties>false</all_properties>
+                <description>cmdb_rel_attributes</description>
+                <encoded_query/>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <hidden>false</hidden>
+                <label>CI Relation Attributes</label>
+                <node_type>cmdb_rel_attributes</node_type>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>47ef2484fbfd26d0625bf7704eefdcdc</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <table>cmdb_rel_attributes</table>
+            </sys_meta_graph_node>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <all_properties>false</all_properties>
+                <description>incident</description>
+                <encoded_query/>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <hidden>false</hidden>
+                <label>Incident</label>
+                <node_type>incident</node_type>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>c4138988fb7166d0625bf7704eefdc62</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <table>incident</table>
+            </sys_meta_graph_node>
+            <sys_meta_graph_node action="INSERT_OR_UPDATE">
+                <all_properties>false</all_properties>
+                <description>sys_user</description>
+                <encoded_query/>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <hidden>false</hidden>
+                <label>User</label>
+                <node_type>sys_user</node_type>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>f971fc08fbfd26d0625bf7704eefdc69</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <table>sys_user</table>
+            </sys_meta_graph_node>
+        </nodes>
+        <edges>
+            <sys_meta_graph_edge action="INSERT_OR_UPDATE">
+                <description>opened_by</description>
+                <edge_type>opened_by</edge_type>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <label>Opened by</label>
+                <mapping_table/>
+                <passthru_to_edge/>
+                <source_key_field/>
+                <source_node display_value="Incident">c4138988fb7166d0625bf7704eefdc62</source_node>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>7604814cfb7166d0625bf7704eefdca9</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <target_key_field>opened_by</target_key_field>
+                <target_node display_value="User">f971fc08fbfd26d0625bf7704eefdc69</target_node>
+                <type_key_field/>
+            </sys_meta_graph_edge>
+            <sys_meta_graph_edge action="INSERT_OR_UPDATE">
+                <description>relation</description>
+                <edge_type>relation</edge_type>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <label>Relation</label>
+                <mapping_table/>
+                <passthru_to_edge/>
+                <source_key_field/>
+                <source_node display_value="CI Relation Attributes">47ef2484fbfd26d0625bf7704eefdcdc</source_node>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>b204c90cfb7166d0625bf7704eefdc3a</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <target_key_field>relation</target_key_field>
+                <target_node display_value="CI Relationship">03ef2484fbfd26d0625bf7704eefdcdc</target_node>
+                <type_key_field/>
+            </sys_meta_graph_edge>
+            <sys_meta_graph_edge action="INSERT_OR_UPDATE">
+                <description>Person who reported or is affected by this incident</description>
+                <edge_type>caller_id</edge_type>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <label>Caller</label>
+                <mapping_table/>
+                <passthru_to_edge/>
+                <source_key_field/>
+                <source_node display_value="Incident">c4138988fb7166d0625bf7704eefdc62</source_node>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>f204814cfb7166d0625bf7704eefdca9</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <target_key_field>caller_id</target_key_field>
+                <target_node display_value="User">f971fc08fbfd26d0625bf7704eefdc69</target_node>
+                <type_key_field/>
+            </sys_meta_graph_edge>
+            <sys_meta_graph_edge action="INSERT_OR_UPDATE">
+                <description>manager</description>
+                <edge_type>manager</edge_type>
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <label>Manager</label>
+                <mapping_table/>
+                <passthru_to_edge/>
+                <source_key_field/>
+                <source_node display_value="User">f971fc08fbfd26d0625bf7704eefdc69</source_node>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>f604814cfb7166d0625bf7704eefdca9</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+                <target_key_field>manager</target_key_field>
+                <target_node display_value="User">f971fc08fbfd26d0625bf7704eefdc69</target_node>
+                <type_key_field/>
+            </sys_meta_graph_edge>
+        </edges>
+        <properties>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <node display_value="User">f971fc08fbfd26d0625bf7704eefdc69</node>
+                <properties_json>[{"property":"first_name","description":"first_name","label":"First name"},{"property":"last_name","description":"last_name","label":"Last name"}]</properties_json>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>3204c90cfb7166d0625bf7704eefdc3a</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+            </sys_meta_graph_node_property>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <node display_value="Incident">c4138988fb7166d0625bf7704eefdc62</node>
+                <properties_json>[{"property":"short_description","description":"short_description","label":"Short description"}]</properties_json>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>7e04c90cfb7166d0625bf7704eefdc39</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+            </sys_meta_graph_node_property>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <node display_value="CI Relationship">03ef2484fbfd26d0625bf7704eefdcdc</node>
+                <properties_json>[{"property":"sys_id","description":"sys_id","label":"sys_id"}]</properties_json>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>ba04c90cfb7166d0625bf7704eefdc39</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+            </sys_meta_graph_node_property>
+            <sys_meta_graph_node_property action="INSERT_OR_UPDATE">
+                <graph display_value="Test 2">587fac04fbfd26d0625bf7704eefdc8f</graph>
+                <node display_value="CI Relation Attributes">47ef2484fbfd26d0625bf7704eefdcdc</node>
+                <properties_json>[{"property":"classification","description":"The sys id of the classification record associated with this relation in case it's traffic based","label":"Classification"},{"property":"qualifier_type","description":"qualifier_type","label":"Qualifier Type"}]</properties_json>
+                <sys_created_by>john.spirko</sys_created_by>
+                <sys_created_on>2025-05-24 01:37:09</sys_created_on>
+                <sys_id>f604c90cfb7166d0625bf7704eefdc39</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>john.spirko</sys_updated_by>
+                <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+            </sys_meta_graph_node_property>
+        </properties>
+        <edge_restrictions/>
+        <sys_meta_graph action="INSERT_OR_UPDATE">
+            <default>false</default>
+            <description/>
+            <gtop_schema>{"implementationLevel":{"implementationEdges":[{"types":["relation"],"paths":[{"traversalHops":[{"destinationTableColumn":"sys_id","sourceTableName":"cmdb_rel_attributes","destinationTableName":"cmdb_rel_ci","attributes":[],"sourceTableColumn":"relation"}]}]},{"types":["caller_id"],"paths":[{"traversalHops":[{"destinationTableColumn":"sys_id","sourceTableName":"incident","destinationTableName":"sys_user","attributes":[],"sourceTableColumn":"caller_id"}]}]},{"types":["opened_by"],"paths":[{"traversalHops":[{"destinationTableColumn":"sys_id","sourceTableName":"incident","destinationTableName":"sys_user","attributes":[],"sourceTableColumn":"opened_by"}]}]},{"types":["manager"],"paths":[{"traversalHops":[{"destinationTableColumn":"sys_id","sourceTableName":"sys_user","destinationTableName":"sys_user","attributes":[],"sourceTableColumn":"manager"}]}]}],"implementationNodes":[{"types":["cmdb_rel_attributes"],"restrictions":[],"attributes":[{"dataType":"VARCHAR(40)","abstractionLevelName":"classification","columnName":"classification"},{"dataType":"VARCHAR(80)","abstractionLevelName":"qualifier_type","columnName":"qualifier_type"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"cmdb_rel_attributes"},{"types":["cmdb_rel_ci"],"restrictions":[],"attributes":[{"dataType":"CHAR(32)","abstractionLevelName":"sys_id","columnName":"sys_id"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"cmdb_rel_ci"},{"types":["incident"],"restrictions":[],"attributes":[{"dataType":"VARCHAR(160)","abstractionLevelName":"short_description","columnName":"short_description"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"incident"},{"types":["sys_user"],"restrictions":[],"attributes":[{"dataType":"VARCHAR(50)","abstractionLevelName":"first_name","columnName":"first_name"},{"dataType":"VARCHAR(50)","abstractionLevelName":"last_name","columnName":"last_name"}],"id":[{"datatype":"CHAR(32)","concatenationPosition":1,"columnName":"sys_id"}],"tableName":"sys_user"}],"graphMetadata":{"storageLayout":"IGNORETIME","backendSystem":"RELATIONAL"}},"version":"1.0","abstractionLevel":{"abstractionEdges":[{"types":["relation"],"directed":true,"sourceType":["cmdb_rel_attributes"],"destinationType":["cmdb_rel_ci"],"attributes":[]},{"types":["caller_id"],"directed":true,"sourceType":["incident"],"destinationType":["sys_user"],"attributes":[]},{"types":["opened_by"],"directed":true,"sourceType":["incident"],"destinationType":["sys_user"],"attributes":[]},{"types":["manager"],"directed":true,"sourceType":["sys_user"],"destinationType":["sys_user"],"attributes":[]}],"abstractionNodes":[{"types":["cmdb_rel_attributes"],"attributes":["classification","qualifier_type"]},{"types":["cmdb_rel_ci"],"attributes":["sys_id"]},{"types":["incident"],"attributes":["short_description"]},{"types":["sys_user"],"attributes":["first_name","last_name"]}]}}</gtop_schema>
+            <label>Test 2</label>
+            <model/>
+            <name>test_2</name>
+            <parent/>
+            <schema_json>{"sys_id":"587fac04fbfd26d0625bf7704eefdc8f","sys_updated_by":"john.spirko","nodes":[{"sys_id":"47ef2484fbfd26d0625bf7704eefdcdc","node_type":"cmdb_rel_attributes","hidden":"false","description":"cmdb_rel_attributes","label":"CI Relation Attributes","encoded_query":"","table":"cmdb_rel_attributes","properties":[{"jdbc_type":"VARCHAR(40)","property":"classification","description":"The sys id of the classification record associated with this relation in case it's traffic based","label":"Classification","type":"string"},{"jdbc_type":"VARCHAR(80)","property":"qualifier_type","description":"qualifier_type","label":"Qualifier Type","type":"string","choices":[{"Traffic Based":"cmdb_ci_qualifier_traffic_based_connection"},{"Manual":"cmdb_ci_qualifier_manual_connection"},{"Hidden":"cmdb_ci_qualifier_hidden_conn"},{"CRUD":"cmdb_ci_qualifier_crud"}]}]},{"sys_id":"03ef2484fbfd26d0625bf7704eefdcdc","node_type":"cmdb_rel_ci","hidden":"false","description":"cmdb_rel_ci","label":"CI Relationship","encoded_query":"","table":"cmdb_rel_ci","properties":[{"jdbc_type":"CHAR(32)","property":"sys_id","description":"sys_id","label":"sys_id","type":"GUID"}]},{"sys_id":"c4138988fb7166d0625bf7704eefdc62","node_type":"incident","hidden":"false","description":"incident","label":"Incident","encoded_query":"","table":"incident","properties":[{"jdbc_type":"VARCHAR(160)","property":"short_description","description":"short_description","label":"Short description","type":"string"}]},{"sys_id":"f971fc08fbfd26d0625bf7704eefdc69","node_type":"sys_user","hidden":"false","description":"sys_user","label":"User","encoded_query":"","table":"sys_user","properties":[{"jdbc_type":"VARCHAR(50)","property":"first_name","description":"first_name","label":"First name","type":"string"},{"jdbc_type":"VARCHAR(50)","property":"last_name","description":"last_name","label":"Last name","type":"string"}]}],"sys_created_on":"2025-05-24 00:07:08","name":"test_2","edges":[{"sys_id":"b204c90cfb7166d0625bf7704eefdc3a","target_key_field":"relation","passthru_to_edge":"","source_node":"cmdb_rel_attributes","mapping_table":"","description":"relation","source_key_field":"","type_key_field":"","label":"Relation","target_node":"cmdb_rel_ci","edge_type":"relation"},{"sys_id":"f204814cfb7166d0625bf7704eefdca9","target_key_field":"caller_id","passthru_to_edge":"","source_node":"incident","mapping_table":"","description":"Person who reported or is affected by this incident","source_key_field":"","type_key_field":"","label":"Caller","target_node":"sys_user","edge_type":"caller_id"},{"sys_id":"7604814cfb7166d0625bf7704eefdca9","target_key_field":"opened_by","passthru_to_edge":"","source_node":"incident","mapping_table":"","description":"opened_by","source_key_field":"","type_key_field":"","label":"Opened by","target_node":"sys_user","edge_type":"opened_by"},{"sys_id":"f604814cfb7166d0625bf7704eefdca9","target_key_field":"manager","passthru_to_edge":"","source_node":"sys_user","mapping_table":"","description":"manager","source_key_field":"","type_key_field":"","label":"Manager","target_node":"sys_user","edge_type":"manager"}],"description":"","sys_scope":"x_snc_15_minute_se","label":"Test 2","sys_updated_on":"2025-05-24 01:37:09","version":"1.1","sys_created_by":"john.spirko"}</schema_json>
+            <scope>9c753ca0479902504f6574fc416d43d9</scope>
+            <sys_class_name>sys_meta_graph</sys_class_name>
+            <sys_created_by>john.spirko</sys_created_by>
+            <sys_created_on>2025-05-24 00:07:08</sys_created_on>
+            <sys_id>587fac04fbfd26d0625bf7704eefdc8f</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_name>Test 2</sys_name>
+            <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+            <sys_update_name>sys_meta_graph_587fac04fbfd26d0625bf7704eefdc8f</sys_update_name>
+            <sys_updated_by>john.spirko</sys_updated_by>
+            <sys_updated_on>2025-05-24 01:37:09</sys_updated_on>
+            <use_dictionary>false</use_dictionary>
+        </sys_meta_graph>
+    </graph_schema>
+</record_update>

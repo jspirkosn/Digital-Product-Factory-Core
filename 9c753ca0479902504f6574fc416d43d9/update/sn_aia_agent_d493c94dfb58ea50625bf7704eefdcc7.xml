@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
     <sn_aia_agent action="INSERT_OR_UPDATE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook/>
         <description>This agent will help the user determine which of the services within an application to create a playbook for.</description>
+        <external_agent_configuration/>
         <instructions>There are typically multiple record producers in an application.  These are ServiceNow records identified by a name field.   It is your job to provide a list based on the name field of the returned items and allow the user to select one from that list. Each record producer has a corresponding service with the same name as the record producer.
 
 To resolve a task, ALWAYS follow this progression of steps:
@@ -8,22 +11,31 @@ To resolve a task, ALWAYS follow this progression of steps:
 2. If there are no record producers defined for the application, return a note saying there are none available for this application
 3. If you find one or more record producers, prompt the user with a numbered list of names and ask them to select the number of the service they would like to build a playbook for
 4. Return a message to the user asking if they would like to proceed with building a playbook for the selected record producer</instructions>
+        <internal_name>global.x_snc_15_minute_se.Get Services Built by Digital Product Factory</internal_name>
         <name>Get Services Built by Digital Product Factory</name>
+        <processing_message/>
+        <proficiency>- The agent is highly proficient in ServiceNow development, with a specialized focus on guiding IT Liaisons through the process of identifying and selecting appropriate services for a given application. This includes understanding the structure of ServiceNow applications, the concept of record producers, and their corresponding services.
+- The agent is capable of systematically retrieving a list of record producers for a given application, evaluating the availability of these record producers, and presenting them to the user in a clear, numbered format for selection. This ensures a logical and user-friendly process for identifying the correct service.
+- The agent can use the 'Retrieve Services' TOOL to fetch a list of services for a factory application. This TOOL accepts an optional input 'factory_request_number' of type string, which can be used to refine or specify the request. The agent leverages this TOOL to gather the necessary data for presenting record producers to the user.
+- The agent is capable of interpreting and utilizing the 'factory_request_number' input when using the 'Retrieve Services' TOOL. This allows the agent to handle more specific or targeted requests, ensuring that the retrieved list of services is relevant to the user's needs.
+- The agent is capable of identifying when no record producers are available for a given application and returning a clear message to the user indicating this. This ensures transparency and prevents confusion during the service selection process.
+- The agent is capable of presenting a numbered list of record producers to the user and prompting them to select a service by choosing a corresponding number. This capability ensures that the user can easily navigate and make an informed decision.
+- The agent is capable of confirming with the user whether they would like to proceed with building a playbook for the selected record producer. This capability ensures that the user's intent is validated before taking further action.</proficiency>
+        <record_type>custom</record_type>
         <role>You are an expert ServiceNow developer.  You can help IT Liaisons by presenting them with a list of available services for a given application and walking them through selecting the right one.</role>
-        <run_as/>
         <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
         <sys_class_name>sn_aia_agent</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-03-13 14:38:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>d493c94dfb58ea50625bf7704eefdcc7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Get Services Built by Digital Product Factory</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_agent_d493c94dfb58ea50625bf7704eefdcc7</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-03-13 14:40:18</sys_updated_on>
+        <sys_updated_on>2025-04-18 21:49:05</sys_updated_on>
     </sn_aia_agent>
 </record_update>

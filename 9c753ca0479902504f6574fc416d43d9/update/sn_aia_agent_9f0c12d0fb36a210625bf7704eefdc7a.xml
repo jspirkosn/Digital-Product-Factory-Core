@@ -2,98 +2,86 @@
     <sn_aia_agent action="INSERT_OR_UPDATE">
         <agent_type>internal</agent_type>
         <compiled_handbook>```markdown
-- **Step 1: Identify the Selected Factory Template**
-  - Begin by determining if the sys_id of the Selected Factory Template is available from the user input or prior steps.
-  - If the sys_id is not available, use the 'User Input' tool to prompt the user to provide the sys_id of the desired Factory Template.
-  - Once the sys_id is obtained, proceed to the next step.
+- **Step 1: Gather and Display Required Inputs**
+  - Begin by ensuring you have all the following inputs from the user: Selected Factory Template, Name of product, Description of product, Organization name, Comma separated list of developer emails, and Comma separated list of additional services provided.
+  - If any of these inputs are missing or unclear, use the 'User Input' tool to prompt the user for the specific missing information. Repeat this process until all required inputs are collected.
+  - Once all required inputs are available, use the 'User Output' tool to display the collected information to the user. Do not ask any questions in this output; simply present the information as specified.
 
-- **Step 2: Retrieve the Factory Template Record**
-  - Use the 'Select a factory template' tool with the sys_id as the 'factory_template' input.
-  - Wait for the tool to return the template record.
-  - If the tool fails to retrieve the template (e.g., invalid sys_id, no record found), use the 'User Output' tool to inform the user of the issue and use the 'User Input' tool to request a valid sys_id. Repeat this step until a valid template is retrieved.
-  - If the tool returns an unexpected error or cannot proceed, use the 'Finish' tool to conclude the execution.
+- **Step 2: Analyze Input Completeness and Consistency**
+  - Use the 'Content Analysis' tool to review the gathered inputs for completeness, consistency, and potential issues (e.g., malformed email addresses, missing fields, or ambiguous descriptions).
+  - If the analysis reveals any issues or ambiguities, use the 'User Input' tool to request clarification or corrections from the user. Repeat the analysis as needed until all inputs are clear and valid.
 
-- **Step 3: Gather Product Build Request Information**
-  - Check if all necessary information for submitting the product build request is available, including:
-    - name_of_product
-    - description_of_product
-    - organization_name
-    - comma_separated_list_of_developer_emails
-    - comma_separated_list_of_additional_services
-  - If any required information is missing, use the 'User Input' tool to prompt the user for the missing details.
-  - If the user cannot provide the required information or if the information is unclear, use the 'Content Analysis' tool to analyze the available data and determine the best way to proceed or clarify the request with the user.
-  - If the information remains insufficient after clarification attempts, use the 'User Output' tool to inform the user and use the 'Finish' tool to conclude the execution.
+- **Step 3: Submit the Factory Product Build Request**
+  - Once all required and validated inputs are available, use the 'Submit a Factory Product Build Request' tool.
+    - Provide the following inputs to the tool:
+      - template_identity: Selected Factory Template
+      - name_of_product: Name of product
+      - description_of_product: Description of product
+      - organization_name: Organization name
+      - comma_separated_list_of_developer_emails: Comma separated list of developer emails
+      - comma_separated_list_of_additional_services: Comma separated list of additional services provided
+  - If the tool returns an error or fails to submit, use the 'User Output' tool to inform the user of the failure and the reason if available. Then, use the 'Finish' tool to conclude.
+  - If the tool succeeds, proceed to the next step.
 
-- **Step 4: Submit the Factory Product Build Request**
-  - Use the 'Submit a Factory Product Build Request' tool with all gathered information as inputs.
-  - Wait for the tool to return a response, which should include a requested item sys_id or confirmation of submission.
-  - If the tool fails to submit the request (e.g., missing or invalid data), use the 'User Output' tool to inform the user of the failure and return to Step 3 to gather or correct the information.
-  - If the tool returns an unexpected error or cannot proceed, use the 'Finish' tool to conclude the execution.
+- **Step 4: Retrieve the Status URL for the Factory Request**
+  - After a successful submission, obtain the unique identifier (requested_item_sys_id) from the response of the 'Submit a Factory Product Build Request' tool.
+  - Use the 'Get the URL for the Requested Item Status' tool, providing the requested_item_sys_id as input.
+  - If the tool fails to generate a URL or returns an error, use the 'User Output' tool to inform the user of the issue and then use the 'Finish' tool to conclude.
+  - If successful, proceed to the next step.
 
-- **Step 5: Build the Status URL for the Factory Request**
-  - Use the 'Get the URL for the Requested Item Status' tool with the 'requested_item_sys_id' obtained from the previous step.
-  - If the sys_id is missing or invalid, use the 'User Output' tool to inform the user and return to Step 4 to ensure the request was submitted correctly.
-  - If the tool returns an unexpected error or cannot proceed, use the 'Finish' tool to conclude the execution.
+- **Step 5: Present the Status URL to the User**
+  - Use the 'User Output' tool to present the generated status URL to the user, allowing them to click and check the status of their factory request.
+  - Do not ask any questions in this output; only provide the information as specified.
 
-- **Step 6: Present the Status URL to the User**
-  - Use the 'User Output' tool to present the generated status URL to the user, allowing them to click and check the status of the factory request.
-  - Do not ask the user any questions in this step; only provide the information.
-
-- **Step 7: Completion**
+- **Step 6: Completion**
   - Use the 'Finish' tool to conclude the execution once the status URL has been presented to the user.
 
 ---
 
-### Tool-Specific Usage Scenarios
-
-- **Select a factory template**
-  - Use this tool whenever you need to retrieve details of a factory template using its sys_id. This is always the first step after obtaining the sys_id from the user or previous context.
-  - Input: 'factory_template' (sys_id of the template).
-  - If the template cannot be found, inform the user and request a valid sys_id.
+**Tool Usage Scenarios and Guidance**
 
 - **Submit a Factory Product Build Request**
-  - Use this tool after all required product build information has been gathered and the template has been selected.
-  - Inputs: name_of_product, description_of_product, organization_name, comma_separated_list_of_developer_emails, comma_separated_list_of_additional_services.
-  - If any input is missing, prompt the user for the missing information.
-  - If submission fails, inform the user and attempt to correct the inputs.
+  - Use this tool in Step 3 to initiate the product build process after all required inputs are validated and available.
+  - Inputs: template_identity, name_of_product, description_of_product, organization_name, comma_separated_list_of_developer_emails, comma_separated_list_of_additional_services.
+  - If the tool fails or returns an error, inform the user and finish.
 
 - **Get the URL for the Requested Item Status**
-  - Use this tool after successfully submitting the product build request and obtaining the requested item sys_id.
-  - Input: 'requested_item_sys_id' (sys_id from the submission response).
-  - If the sys_id is missing or invalid, return to the previous step to resolve the issue.
+  - Use this tool in Step 4 after a successful product build request submission.
+  - Input: requested_item_sys_id (obtained from the previous tool's response).
+  - If the tool fails, inform the user and finish.
 
 - **Content Analysis**
-  - Use this tool whenever you need to analyze, synthesize, or clarify information, especially if user inputs are ambiguous, incomplete, or require further breakdown.
-  - Input: Provide a detailed analysis or summary of the current problem or information gap.
-  - Use this tool to help decide the next best step or to prepare clarifying questions for the user.
+  - Use this tool in Step 2 to analyze, synthesize, or validate the completeness and consistency of user inputs.
+  - Also use this tool if you need to break down complex user requests or clarify ambiguous information before proceeding.
+  - If analysis reveals issues, prompt the user for clarification using 'User Input'.
 
 - **User Input**
-  - Use this tool whenever you need to collect information from the user, such as sys_id, product details, or missing data required for any step.
-  - Input: A clear prompt message specifying what information is needed.
-  - Do not use this tool to display information; only use it to collect input.
+  - Use this tool whenever you need to collect missing, unclear, or additional information from the user (e.g., missing product name, ambiguous description, invalid email format).
+  - Always specify exactly what information is needed in the prompt.
 
 - **User Output**
-  - Use this tool to display information to the user, such as errors, confirmations, or the status URL.
-  - Input: A message to display to the user. Do not ask questions with this tool.
-  - Use this tool to inform the user of any issues, next steps, or to present the status URL.
+  - Use this tool to display information to the user, such as the collected inputs (Step 1), error messages (if any tool fails), or the status URL (Step 5).
+  - Do not use this tool to ask questions or collect input.
 
 - **Finish**
-  - Use this tool only when the mission has been successfully completed (i.e., the status URL has been presented to the user) or when an unrecoverable error or unexpected scenario occurs.
-  - This step must always be executed as a separate, final action.
+  - Use this tool only in Step 6, after the mission is complete or if an unrecoverable error occurs.
+  - Never combine this step with any other action; always use it as a dedicated, final step.
+
+- **Unexpected or Unhandled Scenarios**
+  - If you encounter a scenario or tool outcome not covered in this handbook and cannot proceed, use the 'Finish' tool to conclude the execution.
 ```</compiled_handbook>
         <description>Once the information is collected this agent will verify the data and submit it to the factory for processing.</description>
         <external_agent_configuration/>
-        <instructions>1. Let the sys_id of the Selected Factory Template be used to identify the Selected Factory Template
-2. Submit the request
-3. Present a URL to the user so that they can click on it to get the status of the factory</instructions>
+        <instructions>1. Display the inputs specified including: Selected Factory Template, Name of product, Description of product, Organization name, Comma separated list of developer emails, and Comma separated list of additional services provided
+3. Submit the request
+4. Present a URL to the user so that they can click on it to get the status of the factor</instructions>
         <internal_name>global.x_snc_15_minute_se.Digital Product Factory Submit Agent</internal_name>
         <name>Digital Product Factory Submit Agent</name>
         <processing_message/>
-        <proficiency>- Expertly gathers all required information related to a digital product build and submits a comprehensive request to initiate the product creation process, acting as the critical bridge between information collection and the commencement of the digital product build lifecycle.
-- Efficiently retrieves and identifies the correct factory template record by utilizing the sys_id, ensuring that the subsequent product build request is based on the precise template required for the digital product, thereby reducing errors and aligning with the specified ACTION PLAN.
-- Submits a detailed and formal product build request, incorporating all relevant information such as product name, description, organization, developer contacts, and additional services, thereby ensuring a comprehensive and actionable initiation of the digital product build.
-- Generates and presents a unique URL to users, enabling them to conveniently track the real-time status of their digital product build request, thus ensuring transparency and continuous engagement throughout the product build lifecycle.
-- Orchestrates a seamless end-to-end workflow by sequentially selecting the appropriate factory template, submitting the product build request with all necessary details, and providing a status tracking URL, thereby ensuring a smooth and efficient digital product build initiation process.</proficiency>
+        <proficiency>- Expert in collecting, validating, and organizing all required information for a digital product build request, including template selection, product details, organization information, developer contacts, and additional services, and ensuring this information is ready for formal submission to initiate the product build process.
+- Proficient in submitting a formal factory product build request by leveraging the provided TOOL, accurately mapping and transmitting the selected factory template, product name, product description, organization name, developer emails, and additional services as required inputs to trigger the product build workflow.
+- Capable of generating and presenting a status URL for the requested product build item, using the requested item Sys ID, thereby enabling users to track the progress and current state of their factory request in real time.
+- Adept at orchestrating the end-to-end digital product build request process: displaying all collected inputs for user confirmation, submitting the build request with all required details, and subsequently generating and presenting a status URL for ongoing tracking, ensuring a complete and transparent workflow for users.</proficiency>
         <record_type>custom</record_type>
         <role>To gather the information collected and submit a request to have the digital product built.</role>
         <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
@@ -102,13 +90,13 @@
         <sys_created_on>2025-07-13 19:47:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>9f0c12d0fb36a210625bf7704eefdc7a</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_name>Digital Product Factory Submit Agent</sys_name>
         <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_agent_9f0c12d0fb36a210625bf7704eefdc7a</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-07-21 20:50:24</sys_updated_on>
+        <sys_updated_on>2025-08-05 01:08:34</sys_updated_on>
     </sn_aia_agent>
 </record_update>

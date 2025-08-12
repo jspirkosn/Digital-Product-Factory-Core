@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Get a list of available Digital Product Factory templates.</description>
+        <input_schema>[{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</input_schema>
+        <name>Get Registered Template Records</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    // only string inputs are allowed 
+    // return outputs object where the keys in it are understandable by LLM    
+    // lookup script
+
+    // parses expression containing {{variables}}
+    function parseQuery(expression, inputs) {
+        if (!expression) return "";
+        return expression.replace(/{{\s*(\w+)\s*}}/g, function(match, variableName) {
+            if (inputs && inputs.hasOwnProperty(variableName)) {
+                return inputs[variableName];
+            }
+            return "";
+        });
+
+    }
+
+    function getTypedValue(gr, table, field) {
+        var fieldValue = gr.getValue(field.id);
+        if (field.type === "choice") {
+            var choiceGR = new GlideRecordSecure("sys_choice");
+            choiceGR.addQuery("name", table);
+            choiceGR.addQuery("element", field.id);
+            choiceGR.addQuery("value", fieldValue);
+            choiceGR.query();
+            if (choiceGR.next()) {
+                return choiceGR.getValue('label');
+            }
+        } else if (field.referenceTable) {
+            var refName = field.referenceTableDefaultField;
+            var refGR = new GlideRecordSecure(field.referenceTable);
+            refGR.addQuery("sys_id", fieldValue);
+            refGR.query();
+            if (refName && refGR.next()) {
+                return refGR.getValue(refName);
+            }
+        }
+        return fieldValue;
+    }
+
+    var table = inputs.crudInputs.table.value;
+    var tableName = inputs.crudInputs.table.displayValue;
+    var query = parseQuery(inputs.crudInputs.query, inputs);
+    var sortType = inputs.crudInputs.sortType;
+    var orderBy = inputs.crudInputs.orderBy;
+    var limit = inputs.crudInputs.limit || 5;
+    var fields = inputs.crudInputs.returnFields || [];
+
+    var results = [];
+    var protectedRecords = 0;
+    var gr = new GlideRecordSecure(table);
+    if (query) {
+        gr.addEncodedQuery(query);
+    }
+    if (orderBy && sortType === 'a_to_z') {
+        gr.orderBy(orderBy);
+    } else if (orderBy && sortType !== 'a_to_z') {
+        gr.orderByDesc(orderBy);
+    }
+
+    gr.setLimit(limit);
+    gr.query();
+    while (gr.next()) {
+        var fieldObj = {};
+        if (gr.canRead()) {
+            fields.forEach(function(field) {
+                if (gr.canRead(field.id)) {
+                    fieldObj[field.id] = getTypedValue(gr, table, field);
+                } else {
+                    // number of fields that cannot be read for each record
+                    if (fieldObj["protectedFields"] >= 1) {
+                        fieldObj["protectedFields"]++;
+                    } else {
+                        fieldObj["protectedFields"] = 1;
+                    }
+                }
+            });
+        } else {
+            protectedRecords++;
+        }
+        results.push(fieldObj);
+    }
+    var recordCount = results.length;
+    var total = recordCount + protectedRecords;
+    var message = gs.getMessage("{0} out of {1} records returned from the {2} table.",
+        [recordCount.toString(), total.toString(), tableName]);
+
+    return {
+        "records": results,
+        "message": message,
+        "status": "success"
+    };
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-08-04 17:08:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>24cb83d3fb036610c04cfbac7befdcfc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Get Registered Template Records</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_tool_24cb83d3fb036610c04cfbac7befdcfc</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-08-04 17:10:04</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>crud</type>
+    </sn_aia_tool>
+</record_update>

@@ -2,22 +2,27 @@
     <sn_aia_agent_config action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="New Playbook builder">63d98e07fb7fd2d0c04cfbac7befdcae</agent>
-        <proficiency>- The agent is proficient in developing comprehensive playbooks tailored for industries such as financial services, government, healthcare, and higher education. These playbooks serve as instructional guides for other agents, detailing the procedures and steps necessary to process work requests effectively within these sectors.
-- The agent is capable of generating a playbook as the initial step in its task resolution process. This involves creating a structured set of instructions that guide other agents in executing their tasks within the specified industries.
-- The agent utilizes the 'Generate playbook' tool to create detailed and industry-specific playbooks. This tool can accept an optional 'instance_uri' input, which may be used to customize or specify the context for the playbook generation process.
-- The agent is capable of opening the URL generated from the playbook creation process in a separate browser window. This step ensures that the playbook is accessible and can be reviewed or utilized as needed, completing the task resolution process.</proficiency>
+        <proficiency>- The agent specializes in creating structured, actionable playbooks tailored to the unique operational needs of industries like financial services, government, healthcare, and higher education. These playbooks serve as procedural guides for agents processing work requests in these domains.
+- The agent is capable of following a structured workflow to create and deliver playbooks. This includes naming the playbook using the selected service name, generating the playbook, appending the Sys ID to the URL, and presenting the final URL to the end user.
+- The agent can use the 'Generate playbook' tool to create playbooks by providing mandatory inputs such as 'instance_uri', 'prompt', and 'sys_scope'. This capability ensures the agent can generate playbooks tailored to specific instances and operational contexts.
+- The agent can interpret and utilize the 'instance_uri' input to ensure that the playbook is generated for the appropriate instance, aligning the playbook with the specific operational environment.
+- The agent can process the 'prompt' input to generate playbooks that are contextually relevant and aligned with the specific needs of the task or industry.
+- The agent can utilize the 'sys_scope' input to ensure that the generated playbook is confined to the correct operational boundaries, enhancing its relevance and usability.
+- The agent is capable of appending the Sys ID to the generated URL, ensuring that the final URL is complete and ready for presentation to the end user.
+- The agent can present the final, complete playbook URL to the end user, ensuring that the playbook is accessible and ready for use.</proficiency>
         <sys_class_name>sn_aia_agent_config</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-23 04:20:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>565a8e47fb7fd2d0c04cfbac7befdcc3</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_agent_config_565a8e47fb7fd2d0c04cfbac7befdcc3</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-25 03:03:28</sys_updated_on>
+        <sys_updated_on>2025-03-17 18:44:34</sys_updated_on>
     </sn_aia_agent_config>
 </record_update>

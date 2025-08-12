@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="b6f99f9efbaa9a50c04cfbac7befdc15" label="Registered Templates" max_length="40" name="x_snc_15_minute_se_registered_templates" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Delivery Catalog" max_length="32" name="delivery_catalog" reference="sc_catalog" type="reference"/>
         <element attributes="ref_autocompleter=AJAXTableCompleter,ref_ac_columns=registerd_to_factory,ref_ac_columns_search=true" display="true" label="App Template" max_length="32" name="app_template" reference="sys_app_template" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Delivered Services" max_length="512" name="delivered_services" type="html"/>

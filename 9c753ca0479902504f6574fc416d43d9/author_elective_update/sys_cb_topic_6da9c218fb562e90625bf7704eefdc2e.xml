@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Test Subflow</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "57097382e5874accab99da13272811cf": {
+          "id": "57097382e5874accab99da13272811cf",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "2697d5ee9d154479882879864491253a": {
+          "id": "2697d5ee9d154479882879864491253a",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "a2cda5aeda1c4f7a821c7fa7631f1ab9": {
+          "id": "a2cda5aeda1c4f7a821c7fa7631f1ab9",
+          "name": "DummyRecord",
+          "invocationType": "subflow",
+          "stepType": "FlowAction",
+          "actionRunAs": "session_user",
+          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "subflowSpoke": "9c753ca0479902504f6574fc416d43d9",
+          "subflowSpokeSubflow": "",
+          "subflowWaitType": "sync",
+          "subflowInputs": {},
+          "subflowOutputs": {},
+          "subflowDefinition": ""
+        }
+      },
+      "edges": [
+        {
+          "id": "d73d9a1b95344f5c91f5bbdb0b302fcf",
+          "edgeType": "Edge",
+          "source": "57097382e5874accab99da13272811cf",
+          "target": "a2cda5aeda1c4f7a821c7fa7631f1ab9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bdfffb02095646aa957842a1b5f83074",
+          "edgeType": "Edge",
+          "source": "a2cda5aeda1c4f7a821c7fa7631f1ab9",
+          "target": "2697d5ee9d154479882879864491253a",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases/>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>llm</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Test Subflow</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>olufemi.adefila@snc</sys_created_by>
+        <sys_created_on>2025-06-18 21:51:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6da9c218fb562e90625bf7704eefdc2e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Test Subflow</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_cb_topic_6da9c218fb562e90625bf7704eefdc2e</sys_update_name>
+        <sys_updated_by>olufemi.adefila@snc</sys_updated_by>
+        <sys_updated_on>2025-06-18 21:51:43</sys_updated_on>
+        <title>Test Subflow</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_translated_text action="DELETE" query="documentkey=6da9c218fb562e90625bf7704eefdc2e"/>
+    <sys_variable_value action="DELETE" query="document_key=6da9c218fb562e90625bf7704eefdc2e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</application>
+        <file_path/>
+        <instance_id>efeaa946dbc0c740b2e05d00cf96194a</instance_id>
+        <instance_name>empjspirkosc2</instance_name>
+        <name>sys_cb_topic_6da9c218fb562e90625bf7704eefdc2e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><autopilot_topic>false</autopilot_topic><category/><channels/><connect_queue/><context_profiles/><description>Test Subflow</description><dialog_acts_enabled>false</dialog_acts_enabled><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>false</flexible_conversation_switching><foundational>false</foundational><graph>{
+  "graph_api_version": "1.0.78",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "57097382e5874accab99da13272811cf": {
+          "id": "57097382e5874accab99da13272811cf",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "2697d5ee9d154479882879864491253a": {
+          "id": "2697d5ee9d154479882879864491253a",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "a2cda5aeda1c4f7a821c7fa7631f1ab9": {
+          "id": "a2cda5aeda1c4f7a821c7fa7631f1ab9",
+          "name": "DummyRecord",
+          "invocationType": "subflow",
+          "stepType": "FlowAction",
+          "actionRunAs": "session_user",
+          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "subflowSpoke": "9c753ca0479902504f6574fc416d43d9",
+          "subflowSpokeSubflow": "",
+          "subflowWaitType": "sync",
+          "subflowInputs": {},
+          "subflowOutputs": {},
+          "subflowDefinition": ""
+        }
+      },
+      "edges": [
+        {
+          "id": "d73d9a1b95344f5c91f5bbdb0b302fcf",
+          "edgeType": "Edge",
+          "source": "57097382e5874accab99da13272811cf",
+          "target": "a2cda5aeda1c4f7a821c7fa7631f1ab9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bdfffb02095646aa957842a1b5f83074",
+          "edgeType": "Edge",
+          "source": "a2cda5aeda1c4f7a821c7fa7631f1ab9",
+          "target": "2697d5ee9d154479882879864491253a",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph><key_phrases/><library>false</library><live_agent>false</live_agent><model_type>llm</model_type><modify_confirmation_enabled>false</modify_confirmation_enabled><name>Test Subflow</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><root_topic_id/><secure_custom_input_control>false</secure_custom_input_control><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>olufemi.adefila@snc</sys_created_by><sys_created_on>2025-06-18 21:51:08</sys_created_on><sys_domain>global</sys_domain><sys_id>6da9c218fb562e90625bf7704eefdc2e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Test Subflow</sys_name><sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package><sys_policy/><sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope><sys_update_name>sys_cb_topic_6da9c218fb562e90625bf7704eefdc2e</sys_update_name><sys_updated_by>olufemi.adefila@snc</sys_updated_by><sys_updated_on>2025-06-18 21:51:43</sys_updated_on><title>Test Subflow</title><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_translated_text action="delete_multiple" query="documentkey=6da9c218fb562e90625bf7704eefdc2e"/><sys_variable_value action="delete_multiple" query="document_key=6da9c218fb562e90625bf7704eefdc2e"/></record_update>]]></payload>
+        <payload_hash>1366470894</payload_hash>
+        <record_name>Test Subflow</record_name>
+        <reverted_from/>
+        <source>29a9c658fb562e90625bf7704eefdc8f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>olufemi.adefila@snc</sys_created_by>
+        <sys_created_on>2025-06-18 21:51:43</sys_created_on>
+        <sys_id>46c90a58fb562e90625bf7704eefdc84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1978506c8170000001</sys_recorded_at>
+        <sys_updated_by>olufemi.adefila@snc</sys_updated_by>
+        <sys_updated_on>2025-06-18 21:51:43</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>4ac90a5845562e90f174bf6239ac5e83</update_guid>
+        <update_guid_history>4ac90a5845562e90f174bf6239ac5e83:1366470894,96b982189d562e905cc4c1ecf74616ea:-930823468,7da9c65809562e9042ec3cb06a4b899a:-1531152407</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>olufemi.adefila@snc</sys_created_by>
+        <sys_created_on>2025-06-20 22:35:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>2b188c3e614a443299d6328ec29a1e44</sys_id>
+        <sys_metadata>6da9c218fb562e90625bf7704eefdc2e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Subflow</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope_delete display_value="">230f96bf0ff44c9496c73d4227f02fc1</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_6da9c218fb562e90625bf7704eefdc2e</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_6da9c218fb562e90625bf7704eefdc2e">46c90a58fb562e90625bf7704eefdc84</sys_update_version>
+        <sys_updated_by>olufemi.adefila@snc</sys_updated_by>
+        <sys_updated_on>2025-06-20 22:35:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

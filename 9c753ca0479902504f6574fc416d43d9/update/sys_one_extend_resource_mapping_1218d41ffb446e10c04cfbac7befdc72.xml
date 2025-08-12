@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_resource_mapping">
+    <sys_one_extend_resource_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability_condition/>
+        <applicability_condition_expression/>
+        <applicability_condition_table/>
+        <applicability_failed_policy/>
+        <applicability_script><![CDATA[(function(currentInputs, context) {
+ /* customize condition logic here, return true or false */
+  var featureInput = currentInputs; 
+  if (typeof featureInput === "string") {
+ featureInput = JSON.parse(featureInput);
+    }
+
+    var metrics = featureInput && featureInput._meta && featureInput._meta.evaluationDetails && featureInput._meta.evaluationDetails.metrics;
+
+    return metrics && metrics.indexOf("f5fa89d57f14121071cab6257d8665a6") !== -1; //check for capability id of the metric
+})(currentInputs, context);]]></applicability_script>
+        <applicability_type>script</applicability_type>
+        <depends_on_list>6608905bfb8c6e10625bf7704eefdc70</depends_on_list>
+        <error_handler_script><![CDATA[(function handleError() {  
+	// customize condition logic here,  
+	return ;
+})();]]></error_handler_script>
+        <error_policy/>
+        <metadata>{}</metadata>
+        <parent_capability display_value="Generate Catalog Vars from Definition">0e08981bfb8c6e10625bf7704eefdc4a</parent_capability>
+        <resource_capability display_value="Correctness Metric with Golden Response">f5fa89d57f14121071cab6257d8665a6</resource_capability>
+        <resource_name>Correctness Metric with Golden Response</resource_name>
+        <sys_class_name>sys_one_extend_resource_mapping</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-03-08 00:55:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1218d41ffb446e10c04cfbac7befdc72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Correctness Metric with Golden Response</sys_name>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sys_one_extend_resource_mapping_1218d41ffb446e10c04cfbac7befdc72</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-03-08 00:55:31</sys_updated_on>
+    </sys_one_extend_resource_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=1218d41ffb446e10c04cfbac7befdc72"/>
+</record_update>

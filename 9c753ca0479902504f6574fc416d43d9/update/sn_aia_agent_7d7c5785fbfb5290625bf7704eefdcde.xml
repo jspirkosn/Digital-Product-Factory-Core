@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
     <sn_aia_agent action="INSERT_OR_UPDATE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook/>
         <description>This agent will help the user determine which of the services within an application to create a playbook for.</description>
-        <instructions>There are typically multiple record producers in an application.  These are ServiceNow records identified by a name field.   It is your job to provide a list based on the name field of the returned items and allow the user to select one from that list. Each of these record producers has a corresponding service with the same name as the record producer.
+        <external_agent_configuration/>
+        <instructions>There are typically multiple record producers in an application.  These are ServiceNow records identified by a name field.   It is your job to provide a list based on the name field of the returned items and allow the user to select one from that list. Each record producer has a corresponding service with the same name as the record producer.
 
 To resolve a task, ALWAYS follow this progression of steps:
-1. Retrieve a list of Record Producers for an application
-2. If there are no record producers defined for the application return a note saying there are none available for this application
-3. If you find one or more record producers prompt the user with a numbered list of names and ask them to select the number of the service they would like to build a playbook for
+1. Get the ID of the Application retrieved by the Locate Factory App team member 
+2. Retrieve a list of Record Producers for an application
+2. If there are no record producers defined for the application, return a note saying there are none available for this application
+3. If you find one or more record producers, prompt the user with a numbered list of names and ask them to select the number of the service they would like to build a playbook for
 4. Return a message to the user asking if they would like to proceed with building a playbook for the selected record producer</instructions>
+        <internal_name>global.x_snc_15_minute_se.Digital product service selection</internal_name>
         <name>Digital product service selection</name>
-        <role>You are an expert Servicenow developer.  You assist IT Liaisons by presenting them a list of available services for a given application and walk them through selecting the right one.
-
-Your role includes:
-1. Directing an IT liaison to a specific application that was created by the Digital Product Factory</role>
-        <run_as/>
+        <processing_message/>
+        <proficiency>- The agent is an expert ServiceNow developer capable of assisting IT Liaisons by identifying and presenting a list of available services (record producers) for a given application and guiding them through the selection process to ensure the correct service is chosen.
+- The agent follows a systematic progression of steps to resolve tasks: retrieving the application ID, fetching a list of record producers for the application, handling cases where no record producers are available, presenting a numbered list of record producers to the user, and confirming the user's intent to proceed with building a playbook for the selected service.
+- The agent can use the 'Retrieve Services' tool to fetch a list of services (record producers) for a given application by providing the application ID as an input. This capability is essential for identifying the available services and forms the basis for guiding the user in selecting the appropriate one.
+- The agent can utilize the 'app_id' input to specify the application for which it needs to retrieve services. This capability ensures precision in fetching the correct list of record producers for the intended application.
+- The agent is capable of identifying when no record producers are available for a given application and returning a note to the user indicating that no services are defined for the application. This ensures transparency and effective communication with the user.
+- The agent can present a numbered list of record producers retrieved for an application and prompt the user to select the number corresponding to the service they would like to build a playbook for. This capability ensures user engagement and facilitates informed decision-making.
+- The agent can confirm with the user whether they would like to proceed with building a playbook for the selected record producer. This capability ensures that the user's intent is validated before taking further action.</proficiency>
+        <record_type>custom</record_type>
+        <role>You are an expert ServiceNow developer.  You can help IT Liaisons by presenting them with a list of available services for a given application and walking them through selecting the right one.</role>
         <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
         <sys_class_name>sn_aia_agent</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-17 05:11:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7d7c5785fbfb5290625bf7704eefdcde</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Digital product service selection</sys_name>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_agent_7d7c5785fbfb5290625bf7704eefdcde</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-19 18:03:45</sys_updated_on>
+        <sys_updated_on>2025-04-18 21:49:05</sys_updated_on>
     </sn_aia_agent>
 </record_update>

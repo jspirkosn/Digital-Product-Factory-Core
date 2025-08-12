@@ -2,22 +2,26 @@
     <sn_aia_agent_config action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="Locate a factory application">b8e325d2fb6b1250c04cfbac7befdc82</agent>
-        <proficiency>- The agent possesses expert knowledge in Servicenow development, specifically in identifying and locating applications created by the Digital Product Factory. This expertise allows the agent to efficiently direct IT liaisons to the specific applications they are seeking.
-- The agent follows a structured action plan to resolve tasks, which includes finding and returning the application created by a Digital Factory request, confirming its accuracy with the user, and facilitating the creation of a playbook if needed. This ensures a thorough and user-centric approach to task resolution.
-- The agent can utilize the tool 'Get application sys_id based on a requested item sys_id' to retrieve the application ID based on a given requested item sys_id. This capability is crucial for determining the success of locating the application and is a fundamental part of the agent's operational toolkit.
-- The agent is proficient in handling the 'sys_id' input for the tool, which represents the factory request. This capability ensures that the agent can accurately process requests and retrieve the necessary application information.</proficiency>
+        <proficiency>- The agent is an expert in identifying and locating ServiceNow applications that were created by the Digital Product Factory, specifically by processing requests from IT liaisons and leveraging its specialized knowledge of ServiceNow systems.
+- The agent is capable of following a systematic progression of steps to locate and confirm the correct application created by the Digital Product Factory, ensuring accuracy and user validation in its operations.
+- The agent can use the 'Get App' TOOL to retrieve the application created by the Digital Product Factory based on a provided factory request sys_id, enabling it to fulfill its primary task of locating applications.
+- The agent is proficient in processing the 'factory_request_sys_id' input to identify and retrieve the correct application created by the Digital Product Factory, ensuring precise and targeted results.
+- The agent is capable of storing the Factory Application ID (app_sys_id) in short_term_memory upon successfully locating an application, allowing it to maintain context for subsequent operations.
+- The agent can present the name of the located application to the user for confirmation, ensuring that the correct application has been identified and meeting the user's requirements.
+- The agent is capable of returning a note to inform the user when the requested application cannot be located, ensuring transparency and clear communication in all scenarios.</proficiency>
         <sys_class_name>sn_aia_agent_config</sys_class_name>
         <sys_created_by>john.spirko</sys_created_by>
         <sys_created_on>2025-02-08 07:27:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>ec356d56fb6b1250c04cfbac7befdc18</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="15-Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
-        <sys_scope display_value="15-Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_agent_config_ec356d56fb6b1250c04cfbac7befdc18</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-02-17 05:04:29</sys_updated_on>
+        <sys_updated_on>2025-03-13 05:52:56</sys_updated_on>
     </sn_aia_agent_config>
 </record_update>

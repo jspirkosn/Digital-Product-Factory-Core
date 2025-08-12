@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
     <sn_aia_usecase action="INSERT_OR_UPDATE">
-        <base_plan>1. Guide the user to a template that they can start with as a basis immediately.
-2. Prompt the user for their organization
-3. Prompt the user to name their Digital Product. Please note that this Digital Product is a package that will contain their services, data tables, and workflows.
-4. Ask the user for a detailed description of the Digital Product. 
+        <base_plan>1. Ask the user to select a template and remember the record number as the template identity.
+2. Prompt the user for their organization and remember it as the "Organization Name".
+3. Prompt the user to name their Digital Product and remember this as the "Name of Product". Please note that this Digital Product is a package that will contain their services, data tables, and workflows. 
+4. Ask the user for a detailed description of the Digital Product and remember it as "Description of Product". 
 5. Ask the user if they would like to add additional service(s) to their product
 6. If they say yes, ask them to describe the details of the service, what they hope it can do from an intake and workflow perspective.
 7. Maintain a list called "Comma Separated List of Additional Services" and add the description from step 6, followed by a comma, to that list.  
 8. Ask them if they would like to add another service
 9. If they say yes, go back to step 5
-10. Tell the user that they will be the owner of the product and ask if they would like to add any collaborators
-11. If they said yes to adding collaborators, prompt them for a list of email addresses
+10. Ask if they would like to add any collaborators
+11. If they say yes to adding collaborators, prompt them for a list of email addresses
 12. Make sure the email list is a comma-separated list of valid email addresses.  If it’s not, allow them to edit what they wrote.
 13. Describe the product by providing a list of the delivered services and supporting services, including any services they've asked to add, and describe how they will make up the digital product.
-14. Submit a request to the factory</base_plan>
+14. Submit a request to the factory using all of the variables collected</base_plan>
         <description>This agentic workflow helps users build digital product prototypes. The agent will guide you through collecting basic requirements, which should take about 10 minutes, and a prototype will be delivered within 10 minutes of submission.</description>
         <execution_mode>copilot</execution_mode>
         <internal_name>global.x_snc_15_minute_se.Digital Product Factory Assistant</internal_name>
@@ -25,14 +25,14 @@
         <sys_created_on>2025-06-23 00:51:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>a2779b29fb12a210625bf7704eefdca2</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Digital Product Factory Assistant</sys_name>
         <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
         <sys_policy/>
         <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
         <sys_update_name>sn_aia_usecase_a2779b29fb12a210625bf7704eefdca2</sys_update_name>
         <sys_updated_by>john.spirko</sys_updated_by>
-        <sys_updated_on>2025-07-22 23:31:42</sys_updated_on>
+        <sys_updated_on>2025-08-05 01:16:51</sys_updated_on>
         <team display_value="Digital Product Factory Assistant">655997a9fb12a210625bf7704eefdc09</team>
     </sn_aia_usecase>
 </record_update>

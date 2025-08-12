@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Digital Factory Template Selection Assistant">a9936b21fb92a210625bf7704eefdc31</agent>
+        <description>Get a list of available Digital Product Factory templates.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"crudInputs","value":{"operation":"lookup","table":{"value":"x_snc_15_minute_se_registered_templates","displayValue":"Registered Templates"},"query":"app_template.active=true","returnFields":[{"id":"app_template","sublabel":"app_template","excludedOperators":[],"extendedOperators":null,"label":"App Template","type":"reference","referenceTable":"sys_app_template","referenceTableDefaultField":"name","referenceKey":null,"dictionaryAttributes":[{"name":"encode_utf8","value":"false"},{"name":"ref_ac_columns","value":"registerd_to_factory"},{"name":"ref_ac_columns_search","value":"true"},{"name":"ref_autocompleter","value":"AJAXTableCompleter"}]},{"id":"industry_sector","sublabel":"industry_sector","excludedOperators":[],"extendedOperators":null,"label":"Industry / Sector","type":"choice","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},{"id":"supporting_services","sublabel":"supporting_services","excludedOperators":[],"extendedOperators":null,"label":"Supporting Services","type":"html","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},{"id":"delivered_services","sublabel":"delivered_services","excludedOperators":[],"extendedOperators":null,"label":"Delivered Services","type":"html","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},{"id":"number","sublabel":"number","excludedOperators":[],"extendedOperators":null,"label":"Number","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"ignore_filter_on_new","value":"true"}]}],"limit":"10","orderBy":"","sortType":""},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get Registered Template Records</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>john.spirko</sys_created_by>
+        <sys_created_on>2025-08-04 17:08:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a8cbc3d3fb036610c04cfbac7befdc00</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Get Registered Template Records</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="15 Minute Digital Product Prototype" source="x_snc_15_minute_se">9c753ca0479902504f6574fc416d43d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="15 Minute Digital Product Prototype">9c753ca0479902504f6574fc416d43d9</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_a8cbc3d3fb036610c04cfbac7befdc00</sys_update_name>
+        <sys_updated_by>john.spirko</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:51</sys_updated_on>
+        <tool display_value="Get Registered Template Records">24cb83d3fb036610c04cfbac7befdcfc</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+</record_update>
